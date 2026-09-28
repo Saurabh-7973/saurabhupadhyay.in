@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Guidester — in-app tester feedback for Flutter</title>
+  <meta name="description" content="Guidester lets testers tap anywhere in a Flutter app, type what's wrong, and send it to your dashboard with a screenshot and device context.">
+  <meta name="theme-color" content="#000000">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;display=swap">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header class="site">
+    <div class="wrap">
+      <a class="name" href="/">Saurabh Upadhyay</a>
+      <nav aria-label="Main">
+        <a href="/">Home</a>
+        <a href="/guidester.html" aria-current="page">Guidester</a>
+        <a href="/products.html">Products</a>
+        <a href="/contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap">
+      <h1>Guidester</h1>
+      <p class="lede">In-app tester feedback for Flutter. Testers tap anywhere in your app, type what's wrong, and it lands on your dashboard with a screenshot, the screen name, the device, the build, and the error that caused it.</p>
+
+      <div class="actions">
+        <a class="button" href="https://saurabh-7973.github.io/guidester/">Try it in your browser</a>
+        <a href="https://pub.dev/packages/guidester">pub.dev</a>
+        <a href="https://github.com/Saurabh-7973/guidester">GitHub</a>
+      </div>
+
+      <figure>
+        <img src="/guidester-demo.gif" width="1000" height="600" loading="lazy" alt="A tester pins a comment on the checkout screen; it lands on the dashboard with the screenshot and screen name.">
+        <figcaption>A tester pins a comment on a screen. It arrives on the dashboard with the screenshot and screen name.</figcaption>
+      </figure>
+
+      <h2>What it does</h2>
+      <ol>
+        <li><strong>Tap the bubble</strong> in the corner of the test build.</li>
+        <li><strong>Tap the spot</strong> that's wrong. A pin drops there.</li>
+        <li><strong>Type what's wrong</strong>, pick how bad it is (Blocked, Annoying, Cosmetic), and send. Optionally mark up the screenshot.</li>
+      </ol>
+      <p>The comment arrives on your dashboard with the screenshot and pin, the screen name, device, build, and the last errors the app threw. When you mark it fixed, the tester is asked on their next launch whether it works now.</p>
+      <p>It's self-hosted: screenshots go to <strong>your own</strong> Supabase project. There's no Guidester server in between.</p>
+
+      <h2>Install</h2>
+      <pre><code>flutter pub add guidester</code></pre>
+      <p>Then add two lines to your app &mdash; one in <code>main()</code>, one on your <code>MaterialApp</code>:</p>
+      <pre><code>Guidester.init(apiKey: myKey, endpoint: myEndpoint);
+builder: (context, child) =&gt; GuidesterOverlay(child: child!),</code></pre>
+      <p>Backend setup is one script and takes about 15 minutes, once. The full quick start is in the <a href="https://github.com/Saurabh-7973/guidester#readme">README on GitHub</a>.</p>
+
+      <h2>Links</h2>
+      <ul>
+        <li>Package: <a href="https://pub.dev/packages/guidester">pub.dev/packages/guidester</a></li>
+        <li>Source: <a href="https://github.com/Saurabh-7973/guidester">github.com/Saurabh-7973/guidester</a> (MIT licence)</li>
+        <li>Live demo: <a href="https://saurabh-7973.github.io/guidester/">saurabh-7973.github.io/guidester</a> &mdash; runs the real package in your browser; nothing you type leaves it.</li>
+      </ul>
+    </div>
+  </main>
+
+  <footer class="site">
+    <div class="wrap">
+      <nav aria-label="Legal">
+        <a href="/terms.html">Terms</a>
+        <a href="/privacy.html">Privacy</a>
+        <a href="/refund.html">Refunds</a>
+        <a href="/contact.html">Contact</a>
+      </nav>
+      <p>&copy; 2026 Saurabh Upadhyay &middot; Mumbai, India</p>
+    </div>
+  </footer>
+</body>
+</html>

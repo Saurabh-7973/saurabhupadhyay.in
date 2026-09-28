@@ -15,7 +15,7 @@ Everything below lives in `public/`.
 | `products.html` | Apps: Sanatan Guide, Sahaj, Snapdrop |
 | `terms.html`, `privacy.html`, `refund.html`, `contact.html` | Legal pages for payment-gateway onboarding |
 | `404.html` | Not-found page (served via `not_found_handling` in `wrangler.jsonc`) |
-| `style.css` | Shared styles (Guidester dashboard tokens, Inter) |
+| `style.css` | Shared styles (Guidester dashboard tokens, Inter + JetBrains Mono) |
 | `guidester-demo.gif` | Demo GIF, copied from the Guidester repo so the site loads nothing from GitHub |
 | `.assetsignore` | Keeps `.git` and `.wrangler` out of the published assets |
 

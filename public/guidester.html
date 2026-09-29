@@ -62,7 +62,7 @@
 <main>
   <div class="page-head">
     <div class="wrap">
-      <p class="eyebrow">Flutter package · MIT licence</p>
+      <p class="eyebrow">Flutter package · MIT licence · Redaction built in</p>
       <h1>Guidester</h1>
       <p class="lede">In-app tester feedback for Flutter. Testers tap anywhere in your app, type what's wrong, and it lands on your dashboard with a screenshot, the screen name, the device, the build, and the error that caused it.</p>
       <div class="cta-row">
@@ -137,6 +137,10 @@
         <div>
           <h3>Self-hosted by design</h3>
           <p>Screenshots go to your own Supabase project. There is no Guidester server in between.</p>
+        </div>
+        <div>
+          <h3>Hide sensitive fields</h3>
+          <p>Wrap anything private in <code>GuidesterRedact</code> and it is painted over before the screenshot is encoded. The block is opaque, not blurred, because a blur can be reversed. If redaction fails for any reason, no screenshot is sent at all — the comment still goes.</p>
         </div>
       </div>
     </div>

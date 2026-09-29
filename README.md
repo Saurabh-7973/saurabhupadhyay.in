@@ -27,6 +27,10 @@ python3 -m http.server 8000 -d public
 # open http://localhost:8000
 ```
 
+Internal links are extensionless (`/guidester`), matching how Cloudflare serves
+the site. A plain local server doesn't map those to `.html`, so in local preview open
+pages by filename (`/guidester.html`).
+
 ## Before going live
 
 1. **Read the legal pages.** `terms.html`, `privacy.html`, `refund.html` and

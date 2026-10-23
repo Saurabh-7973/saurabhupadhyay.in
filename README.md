@@ -17,6 +17,7 @@ Everything below lives in `public/`.
 | `404.html` | Not-found page (served via `not_found_handling` in `wrangler.jsonc`) |
 | `style.css` | Shared styles (Guidester dashboard tokens, Inter + JetBrains Mono) |
 | `guidester-demo.gif` | Demo GIF, copied from the Guidester repo so the site loads nothing from GitHub |
+| `guidester-demo-phone.gif` | Phone-only crop of the demo GIF, served on screens up to 600px wide. Rebuild after replacing the demo: `gifsicle --crop 20,20+252x560 -O3 public/guidester-demo.gif -o public/guidester-demo-phone.gif` |
 | `.assetsignore` | Keeps `.git` and `.wrangler` out of the published assets |
 
 Links and the stylesheet use root-absolute paths (`/style.css`), so preview with a

@@ -306,3 +306,43 @@ address{font-style:normal;color:var(--text-1);}
 .contact-grid .card address{margin:0;}
 .card ul{margin:0;padding-left:18px;}
 .card li{margin-bottom:4px;}
+
+/* ── phones ─────────────────────────────────────────── */
+/* The header wraps to two lines here, so it scrolls away instead of
+   pinning ~90px of a small screen. Spacing tightens, button rows become an
+   even grid, and the demo swaps to a phone-only crop (see index.html). */
+@media(max-width:600px){
+  :root{--gutter:20px;}
+
+  header.site{position:static;}
+  header.site .wrap{padding-block:12px 4px;gap:2px 16px;}
+  header nav{gap:0;margin-left:-10px;font-size:15px;}
+  header nav a{padding:9px 10px;}
+
+  .hero{padding-block:36px 48px;}
+  .hero .wrap{gap:32px;}
+  .hero h1{margin-bottom:16px;}
+  .hero p.lede,.page-head .lede,.lede{font-size:17px;}
+  .page-head{padding-block:36px 44px;}
+  .page-head .screen{margin-top:32px;}
+  main.page{padding-block:36px 64px;}
+  section{padding-block:48px;}
+  .sec-head{margin-bottom:24px;}
+  .sec-head h2{font-size:24px;}
+
+  .cta-row{display:grid;grid-template-columns:1fr 1fr;gap:10px;}
+  .cta-row .btn{justify-content:center;padding:12px 14px;}
+  .cta-row .btn:first-child{grid-column:1/-1;}
+  .install{max-width:none;}
+
+  .screen picture{display:block;background:#000;padding-block:16px;}
+  .screen picture img{width:auto;max-width:100%;max-height:62vh;margin-inline:auto;}
+
+  pre{font-size:12.5px;padding:12px 14px;}
+
+  .posts a{gap:12px;}
+  .card li{margin-bottom:10px;}
+  footer.site .wrap{flex-direction:column;gap:6px;}
+  footer nav{gap:0 4px;margin-left:-8px;}
+  footer nav a{padding:8px;}
+}

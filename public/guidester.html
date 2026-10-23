@@ -79,8 +79,11 @@
           <div class="dots"><i></i><i></i><i></i></div>
           <span>guidester — tester taps a screen, it lands on the dashboard</span>
         </div>
-        <img src="/guidester-demo.gif" width="1000" height="600"
-             alt="A tester pins a comment on the checkout screen; it lands on the dashboard with the screenshot and screen name.">
+        <picture>
+          <source media="(max-width: 600px)" srcset="/guidester-demo-phone.gif" width="252" height="560">
+          <img src="/guidester-demo.gif" width="1000" height="600"
+               alt="A tester pins a comment on the checkout screen; it lands on the dashboard with the screenshot and screen name.">
+        </picture>
         <figcaption>A tester pins a comment on a screen. It arrives on the dashboard with the screenshot and screen name.</figcaption>
       </figure>
     </div>
@@ -153,9 +156,16 @@
       </div>
       <div class="prose">
         <pre><code>flutter pub add guidester</code></pre>
-        <p>Then add two lines to your app — one in <code>main()</code>, one on your <code>MaterialApp</code>:</p>
-        <pre><code>Guidester.init(apiKey: myKey, endpoint: myEndpoint);
-builder: (context, child) =&gt; GuidesterOverlay(child: child!),</code></pre>
+        <p>Then make two changes to your app — one in <code>main()</code>, one on your <code>MaterialApp</code>:</p>
+        <pre><code>// in main()
+Guidester.init(
+  apiKey: myKey,
+  endpoint: myEndpoint,
+);
+
+// on your MaterialApp
+builder: (context, child) =&gt;
+    GuidesterOverlay(child: child!),</code></pre>
         <p>Backend setup is one script and takes about 15 minutes, once. The full quick start is in the <a href="https://github.com/Saurabh-7973/guidester#readme">README on GitHub</a>.</p>
       </div>
     </div>

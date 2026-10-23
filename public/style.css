@@ -155,6 +155,8 @@ section{border-top:1px solid var(--line);padding-block:68px;}
 .sec-head p{margin:0;max-width:62ch;}
 
 .grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));}
+/* Four cards read as two rows of two, not three plus one. */
+.grid.pairs{grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));}
 
 .card{
   display:flex;flex-direction:column;gap:8px;
@@ -333,6 +335,8 @@ address{font-style:normal;color:var(--text-1);}
   .cta-row{display:grid;grid-template-columns:1fr 1fr;gap:10px;}
   .cta-row .btn{justify-content:center;padding:12px 14px;}
   .cta-row .btn:first-child{grid-column:1/-1;}
+  /* With an even count the last button would sit alone at half width. */
+  .cta-row .btn:first-child:nth-last-child(even) ~ .btn:last-child{grid-column:1/-1;}
   .install{max-width:none;}
 
   .screen picture{display:block;background:#000;padding-block:16px;}

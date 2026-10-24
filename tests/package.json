@@ -1,0 +1,18 @@
+{
+  "name": "saurabhupadhyay-in-checks",
+  "private": true,
+  "type": "module",
+  "description": "Checks for the site in ../public. Nothing here is served.",
+  "scripts": {
+    "serve": "node serve.mjs",
+    "html": "html-validate --config .htmlvalidate.json ../public/*.html",
+    "e2e": "playwright test",
+    "lighthouse": "lhci autorun"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "4.14.0",
+    "@lhci/cli": "0.15.1",
+    "@playwright/test": "1.64.1",
+    "html-validate": "11.17.0"
+  }
+}

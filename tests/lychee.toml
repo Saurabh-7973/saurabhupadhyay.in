@@ -1,0 +1,15 @@
+# Link check for public/. Root-absolute links (/guidester) resolve against
+# public/ via --root-dir in the workflow.
+# /guidester is served from guidester.html, as Cloudflare does.
+fallback_extensions = ["html"]
+max_retries = 3
+retry_wait_time = 5
+timeout = 20
+accept = [200, 206, 429]
+exclude_path = ["public/404.html"]
+# These answer bots with 403/999 whatever the link; checked by hand instead.
+exclude = [
+  '^https://medium\.com/',
+  '^https://(www\.)?linkedin\.com/',
+  '^mailto:',
+]

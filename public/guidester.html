@@ -19,9 +19,7 @@
   <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="theme-color" content="#000000">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap">
+  <link rel="preload" href="/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/style.css">
   <script type="application/ld+json">
   {
@@ -45,8 +43,30 @@
     }
   }
   </script>
+  <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "SoftwareSourceCode",
+    "name": "Guidester",
+    "description": "Source code of Guidester: the Flutter SDK, the dashboard and the Supabase backend.",
+    "codeRepository": "https://github.com/Saurabh-7973/guidester",
+    "programmingLanguage": [
+      "Dart",
+      "TypeScript",
+      "SQL"
+    ],
+    "runtimePlatform": "Flutter",
+    "license": "https://github.com/Saurabh-7973/guidester/blob/main/LICENSE",
+    "author": {
+      "@type": "Person",
+      "name": "Saurabh Upadhyay",
+      "url": "https://saurabhupadhyay.in/"
+    }
+  }
+  </script>
 </head>
 <body>
+<a class="skip" href="#main">Skip to content</a>
 <header class="site">
   <div class="wrap">
     <a class="brand" href="/">Saurabh Upadhyay</a>
@@ -59,7 +79,7 @@
   </div>
 </header>
 
-<main>
+<main id="main">
   <div class="page-head">
     <div class="wrap">
       <p class="eyebrow">Flutter package · MIT licence · Redaction built in</p>
@@ -80,11 +100,19 @@
           <div class="dots"><i></i><i></i><i></i></div>
           <span>guidester — tester taps a screen, it lands on the dashboard</span>
         </div>
-        <picture>
-          <source media="(max-width: 600px)" srcset="/guidester-demo-phone.gif" width="252" height="560">
-          <img src="/guidester-demo.gif" width="1000" height="600"
-               alt="A tester pins a comment on the checkout screen; it lands on the dashboard with the screenshot and screen name.">
-        </picture>
+        <div class="demo">
+          <video class="demo-video" autoplay muted loop playsinline width="1000" height="600"
+                 poster="/guidester-demo-poster.webp" aria-hidden="true">
+            <source media="(max-width: 600px)" src="/guidester-demo-phone.webm" type="video/webm">
+            <source media="(max-width: 600px)" src="/guidester-demo-phone.mp4" type="video/mp4">
+            <source src="/guidester-demo.webm" type="video/webm">
+            <source src="/guidester-demo.mp4" type="video/mp4">
+          </video>
+          <picture class="demo-still">
+            <source media="(max-width: 600px)" srcset="/guidester-demo-phone-poster.webp" width="252" height="560">
+            <img src="/guidester-demo-poster.webp" width="1000" height="600" loading="lazy" alt="A tester pins a comment on the checkout screen; it lands on the dashboard with the screenshot and screen name.">
+          </picture>
+        </div>
         <figcaption>A tester pins a comment on a screen. It arrives on the dashboard with the screenshot and screen name.</figcaption>
       </figure>
     </div>
@@ -98,17 +126,17 @@
       </div>
       <div class="grid">
         <div class="card">
-          <span class="meta" style="margin:0;padding:0">01</span>
+          <span class="meta flush">01</span>
           <h3>Tap the bubble</h3>
           <p>In the corner of the test build.</p>
         </div>
         <div class="card">
-          <span class="meta" style="margin:0;padding:0">02</span>
+          <span class="meta flush">02</span>
           <h3>Tap the spot</h3>
           <p>The one that's wrong. A pin drops there.</p>
         </div>
         <div class="card">
-          <span class="meta" style="margin:0;padding:0">03</span>
+          <span class="meta flush">03</span>
           <h3>Type what's wrong</h3>
           <p>Pick how bad it is and send. Optionally mark up the screenshot.</p>
           <div class="chips">
@@ -118,7 +146,7 @@
           </div>
         </div>
       </div>
-      <div class="prose" style="margin-top:32px">
+      <div class="prose mt-32">
         <p>The comment arrives on your dashboard with the screenshot and pin, the screen name, device, build, and the last errors the app threw. When you mark it fixed, the tester is asked on their next launch whether it works now.</p>
       </div>
     </div>
@@ -208,7 +236,7 @@ builder: (context, child) =&gt;
           <span class="meta">Open dashboard →</span>
         </a>
       </div>
-      <p class="mono-meta" style="margin:24px 0 0">MIT licence · six platforms · free and open source</p>
+      <p class="mono-meta mt-24">MIT licence · six platforms · free and open source</p>
     </div>
   </section>
 </main>

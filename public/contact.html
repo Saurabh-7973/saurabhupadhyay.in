@@ -24,12 +24,11 @@
   <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="theme-color" content="#000000">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap">
+  <link rel="preload" href="/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/style.css">
 </head>
 <body>
+<a class="skip" href="#main">Skip to content</a>
 <header class="site">
   <div class="wrap">
     <a class="brand" href="/">Saurabh Upadhyay</a>
@@ -42,7 +41,7 @@
   </div>
 </header>
 
-<main>
+<main id="main">
   <div class="page-head">
     <div class="wrap">
       <p class="updated">Last updated: 28 September 2026</p>
@@ -52,7 +51,7 @@
         <div class="card">
           <span class="k">Email</span>
           <p><a href="mailto:hello@saurabhupadhyay.in">hello@saurabhupadhyay.in</a></p>
-          <p style="color:var(--text-2);font-size:14.5px">For support, billing, refunds, privacy requests, or anything else. For a payment question, include the transaction or order ID.</p>
+          <p class="note">For support, billing, refunds, privacy requests, or anything else. For a payment question, include the transaction or order ID.</p>
         </div>
         <div class="card">
           <span class="k">Response time</span>

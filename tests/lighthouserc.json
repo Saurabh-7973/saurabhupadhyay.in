@@ -1,0 +1,30 @@
+{
+  "ci": {
+    "collect": {
+      "startServerCommand": "node serve.mjs",
+      "startServerReadyPattern": "serving public",
+      "url": [
+        "http://127.0.0.1:8080/",
+        "http://127.0.0.1:8080/guidester",
+        "http://127.0.0.1:8080/products",
+        "http://127.0.0.1:8080/writing",
+        "http://127.0.0.1:8080/contact",
+        "http://127.0.0.1:8080/terms",
+        "http://127.0.0.1:8080/privacy",
+        "http://127.0.0.1:8080/refund"
+      ],
+      "numberOfRuns": 3
+    },
+    "assert": {
+      "assertions": {
+        "categories:performance": ["error", { "minScore": 0.95 }],
+        "categories:accessibility": ["error", { "minScore": 1 }],
+        "categories:best-practices": ["error", { "minScore": 1 }],
+        "categories:seo": ["error", { "minScore": 1 }],
+        "resource-summary:total:size": ["error", { "maxNumericValue": 250000 }],
+        "resource-summary:third-party:count": ["error", { "maxNumericValue": 0 }]
+      }
+    },
+    "upload": { "target": "filesystem", "outputDir": ".lighthouseci" }
+  }
+}

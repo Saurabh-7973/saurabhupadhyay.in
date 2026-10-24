@@ -1,0 +1,48 @@
+name: Site checks
+
+# Runs against public/ served locally, so a PR is checked before the push to
+# main that deploys it. Tooling lives in tests/; nothing there is served.
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  checks:
+    name: HTML, layout, axe, Lighthouse
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: tests
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: tests/package-lock.json
+      - run: npm ci
+      - name: HTML validation
+        run: npm run html
+      - run: npx playwright install --with-deps chromium
+      - name: No sideways scroll at 360/390/1280, axe, one video per viewport
+        run: npm run e2e
+      - name: Lighthouse CI (budgets in lighthouserc.json)
+        run: npm run lighthouse
+
+  links:
+    name: Links
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: lycheeverse/lychee-action@v2
+        with:
+          args: --config tests/lychee.toml --root-dir ${{ github.workspace }}/public 'public/**/*.html'
+          fail: true

@@ -80,3 +80,27 @@ done
 
 `fps=25` matters: the GIFs use variable frame durations, and without it the
 video comes out shorter than the GIF.
+
+## Checks
+
+`.github/workflows/site-checks.yml` runs on every PR and on `main`, against
+`public/` served locally. The tooling lives in `tests/` (its own
+`package.json`), so none of it is published.
+
+| Check | What fails it |
+|---|---|
+| HTML validation (`html-validate`) | Invalid markup in any page |
+| Layout (Playwright) | Any page scrolling sideways at 360, 390 or 1280px |
+| Accessibility (axe, WCAG 2.2 AA) | Any violation at 390 or 1280px |
+| Demo video | Either viewport downloading more or less than one video |
+| Lighthouse CI | Performance under 95, accessibility, best practices or SEO under 100, a page over 250 KB, any third-party request |
+| Links (lychee) | A broken internal or external link (Medium and LinkedIn excluded: they block bots) |
+
+Run them locally:
+
+```bash
+cd tests
+npm ci
+npx playwright install chromium
+npm run html && npm run e2e && npm run lighthouse
+```

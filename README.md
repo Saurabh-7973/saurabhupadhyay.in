@@ -4,6 +4,10 @@ Personal site of Saurabh Upadhyay. Plain HTML and CSS: no framework, no build st
 no JavaScript. Only the `public/` folder is published; `README.md`, `.gitignore`
 and `wrangler.jsonc` stay at the repo root and are never served.
 
+![The home page of saurabhupadhyay.in](media/readme-home.jpg)
+
+Live at **[saurabhupadhyay.in](https://saurabhupadhyay.in)**. Every pull request runs HTML validation, layout checks at three widths, axe (WCAG 2.2 AA), Lighthouse budgets and a link check (see [Checks](#checks)).
+
 ## Files
 
 Everything below lives in `public/`.
@@ -14,6 +18,7 @@ Everything below lives in `public/`.
 | `guidester.html` | Guidester product page |
 | `products.html` | Apps: Sanatan Guide, Sahaj, Snapdrop |
 | `terms.html`, `privacy.html`, `refund.html`, `contact.html` | Legal pages for payment-gateway onboarding |
+| `llms.txt` | Plain-text summary for AI assistants and search: who I am, what's live, where to check it ([llmstxt.org](https://llmstxt.org)) |
 | `404.html` | Not-found page (served via `not_found_handling` in `wrangler.jsonc`) |
 | `style.css` | Shared styles (Guidester dashboard tokens, Inter + JetBrains Mono) |
 | `guidester-demo.{webm,mp4}`, `guidester-demo-poster.webp` | The demo as video (one `<video>`, WebM first) and its still, for `prefers-reduced-motion`. Built from `media/guidester-demo.gif`, copied from the Guidester repo so the site loads nothing from GitHub |
@@ -106,3 +111,7 @@ npm ci
 npx playwright install chromium
 npm run html && npm run e2e && npm run lighthouse
 ```
+
+## Licence
+
+The code is MIT licensed (see [LICENSE](LICENSE)). The writing, product names, logos and images on the site are © Saurabh Upadhyay and are not covered by that licence.

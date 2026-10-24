@@ -351,7 +351,8 @@ address{font-style:normal;color:var(--text-1);}
   .cta-row .btn:first-child:nth-last-child(even) ~ .btn:last-child{grid-column:1/-1;}
   .install{max-width:none;}
 
-  .screen picture{display:block;background:#000;padding-block:16px;}
+  .screen .demo{padding-block:16px;}
+  .screen .demo-video{width:min(100%,calc(62vh * 252 / 560));aspect-ratio:252/560;margin-inline:auto;}
   .screen picture img{width:auto;max-width:100%;max-height:62vh;margin-inline:auto;}
 
   pre{font-size:12.5px;padding:12px 14px;}
@@ -369,3 +370,12 @@ address{font-style:normal;color:var(--text-1);}
 .mono-meta.mt-24{margin:24px 0 0;}
 .mono-meta.mt-18{margin:18px 0 0;}
 .contact-grid .card p.note{color:var(--text-2);font-size:14.5px;}
+
+/* The demo video, and the still that replaces it for anyone who asked for less motion. */
+.screen .demo{display:block;background:#000;}
+.screen .demo-video{display:block;width:100%;height:auto;background:#000;object-fit:contain;}
+.screen .demo-still{display:none;}
+@media (prefers-reduced-motion: reduce){
+  .screen .demo-video{display:none;}
+  .screen .demo-still{display:block;}
+}

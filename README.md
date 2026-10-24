@@ -16,8 +16,8 @@ Everything below lives in `public/`.
 | `terms.html`, `privacy.html`, `refund.html`, `contact.html` | Legal pages for payment-gateway onboarding |
 | `404.html` | Not-found page (served via `not_found_handling` in `wrangler.jsonc`) |
 | `style.css` | Shared styles (Guidester dashboard tokens, Inter + JetBrains Mono) |
-| `guidester-demo.gif` | Demo GIF, copied from the Guidester repo so the site loads nothing from GitHub |
-| `guidester-demo-phone.gif` | Phone-only crop of the demo GIF, served on screens up to 600px wide. Rebuild after replacing the demo: `gifsicle --crop 20,20+252x560 -O3 public/guidester-demo.gif -o public/guidester-demo-phone.gif` |
+| `guidester-demo.{webm,mp4}`, `guidester-demo-poster.webp` | The demo as video (one `<video>`, WebM first) and its still, for `prefers-reduced-motion`. Built from `media/guidester-demo.gif`, copied from the Guidester repo so the site loads nothing from GitHub |
+| `guidester-demo-phone.{webm,mp4}`, `guidester-demo-phone-poster.webp` | The phone-only crop, served on screens up to 600px wide (`<source media>`), so each viewport downloads one video |
 | `.assetsignore` | Keeps `.git` and `.wrangler` out of the published assets |
 
 Links and the stylesheet use root-absolute paths (`/style.css`), so preview with a
@@ -61,3 +61,22 @@ Once the domain's nameservers point at Cloudflare:
 2. Add `www.saurabhupadhyay.in` as well and redirect it to the apex.
 
 HTTPS is automatic.
+
+## Rebuilding the demo video
+
+`media/` holds the GIF masters; nothing there is served. After replacing
+`media/guidester-demo.gif`:
+
+```bash
+gifsicle --crop 20,20+252x560 -O3 media/guidester-demo.gif -o media/guidester-demo-phone.gif
+for g in guidester-demo guidester-demo-phone; do
+  ffmpeg -y -i media/$g.gif -movflags +faststart -pix_fmt yuv420p \
+    -vf "fps=25,scale=trunc(iw/2)*2:trunc(ih/2)*2" -c:v libx264 -preset veryslow -crf 26 -an public/$g.mp4
+  ffmpeg -y -i media/$g.gif -vf fps=25 -pix_fmt yuv420p -c:v libvpx-vp9 -b:v 0 -crf 40 -row-mt 1 -an public/$g.webm
+  ffmpeg -y -sseof -1.2 -i public/$g.mp4 -frames:v 1 /tmp/$g-poster.png
+  cwebp -q 80 /tmp/$g-poster.png -o public/$g-poster.webp
+done
+```
+
+`fps=25` matters: the GIFs use variable frame durations, and without it the
+video comes out shorter than the GIF.

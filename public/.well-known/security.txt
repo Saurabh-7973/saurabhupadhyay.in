@@ -1,0 +1,4 @@
+Contact: mailto:hello@saurabhupadhyay.in
+Expires: 2027-10-24T00:00:00.000Z
+Preferred-Languages: en, hi
+Canonical: https://saurabhupadhyay.in/.well-known/security.txt

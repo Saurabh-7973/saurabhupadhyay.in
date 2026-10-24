@@ -76,13 +76,19 @@
           <div class="dots"><i></i><i></i><i></i></div>
           <span>guidester — tester taps a screen, it lands on the dashboard</span>
         </div>
-        <picture>
-          <source media="(max-width: 600px)" srcset="/guidester-demo-phone.webp" type="image/webp" width="252" height="560">
-          <source media="(max-width: 600px)" srcset="/guidester-demo-phone.gif" width="252" height="560">
-          <source srcset="/guidester-demo.webp" type="image/webp" width="1000" height="600">
-          <img src="/guidester-demo.gif" width="1000" height="600"
-               alt="A tester pins a comment on the checkout screen of a Flutter app; the report arrives on the Guidester dashboard with the screenshot, screen name and device context.">
-        </picture>
+        <div class="demo">
+          <video class="demo-video" autoplay muted loop playsinline width="1000" height="600"
+                 poster="/guidester-demo-poster.webp" aria-label="A tester pins a comment on the checkout screen of a Flutter app; the report arrives on the Guidester dashboard with the screenshot, screen name and device context.">
+            <source media="(max-width: 600px)" src="/guidester-demo-phone.webm" type="video/webm">
+            <source media="(max-width: 600px)" src="/guidester-demo-phone.mp4" type="video/mp4">
+            <source src="/guidester-demo.webm" type="video/webm">
+            <source src="/guidester-demo.mp4" type="video/mp4">
+          </video>
+          <picture class="demo-still">
+            <source media="(max-width: 600px)" srcset="/guidester-demo-phone-poster.webp" width="252" height="560">
+            <img src="/guidester-demo-poster.webp" width="1000" height="600" loading="lazy" alt="A tester pins a comment on the checkout screen of a Flutter app; the report arrives on the Guidester dashboard with the screenshot, screen name and device context.">
+          </picture>
+        </div>
         <figcaption>The real package running. No edit, no mockup.</figcaption>
       </figure>
     </div>

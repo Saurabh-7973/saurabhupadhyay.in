@@ -37,11 +37,8 @@ pages by filename (`/guidester.html`).
 1. **Read the legal pages.** `terms.html`, `privacy.html`, `refund.html` and
    `contact.html` are templates (each has a notice comment at the top). Review them
    before relying on them or submitting them to a payment gateway.
-2. **Email.** The pages use a Gmail address. Once Cloudflare Email Routing is set up
-   for `hello@saurabhupadhyay.in`, replace it everywhere:
-   ```bash
-   grep -rl 'saurabhupadhyay7973@gmail.com' public/*.html | xargs sed -i '' 's/saurabhupadhyay7973@gmail.com/hello@saurabhupadhyay.in/g'
-   ```
+2. **Email.** Done: every page uses `hello@saurabhupadhyay.in` (Cloudflare Email
+   Routing). Check `grep -rn gmail public/` stays empty.
 
 ## Deploy (Cloudflare Workers, static assets)
 

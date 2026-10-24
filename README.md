@@ -49,6 +49,10 @@ paths. Keep `"name": "saurabhupadhyay-in"`; changing it creates a second Worker.
 Cloudflare is connected to `Saurabh-7973/saurabhupadhyay.in` on GitHub. Every push
 to `main` redeploys. There is no build step and no `package.json`.
 
+Every other branch gets a preview build (`npx wrangler preview`), with its URL in
+the "Workers Builds" check on the pull request. That command fails unless
+`wrangler.jsonc` has a `previews` block, so keep the empty `"previews": {}`.
+
 ## Custom domain
 
 Once the domain's nameservers point at Cloudflare:

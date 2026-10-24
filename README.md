@@ -94,6 +94,7 @@ video comes out shorter than the GIF.
 | Layout (Playwright) | Any page scrolling sideways at 360, 390 or 1280px |
 | Accessibility (axe, WCAG 2.2 AA) | Any violation at 390 or 1280px |
 | Demo video | Either viewport downloading more or less than one video |
+| Demo poster | A 390px phone loading the desktop poster or a desktop loading the phone one; the desktop video box blank before its first frame |
 | Lighthouse CI | Performance under 95, accessibility, best practices or SEO under 100, a page over 250 KB, any third-party request |
 | Links (lychee) | A broken internal or external link (Medium and LinkedIn excluded: they block bots) |
 

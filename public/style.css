@@ -377,7 +377,10 @@ address{font-style:normal;color:var(--text-1);}
    motion. The video is aria-hidden; the still's alt text names the demo for
    screen readers either way, so it stays in the page, only visually hidden. */
 .screen .demo{display:block;background:#000;position:relative;}
-.screen .demo-video{display:block;width:100%;height:auto;background:#000;object-fit:contain;}
+/* The poster is a background, not poster=, so each viewport loads only its own
+   still. It sits on the video itself so it fills exactly the video's box. */
+.screen .demo-video{display:block;width:100%;height:auto;background:#000 url(/guidester-demo-poster.webp) center/contain no-repeat;object-fit:contain;}
+@media(max-width:600px){.screen .demo-video{background-image:url(/guidester-demo-phone-poster.webp);}}
 .screen .demo-still{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap;}
 @media (prefers-reduced-motion: reduce){
   .screen .demo-video{display:none;}

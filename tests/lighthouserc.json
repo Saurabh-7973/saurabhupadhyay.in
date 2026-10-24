@@ -13,7 +13,7 @@
         "http://127.0.0.1:8080/privacy",
         "http://127.0.0.1:8080/refund"
       ],
-      "numberOfRuns": 1
+      "numberOfRuns": 3
     },
     "assert": {
       "assertions": {

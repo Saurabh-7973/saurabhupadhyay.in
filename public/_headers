@@ -1,0 +1,22 @@
+# Security headers for every page and file (Cloudflare static assets).
+# The site runs no JavaScript and loads nothing from another origin, so the
+# policy can be strict: everything from this site, nothing else.
+/*
+  Content-Security-Policy: default-src 'self'; script-src 'none'; style-src 'self'; img-src 'self'; font-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'; upgrade-insecure-requests
+  Strict-Transport-Security: max-age=31536000
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), interest-cohort=()
+  Cross-Origin-Opener-Policy: same-origin
+  X-Frame-Options: DENY
+
+# Fonts: a year, immutable. Rename the file if a font ever changes.
+# Images: a week. Pages and style.css keep Cloudflare's revalidate-every-time.
+/fonts/*
+  Cache-Control: public, max-age=31536000, immutable
+/*.gif
+  Cache-Control: public, max-age=604800
+/*.webp
+  Cache-Control: public, max-age=604800
+/*.png
+  Cache-Control: public, max-age=604800

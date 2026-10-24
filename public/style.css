@@ -1,3 +1,15 @@
+/* Inter and JetBrains Mono, Latin subsets, served from this site (OFL). */
+@font-face{
+  font-family:'Inter';font-style:normal;font-weight:400 700;font-display:swap;
+  src:url(/fonts/inter-latin.woff2) format('woff2');
+  unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+@font-face{
+  font-family:'JetBrains Mono';font-style:normal;font-weight:400 500;font-display:swap;
+  src:url(/fonts/jetbrains-mono-latin.woff2) format('woff2');
+  unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
 :root{
   color-scheme: dark;
 
@@ -350,3 +362,10 @@ address{font-style:normal;color:var(--text-1);}
   footer nav{gap:0 4px;margin-left:-8px;}
   footer nav a{padding:8px;}
 }
+
+/* Spacing that used to be inline style attributes; the CSP allows no inline styles. */
+.meta.flush{margin:0;padding:0;}
+.prose.mt-32{margin-top:32px;}
+.mono-meta.mt-24{margin:24px 0 0;}
+.mono-meta.mt-18{margin:18px 0 0;}
+.contact-grid .card p.note{color:var(--text-2);font-size:14.5px;}

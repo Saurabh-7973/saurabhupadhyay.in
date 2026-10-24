@@ -19,9 +19,7 @@
   <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="theme-color" content="#000000">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap">
+  <link rel="preload" href="/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/style.css">
   <script type="application/ld+json">
   {
@@ -79,7 +77,9 @@
           <span>guidester — tester taps a screen, it lands on the dashboard</span>
         </div>
         <picture>
+          <source media="(max-width: 600px)" srcset="/guidester-demo-phone.webp" type="image/webp" width="252" height="560">
           <source media="(max-width: 600px)" srcset="/guidester-demo-phone.gif" width="252" height="560">
+          <source srcset="/guidester-demo.webp" type="image/webp" width="1000" height="600">
           <img src="/guidester-demo.gif" width="1000" height="600"
                alt="A tester pins a comment on the checkout screen of a Flutter app; the report arrives on the Guidester dashboard with the screenshot, screen name and device context.">
         </picture>
@@ -125,7 +125,7 @@
         <a class="btn btn-ghost" href="/guidester">Details and install</a>
         <a class="btn btn-ghost" href="https://pub.dev/packages/guidester">pub.dev</a>
       </div>
-      <p class="mono-meta" style="margin:18px 0 0">MIT licence · six platforms · free and open source</p>
+      <p class="mono-meta mt-18">MIT licence · six platforms · free and open source</p>
     </div>
   </section>
 
@@ -166,7 +166,7 @@
         <li><a href="https://medium.com/@Saurabh7973/the-hidden-vulnerability-security-practices-every-flutter-developer-must-know-5dff2e9eadac"><span>The Hidden Vulnerability: Security Practices Every Flutter Developer Must Know</span><span class="src">Medium</span></a></li>
         <li><a href="https://medium.com/@Saurabh7973/optimizing-flutter-apps-for-maximum-performance-97f6bd90bca2"><span>Optimizing Flutter Apps for Maximum Performance</span><span class="src">Medium</span></a></li>
       </ul>
-      <p class="mono-meta" style="margin:18px 0 0"><a href="/writing">All 19 posts →</a></p>
+      <p class="mono-meta mt-18"><a href="/writing">All 19 posts →</a></p>
     </div>
   </section>
 

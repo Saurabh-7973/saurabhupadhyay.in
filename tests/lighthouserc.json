@@ -11,7 +11,9 @@
         "http://127.0.0.1:8080/contact",
         "http://127.0.0.1:8080/terms",
         "http://127.0.0.1:8080/privacy",
-        "http://127.0.0.1:8080/refund"
+        "http://127.0.0.1:8080/refund",
+        "http://127.0.0.1:8080/dhara-kosh/",
+        "http://127.0.0.1:8080/dhara-kosh/privacy/"
       ],
       "numberOfRuns": 3
     },

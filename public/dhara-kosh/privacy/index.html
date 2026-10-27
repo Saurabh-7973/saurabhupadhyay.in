@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy</title>
+<meta name="description" content="Privacy Policy for the Dhara Kosh Android app: what stays on your phone, what leaves it, and how to delete your data.">
+<meta name="robots" content="index,follow">
+<link rel="stylesheet" href="/dhara-kosh/privacy.css">
+</head>
+<body>
+<main>
+<nav class="top" aria-label="Page"><a href="../">Dhara Kosh</a><a href="#deleting-your-data">Deleting your data</a><a href="#hindi" lang="hi">हिंदी</a></nav>
+<p class="notice">Not affiliated with any government entity. Not legal advice. · किसी भी सरकारी संस्था से संबद्ध नहीं। कानूनी सलाह नहीं।</p>
+<!--
+Source for site/privacy/index.html. Keep both identical in substance (L-01, L-02).
+Editor notes (delete nothing below the line without updating DATA_SAFETY.md):
+- Name and URL depend on Q-006: "Dhara Kosh", https://saurabhupadhyay.in/dhara-kosh/privacy
+- Firebase Analytics and Crashlytics are in the build (18 Oct) and switch on only in release builds that include google-services.json (H-010). If the build you upload has no google-services.json, remove those two sections from both copies before publishing.
+- The library-updates section applies only once the content-signing key is set (H-012); until then the app makes no update requests. Remove it from both copies if you publish before H-012.
+- Replace [EFFECTIVE DATE] with the publish date.
+- This is a plain-English draft, not reviewed by a lawyer (DPDP Act 2023 wording in particular).
+-->
+<section lang="en">
+<h1>Privacy Policy</h1>
+<p><strong>Dhara Kosh</strong> (Android app, package <code>com.saurabh7973.criminallaws</code>)<br>
+Effective date: [EFFECTIVE DATE]<br>
+Developer: Saurabh Upadhyay, an independent developer in India<br>
+Contact: <a href="mailto:saurabhupadhyay7973@gmail.com">saurabhupadhyay7973@gmail.com</a></p>
+<p>Dhara Kosh is a reference app for India's criminal laws (BNS, BNSS, BSA and the old IPC, CrPC and Evidence Act). This policy explains, in plain words, what the app keeps on your phone, what leaves your phone, who receives it, and how to delete it.</p>
+<h2>The short version</h2>
+<ul>
+<li>There is no account and no sign-in. We never ask for your name, phone number or email inside the app.</li>
+<li>Your searches, bookmarks, notes and drill answers stay on your phone. They are never sent to us or anyone else.</li>
+<li>There are no ads and no advertising ID.</li>
+<li>The app asks for no location, contacts, camera, microphone, storage or photo permissions.</li>
+<li>If you buy the one-time unlock, RevenueCat (our purchase service) keeps a record of the purchase so you can restore it.</li>
+<li>If you leave "Share anonymous usage" on, the app sends anonymous usage counts to Google Firebase Analytics. You can turn it off in Settings at any time.</li>
+<li>If the app crashes, a crash report goes to Google Firebase Crashlytics so we can fix the bug.</li>
+<li>If you email us from the app, you choose what to send.</li>
+</ul>
+<h2>What stays on your phone</h2>
+<p>These are stored only in the app's private storage on your device. We cannot see them.</p>
+<ul>
+<li>Everything you type into search, and your recent searches</li>
+<li>Bookmarks, highlights, notes and collections</li>
+<li>Drill and practice answers, scores and review schedules</li>
+<li>Your settings (language, theme, text size, usage sharing)</li>
+<li>Whether you have bought the unlock (a cached copy, so the app works offline)</li>
+<li>The library of Acts itself</li>
+</ul>
+<h2>What leaves your phone, and who receives it</h2>
+<h3>1. RevenueCat (purchases)</h3>
+<p>We use RevenueCat, Inc. to handle the one-time unlock through Google Play. The app contacts RevenueCat when it starts (to check whether you have the unlock), when you open the unlock screen (to show the price), and when you buy or restore.</p>
+<p>What is sent:</p>
+<ul>
+<li>a random ID that RevenueCat creates for this install of the app (it is not your name, email or Google account)</li>
+<li>your Google Play purchase details: product (<code>criminallaws_pro_lifetime</code>), order ID, purchase token, purchase time, price, currency and store country</li>
+<li>technical details needed to process the request: app version, RevenueCat SDK version, Android version, device language, and your IP address as seen by RevenueCat's servers</li>
+</ul>
+<p>Why: to confirm the purchase with Google, unlock the paid features, and let you restore them on a new phone. RevenueCat's privacy policy: <a href="https://www.revenuecat.com/privacy">https://www.revenuecat.com/privacy</a></p>
+<h3>2. Google Play (payment and ratings)</h3>
+<p>Payments happen inside Google Play. Your card, UPI or bank details go to Google, never to us or to the app. If the app shows Google Play's rating dialog, your rating goes to Google Play under your Google account; the app does not learn whether or how you rated. Google's privacy policy: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></p>
+<h3>3. Google Firebase Analytics (anonymous usage)</h3>
+<p>Only from the released app, and only while Settings → "Share anonymous usage" is on (it is on by default; turning it off stops all usage events straight away).</p>
+<p>What is sent:</p>
+<ul>
+<li>that the app was opened</li>
+<li>that a search was made, with the number of characters typed, the kind of search (section number, Act and section, words, or Hindi) and the number of results. <strong>Never the words you searched.</strong></li>
+<li>that a section was opened: only which Act it belongs to (BNS, BNSS or BSA), how it was reached, and a running count of how many sections this install has opened. <strong>Never the section number</strong>: which offence someone reads can say something about their situation</li>
+<li>that the converter was used, with only the Act (for example "IPC"), never the section number</li>
+<li>that the unlock screen was shown and from where; that a purchase completed, failed (with "cancelled" or "failed") or was restored</li>
+<li>for a finished practice session: its kind, number of questions, score percentage and duration</li>
+<li>that "Report an error" was opened, with only the Act; a change of app language; a content update version number</li>
+<li>what Firebase collects automatically: a random app-instance ID, app version, Android version, device brand and model, device language, approximate country or region worked out from the IP address, how the app was found on Google Play (the Play install referrer), session start and engagement time</li>
+</ul>
+<p>What is never sent: your search words, notes, highlights, bookmarks, drill answers, name, email, phone number, Google account, or advertising ID.</p>
+<p>Why: to see which features are used, whether search finds what people look for, and whether the app is worth improving. Usage data is kept for 2 months and then deleted automatically. Firebase's privacy information: <a href="https://firebase.google.com/support/privacy">https://firebase.google.com/support/privacy</a></p>
+<h3>4. Google Firebase Crashlytics (crash reports)</h3>
+<p>Only from the released app. When the app crashes or hits a serious error, it sends a crash report: the technical error and where in the code it happened, app version, Android version, device manufacturer and model, free memory and storage, screen orientation, a random installation ID and the time. If usage sharing is on, the report also lists the last few usage events from section 3. Crash reports never contain your search words or notes.</p>
+<p>Why: to find and fix crashes. Crash reports are kept for up to 90 days.</p>
+<h3>5. Emails you choose to send</h3>
+<p>"Report an error" and "Feedback" open <strong>your own email app</strong> with a draft addressed to <a href="mailto:saurabhupadhyay7973@gmail.com">saurabhupadhyay7973@gmail.com</a>. Nothing is sent unless you press Send there. The draft starts with the app version, content version, Android version and phone model (and, for an error report, the section), so we can reproduce the problem. You can edit or delete any of it before sending. When you send, we receive your email address and whatever the email contains, and we use it only to reply and fix the issue.</p>
+<h3>5a. Copy and Share</h3>
+<p>When you tap Copy or Share on a section, the app puts the section text (with its citation, source and disclaimers) on your clipboard, or opens Android's share sheet with that text or with an image card of the same section (also carrying the citation, source and disclaimers). It goes only where you choose to send it, and the app you choose handles it under its own policy.</p>
+<h3>5b. Read aloud</h3>
+<p>"Read aloud" hands the section text to your phone's own text-to-speech engine (for example Google's Speech Services). The app sends it nowhere else; the engine works under its own policy, and some engines may use the internet for some voices.</p>
+<h3>6. Links you open</h3>
+<p>Source links (for example to egazette.gov.in) open in your browser. That website may log your visit under its own policy. The app sends nothing with the link.</p>
+<h3>7. Library updates</h3>
+<p>From time to time the app checks for a corrections update to the library of Acts and downloads it from a public file server (jsDelivr or GitHub). No personal data or ID is sent; like any download, the server sees your IP address.</p>
+<h2>What we do not do</h2>
+<ul>
+<li>No ads, and no advertising ID.</li>
+<li>No selling or renting of data, and no sharing with data brokers.</li>
+<li>RevenueCat and Google receive data only to provide their services to us, as described above.</li>
+<li>No location, contacts, camera, microphone, storage or photo access.</li>
+</ul>
+<h2>Children</h2>
+<p>The app is meant for adults (18+): law students, exam aspirants and professionals. It is not directed at children, and we do not knowingly collect data from children.</p>
+<h2>Security</h2>
+<p>All data the app sends travels over encrypted connections (HTTPS). Data on your phone is kept in the app's private storage, which other apps cannot read.</p>
+<h2 id="deleting-your-data">Deleting your data</h2>
+<p><strong>1. Delete what is on your phone (in the app).</strong><br>
+Open the app → <strong>Me</strong> → <strong>Settings</strong> → <strong>Delete my data</strong> → confirm. This erases your bookmarks, highlights, notes, collections, recent searches, practice history and settings from the phone, and resets settings to their defaults (except that usage sharing stays off if you had switched it off), and switches off the daily reminder. It does not cancel your unlock: open the unlock screen and tap <strong>Restore purchases</strong> to get it back. You can clear only recent searches with Settings → <strong>Clear recent searches</strong>. To keep a copy first, use Settings → <strong>Export my data</strong>: it makes one file with everything listed above, which you can save or send through your phone's share menu. The app does not upload it anywhere.</p>
+<p><strong>2. Uninstall the app.</strong><br>
+Uninstalling removes everything the app stored on your phone, including the random RevenueCat and Firebase IDs for this install.</p>
+<p><strong>3. Ask us to delete data held by RevenueCat or Firebase.</strong><br>
+Email <a href="mailto:saurabhupadhyay7973@gmail.com">saurabhupadhyay7973@gmail.com</a> with the subject "Delete my data".</p>
+<ul>
+<li>For your purchase record at RevenueCat, include the Google Play order number from your purchase receipt email (it starts with "GPA."). We will delete the RevenueCat customer record linked to it within 30 days and confirm by email. After that, Restore may not find the purchase in the app until you buy or restore again through Google Play; Google keeps its own purchase record under your Google account.</li>
+<li>Usage data in Firebase Analytics and crash reports in Crashlytics are not linked to your name or email, so we cannot look them up by those. Turn off "Share anonymous usage" to stop new usage data; existing usage data is deleted automatically after 2 months and crash reports after 90 days. If you can give us details that let us find a specific crash report (date, time and phone model), we will delete it on request.</li>
+<li>To stop sending anything at all, uninstall the app.</li>
+</ul>
+<p>Under India's Digital Personal Data Protection Act, 2023 you may ask us what personal data we hold about you, ask us to correct or delete it, and raise a grievance. Write to the contact email above; we reply within 30 days.</p>
+<h2>Changes to this policy</h2>
+<p>If what the app sends changes, we will update this page and the effective date before the new version of the app is released.</p>
+<h2>About this app</h2>
+<p>Dhara Kosh is an independent app. <strong>Not affiliated with any government entity.</strong> It does not represent the Government of India or any ministry, court or police force. Statute text is from the Gazette of India (<a href="https://egazette.gov.in">https://egazette.gov.in</a>).</p>
+<p><strong>Not legal advice.</strong> For reference and education. Verify with the official Gazette.</p>
+<h2>Contact</h2>
+<p>Saurabh Upadhyay · <a href="mailto:saurabhupadhyay7973@gmail.com">saurabhupadhyay7973@gmail.com</a> · <a href="https://saurabhupadhyay.in">https://saurabhupadhyay.in</a></p>
+</section>
+<hr>
+<section lang="hi" id="hindi">
+<h1>गोपनीयता नीति (Privacy Policy, हिंदी)</h1>
+<p><strong>धारा कोश</strong> (Android ऐप, पैकेज <code>com.saurabh7973.criminallaws</code>)<br>
+लागू होने की तारीख़: [EFFECTIVE DATE]<br>
+डेवलपर: सौरभ उपाध्याय, भारत के एक स्वतंत्र डेवलपर<br>
+संपर्क: <a href="mailto:saurabhupadhyay7973@gmail.com">saurabhupadhyay7973@gmail.com</a></p>
+<p>धारा कोश भारत के आपराधिक कानूनों (BNS, BNSS, BSA और पुरानी IPC, CrPC और साक्ष्य अधिनियम) का संदर्भ ऐप है। यह नीति सरल शब्दों में बताती है कि ऐप आपके फ़ोन पर क्या रखता है, फ़ोन से क्या बाहर जाता है, उसे कौन पाता है, और उसे कैसे मिटाएँ। अंग्रेज़ी और हिंदी पाठ में अंतर हो तो अंग्रेज़ी पाठ मान्य होगा।</p>
+<h2>संक्षेप में</h2>
+<ul>
+<li>कोई अकाउंट या साइन-इन नहीं। ऐप में हम आपका नाम, फ़ोन नंबर या ईमेल कभी नहीं माँगते।</li>
+<li>आपकी खोज, बुकमार्क, नोट्स और अभ्यास के जवाब आपके फ़ोन पर ही रहते हैं। ये हमें या किसी और को कभी नहीं भेजे जाते।</li>
+<li>कोई विज्ञापन नहीं, और कोई विज्ञापन ID नहीं।</li>
+<li>ऐप लोकेशन, संपर्क, कैमरा, माइक्रोफ़ोन, स्टोरेज या फ़ोटो की अनुमति नहीं माँगता।</li>
+<li>अगर आप एक बार का अनलॉक ख़रीदते हैं, तो RevenueCat (हमारी ख़रीद सेवा) उस ख़रीद का रिकॉर्ड रखती है, ताकि आप उसे वापस पा सकें।</li>
+<li>अगर "गुमनाम उपयोग जानकारी भेजें" चालू है, तो ऐप गुमनाम उपयोग की गिनती Google Firebase Analytics को भेजता है। इसे सेटिंग्स में कभी भी बंद कर सकते हैं।</li>
+<li>ऐप क्रैश हो, तो क्रैश रिपोर्ट Google Firebase Crashlytics को जाती है, ताकि हम गड़बड़ी ठीक कर सकें।</li>
+<li>ऐप से हमें ईमेल करते हैं, तो क्या भेजना है यह आप तय करते हैं।</li>
+</ul>
+<h2>आपके फ़ोन पर क्या रहता है</h2>
+<p>ये सिर्फ़ आपके फ़ोन में ऐप के निजी स्टोरेज में रहते हैं। हम इन्हें नहीं देख सकते।</p>
+<ul>
+<li>खोज में लिखा हर शब्द, और हाल की खोजें</li>
+<li>बुकमार्क, हाइलाइट, नोट्स और संग्रह</li>
+<li>अभ्यास के जवाब, स्कोर और दोहराव का समय</li>
+<li>आपकी सेटिंग्स (भाषा, थीम, अक्षर का आकार, उपयोग जानकारी)</li>
+<li>आपने अनलॉक ख़रीदा है या नहीं (एक कॉपी, ताकि ऐप बिना इंटरनेट चले)</li>
+<li>अधिनियमों की लाइब्रेरी</li>
+</ul>
+<h2>फ़ोन से क्या बाहर जाता है, और कौन पाता है</h2>
+<h3>1. RevenueCat (ख़रीद)</h3>
+<p>Google Play से एक बार का अनलॉक संभालने के लिए हम RevenueCat, Inc. का उपयोग करते हैं। ऐप RevenueCat से तब जुड़ता है जब वह खुलता है (यह देखने के लिए कि आपके पास अनलॉक है या नहीं), जब आप अनलॉक स्क्रीन खोलते हैं (कीमत दिखाने के लिए), और जब आप ख़रीदते या रीस्टोर करते हैं।</p>
+<p>क्या भेजा जाता है:</p>
+<ul>
+<li>इस ऐप-इंस्टॉल के लिए RevenueCat की बनाई एक रैंडम ID (यह आपका नाम, ईमेल या Google अकाउंट नहीं है)</li>
+<li>Google Play ख़रीद का विवरण: प्रोडक्ट (<code>criminallaws_pro_lifetime</code>), ऑर्डर ID, ख़रीद टोकन, ख़रीद का समय, कीमत, मुद्रा और स्टोर का देश</li>
+<li>अनुरोध पूरा करने के लिए तकनीकी विवरण: ऐप वर्ज़न, RevenueCat SDK वर्ज़न, Android वर्ज़न, फ़ोन की भाषा, और RevenueCat के सर्वर को दिखने वाला आपका IP पता</li>
+</ul>
+<p>क्यों: Google से ख़रीद की पुष्टि करने, पेड फ़ीचर खोलने, और नए फ़ोन पर उन्हें वापस पाने के लिए। RevenueCat की गोपनीयता नीति: <a href="https://www.revenuecat.com/privacy">https://www.revenuecat.com/privacy</a></p>
+<h3>2. Google Play (भुगतान और रेटिंग)</h3>
+<p>भुगतान Google Play के अंदर होता है। आपके कार्ड, UPI या बैंक का विवरण Google को जाता है, हमें या ऐप को कभी नहीं। अगर ऐप Google Play का रेटिंग बॉक्स दिखाता है, तो आपकी रेटिंग आपके Google अकाउंट से Google Play को जाती है; ऐप को पता नहीं चलता कि आपने रेटिंग दी या नहीं, या कितनी दी। Google की गोपनीयता नीति: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></p>
+<h3>3. Google Firebase Analytics (गुमनाम उपयोग)</h3>
+<p>सिर्फ़ प्रकाशित ऐप से, और सिर्फ़ तब जब सेटिंग्स → "गुमनाम उपयोग जानकारी भेजें" चालू हो (यह शुरू में चालू रहता है; बंद करते ही सारे उपयोग इवेंट तुरंत रुक जाते हैं)।</p>
+<p>क्या भेजा जाता है:</p>
+<ul>
+<li>ऐप खोला गया</li>
+<li>खोज की गई, साथ में लिखे गए अक्षरों की संख्या, खोज का प्रकार (धारा नंबर, अधिनियम और धारा, शब्द, या हिंदी) और नतीजों की संख्या। <strong>आपके खोजे गए शब्द कभी नहीं।</strong></li>
+<li>कि कोई धारा खोली गई: सिर्फ़ यह कि वह किस अधिनियम की है (BNS, BNSS या BSA), वहाँ कैसे पहुँचे, और इस इंस्टॉल पर अब तक खोली गई धाराओं की गिनती। <strong>धारा संख्या कभी नहीं</strong>: कोई कौन-सा अपराध पढ़ रहा है, इससे उसकी स्थिति का पता चल सकता है</li>
+<li>कि कन्वर्टर इस्तेमाल हुआ, सिर्फ़ अधिनियम के साथ (जैसे "IPC"), धारा संख्या कभी नहीं</li>
+<li>अनलॉक स्क्रीन दिखी और कहाँ से; ख़रीद पूरी हुई, नहीं हुई ("रद्द" या "विफल") या रीस्टोर हुई</li>
+<li>पूरे हुए अभ्यास का प्रकार, सवालों की संख्या, स्कोर प्रतिशत और समय</li>
+<li>"गलती बताएँ" खोला गया, सिर्फ़ अधिनियम के साथ; ऐप की भाषा बदली; कंटेंट अपडेट का वर्ज़न नंबर</li>
+<li>Firebase अपने आप जो लेता है: एक रैंडम ऐप-इंस्टेंस ID, ऐप वर्ज़न, Android वर्ज़न, फ़ोन का ब्रांड और मॉडल, फ़ोन की भाषा, IP पते से अनुमानित देश या क्षेत्र, ऐप Google Play पर कैसे मिला (Play इंस्टॉल रेफ़रर), सत्र की शुरुआत और उपयोग का समय</li>
+</ul>
+<p>क्या कभी नहीं भेजा जाता: आपके खोजे शब्द, नोट्स, हाइलाइट, बुकमार्क, अभ्यास के जवाब, नाम, ईमेल, फ़ोन नंबर, Google अकाउंट या विज्ञापन ID।</p>
+<p>क्यों: यह देखने के लिए कि कौन-से फ़ीचर काम आते हैं, खोज सही नतीजे देती है या नहीं, और ऐप को कहाँ बेहतर करना है। उपयोग की जानकारी 2 महीने रखी जाती है, फिर अपने आप मिट जाती है। Firebase की गोपनीयता जानकारी: <a href="https://firebase.google.com/support/privacy">https://firebase.google.com/support/privacy</a></p>
+<h3>4. Google Firebase Crashlytics (क्रैश रिपोर्ट)</h3>
+<p>सिर्फ़ प्रकाशित ऐप से। ऐप क्रैश हो या कोई गंभीर गड़बड़ी हो, तो एक क्रैश रिपोर्ट जाती है: तकनीकी गड़बड़ी और कोड में उसकी जगह, ऐप वर्ज़न, Android वर्ज़न, फ़ोन का निर्माता और मॉडल, खाली मेमोरी और स्टोरेज, स्क्रीन की दिशा, एक रैंडम इंस्टॉलेशन ID और समय। उपयोग जानकारी चालू हो, तो रिपोर्ट में भाग 3 के आख़िरी कुछ इवेंट भी होते हैं। क्रैश रिपोर्ट में आपके खोजे शब्द या नोट्स कभी नहीं होते।</p>
+<p>क्यों: क्रैश ढूँढने और ठीक करने के लिए। क्रैश रिपोर्ट ज़्यादा से ज़्यादा 90 दिन रखी जाती हैं।</p>
+<h3>5. आपके भेजे ईमेल</h3>
+<p>"गलती बताएँ" और "सुझाव" <strong>आपका अपना ईमेल ऐप</strong> खोलते हैं, जिसमें <a href="mailto:saurabhupadhyay7973@gmail.com">saurabhupadhyay7973@gmail.com</a> के नाम एक ड्राफ़्ट होता है। जब तक आप वहाँ Send नहीं दबाते, कुछ नहीं जाता। ड्राफ़्ट की शुरुआत में ऐप वर्ज़न, कंटेंट वर्ज़न, Android वर्ज़न और फ़ोन मॉडल (और गलती की रिपोर्ट में धारा) होते हैं, ताकि हम समस्या समझ सकें। भेजने से पहले आप इनमें से कुछ भी बदल या हटा सकते हैं। भेजने पर हमें आपका ईमेल पता और ईमेल में लिखी बात मिलती है, जिसका उपयोग हम सिर्फ़ जवाब देने और गलती ठीक करने के लिए करते हैं।</p>
+<h3>5a. कॉपी और शेयर</h3>
+<p>किसी धारा पर कॉपी या शेयर दबाने पर ऐप धारा का पाठ (संदर्भ, स्रोत और अस्वीकरण के साथ) क्लिपबोर्ड पर रखता है, या Android की शेयर सूची खोलता है, उसी पाठ के साथ या उसी धारा के चित्र-कार्ड के साथ (उसमें भी संदर्भ, स्रोत और अस्वीकरण होते हैं)। यह सिर्फ़ वहीं जाता है जहाँ आप भेजना चुनते हैं, और चुना गया ऐप उसे अपनी नीति के अनुसार संभालता है।</p>
+<h3>5b. पढ़कर सुनाना</h3>
+<p>"पढ़कर सुनाएँ" धारा का पाठ आपके फ़ोन के अपने टेक्स्ट-टू-स्पीच इंजन (जैसे Google की Speech Services) को देता है। ऐप इसे और कहीं नहीं भेजता; इंजन अपनी नीति के अनुसार काम करता है, और कुछ इंजन कुछ आवाज़ों के लिए इंटरनेट का इस्तेमाल कर सकते हैं।</p>
+<h3>6. आपके खोले लिंक</h3>
+<p>स्रोत के लिंक (जैसे egazette.gov.in) आपके ब्राउज़र में खुलते हैं। वह वेबसाइट अपनी नीति के अनुसार आपकी विज़िट दर्ज कर सकती है। ऐप लिंक के साथ कुछ नहीं भेजता।</p>
+<h3>7. लाइब्रेरी के अपडेट</h3>
+<p>ऐप समय-समय पर अधिनियमों की लाइब्रेरी के सुधार-अपडेट देखता है और उन्हें एक सार्वजनिक फ़ाइल सर्वर (jsDelivr या GitHub) से डाउनलोड करता है। कोई निजी जानकारी या ID नहीं भेजी जाती; किसी भी डाउनलोड की तरह, सर्वर को आपका IP पता दिखता है।</p>
+<h2>हम क्या नहीं करते</h2>
+<ul>
+<li>कोई विज्ञापन नहीं, और कोई विज्ञापन ID नहीं।</li>
+<li>जानकारी बेचना या किराए पर देना नहीं, और डेटा ब्रोकर से साझा करना नहीं।</li>
+<li>RevenueCat और Google को जानकारी सिर्फ़ ऊपर बताई सेवाएँ देने के लिए मिलती है।</li>
+<li>लोकेशन, संपर्क, कैमरा, माइक्रोफ़ोन, स्टोरेज या फ़ोटो तक कोई पहुँच नहीं।</li>
+</ul>
+<h2>बच्चे</h2>
+<p>यह ऐप वयस्कों (18+) के लिए है: कानून के छात्र, परीक्षा की तैयारी करने वाले और पेशेवर। यह बच्चों के लिए नहीं बना है, और हम जानबूझकर बच्चों की जानकारी नहीं लेते।</p>
+<h2>सुरक्षा</h2>
+<p>ऐप जो भी जानकारी भेजता है, वह एन्क्रिप्टेड कनेक्शन (HTTPS) से जाती है। फ़ोन पर जानकारी ऐप के निजी स्टोरेज में रहती है, जिसे दूसरे ऐप नहीं पढ़ सकते।</p>
+<h2 id="deleting-your-data-hi">अपनी जानकारी मिटाना (Deleting your data)</h2>
+<p><strong>1. फ़ोन पर रखी जानकारी मिटाएँ (ऐप में)।</strong><br>
+ऐप खोलें → <strong>मेरा</strong> → <strong>सेटिंग्स</strong> → <strong>मेरा डेटा मिटाएँ</strong> → पुष्टि करें। इससे फ़ोन से आपके बुकमार्क, हाइलाइट, नोट्स, संग्रह, हाल की खोजें, अभ्यास का इतिहास और सेटिंग्स मिट जाते हैं, और सेटिंग्स शुरुआती हालत में लौट आती हैं (पर अगर आपने उपयोग जानकारी साझा करना बंद किया था, तो वह बंद ही रहता है), और रोज़ का रिमाइंडर भी बंद हो जाता है। इससे आपका अनलॉक रद्द नहीं होता: उसे वापस पाने के लिए अनलॉक स्क्रीन पर <strong>खरीदारी बहाल करें</strong> दबाएँ। सिर्फ़ हाल की खोजें मिटाने के लिए सेटिंग्स → <strong>हाल की खोजें मिटाएँ</strong>। मिटाने से पहले एक कॉपी रखनी हो, तो सेटिंग्स → <strong>मेरा डेटा निर्यात करें</strong>: इससे ऊपर लिखी सारी जानकारी की एक फ़ाइल बनती है, जिसे आप फ़ोन के शेयर मेन्यू से सेव कर सकते हैं या भेज सकते हैं। ऐप उसे कहीं अपलोड नहीं करता।</p>
+<p><strong>2. ऐप अनइंस्टॉल करें।</strong><br>
+अनइंस्टॉल करने से ऐप ने फ़ोन पर जो भी रखा था, सब मिट जाता है, इस इंस्टॉल की रैंडम RevenueCat और Firebase ID भी।</p>
+<p><strong>3. RevenueCat या Firebase के पास रखी जानकारी मिटाने के लिए हमें लिखें।</strong><br>
+<a href="mailto:saurabhupadhyay7973@gmail.com">saurabhupadhyay7973@gmail.com</a> पर "Delete my data" विषय के साथ ईमेल करें।</p>
+<ul>
+<li>RevenueCat में ख़रीद का रिकॉर्ड मिटवाने के लिए, अपनी ख़रीद की रसीद वाले ईमेल से Google Play ऑर्डर नंबर ("GPA." से शुरू) भेजें। हम 30 दिन के अंदर उससे जुड़ा RevenueCat रिकॉर्ड मिटाएँगे और ईमेल से पुष्टि करेंगे। उसके बाद, जब तक आप Google Play से दोबारा ख़रीद या रीस्टोर नहीं करते, ऐप में रीस्टोर ख़रीद न ढूँढ पाए, ऐसा हो सकता है; Google आपके Google अकाउंट में अपना ख़रीद रिकॉर्ड अलग से रखता है।</li>
+<li>Firebase Analytics की उपयोग जानकारी और Crashlytics की क्रैश रिपोर्ट आपके नाम या ईमेल से जुड़ी नहीं होतीं, इसलिए हम उन्हें इनसे नहीं ढूँढ सकते। नई जानकारी रोकने के लिए "गुमनाम उपयोग जानकारी भेजें" बंद करें; पुरानी उपयोग जानकारी 2 महीने में और क्रैश रिपोर्ट 90 दिन में अपने आप मिट जाती हैं। अगर आप किसी क्रैश की तारीख़, समय और फ़ोन मॉडल बता सकें, तो कहने पर हम वह रिपोर्ट मिटा देंगे।</li>
+<li>कुछ भी न भेजा जाए, इसके लिए ऐप अनइंस्टॉल करें।</li>
+</ul>
+<p>भारत के डिजिटल व्यक्तिगत डेटा संरक्षण अधिनियम, 2023 के तहत आप पूछ सकते हैं कि हमारे पास आपकी कौन-सी निजी जानकारी है, उसे ठीक करवा या मिटवा सकते हैं, और शिकायत कर सकते हैं। ऊपर दिए ईमेल पर लिखें; हम 30 दिन के अंदर जवाब देंगे।</p>
+<h2>इस नीति में बदलाव</h2>
+<p>अगर ऐप से भेजी जाने वाली जानकारी बदलती है, तो ऐप का नया वर्ज़न आने से पहले हम यह पेज और लागू होने की तारीख़ बदल देंगे।</p>
+<h2>इस ऐप के बारे में</h2>
+<p>धारा कोश एक स्वतंत्र ऐप है। <strong>किसी भी सरकारी संस्था से संबद्ध नहीं।</strong> यह भारत सरकार, किसी मंत्रालय, न्यायालय या पुलिस का प्रतिनिधित्व नहीं करता। कानून का पाठ भारत के राजपत्र (<a href="https://egazette.gov.in">https://egazette.gov.in</a>) से है।</p>
+<p><strong>कानूनी सलाह नहीं।</strong> केवल संदर्भ और शिक्षा के लिए। आधिकारिक राजपत्र से मिलान करें।</p>
+<h2>संपर्क</h2>
+<p>सौरभ उपाध्याय · <a href="mailto:saurabhupadhyay7973@gmail.com">saurabhupadhyay7973@gmail.com</a> · <a href="https://saurabhupadhyay.in">https://saurabhupadhyay.in</a></p>
+</section>
+<footer>
+<p>Dhara Kosh is an independent app. Not affiliated with any government entity. Statute text from the Gazette of India (<a href="https://egazette.gov.in">egazette.gov.in</a>).</p>
+<p>Not legal advice. For reference and education. Verify with the official Gazette.</p>
+<p>Contact: <a href="mailto:saurabhupadhyay7973@gmail.com">saurabhupadhyay7973@gmail.com</a> · <a href="https://saurabhupadhyay.in">saurabhupadhyay.in</a></p>
+</footer>
+</main>
+</body>
+</html>

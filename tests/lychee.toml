@@ -12,4 +12,10 @@ exclude = [
   '^https://medium\.com/',
   '^https://(www\.)?linkedin\.com/',
   '^mailto:',
+  # egazette.gov.in serves an incomplete certificate chain, so the checker rejects it
+  # even though browsers open it. Checked by hand (the Dhara Kosh section pages link it).
+  '^https://egazette\.gov\.in/',
+  # Absolute self-URLs of the Dhara Kosh pages (canonical tags, sitemap). They 404 until
+  # the pages are live; the same pages are checked through their relative links.
+  '^https://saurabhupadhyay\.in/dhara-kosh/',
 ]

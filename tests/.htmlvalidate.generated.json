@@ -1,7 +1,0 @@
-{
-  "extends": ["./.htmlvalidate.json"],
-  "rules": {
-    "attr-quotes": "off",
-    "prefer-tbody": "off"
-  }
-}

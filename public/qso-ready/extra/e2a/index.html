@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>E2A Amateur radio in space: amateur satellites; orbital mechanics; frequencies and modes; satellite hardware; satellite operations: Amateur Extra questions explained · QSO Ready</title>
+<meta name="description" content="Amateur Extra pool group E2A (Amateur radio in space: amateur satellites; orbital mechanics; frequencies and modes; satellite hardware; satellite operations): all 12 questions with correct answers and plain-English explanations.">
+<link rel="canonical" href="https://saurabhupadhyay.in/qso-ready/extra/e2a/">
+<link rel="stylesheet" href="../../site.css">
+</head>
+<body>
+<main>
+<p class="notice">Not affiliated with or endorsed by the FCC, NCVEC, ARRL or any VEC. Questions are the NCVEC pools word for word (public domain); explanations are our own. Exam rules and fees can change: check with your VE team.</p>
+<nav class="crumbs" aria-label="Breadcrumb"><a href="../../">QSO Ready</a> › <a href="../">Amateur Extra</a> › E2A</nav>
+<h1>E2A: Amateur radio in space: amateur satellites; orbital mechanics; frequencies and modes; satellite hardware; satellite operations</h1>
+<p>Group E2A of the Amateur Extra pool (2024–2028) has 12 active questions. One of them is on every Amateur Extra exam. Each is shown word for word; open it to see the correct answer and our explanation.</p>
+<article id="e2a01">
+<h2>E2A01</h2>
+<p class="stem">What is the direction of an ascending pass for an amateur satellite?</p>
+<ol class="opts">
+<li><span class="l">A</span> From west to east</li>
+<li><span class="l">B</span> From east to west</li>
+<li><span class="l">C</span> From south to north</li>
+<li><span class="l">D</span> From north to south</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>C</strong>. From south to north</p>
+<div class="ex">
+<p><strong>Why C is right.</strong> C. Ascending names the half of the orbit where the satellite crosses the equator heading north, so the pass moves from south to north.</p>
+<p>Every orbit crosses the equator twice per lap, once going north and once going south. Tracking programs call the southbound half a descending pass. The labels say nothing about east or west motion.</p>
+<p><strong>Why not A?</strong> East or west drift does not define ascending; the direction relative to north and south does.</p>
+</div>
+</details>
+</article>
+<article id="e2a02">
+<h2>E2A02</h2>
+<p class="stem">Which of the following is characteristic of an inverting linear transponder?</p>
+<ol class="opts">
+<li><span class="l">A</span> Doppler shift is reduced because the uplink and downlink shifts are in opposite directions</li>
+<li><span class="l">B</span> Signal position in the band is reversed</li>
+<li><span class="l">C</span> Upper sideband on the uplink becomes lower sideband on the downlink, and vice versa</li>
+<li><span class="l">D</span> All these choices are correct</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>D</strong>. All these choices are correct</p>
+<div class="ex">
+<p><strong>Why D is right.</strong> D. Because the transponder flips the spectrum, choices A, B and C are all true effects of the same flip.</p>
+<p>An inverting transponder turns the passband upside down. A signal near the bottom of the uplink comes out near the top of the downlink, so position is reversed. The flip also swaps sidebands: upper sideband in becomes lower sideband out. Doppler shift (the frequency change caused by the satellite&#x27;s motion toward or away from you) moves the uplink and downlink in opposite directions, so the two shifts partly cancel.</p>
+</div>
+</details>
+</article>
+<article id="e2a03">
+<h2>E2A03</h2>
+<p class="stem">How is an upload signal processed by an inverting linear transponder?</p>
+<ol class="opts">
+<li><span class="l">A</span> The signal is detected and remodulated on the reverse sideband</li>
+<li><span class="l">B</span> The signal is passed through a nonlinear filter</li>
+<li><span class="l">C</span> The signal is reduced to I and Q components, and the Q component is filtered out</li>
+<li><span class="l">D</span> The signal is mixed with a local oscillator signal and the difference product is transmitted</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>D</strong>. The signal is mixed with a local oscillator signal and the difference product is transmitted</p>
+<div class="ex">
+<p><strong>Why D is right.</strong> D. The transponder mixes the uplink with a local oscillator and sends out the difference frequency, which reverses the spectrum.</p>
+<p>If the downlink is the oscillator frequency minus the uplink frequency, then raising the uplink lowers the downlink. That subtraction is what inverts the passband. Nothing is detected or demodulated along the way; the signal is only shifted and amplified, which is why the transponder stays linear.</p>
+<p><strong>Why not A?</strong> A linear transponder never demodulates the signal; it only shifts its frequency.</p>
+</div>
+</details>
+</article>
+<article id="e2a04">
+<h2>E2A04</h2>
+<p class="stem">What is meant by the “mode” of an amateur radio satellite?</p>
+<ol class="opts">
+<li><span class="l">A</span> Whether the satellite is in a low earth or geostationary orbit</li>
+<li><span class="l">B</span> The satellite’s uplink and downlink frequency bands</li>
+<li><span class="l">C</span> The satellite’s orientation with respect to the Earth</li>
+<li><span class="l">D</span> Whether the satellite is in a polar or equatorial orbit</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>B</strong>. The satellite’s uplink and downlink frequency bands</p>
+<div class="ex">
+<p><strong>Why B is right.</strong> B. To work a satellite you must know which band to transmit on and which to receive, and the mode is the name for that band pair.</p>
+<p>A satellite can offer more than one mode if it carries several transponders.</p>
+<p><strong>Why not C?</strong> Orientation is called attitude, not mode.</p>
+</div>
+</details>
+</article>
+<article id="e2a05">
+<h2>E2A05</h2>
+<p class="stem">What do the letters in a satellite’s mode designator specify?</p>
+<ol class="opts">
+<li><span class="l">A</span> Power limits for uplink and downlink transmissions</li>
+<li><span class="l">B</span> The location of the ground control station</li>
+<li><span class="l">C</span> The polarization of uplink and downlink signals</li>
+<li><span class="l">D</span> The uplink and downlink frequency ranges</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>D</strong>. The uplink and downlink frequency ranges</p>
+<div class="ex">
+<p><strong>Why D is right.</strong> D. The designator exists to tell you where to transmit and listen, so each letter stands for a band: first the uplink, then the downlink.</p>
+<p>In U/V, U means a UHF band (70 cm) and V means a VHF band (2 meters). So you transmit on 70 cm and listen on 2 meters.</p>
+<p><strong>Why not C?</strong> The letters name frequency ranges; polarization is not part of the designator.</p>
+</div>
+</details>
+</article>
+<article id="e2a06">
+<h2>E2A06</h2>
+<p class="stem">What are Keplerian elements?</p>
+<ol class="opts">
+<li><span class="l">A</span> Parameters that define the orbit of a satellite</li>
+<li><span class="l">B</span> Phase reversing elements in a Yagi antenna</li>
+<li><span class="l">C</span> High-emission heater filaments used in magnetron tubes</li>
+<li><span class="l">D</span> Encrypting codes used for spread spectrum modulation</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>A</strong>. Parameters that define the orbit of a satellite</p>
+<div class="ex">
+<p><strong>Why A is right.</strong> A. Kepler worked out the laws of orbits, and his name is used for the set of numbers that pins down a satellite&#x27;s orbit.</p>
+<p>The set includes the orbit&#x27;s tilt to the equator (inclination), how stretched the ellipse is (eccentricity), and where the satellite was at a stated time. Tracking programs use these numbers to predict passes and antenna aiming. Fresh sets are published often because orbits slowly change.</p>
+<p><strong>Why not D?</strong> They describe an orbit; they have nothing to do with encryption.</p>
+</div>
+</details>
+</article>
+<article id="e2a07">
+<h2>E2A07</h2>
+<p class="stem">Which of the following types of signals can be relayed through a linear transponder?</p>
+<ol class="opts">
+<li><span class="l">A</span> FM and CW</li>
+<li><span class="l">B</span> SSB and SSTV</li>
+<li><span class="l">C</span> PSK and packet</li>
+<li><span class="l">D</span> All these choices are correct</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>D</strong>. All these choices are correct</p>
+<div class="ex">
+<p><strong>Why D is right.</strong> D. A linear transponder copies everything in its passband without changing it, so FM, CW, SSB, SSTV, PSK and packet can all pass through.</p>
+<p>Linear means the output keeps the same shape as the input, only shifted in frequency and made stronger. Because the transponder does not decode anything, it does not care what mode you use. In practice, SSB and CW are preferred because constant-power modes such as FM use more of the shared output power.</p>
+</div>
+</details>
+</article>
+<article id="e2a08">
+<h2>E2A08</h2>
+<p class="stem">Why should effective radiated power (ERP) be limited to a satellite that uses a linear transponder?</p>
+<ol class="opts">
+<li><span class="l">A</span> To prevent creating errors in the satellite telemetry</li>
+<li><span class="l">B</span> To avoid reducing the downlink power to all other users</li>
+<li><span class="l">C</span> To prevent the satellite from emitting out-of-band signals</li>
+<li><span class="l">D</span> To avoid interfering with terrestrial QSOs</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>B</strong>. To avoid reducing the downlink power to all other users</p>
+<div class="ex">
+<p><strong>Why B is right.</strong> B. A linear transponder has a fixed total output power shared by every signal in its passband, so a too-strong uplink takes power away from everyone else.</p>
+<p>The satellite&#x27;s transmitter divides its limited power among all the signals it relays. A station that sends a much stronger uplink than needed gets a larger slice of that power. Every other user&#x27;s downlink then gets weaker. Use only enough power to hear your own downlink about as loud as other stations.</p>
+<p><strong>Why not D?</strong> The concern is sharing the satellite&#x27;s own power, not interference to ground contacts.</p>
+</div>
+</details>
+</article>
+<article id="e2a09">
+<h2>E2A09</h2>
+<p class="stem">What do the terms “L band” and “S band” specify?</p>
+<ol class="opts">
+<li><span class="l">A</span> The 23- and 13-centimeter bands</li>
+<li><span class="l">B</span> The 2-meter and 70-centimeter bands</li>
+<li><span class="l">C</span> FM and digital store-and-forward systems</li>
+<li><span class="l">D</span> Which sideband to use</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>A</strong>. The 23- and 13-centimeter bands</p>
+<div class="ex">
+<p><strong>Why A is right.</strong> A. L band and S band are microwave band names; in amateur satellite use they mean 23 cm (about 1.2 GHz) and 13 cm (about 2.4 GHz).</p>
+<p>These letter names come from radar practice. L band covers roughly 1 to 2 GHz, which holds the 23 cm amateur band. S band covers roughly 2 to 4 GHz, which holds the 13 cm band. Satellite modes often use these letters, for example an L-band uplink with an S-band downlink.</p>
+<p><strong>Why not B?</strong> 2 meters and 70 cm are VHF and UHF, called V and U, not L and S.</p>
+</div>
+</details>
+</article>
+<article id="e2a10">
+<h2>E2A10</h2>
+<p class="stem">What type of satellite appears to stay in one position in the sky?</p>
+<ol class="opts">
+<li><span class="l">A</span> HEO</li>
+<li><span class="l">B</span> Geostationary</li>
+<li><span class="l">C</span> Geomagnetic</li>
+<li><span class="l">D</span> LEO</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>B</strong>. Geostationary</p>
+<div class="ex">
+<p><strong>Why B is right.</strong> B. A geostationary satellite circles the Earth once per day above the equator, matching Earth&#x27;s spin, so it seems to hang in one spot.</p>
+<p>At about 35,800 km above the equator, an orbit takes exactly as long as one turn of the Earth. A satellite there moves with the ground below it. You can aim a fixed dish at it and never move the antenna. Low Earth orbit (LEO) satellites, by contrast, cross the sky in minutes.</p>
+<p><strong>Why not D?</strong> A LEO satellite moves across the sky in a few minutes per pass.</p>
+</div>
+</details>
+</article>
+<article id="e2a11">
+<h2>E2A11</h2>
+<p class="stem">What type of antenna can be used to minimize the effects of spin modulation and Faraday rotation?</p>
+<ol class="opts">
+<li><span class="l">A</span> A linearly polarized antenna</li>
+<li><span class="l">B</span> A circularly polarized antenna</li>
+<li><span class="l">C</span> An isotropic antenna</li>
+<li><span class="l">D</span> A log-periodic dipole array</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>B</strong>. A circularly polarized antenna</p>
+<div class="ex">
+<p><strong>Why B is right.</strong> B. A circularly polarized antenna receives a linear signal about equally at any tilt, so twisting polarization no longer causes deep fades.</p>
+<p>Spin modulation is the rise and fall in signal strength as a spinning satellite&#x27;s antenna turns. Faraday rotation is the slow twisting of a wave&#x27;s polarization as it passes through the ionosphere. Both keep changing the angle of the arriving wave. A linear antenna fades badly when the angle is wrong, but a circular antenna has no such null.</p>
+<p><strong>Why not A?</strong> A linear antenna is the kind that suffers deep fades when the wave&#x27;s angle changes.</p>
+</div>
+</details>
+</article>
+<article id="e2a12">
+<h2>E2A12</h2>
+<p class="stem">What is the purpose of digital store-and-forward functions on an amateur radio satellite?</p>
+<ol class="opts">
+<li><span class="l">A</span> To upload operational software for the transponder</li>
+<li><span class="l">B</span> To delay download of telemetry between satellites</li>
+<li><span class="l">C</span> To hold digital messages in the satellite for later download</li>
+<li><span class="l">D</span> To relay messages between satellites</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>C</strong>. To hold digital messages in the satellite for later download</p>
+<div class="ex">
+<p><strong>Why C is right.</strong> C. A low-orbit satellite is in range of any one station for only minutes, so it holds messages in memory until the receiving station comes into view.</p>
+<p>You upload a message as the satellite passes over you. The station you are writing to downloads it when the satellite later passes over them.</p>
+<p><strong>Why not D?</strong> The messages go between ground stations through the satellite&#x27;s memory, not between satellites.</p>
+</div>
+</details>
+</article>
+<article id="e2a13">
+<h2>E2A13</h2>
+<p class="withdrawn">Withdrawn by NCVEC on 2024-11-08. It is not used on exams.</p>
+</article>
+<nav class="pager" aria-label="Groups"><p><a href="../e1f/">Previous: E1F Miscellaneous rules: external RF power amplifiers; prohibited communications; spread spectrum; auxiliary stations; Canadian amateurs operating in the US; special temporary authority</a></p><p><a href="../e2b/">Next: E2B Television practices: fast-scan television standards and techniques; slow scan television standards and techniques</a></p></nav>
+<footer>
+<p>QSO Ready is an independent study app for the US amateur radio license exams. Questions: NCVEC Question Pool Committee,
+released to the public domain. Rule quotes: 47 CFR, eCFR as of 2026-10-29. Content version 1.</p>
+<p><a href="../../">QSO Ready home</a> · <a href="../../privacy/">Privacy policy</a> · <a href="mailto:hello@saurabhupadhyay.in">hello@saurabhupadhyay.in</a></p>
+</footer>
+</main>
+</body>
+</html>

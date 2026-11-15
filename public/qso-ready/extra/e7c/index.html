@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>E7C Filters and matching networks: types of networks; types of filters; filter applications; filter characteristics; impedance matching: Amateur Extra questions explained · QSO Ready</title>
+<meta name="description" content="Amateur Extra pool group E7C (Filters and matching networks: types of networks; types of filters; filter applications; filter characteristics; impedance matching): all 11 questions with correct answers and plain-English explanations.">
+<link rel="canonical" href="https://saurabhupadhyay.in/qso-ready/extra/e7c/">
+<link rel="stylesheet" href="../../site.css">
+</head>
+<body>
+<main>
+<p class="notice">Not affiliated with or endorsed by the FCC, NCVEC, ARRL or any VEC. Questions are the NCVEC pools word for word (public domain); explanations are our own. Exam rules and fees can change: check with your VE team.</p>
+<nav class="crumbs" aria-label="Breadcrumb"><a href="../../">QSO Ready</a> › <a href="../">Amateur Extra</a> › E7C</nav>
+<h1>E7C: Filters and matching networks: types of networks; types of filters; filter applications; filter characteristics; impedance matching</h1>
+<p>Group E7C of the Amateur Extra pool (2024–2028) has 11 active questions. One of them is on every Amateur Extra exam. Each is shown word for word; open it to see the correct answer and our explanation.</p>
+<article id="e7c01">
+<h2>E7C01</h2>
+<p class="stem">How are the capacitors and inductors of a low-pass filter Pi-network arranged between the network’s input and output?</p>
+<ol class="opts">
+<li><span class="l">A</span> Two inductors are in series between the input and output, and a capacitor is connected between the two inductors and ground</li>
+<li><span class="l">B</span> Two capacitors are in series between the input and output, and an inductor is connected between the two capacitors and ground</li>
+<li><span class="l">C</span> An inductor is connected between the input and ground, another inductor is connected between the output and ground, and a capacitor is connected between the input and output</li>
+<li><span class="l">D</span> A capacitor is connected between the input and ground, another capacitor is connected between the output and ground, and an inductor is connected between the input and output</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>D</strong>. A capacitor is connected between the input and ground, another capacitor is connected between the output and ground, and an inductor is connected between the input and output</p>
+<div class="ex">
+<p><strong>Why D is right.</strong> D. Capacitors to ground at both ends shunt high frequencies away, while the series inductor between them blocks highs, so only low frequencies pass.</p>
+<p>A capacitor&#x27;s reactance falls as frequency rises, so a capacitor to ground shorts high frequencies. An inductor&#x27;s reactance rises with frequency, so a coil in the signal path blocks them. Drawn out, the coil is the top bar of the Greek letter pi and the two capacitors are its legs.</p>
+<p><strong>Why not B?</strong> Series capacitors with an inductor to ground block low frequencies, which makes a high-pass network.</p>
+</div>
+</details>
+</article>
+<article id="e7c02">
+<h2>E7C02</h2>
+<p class="stem">What is the frequency response of a T-network with series capacitors and a shunt inductor?</p>
+<ol class="opts">
+<li><span class="l">A</span> Low-pass</li>
+<li><span class="l">B</span> High-pass</li>
+<li><span class="l">C</span> Band-pass</li>
+<li><span class="l">D</span> Notch</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>B</strong>. High-pass</p>
+<div class="ex">
+<p><strong>Why B is right.</strong> B. Series capacitors block low frequencies and the shunt inductor drains them to ground, so only high frequencies get through.</p>
+<p>Capacitors pass high frequencies easily and resist low ones. An inductor to ground has low reactance at low frequencies, shorting them out, but high reactance at high frequencies, leaving them alone. Both parts favor the highs.</p>
+<p><strong>Why not A?</strong> A low-pass network would need series inductors and a capacitor to ground, the reverse arrangement.</p>
+</div>
+</details>
+</article>
+<article id="e7c03">
+<h2>E7C03</h2>
+<p class="stem">What is the purpose of adding an inductor to a Pi-network to create a Pi-L-network?</p>
+<ol class="opts">
+<li><span class="l">A</span> Greater harmonic suppression</li>
+<li><span class="l">B</span> Higher efficiency</li>
+<li><span class="l">C</span> To eliminate one capacitor</li>
+<li><span class="l">D</span> Greater transformation range</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>A</strong>. Greater harmonic suppression</p>
+<div class="ex">
+<p><strong>Why A is right.</strong> A. The added series inductor gives one more low-pass section, so harmonics above the operating frequency are cut more sharply.</p>
+<p>In a low-pass ladder, each added reactive part makes the response fall faster above cutoff. A pi network has three parts; adding a series coil after the output capacitor makes four. The steeper slope weakens harmonics, the whole-number multiples of the operating frequency, before they reach the antenna.</p>
+<p><strong>Why not C?</strong> A Pi-L network adds a part; it does not remove a capacitor.</p>
+</div>
+</details>
+</article>
+<article id="e7c04">
+<h2>E7C04</h2>
+<p class="stem">How does an impedance-matching circuit transform a complex impedance to a resistive impedance?</p>
+<ol class="opts">
+<li><span class="l">A</span> It introduces negative resistance to cancel the resistive part of impedance</li>
+<li><span class="l">B</span> It introduces transconductance to cancel the reactive part of impedance</li>
+<li><span class="l">C</span> It cancels the reactive part of the impedance and changes the resistive part to the desired value</li>
+<li><span class="l">D</span> Reactive currents are dissipated in matched resistances</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>C</strong>. It cancels the reactive part of the impedance and changes the resistive part to the desired value</p>
+<div class="ex">
+<p><strong>Why C is right.</strong> C. A matching network adds opposite reactance to cancel the load&#x27;s reactance and transforms the remaining resistance to the value the source needs.</p>
+<p>A complex impedance has a resistive part, which absorbs power, and a reactive part, which stores and returns it. The network supplies an equal and opposite reactance so the two cancel. Its coils and capacitors also step the resistance up or down, like a transformer, until it equals, for example, 50 ohms.</p>
+<p><strong>Why not D?</strong> An ideal matching network uses lossless coils and capacitors, so it dissipates nothing.</p>
+</div>
+</details>
+</article>
+<article id="e7c05">
+<h2>E7C05</h2>
+<p class="stem">Which filter type has ripple in the passband and a sharp cutoff?</p>
+<ol class="opts">
+<li><span class="l">A</span> A Butterworth filter</li>
+<li><span class="l">B</span> An active LC filter</li>
+<li><span class="l">C</span> A passive op-amp filter</li>
+<li><span class="l">D</span> A Chebyshev filter</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>D</strong>. A Chebyshev filter</p>
+<div class="ex">
+<p><strong>Why D is right.</strong> D. A Chebyshev design accepts some ripple in the passband in exchange for a steeper drop past the cutoff.</p>
+<p>Filter designs trade flatness against sharpness. A Chebyshev filter lets its passband response wiggle up and down by a set amount, called ripple. In return its sides fall off faster than a Butterworth filter with the same number of parts, which has a flat passband but a gentler cutoff.</p>
+<p><strong>Why not A?</strong> A Butterworth filter has the flattest passband, with no ripple.</p>
+</div>
+</details>
+</article>
+<article id="e7c06">
+<h2>E7C06</h2>
+<p class="stem">What are the characteristics of an elliptical filter?</p>
+<ol class="opts">
+<li><span class="l">A</span> Gradual passband rolloff with minimal stop-band ripple</li>
+<li><span class="l">B</span> Extremely flat response over its pass band with gradually rounded stop-band corners</li>
+<li><span class="l">C</span> Extremely sharp cutoff with one or more notches in the stop band</li>
+<li><span class="l">D</span> Gradual passband rolloff with extreme stop-band ripple</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>C</strong>. Extremely sharp cutoff with one or more notches in the stop band</p>
+<div class="ex">
+<p><strong>Why C is right.</strong> C. An elliptical filter puts notches right beside its passband, giving the steepest change from pass to stop among common designs.</p>
+<p>Elliptical, or Cauer, filters allow ripple in both the passband and the stopband. In exchange they place notches, frequencies where the response drops nearly to zero, right next to the cutoff. That makes the edge very sharp for a given number of parts.</p>
+<p><strong>Why not B?</strong> A flat passband with gently rounded corners describes a Butterworth filter.</p>
+</div>
+</details>
+</article>
+<article id="e7c07">
+<h2>E7C07</h2>
+<p class="stem">Which describes a Pi-L network?</p>
+<ol class="opts">
+<li><span class="l">A</span> A Phase Inverter Load network</li>
+<li><span class="l">B</span> A Pi-network with an additional output series inductor</li>
+<li><span class="l">C</span> A network with only three discrete parts</li>
+<li><span class="l">D</span> A matching network in which all components are isolated from ground</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>B</strong>. A Pi-network with an additional output series inductor</p>
+<div class="ex">
+<p><strong>Why B is right.</strong> B. The name describes the shape: a pi section of capacitor, coil and capacitor, then an L made by one more series coil at the output.</p>
+<p>The pi part is a capacitor to ground, a series coil and another capacitor to ground; it does the main impedance matching in many tube amplifiers. The extra series coil, the L, adds filtering. Together they use four parts, two of them connected to ground.</p>
+<p><strong>Why not A?</strong> Pi-L names the shape of the circuit, a pi followed by an L, not a phase inverter.</p>
+</div>
+</details>
+</article>
+<article id="e7c08">
+<h2>E7C08</h2>
+<p class="stem">Which of the following is most frequently used as a band-pass or notch filter in VHF and UHF transceivers?</p>
+<ol class="opts">
+<li><span class="l">A</span> A Sallen-Key filter</li>
+<li><span class="l">B</span> A helical filter</li>
+<li><span class="l">C</span> A swinging choke filter</li>
+<li><span class="l">D</span> A finite impulse response filter</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>B</strong>. A helical filter</p>
+<div class="ex">
+<p><strong>Why B is right.</strong> B. A helical filter, a wire coil inside a metal can, gives sharp, low-loss resonance in a small space at VHF and UHF.</p>
+<p>At VHF and UHF, ordinary coils and capacitors get lossy and tiny values are hard to control. A helical resonator is a wire spiral inside a shielded can that acts like a compact resonant line. Several coupled cans make a selective band-pass or notch filter for a radio&#x27;s front end.</p>
+<p><strong>Why not D?</strong> A finite impulse response filter is a digital filter that works on samples, not on the RF signal in the front end.</p>
+</div>
+</details>
+</article>
+<article id="e7c09">
+<h2>E7C09</h2>
+<p class="stem">What is a crystal lattice filter?</p>
+<ol class="opts">
+<li><span class="l">A</span> A power supply filter made with interlaced quartz crystals</li>
+<li><span class="l">B</span> An audio filter made with four quartz crystals that resonate at 1 kHz intervals</li>
+<li><span class="l">C</span> A filter using lattice-shaped quartz crystals for high-Q performance</li>
+<li><span class="l">D</span> A filter for low-level signals made using quartz crystals</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>D</strong>. A filter for low-level signals made using quartz crystals</p>
+<div class="ex">
+<p><strong>Why D is right.</strong> D. A crystal lattice filter combines several quartz crystals into a very narrow, steep filter for low-level signals, such as in a receiver&#x27;s IF stage.</p>
+<p>Quartz crystals resonate very sharply with very little loss. Arranging several, cut to slightly different frequencies, gives a flat-topped passband with steep sides. Receivers use these filters to select a single SSB or CW signal. They handle small signal levels, not power supply currents.</p>
+<p><strong>Why not C?</strong> The name comes from how the crystals are wired together, not from the shape of the crystals.</p>
+</div>
+</details>
+</article>
+<article id="e7c10">
+<h2>E7C10</h2>
+<p class="stem">Which of the following filters is used in a 2-meter band repeater duplexer?</p>
+<ol class="opts">
+<li><span class="l">A</span> A crystal filter</li>
+<li><span class="l">B</span> A cavity filter</li>
+<li><span class="l">C</span> A DSP filter</li>
+<li><span class="l">D</span> An L-C filter</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>B</strong>. A cavity filter</p>
+<div class="ex">
+<p><strong>Why B is right.</strong> B. A duplexer must keep a strong transmitter out of a receiver only 600 kHz away, which takes the very sharp, low-loss response of cavity filters.</p>
+<p>A repeater transmits and receives at the same time on one antenna. The duplexer separates the two frequencies. Cavity filters are metal tubes with a tuned rod inside, resonant like a quarter-wave line, and they handle full transmitter power with little loss. Several in a row give the deep isolation needed.</p>
+<p><strong>Why not A?</strong> Crystal filters are for low signal levels and cannot handle transmitter power.</p>
+</div>
+</details>
+</article>
+<article id="e7c11">
+<h2>E7C11</h2>
+<p class="stem">Which of the following measures a filter’s ability to reject signals in adjacent channels?</p>
+<ol class="opts">
+<li><span class="l">A</span> Passband ripple</li>
+<li><span class="l">B</span> Phase response</li>
+<li><span class="l">C</span> Shape factor</li>
+<li><span class="l">D</span> Noise factor</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>C</strong>. Shape factor</p>
+<div class="ex">
+<p><strong>Why C is right.</strong> C. Shape factor compares a filter&#x27;s bandwidth far down its sides with its bandwidth near the top, which shows how well it rejects nearby signals.</p>
+<p>A common shape factor is the 60 dB bandwidth divided by the 6 dB bandwidth. A value near 1 means steep sides, so signals a little outside the passband are cut hard. A large value means sloping sides that let adjacent-channel signals leak through.</p>
+<p><strong>Why not D?</strong> Noise factor tells how much noise a stage adds, not how selective it is.</p>
+</div>
+</details>
+</article>
+<nav class="pager" aria-label="Groups"><p><a href="../e7b/">Previous: E7B Amplifiers: class of operation; vacuum tube and solid-state circuits; distortion and intermodulation; spurious and parasitic suppression; switching-type amplifiers</a></p><p><a href="../e7d/">Next: E7D Power supplies and voltage regulators; solar array charge controllers</a></p></nav>
+<footer>
+<p>QSO Ready is an independent study app for the US amateur radio license exams. Questions: NCVEC Question Pool Committee,
+released to the public domain. Rule quotes: 47 CFR, eCFR as of 2026-10-29. Content version 1.</p>
+<p><a href="../../">QSO Ready home</a> · <a href="../../privacy/">Privacy policy</a> · <a href="mailto:hello@saurabhupadhyay.in">hello@saurabhupadhyay.in</a></p>
+</footer>
+</main>
+</body>
+</html>

@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>E4B Measurement technique and limitations: instrument accuracy and performance limitations; probes; techniques to minimize errors; measurement of Q; instrument calibration; S parameters; vector network analyzers; RF signals: Amateur Extra questions explained · QSO Ready</title>
+<meta name="description" content="Amateur Extra pool group E4B (Measurement technique and limitations: instrument accuracy and performance limitations; probes; techniques to minimize errors; measurement of Q; instrument calibration; S parameters; vector network analyzers; RF signals): all 11 questions with correct answers and plain-English explanations.">
+<link rel="canonical" href="https://saurabhupadhyay.in/qso-ready/extra/e4b/">
+<link rel="stylesheet" href="../../site.css">
+</head>
+<body>
+<main>
+<p class="notice">Not affiliated with or endorsed by the FCC, NCVEC, ARRL or any VEC. Questions are the NCVEC pools word for word (public domain); explanations are our own. Exam rules and fees can change: check with your VE team.</p>
+<nav class="crumbs" aria-label="Breadcrumb"><a href="../../">QSO Ready</a> › <a href="../">Amateur Extra</a> › E4B</nav>
+<h1>E4B: Measurement technique and limitations: instrument accuracy and performance limitations; probes; techniques to minimize errors; measurement of Q; instrument calibration; S parameters; vector network analyzers; RF signals</h1>
+<p>Group E4B of the Amateur Extra pool (2024–2028) has 11 active questions. One of them is on every Amateur Extra exam. Each is shown word for word; open it to see the correct answer and our explanation.</p>
+<article id="e4b01">
+<h2>E4B01</h2>
+<p class="stem">Which of the following factors most affects the accuracy of a frequency counter?</p>
+<ol class="opts">
+<li><span class="l">A</span> Input attenuator accuracy</li>
+<li><span class="l">B</span> Time base accuracy</li>
+<li><span class="l">C</span> Decade divider accuracy</li>
+<li><span class="l">D</span> Temperature coefficient of the logic</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>B</strong>. Time base accuracy</p>
+<div class="ex">
+<p><strong>Why B is right.</strong> B. A counter counts cycles during a gate time set by its time base, so any time base error goes straight into the reading.</p>
+<p>The time base is a crystal oscillator that opens the counting gate for an exact interval, such as 1 second. If the crystal is off by 10 parts per million, every reading is off by 10 parts per million. That is why good counters use temperature-controlled or GPS-locked references.</p>
+<p><strong>Why not A?</strong> The attenuator changes signal level, not the number of cycles counted.</p>
+</div>
+</details>
+</article>
+<article id="e4b02">
+<h2>E4B02</h2>
+<p class="stem">What is the significance of voltmeter sensitivity expressed in ohms per volt?</p>
+<ol class="opts">
+<li><span class="l">A</span> The full scale reading of the voltmeter multiplied by its ohms per volt rating is the input impedance of the voltmeter</li>
+<li><span class="l">B</span> The reading in volts multiplied by the ohms per volt rating will determine the power drawn by the device under test</li>
+<li><span class="l">C</span> The reading in ohms divided by the ohms per volt rating will determine the voltage applied to the circuit</li>
+<li><span class="l">D</span> The full scale reading in amps divided by ohms per volt rating will determine the size of shunt needed</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>A</strong>. The full scale reading of the voltmeter multiplied by its ohms per volt rating is the input impedance of the voltmeter</p>
+<div class="ex">
+<p><strong>Why A is right.</strong> A. Multiplying full-scale volts by the ohms-per-volt rating gives the meter&#x27;s input resistance on that range.</p>
+<p>A meter rated 20,000 ohms per volt on its 10 V range puts 20,000 × 10 = 200,000 ohms across the circuit. A higher rating means the meter draws less current, so it disturbs the circuit less and reads more accurately.</p>
+<p><strong>Why not B?</strong> The rating describes the meter&#x27;s own loading, not the power the circuit delivers.</p>
+</div>
+</details>
+</article>
+<article id="e4b03">
+<h2>E4B03</h2>
+<p class="stem">Which S parameter is equivalent to forward gain?</p>
+<ol class="opts">
+<li><span class="l">A</span> S11</li>
+<li><span class="l">B</span> S12</li>
+<li><span class="l">C</span> S21</li>
+<li><span class="l">D</span> S22</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>C</strong>. S21</p>
+<div class="ex">
+<p><strong>Why C is right.</strong> C. S21 compares the signal leaving port 2 with the signal sent into port 1, which is forward gain.</p>
+<p>S parameters (scattering parameters) describe a device by the waves going in and out of its ports. The first digit is where the wave leaves; the second is where it entered. So S21 means in at port 1, out at port 2. For an amplifier with port 1 as its input, that is its gain.</p>
+<p><strong>Why not B?</strong> S12 runs backward, from port 2 to port 1, and measures reverse isolation.</p>
+</div>
+</details>
+</article>
+<article id="e4b04">
+<h2>E4B04</h2>
+<p class="stem">Which S parameter represents input port return loss or reflection coefficient (equivalent to VSWR)?</p>
+<ol class="opts">
+<li><span class="l">A</span> S11</li>
+<li><span class="l">B</span> S12</li>
+<li><span class="l">C</span> S21</li>
+<li><span class="l">D</span> S22</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>A</strong>. S11</p>
+<div class="ex">
+<p><strong>Why A is right.</strong> A. S11 compares the wave reflected back out of port 1 with the wave sent into port 1, so it measures input reflection.</p>
+<p>In S parameter names, the first digit is the port the wave leaves and the second is the port it entered. S11 means in at port 1 and back out at port 1, which is a reflection. From it you can find return loss and SWR (standing wave ratio).</p>
+<p><strong>Why not D?</strong> S22 is reflection at the output port, port 2.</p>
+</div>
+</details>
+</article>
+<article id="e4b05">
+<h2>E4B05</h2>
+<p class="stem">What three test loads are used to calibrate an RF vector network analyzer?</p>
+<ol class="opts">
+<li><span class="l">A</span> 50 ohms, 75 ohms, and 90 ohms</li>
+<li><span class="l">B</span> Short circuit, open circuit, and 50 ohms</li>
+<li><span class="l">C</span> Short circuit, open circuit, and resonant circuit</li>
+<li><span class="l">D</span> 50 ohms through 1/8 wavelength, 1/4 wavelength, and 1/2 wavelength of coaxial cable</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>B</strong>. Short circuit, open circuit, and 50 ohms</p>
+<div class="ex">
+<p><strong>Why B is right.</strong> B. A short, an open and a precise 50-ohm load give three known reflections the analyzer uses to measure and remove its own errors.</p>
+<p>A short and an open each reflect all the signal, with opposite phase, while a perfect 50-ohm load reflects none. The vector network analyzer measures each standard, works out the errors added by its cables and connectors, and subtracts them from later measurements.</p>
+<p><strong>Why not A?</strong> Three resistive loads would not give the full-reflection references the correction needs.</p>
+</div>
+</details>
+</article>
+<article id="e4b06">
+<h2>E4B06</h2>
+<p class="stem">How much power is being absorbed by the load when a directional power meter connected between a transmitter and a terminating load reads 100 watts forward power and 25 watts reflected power?</p>
+<ol class="opts">
+<li><span class="l">A</span> 100 watts</li>
+<li><span class="l">B</span> 125 watts</li>
+<li><span class="l">C</span> 112.5 watts</li>
+<li><span class="l">D</span> 75 watts</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>D</strong>. 75 watts</p>
+<div class="ex">
+<p><strong>Why D is right.</strong> D. The reflected 25 watts is subtracted from the 100 watts sent forward, leaving 75 watts in the load.</p>
+<p>A directional meter reads power heading to the load (forward) and power coming back (reflected) separately. The power the load actually absorbs is the difference between the two.</p>
+<pre class="worked">P(load) = P(forward) - P(reflected)
+P(load) = 100 W - 25 W
+P(load) = 75 W
+= 75 W</pre>
+<p><strong>Why not B?</strong> 125 watts adds the readings; reflected power is not extra power delivered.</p>
+</div>
+</details>
+</article>
+<article id="e4b07">
+<h2>E4B07</h2>
+<p class="stem">What do the subscripts of S parameters represent?</p>
+<ol class="opts">
+<li><span class="l">A</span> The port or ports at which measurements are made</li>
+<li><span class="l">B</span> The relative time between measurements</li>
+<li><span class="l">C</span> Relative quality of the data</li>
+<li><span class="l">D</span> Frequency order of the measurements</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>A</strong>. The port or ports at which measurements are made</p>
+<div class="ex">
+<p><strong>Why A is right.</strong> A. Each subscript is a port number: the first is where the wave comes out, the second is where it went in.</p>
+<p>A two-port device such as a filter or amplifier has an input (port 1) and an output (port 2). S21 means a wave entered port 1 and was measured leaving port 2. S11 means it entered and left at port 1, which is a reflection.</p>
+<p><strong>Why not D?</strong> The subscripts have nothing to do with frequency; the whole set is measured at each frequency.</p>
+</div>
+</details>
+</article>
+<article id="e4b08">
+<h2>E4B08</h2>
+<p class="stem">Which of the following can be used to determine the Q of a series-tuned circuit?</p>
+<ol class="opts">
+<li><span class="l">A</span> The ratio of inductive reactance to capacitive reactance</li>
+<li><span class="l">B</span> The frequency shift</li>
+<li><span class="l">C</span> The bandwidth of the circuit&#x27;s frequency response</li>
+<li><span class="l">D</span> The resonant frequency of the circuit</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>C</strong>. The bandwidth of the circuit&#x27;s frequency response</p>
+<div class="ex">
+<p><strong>Why C is right.</strong> C. Q equals the resonant frequency divided by the bandwidth, so measuring the bandwidth lets you find Q.</p>
+<p>Q (quality factor) tells how sharply a tuned circuit picks out its resonant frequency. Sweep the frequency and find the two points where the response is 3 dB below the peak; the gap between them is the bandwidth. A narrow response means high Q.</p>
+<p><strong>Why not D?</strong> The resonant frequency alone tells where the peak is, not how sharp it is.</p>
+</div>
+</details>
+</article>
+<article id="e4b09">
+<h2>E4B09</h2>
+<p class="stem">Which of the following can be measured by a two-port vector network analyzer?</p>
+<ol class="opts">
+<li><span class="l">A</span> Phase noise</li>
+<li><span class="l">B</span> Filter frequency response</li>
+<li><span class="l">C</span> Pulse rise time</li>
+<li><span class="l">D</span> Forward power</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>B</strong>. Filter frequency response</p>
+<div class="ex">
+<p><strong>Why B is right.</strong> B. A two-port network analyzer sends a swept signal into the filter and measures what comes out, which is the filter&#x27;s frequency response.</p>
+<p>A vector network analyzer (VNA) measures both the size and the phase of signals at each frequency. With the filter between its two ports, it shows how much signal passes at each frequency and how well the filter is matched at its input.</p>
+<p><strong>Why not D?</strong> A VNA uses low test power; transmitter forward power is read with a wattmeter.</p>
+</div>
+</details>
+</article>
+<article id="e4b10">
+<h2>E4B10</h2>
+<p class="stem">Which of the following methods measures intermodulation distortion in an SSB transmitter?</p>
+<ol class="opts">
+<li><span class="l">A</span> Modulate the transmitter using two RF signals having non-harmonically related frequencies and observe the RF output with a spectrum analyzer</li>
+<li><span class="l">B</span> Modulate the transmitter using two AF signals having non-harmonically related frequencies and observe the RF output with a spectrum analyzer</li>
+<li><span class="l">C</span> Modulate the transmitter using two AF signals having harmonically related frequencies and observe the RF output with a peak reading wattmeter</li>
+<li><span class="l">D</span> Modulate the transmitter using two RF signals having harmonically related frequencies and observe the RF output with a logic analyzer</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>B</strong>. Modulate the transmitter using two AF signals having non-harmonically related frequencies and observe the RF output with a spectrum analyzer</p>
+<div class="ex">
+<p><strong>Why B is right.</strong> B. Two audio tones that are not harmonically related make the SSB transmitter put out two RF tones, and any mixing products show up on a spectrum analyzer.</p>
+<p>In SSB, each audio tone becomes one RF signal. If the amplifier is not linear, the two RF signals mix and create extra signals at nearby frequencies. A spectrum analyzer shows how far down those products are. Choosing tones that are not harmonics of each other keeps the products from overlapping their harmonics.</p>
+<p><strong>Why not A?</strong> An SSB transmitter is driven through its audio input, so the test tones are audio, not RF.</p>
+</div>
+</details>
+</article>
+<article id="e4b11">
+<h2>E4B11</h2>
+<p class="stem">Which of the following can be measured with a vector network analyzer?</p>
+<ol class="opts">
+<li><span class="l">A</span> Input impedance</li>
+<li><span class="l">B</span> Output impedance</li>
+<li><span class="l">C</span> Reflection coefficient</li>
+<li><span class="l">D</span> All these choices are correct</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>D</strong>. All these choices are correct</p>
+<div class="ex">
+<p><strong>Why D is right.</strong> D. A VNA measures how signals reflect from each port of a device, which gives all three quantities.</p>
+<p>The reflection coefficient is the fraction of a wave bounced back from a port, along with its phase. From the reflection at a device&#x27;s input you can calculate its input impedance; from the reflection at its output you get its output impedance.</p>
+</div>
+</details>
+</article>
+<nav class="pager" aria-label="Groups"><p><a href="../e4a/">Previous: E4A Test equipment: analog and digital instruments; spectrum analyzers; antenna analyzers; oscilloscopes; RF measurements</a></p><p><a href="../e4c/">Next: E4C Receiver performance: phase noise, noise floor, image rejection, minimum detectable signal (MDS), increasing signal-to-noise ratio and dynamic range, noise figure, reciprocal mixing; selectivity; SDR non-linearity; use of attenuators at low frequencies</a></p></nav>
+<footer>
+<p>QSO Ready is an independent study app for the US amateur radio license exams. Questions: NCVEC Question Pool Committee,
+released to the public domain. Rule quotes: 47 CFR, eCFR as of 2026-10-29. Content version 1.</p>
+<p><a href="../../">QSO Ready home</a> · <a href="../../privacy/">Privacy policy</a> · <a href="mailto:hello@saurabhupadhyay.in">hello@saurabhupadhyay.in</a></p>
+</footer>
+</main>
+</body>
+</html>

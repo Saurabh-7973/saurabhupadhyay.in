@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>G2E Digital mode operating procedures: General questions explained · QSO Ready</title>
+<meta name="description" content="General pool group G2E (Digital mode operating procedures): all 15 questions with correct answers and plain-English explanations.">
+<link rel="canonical" href="https://saurabhupadhyay.in/qso-ready/general/g2e/">
+<link rel="stylesheet" href="../../site.css">
+</head>
+<body>
+<main>
+<p class="notice">Not affiliated with or endorsed by the FCC, NCVEC, ARRL or any VEC. Questions are the NCVEC pools word for word (public domain); explanations are our own. Exam rules and fees can change: check with your VE team.</p>
+<nav class="crumbs" aria-label="Breadcrumb"><a href="../../">QSO Ready</a> › <a href="../">General</a> › G2E</nav>
+<h1>G2E: Digital mode operating procedures</h1>
+<p>Group G2E of the General pool (2023–2027) has 15 active questions. One of them is on every General exam. Each is shown word for word; open it to see the correct answer and our explanation.</p>
+<article id="g2e01">
+<h2>G2E01</h2>
+<p class="stem">Which mode is normally used when sending RTTY signals via AFSK with an SSB transmitter?</p>
+<ol class="opts">
+<li><span class="l">A</span> USB</li>
+<li><span class="l">B</span> DSB</li>
+<li><span class="l">C</span> CW</li>
+<li><span class="l">D</span> LSB</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>D</strong>. LSB</p>
+<div class="ex">
+<p><strong>Why D is right.</strong> D. By long custom, RTTY sent as audio tones through an SSB transmitter uses lower sideband.</p>
+<p>AFSK (audio frequency-shift keying) feeds two audio tones, mark and space, into an SSB transmitter. The sideband choice decides which tone ends up at the higher radio frequency. Using lower sideband, as other RTTY stations do, keeps mark and space in the order everyone expects.</p>
+<p><strong>Why not A?</strong> With USB, mark and space come out reversed compared with standard RTTY.</p>
+</div>
+</details>
+</article>
+<article id="g2e02">
+<h2>G2E02</h2>
+<p class="stem">What is VARA?</p>
+<ol class="opts">
+<li><span class="l">A</span> A low signal-to-noise digital mode used for EME (moonbounce)</li>
+<li><span class="l">B</span> A digital protocol used with Winlink</li>
+<li><span class="l">C</span> A radio direction finding system used on VHF and UHF</li>
+<li><span class="l">D</span> A DX spotting system using a network of software defined radios</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>B</strong>. A digital protocol used with Winlink</p>
+<div class="ex">
+<p><strong>Why B is right.</strong> B. VARA is a sound-card digital mode used to carry Winlink email over radio.</p>
+<p>VARA is a software modem that sends data in connected sessions, with error checking and automatic resending. Winlink, a radio email system, supports it on HF and VHF. It adjusts its speed to suit band conditions.</p>
+<p><strong>Why not A?</strong> VARA carries messages over normal HF and VHF paths, not moonbounce.</p>
+</div>
+</details>
+</article>
+<article id="g2e03">
+<h2>G2E03</h2>
+<p class="stem">What symptoms may result from other signals interfering with a PACTOR or VARA transmission?</p>
+<ol class="opts">
+<li><span class="l">A</span> Frequent retries or timeouts</li>
+<li><span class="l">B</span> Long pauses in message transmission</li>
+<li><span class="l">C</span> Failure to establish a connection between stations</li>
+<li><span class="l">D</span> All these choices are correct</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>D</strong>. All these choices are correct</p>
+<div class="ex">
+<p><strong>Why D is right.</strong> D. Interference forces these error-checking modes to resend data, which shows up as every listed symptom.</p>
+<p>PACTOR and VARA check each block of data and ask for it again if it arrives damaged. Interference causes more repeats, so transfers slow down or pause. If repeats go on too long, the link times out. Bad enough interference can keep a connection from forming at all.</p>
+</div>
+</details>
+</article>
+<article id="g2e04">
+<h2>G2E04</h2>
+<p class="stem">Which of the following is good practice when choosing a transmitting frequency to answer a station calling CQ using FT8?</p>
+<ol class="opts">
+<li><span class="l">A</span> Always call on the station’s frequency</li>
+<li><span class="l">B</span> Call on any frequency in the waterfall except the station’s frequency</li>
+<li><span class="l">C</span> Find a clear frequency during the same time slot as the calling station</li>
+<li><span class="l">D</span> Find a clear frequency during the alternate time slot to the calling station</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>D</strong>. Find a clear frequency during the alternate time slot to the calling station</p>
+<div class="ex">
+<p><strong>Why D is right.</strong> D. FT8 stations take turns in alternating time slots, so you transmit while the caller listens, on an open spot.</p>
+<p>FT8 divides time into 15-second slots. One station sends in the even slots and the other in the odd slots. Pick a clear spot on the waterfall display, then reply in the slot opposite the caller&#x27;s. The caller then hears you during its listening slot.</p>
+<p><strong>Why not C?</strong> In the same slot as the caller, you would be sending while it is also sending, so it would not hear you.</p>
+</div>
+</details>
+</article>
+<article id="g2e05">
+<h2>G2E05</h2>
+<p class="stem">What is the standard sideband for JT65, JT9, FT4, or FT8 digital signal when using AFSK?</p>
+<ol class="opts">
+<li><span class="l">A</span> LSB</li>
+<li><span class="l">B</span> USB</li>
+<li><span class="l">C</span> DSB</li>
+<li><span class="l">D</span> SSB</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>B</strong>. USB</p>
+<div class="ex">
+<p><strong>Why B is right.</strong> B. The custom for these weak-signal digital modes is to use upper sideband on every band.</p>
+<p>JT65, JT9, FT4 and FT8 programs make audio tones that you feed into an SSB transmitter. Everyone uses upper sideband, even on 160, 80 and 40 meters. The software then shows the true frequency of each signal, and stations line up correctly.</p>
+<p><strong>Why not A?</strong> Lower sideband is the voice custom on the low bands, not the custom for these modes.</p>
+</div>
+</details>
+</article>
+<article id="g2e06">
+<h2>G2E06</h2>
+<p class="stem">What is the most common frequency shift for RTTY emissions in the amateur HF bands?</p>
+<ol class="opts">
+<li><span class="l">A</span> 85 Hz</li>
+<li><span class="l">B</span> 170 Hz</li>
+<li><span class="l">C</span> 425 Hz</li>
+<li><span class="l">D</span> 850 Hz</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>B</strong>. 170 Hz</p>
+<div class="ex">
+<p><strong>Why B is right.</strong> B. 170 Hz is the standard space between the mark and space tones for amateur HF RTTY.</p>
+<p>RTTY sends each bit by shifting between two frequencies, called mark and space. On the amateur HF bands, the space tone sits 170 Hz from the mark tone. Wider shifts such as 850 Hz were used by some older systems. Matching the shift is needed to decode a signal.</p>
+<p><strong>Why not D?</strong> 850 Hz is a wide shift from older systems, not the amateur HF norm.</p>
+</div>
+</details>
+</article>
+<article id="g2e07">
+<h2>G2E07</h2>
+<p class="stem">Which of the following is required when using FT8?</p>
+<ol class="opts">
+<li><span class="l">A</span> A special hardware modem</li>
+<li><span class="l">B</span> Computer time accurate to within approximately 1 second</li>
+<li><span class="l">C</span> Receiver attenuator set to -12 dB</li>
+<li><span class="l">D</span> A vertically polarized antenna</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>B</strong>. Computer time accurate to within approximately 1 second</p>
+<div class="ex">
+<p><strong>Why B is right.</strong> B. FT8 sends and receives in fixed time slots, so your computer clock must be correct to about a second.</p>
+<p>FT8 transmissions start at the top of each 15-second slot. If your clock is off by more than about a second, other stations may not decode you, and you may miss them. Keep the clock set from an internet time source or GPS. A sound-card interface is all the hardware needed.</p>
+<p><strong>Why not A?</strong> FT8 runs in software through a sound card; no special modem is needed.</p>
+</div>
+</details>
+</article>
+<article id="g2e08">
+<h2>G2E08</h2>
+<p class="stem">In what segment of the 20-meter band are most digital mode operations commonly found?</p>
+<ol class="opts">
+<li><span class="l">A</span> At the bottom of the slow-scan TV segment, near 14.230 MHz</li>
+<li><span class="l">B</span> At the top of the SSB phone segment, near 14.325 MHz</li>
+<li><span class="l">C</span> In the middle of the CW segment, near 14.100 MHz</li>
+<li><span class="l">D</span> Between 14.070 MHz and 14.100 MHz</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>D</strong>. Between 14.070 MHz and 14.100 MHz</p>
+<div class="ex">
+<p><strong>Why D is right.</strong> D. On 20 meters, digital modes such as FT8 and RTTY gather between 14.070 and 14.100 MHz.</p>
+<p>Band plans group like signals together. On 20 meters, most digital activity sits in this 30 kHz slice, a little above the busiest CW frequencies. FT8, for example, is found a little above 14.074 MHz.</p>
+<p><strong>Why not A?</strong> Near 14.230 MHz you find slow-scan TV, an image mode in the phone part of the band.</p>
+</div>
+</details>
+</article>
+<article id="g2e09">
+<h2>G2E09</h2>
+<p class="stem">How do you join a contact between two stations using the PACTOR protocol?</p>
+<ol class="opts">
+<li><span class="l">A</span> Send broadcast packets containing your call sign while in MONITOR mode</li>
+<li><span class="l">B</span> Transmit a steady carrier until the PACTOR protocol times out and disconnects</li>
+<li><span class="l">C</span> Joining an existing contact is not possible, PACTOR connections are limited to two stations</li>
+<li><span class="l">D</span> Send a NAK code</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>C</strong>. Joining an existing contact is not possible, PACTOR connections are limited to two stations</p>
+<div class="ex">
+<p><strong>Why C is right.</strong> C. The protocol builds a link between exactly two stations, so a third has no way in.</p>
+<p>PACTOR is a connected mode. Two stations trade data blocks and short replies saying whether each block arrived. That back-and-forth only works with two stations. Others can listen, but to talk with either one you must wait until the link ends.</p>
+<p><strong>Why not B?</strong> A steady carrier would be deliberate interference.</p>
+</div>
+</details>
+</article>
+<article id="g2e10">
+<h2>G2E10</h2>
+<p class="stem">Which of the following is a way to establish contact with a digital messaging system gateway station?</p>
+<ol class="opts">
+<li><span class="l">A</span> Send an email to the system control operator</li>
+<li><span class="l">B</span> Send QRL in Morse code</li>
+<li><span class="l">C</span> Respond when the station broadcasts its SSID</li>
+<li><span class="l">D</span> Transmit a connect message on the station’s published frequency</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>D</strong>. Transmit a connect message on the station’s published frequency</p>
+<div class="ex">
+<p><strong>Why D is right.</strong> D. A gateway listens on its published frequency for connection requests, so you start the link by sending one.</p>
+<p>Your messaging software sends a connect request addressed to the gateway&#x27;s call sign on its listed frequency. The gateway answers on its own and the session begins. Then your messages go out and any waiting mail comes in.</p>
+<p><strong>Why not B?</strong> QRL asks whether a frequency is busy; it does not start a data link.</p>
+</div>
+</details>
+</article>
+<article id="g2e11">
+<h2>G2E11</h2>
+<p class="stem">What is the primary purpose of an Amateur Radio Emergency Data Network (AREDN) mesh network?</p>
+<ol class="opts">
+<li><span class="l">A</span> To provide FM repeater coverage in remote areas</li>
+<li><span class="l">B</span> To provide real time propagation data by monitoring amateur radio transmissions worldwide</li>
+<li><span class="l">C</span> To provide high-speed data services during an emergency or community event</li>
+<li><span class="l">D</span> To provide DX spotting reports to aid contesters and DXers</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>C</strong>. To provide high-speed data services during an emergency or community event</p>
+<div class="ex">
+<p><strong>Why C is right.</strong> C. AREDN links stations into a high-speed data network that can stand in for normal internet service at emergencies and events.</p>
+<p>AREDN uses modified commercial Wi-Fi gear on amateur microwave frequencies. Each node can pass traffic on for others, forming a mesh. Served sites can share data, voice calls over the network, and video, even when normal systems are down.</p>
+<p><strong>Why not A?</strong> AREDN carries data at high speed; FM repeaters are a separate system.</p>
+</div>
+</details>
+</article>
+<article id="g2e12">
+<h2>G2E12</h2>
+<p class="stem">Which of the following describes Winlink?</p>
+<ol class="opts">
+<li><span class="l">A</span> An amateur radio wireless network to send and receive email on the internet</li>
+<li><span class="l">B</span> A form of Packet Radio</li>
+<li><span class="l">C</span> A wireless network capable of both VHF and HF band operation</li>
+<li><span class="l">D</span> All these choices are correct</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>D</strong>. All these choices are correct</p>
+<div class="ex">
+<p><strong>Why D is right.</strong> D. Winlink is radio email that connects to the internet, it can travel over packet radio, and it runs on both VHF and HF.</p>
+<p>Winlink is a radio email system that links to internet email. It can use several ways to carry the data, packet radio among them, along with modes such as PACTOR and VARA. It works on VHF and UHF for local links and on HF for long distances.</p>
+</div>
+</details>
+</article>
+<article id="g2e13">
+<h2>G2E13</h2>
+<p class="stem">What is another name for a Winlink Remote Message Server?</p>
+<ol class="opts">
+<li><span class="l">A</span> Terminal Node Controller</li>
+<li><span class="l">B</span> Gateway</li>
+<li><span class="l">C</span> RJ-45</li>
+<li><span class="l">D</span> Printer/Server</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>B</strong>. Gateway</p>
+<div class="ex">
+<p><strong>Why B is right.</strong> B. A Winlink Remote Message Server links radio users to the Winlink system, so it is called a gateway.</p>
+<p>Radio users connect to a Remote Message Server (RMS) over the air. The RMS passes their messages to and from the Winlink system over the internet. A station that joins two networks like this is a gateway.</p>
+<p><strong>Why not A?</strong> A terminal node controller is a modem at a user&#x27;s station, not the server.</p>
+</div>
+</details>
+</article>
+<article id="g2e14">
+<h2>G2E14</h2>
+<p class="stem">What could be wrong if you cannot decode an RTTY or other FSK signal even though it is apparently tuned in properly?</p>
+<ol class="opts">
+<li><span class="l">A</span> The mark and space frequencies may be reversed</li>
+<li><span class="l">B</span> You may have selected the wrong baud rate</li>
+<li><span class="l">C</span> You may be listening on the wrong sideband</li>
+<li><span class="l">D</span> All these choices are correct</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>D</strong>. All these choices are correct</p>
+<div class="ex">
+<p><strong>Why D is right.</strong> D. Any one of these mismatches turns a well-tuned RTTY or FSK signal into nonsense text.</p>
+<p>To decode an FSK signal, your settings must match the sender&#x27;s. Mark and space must be in the right order. The baud rate, the speed of the bits, must match. The sideband must be right, or the tones flip. Check all three when a clear signal will not decode.</p>
+</div>
+</details>
+</article>
+<article id="g2e15">
+<h2>G2E15</h2>
+<p class="stem">Which of the following is a common location for FT8?</p>
+<ol class="opts">
+<li><span class="l">A</span> Anywhere in the voice portion of the band</li>
+<li><span class="l">B</span> Anywhere in the CW portion of the band</li>
+<li><span class="l">C</span> Approximately 14.074 MHz to 14.077 MHz</li>
+<li><span class="l">D</span> Approximately 14.110 MHz to 14.113 MHz</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>C</strong>. Approximately 14.074 MHz to 14.077 MHz</p>
+<div class="ex">
+<p><strong>Why C is right.</strong> C. On 20 meters, FT8 sits in a few kHz right above 14.074 MHz, where operators set their dials.</p>
+<p>FT8 operators set the radio to 14.074 MHz on upper sideband. The software spreads signals across the audio passband, so they land from about 14.074 to 14.077 MHz. Finding that spot is easy because almost everyone uses it.</p>
+<p><strong>Why not A?</strong> FT8 is a data mode, so it belongs in the data part of the band, not the voice part.</p>
+</div>
+</details>
+</article>
+<nav class="pager" aria-label="Groups"><p><a href="../g2d/">Previous: G2D Volunteer Monitor Program; HF operations</a></p><p><a href="../g3a/">Next: G3A Sunspots and solar radiation; geomagnetic field and stability indices</a></p></nav>
+<footer>
+<p>QSO Ready is an independent study app for the US amateur radio license exams. Questions: NCVEC Question Pool Committee,
+released to the public domain. Rule quotes: 47 CFR, eCFR as of 2026-10-29. Content version 1.</p>
+<p><a href="../../">QSO Ready home</a> · <a href="../../privacy/">Privacy policy</a> · <a href="mailto:hello@saurabhupadhyay.in">hello@saurabhupadhyay.in</a></p>
+</footer>
+</main>
+</body>
+</html>

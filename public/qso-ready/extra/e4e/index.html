@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>E4E Noise and interference: external RF interference; electrical and computer noise; line noise; DSP filtering and noise reduction; common-mode current; surge protectors; single point ground panel: Amateur Extra questions explained · QSO Ready</title>
+<meta name="description" content="Amateur Extra pool group E4E (Noise and interference: external RF interference; electrical and computer noise; line noise; DSP filtering and noise reduction; common-mode current; surge protectors; single point ground panel): all 14 questions with correct answers and plain-English explanations.">
+<link rel="canonical" href="https://saurabhupadhyay.in/qso-ready/extra/e4e/">
+<link rel="stylesheet" href="../../site.css">
+</head>
+<body>
+<main>
+<p class="notice">Not affiliated with or endorsed by the FCC, NCVEC, ARRL or any VEC. Questions are the NCVEC pools word for word (public domain); explanations are our own. Exam rules and fees can change: check with your VE team.</p>
+<nav class="crumbs" aria-label="Breadcrumb"><a href="../../">QSO Ready</a> › <a href="../">Amateur Extra</a> › E4E</nav>
+<h1>E4E: Noise and interference: external RF interference; electrical and computer noise; line noise; DSP filtering and noise reduction; common-mode current; surge protectors; single point ground panel</h1>
+<p>Group E4E of the Amateur Extra pool (2024–2028) has 14 active questions. One of them is on every Amateur Extra exam. Each is shown word for word; open it to see the correct answer and our explanation.</p>
+<article id="e4e01">
+<h2>E4E01</h2>
+<p class="stem">What problem can occur when using an automatic notch filter (ANF) to remove interfering carriers while receiving CW signals?</p>
+<ol class="opts">
+<li><span class="l">A</span> Removal of the CW signal as well as the interfering carrier</li>
+<li><span class="l">B</span> Any nearby signal passing through the DSP system will overwhelm the desired signal</li>
+<li><span class="l">C</span> Excessive ringing</li>
+<li><span class="l">D</span> All these choices are correct</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>A</strong>. Removal of the CW signal as well as the interfering carrier</p>
+<div class="ex">
+<p><strong>Why A is right.</strong> A. A CW signal is itself a steady carrier, so an automatic notch filter may treat it as interference and remove it.</p>
+<p>An automatic notch filter (ANF) uses DSP to find steady tones and cut them out. That works well on a whistle interfering with voice. A Morse signal is also a steady tone while the key is down, so the ANF cannot tell it from the unwanted carrier. For CW, turn the ANF off and use a narrow filter.</p>
+<p><strong>Why not B?</strong> The ANF reduces steady tones; it does not make nearby signals overwhelm the one you want.</p>
+</div>
+</details>
+</article>
+<article id="e4e02">
+<h2>E4E02</h2>
+<p class="stem">Which of the following types of noise can often be reduced by a digital noise reduction?</p>
+<ol class="opts">
+<li><span class="l">A</span> Broadband white noise</li>
+<li><span class="l">B</span> Ignition noise</li>
+<li><span class="l">C</span> Power line noise</li>
+<li><span class="l">D</span> All these choices are correct</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>D</strong>. All these choices are correct</p>
+<div class="ex">
+<p><strong>Why D is right.</strong> D. Digital noise reduction can often reduce all three kinds, so every choice is correct.</p>
+<p>DSP noise reduction looks for patterns. Speech and Morse have structure that changes in a predictable way, while noise is random or repeats differently. The processor keeps what looks like signal and suppresses the rest, whether it is steady hiss (white noise), engine ignition pulses or buzz from power lines.</p>
+</div>
+</details>
+</article>
+<article id="e4e03">
+<h2>E4E03</h2>
+<p class="stem">Which of the following types of noise are removed by a noise blanker?</p>
+<ol class="opts">
+<li><span class="l">A</span> Broadband white noise</li>
+<li><span class="l">B</span> Impulse noise</li>
+<li><span class="l">C</span> Hum and buzz</li>
+<li><span class="l">D</span> All these choices are correct</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>B</strong>. Impulse noise</p>
+<div class="ex">
+<p><strong>Why B is right.</strong> B. A noise blanker detects short, sharp pulses and briefly mutes the receiver during each one, which removes impulse noise.</p>
+<p>Impulse noise comes from sparks, such as car ignitions or electric fences. Each pulse is very short but strong. The blanker spots it and shuts the receive path for a few millionths of a second. Steady noise has no separate pulses, so a blanker cannot help with hiss or hum.</p>
+<p><strong>Why not A?</strong> Broadband white noise is continuous, so there are no separate pulses to cut out.</p>
+</div>
+</details>
+</article>
+<article id="e4e04">
+<h2>E4E04</h2>
+<p class="stem">How can conducted noise from an automobile battery charging system be suppressed?</p>
+<ol class="opts">
+<li><span class="l">A</span> By installing filter capacitors in series with the alternator leads</li>
+<li><span class="l">B</span> By installing a noise suppression resistor and a blocking capacitor at the battery</li>
+<li><span class="l">C</span> By installing a high-pass filter in series with the radio’s power lead and a low-pass filter in parallel with the antenna feed line</li>
+<li><span class="l">D</span> By installing ferrite chokes on the charging system leads</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>D</strong>. By installing ferrite chokes on the charging system leads</p>
+<div class="ex">
+<p><strong>Why D is right.</strong> D. Ferrite chokes on the charging leads block RF noise from the alternator while passing the DC charging current.</p>
+<p>An alternator and its regulator switch current rapidly, creating RF noise that travels along the wiring. A ferrite choke adds impedance (opposition to current) at radio frequencies but almost none to DC. Ferrites on the leads keep the noise from spreading through the vehicle wiring to your radio.</p>
+<p><strong>Why not A?</strong> A capacitor in series with the alternator lead would block DC and stop charging.</p>
+</div>
+</details>
+</article>
+<article id="e4e05">
+<h2>E4E05</h2>
+<p class="stem">What is used to suppress radio frequency interference from a line-driven AC motor?</p>
+<ol class="opts">
+<li><span class="l">A</span> A high-pass filter in series with the motor’s power leads</li>
+<li><span class="l">B</span> A brute-force AC-line filter in series with the motor’s power leads</li>
+<li><span class="l">C</span> A bypass capacitor in series with the motor’s field winding</li>
+<li><span class="l">D</span> A bypass choke in parallel with the motor’s field winding</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>B</strong>. A brute-force AC-line filter in series with the motor’s power leads</p>
+<div class="ex">
+<p><strong>Why B is right.</strong> B. A brute-force AC-line filter in series with the motor leads blocks the motor&#x27;s RF noise while passing the 60 Hz power.</p>
+<p>Brushes and switches in a motor make sparks that put RF noise on the power wiring, which then radiates. A brute-force filter is a low-pass filter of series coils and capacitors to ground, built to carry full line current. It passes 60 Hz power and blocks the much higher radio frequencies.</p>
+<p><strong>Why not A?</strong> A high-pass filter would block the 60 Hz power and pass the noise.</p>
+</div>
+</details>
+</article>
+<article id="e4e06">
+<h2>E4E06</h2>
+<p class="stem">What type of electrical interference can be caused by computer network equipment?</p>
+<ol class="opts">
+<li><span class="l">A</span> A loud AC hum in the audio output of your station’s receiver</li>
+<li><span class="l">B</span> A clicking noise at intervals of a few seconds</li>
+<li><span class="l">C</span> The appearance of unstable modulated or unmodulated signals at specific frequencies</li>
+<li><span class="l">D</span> A whining-type noise that continually pulses off and on</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>C</strong>. The appearance of unstable modulated or unmodulated signals at specific frequencies</p>
+<div class="ex">
+<p><strong>Why C is right.</strong> C. Network gear runs on clocks and data signals that leak out as steady or modulated carriers on fixed frequencies.</p>
+<p>Routers, switches and network cables carry fast digital signals. Their clock frequencies and harmonics escape as signals at specific spots on the dial. Some are steady carriers; others warble or shift with data traffic, so they may come and go as network use changes.</p>
+<p><strong>Why not A?</strong> A loud AC hum points to 60 Hz power problems, not digital circuits.</p>
+</div>
+</details>
+</article>
+<article id="e4e07">
+<h2>E4E07</h2>
+<p class="stem">Which of the following can cause shielded cables to radiate or receive interference?</p>
+<ol class="opts">
+<li><span class="l">A</span> Low inductance ground connections at both ends of the shield</li>
+<li><span class="l">B</span> Common-mode currents on the shield and conductors</li>
+<li><span class="l">C</span> Use of braided shielding material</li>
+<li><span class="l">D</span> Tying all ground connections to a common point resulting in differential-mode currents in the shield</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>B</strong>. Common-mode currents on the shield and conductors</p>
+<div class="ex">
+<p><strong>Why B is right.</strong> B. Common-mode current flows the same way on the outside of the shield and on the conductors, so the cable acts like an antenna.</p>
+<p>In a working cable, currents on the inner conductors and the inside of the shield are equal and opposite, so their fields cancel. Common-mode current flows the same direction on everything, usually on the shield&#x27;s outer surface. Its fields do not cancel, so the cable radiates and also picks up outside signals.</p>
+<p><strong>Why not A?</strong> Low-inductance grounds at both ends help the shield work; they do not cause leakage.</p>
+</div>
+</details>
+</article>
+<article id="e4e08">
+<h2>E4E08</h2>
+<p class="stem">What current flows equally on all conductors of an unshielded multiconductor cable?</p>
+<ol class="opts">
+<li><span class="l">A</span> Differential-mode current</li>
+<li><span class="l">B</span> Common-mode current</li>
+<li><span class="l">C</span> Reactive current only</li>
+<li><span class="l">D</span> Magnetically-coupled current only</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>B</strong>. Common-mode current</p>
+<div class="ex">
+<p><strong>Why B is right.</strong> B. Common-mode current is the part that flows in the same direction and amount on every conductor at once.</p>
+<p>Differential-mode current goes out on one wire and back on another; that is the useful signal. Common-mode current travels on all wires together and returns through some other path, such as ground. Because it does not cancel, it is a main cause of radiated interference. A ferrite choke around the whole cable reduces it.</p>
+<p><strong>Why not A?</strong> Differential-mode current flows in opposite directions on two conductors.</p>
+</div>
+</details>
+</article>
+<article id="e4e09">
+<h2>E4E09</h2>
+<p class="stem">What undesirable effect can occur when using a noise blanker?</p>
+<ol class="opts">
+<li><span class="l">A</span> Received audio in the speech range might have an echo effect</li>
+<li><span class="l">B</span> The audio frequency bandwidth of the received signal might be compressed</li>
+<li><span class="l">C</span> Strong signals may be distorted and appear to cause spurious emissions</li>
+<li><span class="l">D</span> FM signals can no longer be demodulated</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>C</strong>. Strong signals may be distorted and appear to cause spurious emissions</p>
+<div class="ex">
+<p><strong>Why C is right.</strong> C. Strong signals can trigger the blanker, which chops them, distorts them and makes them seem to have spurious emissions.</p>
+<p>A noise blanker mutes the receiver whenever it sees a sharp pulse. Strong signals with fast changes, such as loud SSB or CW, can look like pulses to it. The rapid on-off muting distorts them and spreads energy to nearby frequencies, so clean stations appear to be splattering.</p>
+<p><strong>Why not D?</strong> A blanker acts on short pulses; it does not stop FM from being demodulated.</p>
+</div>
+</details>
+</article>
+<article id="e4e10">
+<h2>E4E10</h2>
+<p class="stem">Which of the following can create intermittent loud roaring or buzzing AC line interference?</p>
+<ol class="opts">
+<li><span class="l">A</span> Arcing contacts in a thermostatically controlled device</li>
+<li><span class="l">B</span> A defective doorbell or doorbell transformer inside a nearby residence</li>
+<li><span class="l">C</span> A malfunctioning illuminated advertising display</li>
+<li><span class="l">D</span> All these choices are correct</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>D</strong>. All these choices are correct</p>
+<div class="ex">
+<p><strong>Why D is right.</strong> D. All three can arc or buzz on the power line, so every choice is correct.</p>
+<p>Line noise usually comes from an electrical arc, a small spark jumping a gap. Thermostat contacts in heaters and appliances can arc as they open and close. A failing doorbell transformer can buzz and arc. Lighted signs with bad transformers do the same. The noise starts and stops with the faulty device.</p>
+</div>
+</details>
+</article>
+<article id="e4e11">
+<h2>E4E11</h2>
+<p class="stem">What could be the cause of local AM broadcast band signals combining to generate spurious signals on the MF or HF bands?</p>
+<ol class="opts">
+<li><span class="l">A</span> One or more of the broadcast stations is transmitting an over-modulated signal</li>
+<li><span class="l">B</span> Nearby corroded metal connections are mixing and reradiating the broadcast signals</li>
+<li><span class="l">C</span> You are receiving skywave signals from a distant station</li>
+<li><span class="l">D</span> Your station receiver IF amplifier stage is overloaded</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>B</strong>. Nearby corroded metal connections are mixing and reradiating the broadcast signals</p>
+<div class="ex">
+<p><strong>Why B is right.</strong> B. Corroded metal joints act like crude diodes, mixing strong broadcast signals and reradiating the products on new frequencies.</p>
+<p>A rusty joint in a fence, gutter or tower can conduct better one way than the other, which makes it nonlinear. Strong AM signals induced in the metal mix at that joint and create sums, differences and harmonics. The metal then radiates them, so they reach your antenna like real signals.</p>
+<p><strong>Why not A?</strong> Overmodulation splatters near the station&#x27;s own frequency, not onto other MF or HF bands.</p>
+</div>
+</details>
+</article>
+<article id="e4e12">
+<h2>E4E12</h2>
+<p class="stem">What causes interference received as a series of carriers at regular intervals across a wide frequency range?</p>
+<ol class="opts">
+<li><span class="l">A</span> Switch-mode power supplies</li>
+<li><span class="l">B</span> Radar transmitters</li>
+<li><span class="l">C</span> Wireless security camera transmitters</li>
+<li><span class="l">D</span> Electric fences</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>A</strong>. Switch-mode power supplies</p>
+<div class="ex">
+<p><strong>Why A is right.</strong> A. A switch-mode power supply switches at a fixed rate, and the harmonics of that rate make carriers at regular steps across a wide range.</p>
+<p>Switching supplies turn current on and off tens or hundreds of thousands of times per second. The sharp edges create harmonics at every multiple of the switching frequency. On the band you hear evenly spaced carriers, which may drift as the load changes.</p>
+<p><strong>Why not D?</strong> Electric fences make clicks or pops about once a second, not steady carriers.</p>
+</div>
+</details>
+</article>
+<article id="e4e13">
+<h2>E4E13</h2>
+<p class="stem">Where should a station AC surge protector be installed?</p>
+<ol class="opts">
+<li><span class="l">A</span> At the AC service panel</li>
+<li><span class="l">B</span> At an AC outlet</li>
+<li><span class="l">C</span> On the single point ground panel</li>
+<li><span class="l">D</span> On a ground rod outside the station</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>C</strong>. On the single point ground panel</p>
+<div class="ex">
+<p><strong>Why C is right.</strong> C. Putting the surge protector on the single point ground panel bonds it to the same ground as every other protector in the station.</p>
+<p>The single point ground panel is where every cable entering the station connects to one ground system. Installing the AC protector there means the AC, antenna and control lines share one ground reference. A surge then raises everything together instead of creating a voltage difference between pieces of equipment.</p>
+<p><strong>Why not A?</strong> At the service panel, the protector&#x27;s ground would be separate from the station&#x27;s other protectors, allowing voltage differences between them.</p>
+</div>
+</details>
+</article>
+<article id="e4e14">
+<h2>E4E14</h2>
+<p class="stem">What is the purpose of a single point ground panel?</p>
+<ol class="opts">
+<li><span class="l">A</span> Remove AC power in case of a short-circuit</li>
+<li><span class="l">B</span> Prevent common-mode transients in multi-wire systems</li>
+<li><span class="l">C</span> Eliminate air gaps between protected and non-protected circuits</li>
+<li><span class="l">D</span> Ensure all lightning protectors activate at the same time</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>D</strong>. Ensure all lightning protectors activate at the same time</p>
+<div class="ex">
+<p><strong>Why D is right.</strong> D. Bonding all lightning protectors to one panel gives them the same ground, so they respond to a surge together.</p>
+<p>If protectors sit on different grounds, one may fire before another, and the voltage difference can drive current through your equipment. With every coax, rotator and power protector on one plate tied to one ground system, they all see the surge at the same moment, and everything rises and falls together.</p>
+<p><strong>Why not A?</strong> Breakers and fuses handle short circuits; that is not the panel&#x27;s job.</p>
+</div>
+</details>
+</article>
+<nav class="pager" aria-label="Groups"><p><a href="../e4d/">Previous: E4D Receiver performance characteristics: dynamic range; intermodulation and cross-modulation interference; third-order intercept; desensitization; preselector; sensitivity; link margin</a></p><p><a href="../e5a/">Next: E5A Resonance and Q: characteristics of resonant circuits; series and parallel resonance; definitions and effects of Q; half-power bandwidth</a></p></nav>
+<footer>
+<p>QSO Ready is an independent study app for the US amateur radio license exams. Questions: NCVEC Question Pool Committee,
+released to the public domain. Rule quotes: 47 CFR, eCFR as of 2026-10-29. Content version 1.</p>
+<p><a href="../../">QSO Ready home</a> · <a href="../../privacy/">Privacy policy</a> · <a href="mailto:hello@saurabhupadhyay.in">hello@saurabhupadhyay.in</a></p>
+</footer>
+</main>
+</body>
+</html>

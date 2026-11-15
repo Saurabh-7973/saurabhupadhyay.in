@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>E8B Modulation and demodulation: modulation methods; modulation index and deviation ratio; frequency- and time-division multiplexing; orthogonal frequency-division multiplexing (OFDM): Amateur Extra questions explained · QSO Ready</title>
+<meta name="description" content="Amateur Extra pool group E8B (Modulation and demodulation: modulation methods; modulation index and deviation ratio; frequency- and time-division multiplexing; orthogonal frequency-division multiplexing (OFDM)): all 11 questions with correct answers and plain-English explanations.">
+<link rel="canonical" href="https://saurabhupadhyay.in/qso-ready/extra/e8b/">
+<link rel="stylesheet" href="../../site.css">
+</head>
+<body>
+<main>
+<p class="notice">Not affiliated with or endorsed by the FCC, NCVEC, ARRL or any VEC. Questions are the NCVEC pools word for word (public domain); explanations are our own. Exam rules and fees can change: check with your VE team.</p>
+<nav class="crumbs" aria-label="Breadcrumb"><a href="../../">QSO Ready</a> › <a href="../">Amateur Extra</a> › E8B</nav>
+<h1>E8B: Modulation and demodulation: modulation methods; modulation index and deviation ratio; frequency- and time-division multiplexing; orthogonal frequency-division multiplexing (OFDM)</h1>
+<p>Group E8B of the Amateur Extra pool (2024–2028) has 11 active questions. One of them is on every Amateur Extra exam. Each is shown word for word; open it to see the correct answer and our explanation.</p>
+<article id="e8b01">
+<h2>E8B01</h2>
+<p class="stem">What is the modulation index of an FM signal?</p>
+<ol class="opts">
+<li><span class="l">A</span> The ratio of frequency deviation to modulating signal frequency</li>
+<li><span class="l">B</span> The ratio of modulating signal amplitude to frequency deviation</li>
+<li><span class="l">C</span> The modulating signal frequency divided by the bandwidth of the transmitted signal</li>
+<li><span class="l">D</span> The bandwidth of the transmitted signal divided by the modulating signal frequency</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>A</strong>. The ratio of frequency deviation to modulating signal frequency</p>
+<div class="ex">
+<p><strong>Why A is right.</strong> A. FM sidebands depend on both how far the carrier swings and how fast the audio swings it, so the index divides one by the other.</p>
+<p>Frequency deviation is how far the carrier moves away from its resting frequency. The modulating frequency is the audio tone doing the pushing. Dividing deviation by that tone frequency gives the modulation index, a plain number with no unit. A larger index means more strong sidebands and a wider signal.</p>
+<p><strong>Why not D?</strong> Bandwidth divided by audio frequency is not a standard measure; the index uses deviation, not bandwidth.</p>
+</div>
+</details>
+</article>
+<article id="e8b02">
+<h2>E8B02</h2>
+<p class="stem">How does the modulation index of a phase-modulated emission vary with RF carrier frequency?</p>
+<ol class="opts">
+<li><span class="l">A</span> It increases as the RF carrier frequency increases</li>
+<li><span class="l">B</span> It decreases as the RF carrier frequency increases</li>
+<li><span class="l">C</span> It varies with the square root of the RF carrier frequency</li>
+<li><span class="l">D</span> It does not depend on the RF carrier frequency</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>D</strong>. It does not depend on the RF carrier frequency</p>
+<div class="ex">
+<p><strong>Why D is right.</strong> D. In phase modulation the index is the peak phase shift set by the audio, which has nothing to do with the carrier frequency.</p>
+<p>A phase modulator shifts the carrier&#x27;s phase back and forth by an amount that follows the audio level. The modulation index is that peak phase shift, measured in radians. The same audio level gives the same phase shift whether the carrier is on 3 MHz or 30 MHz. Only the modulating signal sets it.</p>
+<p><strong>Why not A?</strong> A higher carrier frequency does not make the modulator shift phase any further, so the index does not rise.</p>
+</div>
+</details>
+</article>
+<article id="e8b03">
+<h2>E8B03</h2>
+<p class="stem">What is the modulation index of an FM phone signal having a maximum frequency deviation of 3000 Hz either side of the carrier frequency if the highest modulating frequency is 1000 Hz?</p>
+<ol class="opts">
+<li><span class="l">A</span> 3</li>
+<li><span class="l">B</span> 0.3</li>
+<li><span class="l">C</span> 6</li>
+<li><span class="l">D</span> 0.6</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>A</strong>. 3</p>
+<div class="ex">
+<p><strong>Why A is right.</strong> A. Modulation index is deviation divided by modulating frequency, and 3000 Hz over 1000 Hz equals 3.</p>
+<p>Use the deviation on one side of the carrier, not the total swing. Both numbers are in hertz, so the units cancel and the index is a plain number. Choosing 6 would come from doubling the deviation, which the formula does not do.</p>
+<pre class="worked">m = deviation / modulating frequency
+m = 3000 Hz / 1000 Hz
+= 3</pre>
+<p><strong>Why not B?</strong> 0.3 comes from slipping a decimal place; 3000 divided by 1000 is 3.</p>
+</div>
+</details>
+</article>
+<article id="e8b04">
+<h2>E8B04</h2>
+<p class="stem">What is the modulation index of an FM phone signal having a maximum carrier deviation of plus or minus 6 kHz if the highest modulating frequency  is 2 kHz?</p>
+<ol class="opts">
+<li><span class="l">A</span> 0.3</li>
+<li><span class="l">B</span> 3</li>
+<li><span class="l">C</span> 0.6</li>
+<li><span class="l">D</span> 6</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>B</strong>. 3</p>
+<div class="ex">
+<p><strong>Why B is right.</strong> B. Dividing the 6 kHz deviation by the 2 kHz modulating frequency gives a modulation index of 3.</p>
+<p>The phrase plus or minus 6 kHz already gives the one-sided deviation, which is what the formula needs. Both values are in kHz, so the units cancel. Do not double the deviation, or you would get 6.</p>
+<pre class="worked">m = deviation / modulating frequency
+m = 6 kHz / 2 kHz
+= 3</pre>
+<p><strong>Why not D?</strong> 6 counts the full 12 kHz swing; the index uses deviation on one side only.</p>
+</div>
+</details>
+</article>
+<article id="e8b05">
+<h2>E8B05</h2>
+<p class="stem">What is the deviation ratio of an FM phone signal having a maximum frequency swing of plus or minus 5 kHz if the highest modulation frequency is 3 kHz?</p>
+<ol class="opts">
+<li><span class="l">A</span> 6</li>
+<li><span class="l">B</span> 0.167</li>
+<li><span class="l">C</span> 0.6</li>
+<li><span class="l">D</span> 1.67</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>D</strong>. 1.67</p>
+<div class="ex">
+<p><strong>Why D is right.</strong> D. Deviation ratio is the maximum deviation over the highest audio frequency, and 5 kHz over 3 kHz is about 1.67.</p>
+<p>Deviation ratio is the modulation index taken at the worst case: the largest deviation the system allows and the highest audio frequency it passes. It describes the system, not one tone. Here the 5 kHz swing on each side is divided by the 3 kHz top audio frequency.</p>
+<pre class="worked">D = maximum deviation / highest modulating frequency
+D = 5 kHz / 3 kHz
+D = 1.666..., rounded to 1.67
+= 1.67</pre>
+<p><strong>Why not C?</strong> 0.6 is 3 divided by 5, the ratio turned upside down.</p>
+</div>
+</details>
+</article>
+<article id="e8b06">
+<h2>E8B06</h2>
+<p class="stem">What is the deviation ratio of an FM phone signal having a maximum frequency swing of plus or minus 7.5 kHz if the highest modulation frequency is 3.5 kHz?</p>
+<ol class="opts">
+<li><span class="l">A</span> 2.14</li>
+<li><span class="l">B</span> 0.214</li>
+<li><span class="l">C</span> 0.47</li>
+<li><span class="l">D</span> 47</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>A</strong>. 2.14</p>
+<div class="ex">
+<p><strong>Why A is right.</strong> A. Dividing the 7.5 kHz maximum deviation by the 3.5 kHz highest audio frequency gives a deviation ratio of about 2.14.</p>
+<p>Deviation ratio always puts the deviation on top and the highest audio frequency on the bottom. Both are in kHz, so the result is a plain number. A ratio above 1 means the carrier swings farther than the fastest tone it carries.</p>
+<pre class="worked">D = maximum deviation / highest modulating frequency
+D = 7.5 kHz / 3.5 kHz
+D = 2.142..., rounded to 2.14
+= 2.14</pre>
+<p><strong>Why not C?</strong> 0.47 is 3.5 divided by 7.5, the ratio inverted.</p>
+</div>
+</details>
+</article>
+<article id="e8b07">
+<h2>E8B07</h2>
+<p class="stem">Orthogonal frequency-division multiplexing (OFDM) is a technique used for which types of amateur communication?</p>
+<ol class="opts">
+<li><span class="l">A</span> Digital modes</li>
+<li><span class="l">B</span> Extremely low-power contacts</li>
+<li><span class="l">C</span> EME</li>
+<li><span class="l">D</span> OFDM signals are not allowed on amateur bands</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>A</strong>. Digital modes</p>
+<div class="ex">
+<p><strong>Why A is right.</strong> A. OFDM splits data across many closely spaced carriers, which makes it a method for sending digital data.</p>
+<p>OFDM (orthogonal frequency-division multiplexing) carries a data stream on dozens or hundreds of subcarriers at once. Each one runs slowly, which helps it ride out echoes and fading. Hams use it in several HF and VHF/UHF data modes and in high-speed digital links. It is a data technique, not something tied to low power or moonbounce.</p>
+<p><strong>Why not D?</strong> Amateurs do use OFDM-based data modes, so it is not barred from the ham bands.</p>
+</div>
+</details>
+</article>
+<article id="e8b08">
+<h2>E8B08</h2>
+<p class="stem">What describes orthogonal frequency-division multiplexing (OFDM)?</p>
+<ol class="opts">
+<li><span class="l">A</span> A frequency modulation technique that uses non-harmonically related frequencies</li>
+<li><span class="l">B</span> A bandwidth compression technique using Fourier transforms</li>
+<li><span class="l">C</span> A digital mode for narrow-band, slow-speed transmissions</li>
+<li><span class="l">D</span> A digital modulation technique using subcarriers at frequencies chosen to avoid intersymbol interference</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>D</strong>. A digital modulation technique using subcarriers at frequencies chosen to avoid intersymbol interference</p>
+<div class="ex">
+<p><strong>Why D is right.</strong> D. OFDM spaces its subcarriers so each one&#x27;s peak sits where the others are zero, which stops them interfering even though they overlap.</p>
+<p>Orthogonal here means the subcarriers do not disturb each other although their spectra overlap. The spacing equals 1 divided by the symbol time. A separate feature handles echoes: each subcarrier sends long, slow symbols with a short guard time between them. A late echo then fades out before the next symbol starts, so symbols do not blur together. That blurring is called intersymbol interference.</p>
+<p><strong>Why not C?</strong> OFDM is usually used for fast, wide data signals, not narrow slow ones.</p>
+</div>
+</details>
+</article>
+<article id="e8b09">
+<h2>E8B09</h2>
+<p class="stem">What is deviation ratio?</p>
+<ol class="opts">
+<li><span class="l">A</span> The ratio of the audio modulating frequency to the center carrier frequency</li>
+<li><span class="l">B</span> The ratio of the maximum carrier frequency deviation to the highest audio modulating frequency</li>
+<li><span class="l">C</span> The ratio of the carrier center frequency to the audio modulating frequency</li>
+<li><span class="l">D</span> The ratio of the highest audio modulating frequency to the average audio modulating frequency</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>B</strong>. The ratio of the maximum carrier frequency deviation to the highest audio modulating frequency</p>
+<div class="ex">
+<p><strong>Why B is right.</strong> B. Deviation ratio uses the largest carrier swing and the highest audio frequency, the two limits that set an FM system&#x27;s width.</p>
+<p>Modulation index changes from moment to moment with each tone. Deviation ratio fixes both numbers at their system limits, so it describes the whole channel. For example, a system with 5 kHz deviation and 3 kHz audio has a ratio of about 1.67. The carrier&#x27;s own frequency is not part of either ratio.</p>
+<p><strong>Why not C?</strong> The carrier center frequency plays no part in deviation ratio.</p>
+</div>
+</details>
+</article>
+<article id="e8b10">
+<h2>E8B10</h2>
+<p class="stem">What is frequency division multiplexing (FDM)?</p>
+<ol class="opts">
+<li><span class="l">A</span> The transmitted signal jumps from band to band at a predetermined rate</li>
+<li><span class="l">B</span> Dividing the transmitted signal into separate frequency bands that each carry a different data stream</li>
+<li><span class="l">C</span> The transmitted signal is divided into packets of information</li>
+<li><span class="l">D</span> Two or more information streams are merged into a digital combiner, which then pulse position modulates the transmitter</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>B</strong>. Dividing the transmitted signal into separate frequency bands that each carry a different data stream</p>
+<div class="ex">
+<p><strong>Why B is right.</strong> B. Signals on different frequencies can be pulled apart again with filters, so FDM gives each data stream its own band within the channel.</p>
+<p>Multiplexing means sharing one channel among several signals. In frequency-division multiplexing, each signal is placed on a different subcarrier or band within the channel. A receiver pulls them apart with filters. Broadcast FM stereo is a familiar example: the stereo difference signal rides on a subcarrier above the main audio.</p>
+<p><strong>Why not A?</strong> Jumping from frequency to frequency on a schedule describes frequency hopping, not FDM.</p>
+</div>
+</details>
+</article>
+<article id="e8b11">
+<h2>E8B11</h2>
+<p class="stem">What is digital time division multiplexing?</p>
+<ol class="opts">
+<li><span class="l">A</span> Two or more data streams are assigned to discrete sub-carriers on an FM transmitter</li>
+<li><span class="l">B</span> Two or more signals are arranged to share discrete time slots of a data transmission</li>
+<li><span class="l">C</span> Two or more data streams share the same channel by transmitting time of transmission as the sub-carrier</li>
+<li><span class="l">D</span> Two or more signals are quadrature modulated to increase bandwidth efficiency</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>B</strong>. Two or more signals are arranged to share discrete time slots of a data transmission</p>
+<div class="ex">
+<p><strong>Why B is right.</strong> B. A receiver that knows the timing can sort the pieces back out, so TDM lets several signals share one channel by taking turns in time slots.</p>
+<p>The channel&#x27;s time is cut into repeating slots. Stream 1 sends in slot 1, stream 2 in slot 2, and so on, then the cycle starts again. The receiver knows the timing and sorts the pieces back into separate streams. Some digital voice radios use this to put two conversations on one channel.</p>
+<p><strong>Why not A?</strong> Giving each stream its own sub-carrier divides by frequency, not by time.</p>
+</div>
+</details>
+</article>
+<nav class="pager" aria-label="Groups"><p><a href="../e8a/">Previous: E8A Fourier analysis; RMS measurements; average RF power and peak envelope power (PEP); analog/digital conversion</a></p><p><a href="../e8c/">Next: E8C Digital signals: digital communication modes; information rate vs. bandwidth; error correction; constellation diagrams</a></p></nav>
+<footer>
+<p>QSO Ready is an independent study app for the US amateur radio license exams. Questions: NCVEC Question Pool Committee,
+released to the public domain. Rule quotes: 47 CFR, eCFR as of 2026-10-29. Content version 1.</p>
+<p><a href="../../">QSO Ready home</a> · <a href="../../privacy/">Privacy policy</a> · <a href="mailto:hello@saurabhupadhyay.in">hello@saurabhupadhyay.in</a></p>
+</footer>
+</main>
+</body>
+</html>

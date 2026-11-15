@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>E9D Yagi antennas; parabolic reflectors; feed point impedance and loading of electrically short antennas; antenna Q; RF grounding: Amateur Extra questions explained · QSO Ready</title>
+<meta name="description" content="Amateur Extra pool group E9D (Yagi antennas; parabolic reflectors; feed point impedance and loading of electrically short antennas; antenna Q; RF grounding): all 12 questions with correct answers and plain-English explanations.">
+<link rel="canonical" href="https://saurabhupadhyay.in/qso-ready/extra/e9d/">
+<link rel="stylesheet" href="../../site.css">
+</head>
+<body>
+<main>
+<p class="notice">Not affiliated with or endorsed by the FCC, NCVEC, ARRL or any VEC. Questions are the NCVEC pools word for word (public domain); explanations are our own. Exam rules and fees can change: check with your VE team.</p>
+<nav class="crumbs" aria-label="Breadcrumb"><a href="../../">QSO Ready</a> › <a href="../">Amateur Extra</a> › E9D</nav>
+<h1>E9D: Yagi antennas; parabolic reflectors; feed point impedance and loading of electrically short antennas; antenna Q; RF grounding</h1>
+<p>Group E9D of the Amateur Extra pool (2024–2028) has 12 active questions. One of them is on every Amateur Extra exam. Each is shown word for word; open it to see the correct answer and our explanation.</p>
+<article id="e9d01">
+<h2>E9D01</h2>
+<p class="stem">How much does the gain of an ideal parabolic reflector antenna increase when the operating frequency is doubled?</p>
+<ol class="opts">
+<li><span class="l">A</span> 2 dB</li>
+<li><span class="l">B</span> 3 dB</li>
+<li><span class="l">C</span> 4 dB</li>
+<li><span class="l">D</span> 6 dB</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>D</strong>. 6 dB</p>
+<div class="ex">
+<p><strong>Why D is right.</strong> D. A dish&#x27;s gain grows with the square of its size in wavelengths, so doubling frequency multiplies gain by 4, which is 6 dB.</p>
+<p>Gain of an ideal dish depends on its area measured in square wavelengths. Doubling the frequency halves the wavelength. The same dish then measures twice as wide in wavelengths, and its area in square wavelengths becomes four times larger. A power ratio of 4 is about 6 dB.</p>
+<pre class="worked">gain change (dB) = 10 log10((f2 / f1)^2)
+f2 / f1 = 2
+10 log10(2^2) = 10 log10(4) = 6.02 dB, about 6 dB
+= 6.02 dB</pre>
+<p><strong>Why not B?</strong> 3 dB is a doubling of gain, but gain grows with frequency squared, so it quadruples.</p>
+</div>
+</details>
+</article>
+<article id="e9d02">
+<h2>E9D02</h2>
+<p class="stem">How can two linearly polarized Yagi antennas be used to produce circular polarization?</p>
+<ol class="opts">
+<li><span class="l">A</span> Stack two Yagis to form an array with the respective elements in parallel planes fed 90 degrees out of phase</li>
+<li><span class="l">B</span> Stack two Yagis to form an array with the respective elements in parallel planes fed in phase</li>
+<li><span class="l">C</span> Arrange two Yagis on the same axis and perpendicular to each other with the driven elements at the same point on the boom and fed 90 degrees out of phase</li>
+<li><span class="l">D</span> Arrange two Yagis collinear to each other with the driven elements fed 180 degrees out of phase</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>C</strong>. Arrange two Yagis on the same axis and perpendicular to each other with the driven elements at the same point on the boom and fed 90 degrees out of phase</p>
+<div class="ex">
+<p><strong>Why C is right.</strong> C. Two Yagis at right angles on one boom, fed a quarter cycle apart, combine their fields into one that rotates, which is circular polarization.</p>
+<p>One Yagi might be horizontal and the other vertical. Their driven elements sit at the same spot on the boom, so their waves start together. Feeding one 90 degrees behind the other makes the combined electric field turn in a circle as the wave travels. Satellite stations use this so the signal holds up as the spacecraft tumbles.</p>
+<p><strong>Why not A?</strong> Yagis with parallel elements share one polarization, so phasing them cannot produce a rotating field.</p>
+</div>
+</details>
+</article>
+<article id="e9d03">
+<h2>E9D03</h2>
+<p class="stem">What is the most efficient location for a loading coil on an electrically short whip?</p>
+<ol class="opts">
+<li><span class="l">A</span> Near the center of the vertical radiator</li>
+<li><span class="l">B</span> As low as possible on the vertical radiator</li>
+<li><span class="l">C</span> At a voltage maximum</li>
+<li><span class="l">D</span> At a voltage null</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>A</strong>. Near the center of the vertical radiator</p>
+<div class="ex">
+<p><strong>Why A is right.</strong> A. A coil near the middle keeps current high along the lower half while keeping the coil small, the best balance of radiation and loss.</p>
+<p>A short whip radiates mainly where its current is high. A coil at the base leaves the whole whip above it with tapering current. Moving the coil up keeps full current on the section below, raising radiation resistance. But higher up, the coil needs more turns, which add loss. Near the center is the usual best tradeoff.</p>
+<p><strong>Why not B?</strong> A base coil is easy to build but leaves low current on the whip, so it radiates less efficiently.</p>
+</div>
+</details>
+</article>
+<article id="e9d04">
+<h2>E9D04</h2>
+<p class="stem">Why should antenna loading coils have a high ratio of reactance to resistance?</p>
+<ol class="opts">
+<li><span class="l">A</span> To swamp out harmonics</li>
+<li><span class="l">B</span> To lower the radiation angle</li>
+<li><span class="l">C</span> To maximize efficiency</li>
+<li><span class="l">D</span> To minimize the Q</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>C</strong>. To maximize efficiency</p>
+<div class="ex">
+<p><strong>Why C is right.</strong> C. A coil with a high ratio of reactance to resistance has little loss resistance, so less power turns into heat in the coil.</p>
+<p>The ratio of reactance to resistance is the coil&#x27;s Q. A loading coil sits where current is high, so any resistance in it burns power. A short antenna already has low radiation resistance, so even a few ohms of coil loss can waste much of the power. Thick wire and good spacing give a high-Q, efficient coil.</p>
+<p><strong>Why not D?</strong> A high ratio of reactance to resistance is high Q, the opposite of minimizing Q.</p>
+</div>
+</details>
+</article>
+<article id="e9d05">
+<h2>E9D05</h2>
+<p class="stem">Approximately how long is a Yagi’s driven element?</p>
+<ol class="opts">
+<li><span class="l">A</span> 234 divided by frequency in MHz</li>
+<li><span class="l">B</span> 1005 divided by frequency in MHz</li>
+<li><span class="l">C</span> 1/4 wavelength</li>
+<li><span class="l">D</span> 1/2 wavelength</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>D</strong>. 1/2 wavelength</p>
+<div class="ex">
+<p><strong>Why D is right.</strong> D. The driven element is the fed part of a Yagi, and it works as a resonant half-wave dipole, so it is about 1/2 wavelength.</p>
+<p>A Yagi has one fed element plus parasitic elements that are not wired to the feed line. The fed element is a dipole sized near resonance, about a half wavelength. Nearby elements change its impedance a little, so its exact length is trimmed during tuning.</p>
+<p><strong>Why not C?</strong> A quarter wavelength fits a vertical over a ground plane, not a Yagi&#x27;s dipole driven element.</p>
+</div>
+</details>
+</article>
+<article id="e9d06">
+<h2>E9D06</h2>
+<p class="stem">What happens to SWR bandwidth when one or more loading coils are used to resonate an electrically short antenna?</p>
+<ol class="opts">
+<li><span class="l">A</span> It is increased</li>
+<li><span class="l">B</span> It is decreased</li>
+<li><span class="l">C</span> It is unchanged if the loading coil is located at the feed point</li>
+<li><span class="l">D</span> It is unchanged if the loading coil is located at a voltage maximum point</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>B</strong>. It is decreased</p>
+<div class="ex">
+<p><strong>Why B is right.</strong> B. A loaded short antenna stores much more energy than it radiates, so its Q is high and its SWR rises quickly away from resonance.</p>
+<p>A short antenna has large capacitive reactance and small radiation resistance. The loading coil cancels the reactance at one frequency. Move off that frequency and the leftover reactance grows fast compared with the small resistance. The SWR climbs quickly, so the usable range shrinks. Coil position does not avoid this.</p>
+<p><strong>Why not A?</strong> Loading raises Q, which narrows bandwidth instead of widening it.</p>
+</div>
+</details>
+</article>
+<article id="e9d07">
+<h2>E9D07</h2>
+<p class="stem">What is an advantage of top loading an electrically short HF vertical antenna?</p>
+<ol class="opts">
+<li><span class="l">A</span> Lower Q</li>
+<li><span class="l">B</span> Greater structural strength</li>
+<li><span class="l">C</span> Higher losses</li>
+<li><span class="l">D</span> Improved radiation efficiency</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>D</strong>. Improved radiation efficiency</p>
+<div class="ex">
+<p><strong>Why D is right.</strong> D. A top hat keeps current high all the way up the short vertical, which raises its radiation resistance and its efficiency.</p>
+<p>Top loading adds capacitance at the top, often wires or a disk called a capacity hat. Current can now flow into that capacitance instead of dropping to zero at the tip. More of the vertical carries strong current, so it radiates more. It also needs a smaller loading coil, or none, which cuts coil loss.</p>
+<p><strong>Why not C?</strong> Top loading cuts losses relative to radiated power, so higher losses is the opposite of the advantage.</p>
+</div>
+</details>
+</article>
+<article id="e9d08">
+<h2>E9D08</h2>
+<p class="stem">What happens as the Q of an antenna increases?</p>
+<ol class="opts">
+<li><span class="l">A</span> SWR bandwidth increases</li>
+<li><span class="l">B</span> SWR bandwidth decreases</li>
+<li><span class="l">C</span> Gain is reduced</li>
+<li><span class="l">D</span> More common-mode current is present on the feed line</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>B</strong>. SWR bandwidth decreases</p>
+<div class="ex">
+<p><strong>Why B is right.</strong> B. A higher Q means sharper resonance, so the impedance changes faster with frequency and the SWR bandwidth gets narrower.</p>
+<p>Q compares stored energy with energy lost or radiated each cycle. A high-Q antenna acts like a sharply tuned circuit. It matches well right at resonance, but its reactance grows quickly as you tune away. That makes the range of frequencies with acceptable SWR smaller.</p>
+<p><strong>Why not A?</strong> SWR bandwidth widens as Q drops, not as it rises.</p>
+</div>
+</details>
+</article>
+<article id="e9d09">
+<h2>E9D09</h2>
+<p class="stem">What is the function of a loading coil in an electrically short antenna?</p>
+<ol class="opts">
+<li><span class="l">A</span> To increase the SWR bandwidth by increasing net reactance</li>
+<li><span class="l">B</span> To lower the losses</li>
+<li><span class="l">C</span> To lower the Q</li>
+<li><span class="l">D</span> To resonate the antenna by cancelling the capacitive reactance</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>D</strong>. To resonate the antenna by cancelling the capacitive reactance</p>
+<div class="ex">
+<p><strong>Why D is right.</strong> D. A short antenna looks capacitive, and the coil adds equal inductive reactance so the two cancel and the antenna resonates.</p>
+<p>An antenna shorter than resonant length has a feed point impedance with capacitive reactance. That reactance blocks power from flowing in. A series inductor adds an equal amount of inductive reactance. They cancel, leaving mainly resistance, and the antenna is resonant at the chosen frequency.</p>
+<p><strong>Why not B?</strong> A loading coil adds its own resistance, so it raises losses slightly rather than lowering them.</p>
+</div>
+</details>
+</article>
+<article id="e9d10">
+<h2>E9D10</h2>
+<p class="stem">How does radiation resistance of a base-fed whip antenna change below its resonant frequency?</p>
+<ol class="opts">
+<li><span class="l">A</span> Radiation resistance increases</li>
+<li><span class="l">B</span> Radiation resistance decreases</li>
+<li><span class="l">C</span> Radiation resistance becomes imaginary</li>
+<li><span class="l">D</span> Radiation resistance does not depend on frequency</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>B</strong>. Radiation resistance decreases</p>
+<div class="ex">
+<p><strong>Why B is right.</strong> B. Below resonance the whip is shorter in wavelengths, and radiation resistance drops quickly as electrical length shrinks.</p>
+<p>A quarter-wave whip over a good ground has about 36 ohms of radiation resistance. Lower the frequency and the same whip becomes a smaller fraction of a wavelength. Radiation resistance falls roughly with the square of that electrical length. A whip one-eighth wavelength long has only about 6 ohms.</p>
+<p><strong>Why not C?</strong> Radiation resistance is always a real resistance; the imaginary part of impedance is the reactance.</p>
+</div>
+</details>
+</article>
+<article id="e9d11">
+<h2>E9D11</h2>
+<p class="stem">Why do most two-element Yagis with normal spacing have a reflector instead of a director?</p>
+<ol class="opts">
+<li><span class="l">A</span> Lower SWR</li>
+<li><span class="l">B</span> Higher receiving directivity factor</li>
+<li><span class="l">C</span> Greater front-to-side</li>
+<li><span class="l">D</span> Higher gain</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>D</strong>. Higher gain</p>
+<div class="ex">
+<p><strong>Why D is right.</strong> D. At normal element spacing, a driven element plus reflector gives slightly more forward gain than a driven element plus director.</p>
+<p>In a two-element beam, the parasitic element&#x27;s current phase sets which way the beam points and how much gain it has. With typical spacing near 0.1 to 0.2 wavelength, the reflector layout comes out a bit ahead in gain. That is why most two-element Yagis use a reflector behind the driven element.</p>
+<p><strong>Why not C?</strong> Front-to-side ratio is not the main reason; the reflector is chosen for forward gain.</p>
+</div>
+</details>
+</article>
+<article id="e9d12">
+<h2>E9D12</h2>
+<p class="stem">What is the purpose of making a Yagi’s parasitic elements either longer or shorter than resonance?</p>
+<ol class="opts">
+<li><span class="l">A</span> Wind torque cancellation</li>
+<li><span class="l">B</span> Mechanical balance</li>
+<li><span class="l">C</span> Control of phase shift</li>
+<li><span class="l">D</span> Minimize losses</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>C</strong>. Control of phase shift</p>
+<div class="ex">
+<p><strong>Why C is right.</strong> C. Detuning a parasitic element sets the phase of its induced current, which decides whether it pushes the beam forward or backward.</p>
+<p>A parasitic element is not fed; current is induced in it by the driven element. Made slightly long, it acts inductive and its current lags, so it works as a reflector. Made slightly short, it acts capacitive and its current leads, so it works as a director. The right phase makes signals add toward the front.</p>
+<p><strong>Why not D?</strong> Element losses depend mainly on conductor material and size; the length is detuned on purpose to set phase.</p>
+</div>
+</details>
+</article>
+<nav class="pager" aria-label="Groups"><p><a href="../e9c/">Previous: E9C Practical wire antennas; folded dipoles; phased arrays; effects of ground near antennas</a></p><p><a href="../e9e/">Next: E9E Impedance matching: matching antennas to feed lines; phasing lines; power dividers</a></p></nav>
+<footer>
+<p>QSO Ready is an independent study app for the US amateur radio license exams. Questions: NCVEC Question Pool Committee,
+released to the public domain. Rule quotes: 47 CFR, eCFR as of 2026-10-29. Content version 1.</p>
+<p><a href="../../">QSO Ready home</a> · <a href="../../privacy/">Privacy policy</a> · <a href="mailto:hello@saurabhupadhyay.in">hello@saurabhupadhyay.in</a></p>
+</footer>
+</main>
+</body>
+</html>

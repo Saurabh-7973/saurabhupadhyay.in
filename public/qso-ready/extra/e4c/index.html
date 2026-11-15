@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>E4C Receiver performance: phase noise, noise floor, image rejection, minimum detectable signal (MDS), increasing signal-to-noise ratio and dynamic range, noise figure, reciprocal mixing; selectivity; SDR non-linearity; use of attenuators at low frequencies: Amateur Extra questions explained · QSO Ready</title>
+<meta name="description" content="Amateur Extra pool group E4C (Receiver performance: phase noise, noise floor, image rejection, minimum detectable signal (MDS), increasing signal-to-noise ratio and dynamic range, noise figure, reciprocal mixing; selectivity; SDR non-linearity; use of attenuators at low frequencies): all 14 questions with correct answers and plain-English explanations.">
+<link rel="canonical" href="https://saurabhupadhyay.in/qso-ready/extra/e4c/">
+<link rel="stylesheet" href="../../site.css">
+</head>
+<body>
+<main>
+<p class="notice">Not affiliated with or endorsed by the FCC, NCVEC, ARRL or any VEC. Questions are the NCVEC pools word for word (public domain); explanations are our own. Exam rules and fees can change: check with your VE team.</p>
+<nav class="crumbs" aria-label="Breadcrumb"><a href="../../">QSO Ready</a> › <a href="../">Amateur Extra</a> › E4C</nav>
+<h1>E4C: Receiver performance: phase noise, noise floor, image rejection, minimum detectable signal (MDS), increasing signal-to-noise ratio and dynamic range, noise figure, reciprocal mixing; selectivity; SDR non-linearity; use of attenuators at low frequencies</h1>
+<p>Group E4C of the Amateur Extra pool (2024–2028) has 14 active questions. One of them is on every Amateur Extra exam. Each is shown word for word; open it to see the correct answer and our explanation.</p>
+<article id="e4c01">
+<h2>E4C01</h2>
+<p class="stem">What is an effect of excessive phase noise in an SDR receiver’s master clock oscillator?</p>
+<ol class="opts">
+<li><span class="l">A</span> It limits the receiver’s ability to receive strong signals</li>
+<li><span class="l">B</span> It can affect the receiver’s frequency calibration</li>
+<li><span class="l">C</span> It decreases the receiver’s third-order intercept point</li>
+<li><span class="l">D</span> It can combine with strong signals on nearby frequencies to generate interference</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>D</strong>. It can combine with strong signals on nearby frequencies to generate interference</p>
+<div class="ex">
+<p><strong>Why D is right.</strong> D. A noisy clock spreads its noise onto strong nearby signals during sampling, and some of that noise lands on the frequency you are receiving.</p>
+<p>Phase noise is small, random jitter in an oscillator&#x27;s timing. It shows up as a skirt of noise on both sides of the oscillator frequency. In an SDR the master clock sets the sampling instants, so a strong signal close to your frequency gets smeared by that jitter, raising the noise you hear. This is called reciprocal mixing.</p>
+<p><strong>Why not B?</strong> Calibration depends on the clock&#x27;s average frequency, not its short-term jitter.</p>
+</div>
+</details>
+</article>
+<article id="e4c02">
+<h2>E4C02</h2>
+<p class="stem">Which of the following receiver circuits can be effective in eliminating interference from strong out-of-band signals?</p>
+<ol class="opts">
+<li><span class="l">A</span> A front-end filter or preselector</li>
+<li><span class="l">B</span> A narrow IF filter</li>
+<li><span class="l">C</span> A notch filter</li>
+<li><span class="l">D</span> A properly adjusted product detector</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>A</strong>. A front-end filter or preselector</p>
+<div class="ex">
+<p><strong>Why A is right.</strong> A. A front-end filter weakens strong signals outside the band before they reach the first amplifier and mixer, where they would cause overload.</p>
+<p>Out-of-band signals, such as a nearby broadcast station, can overload a receiver&#x27;s first stages and create false signals. A preselector is a tuned filter at the input. It passes the band you want and weakens the rest, so later circuits only see signals they can handle.</p>
+<p><strong>Why not B?</strong> An IF filter comes after the mixer, so overload from the strong signal has already happened.</p>
+</div>
+</details>
+</article>
+<article id="e4c03">
+<h2>E4C03</h2>
+<p class="stem">What is the term for the suppression in an FM receiver of one signal by another stronger signal on the same frequency?</p>
+<ol class="opts">
+<li><span class="l">A</span> Desensitization</li>
+<li><span class="l">B</span> Cross-modulation interference</li>
+<li><span class="l">C</span> Capture effect</li>
+<li><span class="l">D</span> Frequency discrimination</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>C</strong>. Capture effect</p>
+<div class="ex">
+<p><strong>Why C is right.</strong> C. In FM, the stronger of two signals on one frequency takes over the receiver and the weaker one nearly vanishes; this is the capture effect.</p>
+<p>An FM receiver&#x27;s limiter and detector respond mostly to the strongest signal present. If one signal is a few dB stronger, it controls the output. That is why on a repeater you often hear only the stronger of two stations that transmit at once.</p>
+<p><strong>Why not A?</strong> Desensitization is lost sensitivity from a strong signal on a nearby frequency, not the same frequency.</p>
+</div>
+</details>
+</article>
+<article id="e4c04">
+<h2>E4C04</h2>
+<p class="stem">What is the noise figure of a receiver?</p>
+<ol class="opts">
+<li><span class="l">A</span> The ratio of atmospheric noise to phase noise</li>
+<li><span class="l">B</span> The ratio of the noise bandwidth in hertz to the theoretical bandwidth of a resistive network</li>
+<li><span class="l">C</span> The ratio in dB of the noise generated in the receiver to atmospheric noise</li>
+<li><span class="l">D</span> The ratio in dB of the noise generated by the receiver to the theoretical minimum noise</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>D</strong>. The ratio in dB of the noise generated by the receiver to the theoretical minimum noise</p>
+<div class="ex">
+<p><strong>Why D is right.</strong> D. Noise figure tells, in dB, how much more noise a receiver adds than a perfect receiver would.</p>
+<p>Every resistor and transistor produces some noise of its own. A perfect receiver would add none, so its noise figure would be 0 dB. A receiver with a 3 dB noise figure makes the signal-to-noise ratio 3 dB worse than that ideal. Lower is better, especially for weak-signal VHF and UHF work.</p>
+<p><strong>Why not C?</strong> Atmospheric noise comes from outside; noise figure counts only noise the receiver creates.</p>
+</div>
+</details>
+</article>
+<article id="e4c05">
+<h2>E4C05</h2>
+<p class="stem">What does a receiver noise floor of -174 dBm represent?</p>
+<ol class="opts">
+<li><span class="l">A</span> The receiver noise is 6 dB above the theoretical minimum</li>
+<li><span class="l">B</span> The theoretical noise in a 1 Hz bandwidth at the input of a perfect receiver at room temperature</li>
+<li><span class="l">C</span> The noise figure of a 1 Hz bandwidth receiver</li>
+<li><span class="l">D</span> The receiver noise is 3 dB above theoretical minimum</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>B</strong>. The theoretical noise in a 1 Hz bandwidth at the input of a perfect receiver at room temperature</p>
+<div class="ex">
+<p><strong>Why B is right.</strong> B. -174 dBm is the thermal noise power in a 1 Hz bandwidth at room temperature, a floor even a perfect receiver cannot go below.</p>
+<p>Thermal noise power is P = kTB: k is Boltzmann&#x27;s constant (1.38 × 10^-23 joules per kelvin), T is temperature in kelvin, and B is bandwidth in hertz. At 290 kelvin and 1 Hz, P is about 4 × 10^-21 W, which is -174 dBm. A wider bandwidth or a noisier receiver raises the floor.</p>
+<p><strong>Why not C?</strong> Noise figure is a ratio in dB, not a power level in dBm.</p>
+</div>
+</details>
+</article>
+<article id="e4c06">
+<h2>E4C06</h2>
+<p class="stem">How much does increasing a receiver’s bandwidth from 50 Hz to 1,000 Hz increase the receiver’s noise floor?</p>
+<ol class="opts">
+<li><span class="l">A</span> 3 dB</li>
+<li><span class="l">B</span> 5 dB</li>
+<li><span class="l">C</span> 10 dB</li>
+<li><span class="l">D</span> 13 dB</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>D</strong>. 13 dB</p>
+<div class="ex">
+<p><strong>Why D is right.</strong> D. Noise power grows in step with bandwidth, and 20 times the bandwidth means about 13 dB more noise.</p>
+<p>Thermal noise is spread evenly across frequency, so a receiver lets in noise in proportion to how wide its passband is. Going from 50 Hz to 1,000 Hz lets in 20 times as much noise power. Converting that ratio to decibels gives about 13 dB.</p>
+<pre class="worked">Increase (dB) = 10 × log10(B2 / B1)
+Increase = 10 × log10(1,000 Hz / 50 Hz)
+= 10 × log10(20)
+= 10 × 1.301 = 13.0 dB
+= 13 dB</pre>
+<p><strong>Why not C?</strong> 10 dB would be a tenfold increase, from 50 Hz to 500 Hz.</p>
+</div>
+</details>
+</article>
+<article id="e4c07">
+<h2>E4C07</h2>
+<p class="stem">What does the MDS of a receiver represent?</p>
+<ol class="opts">
+<li><span class="l">A</span> The meter display sensitivity</li>
+<li><span class="l">B</span> The minimum discernible signal</li>
+<li><span class="l">C</span> The modulation distortion specification</li>
+<li><span class="l">D</span> The maximum detectable spectrum</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>B</strong>. The minimum discernible signal</p>
+<div class="ex">
+<p><strong>Why B is right.</strong> B. MDS stands for minimum discernible signal, the weakest signal a receiver can detect above its own noise.</p>
+<p>MDS is stated in dBm for a given bandwidth, such as -130 dBm in 500 Hz. It is often defined as the signal level equal to the receiver&#x27;s noise, which raises the output 3 dB above noise alone. A lower (more negative) MDS means a more sensitive receiver.</p>
+<p><strong>Why not D?</strong> MDS is a single weak-signal level, not a span of frequencies.</p>
+</div>
+</details>
+</article>
+<article id="e4c08">
+<h2>E4C08</h2>
+<p class="stem">An SDR receiver is overloaded when input signals exceed what level?</p>
+<ol class="opts">
+<li><span class="l">A</span> One-half of the maximum sample rate</li>
+<li><span class="l">B</span> One-half of the maximum sampling buffer size</li>
+<li><span class="l">C</span> The maximum count value of the analog-to-digital converter</li>
+<li><span class="l">D</span> The reference voltage of the analog-to-digital converter</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>D</strong>. The reference voltage of the analog-to-digital converter</p>
+<div class="ex">
+<p><strong>Why D is right.</strong> D. The converter can only report voltages up to its reference voltage; larger inputs are clipped, which distorts everything being digitized.</p>
+<p>An analog-to-digital converter (ADC) compares the input with a reference voltage. Every input above that level gives the same top value, so the waveform&#x27;s peaks are flattened. Clipping creates false signals across the band. That is why SDRs show an overload warning and offer attenuators.</p>
+<p><strong>Why not A?</strong> The sample rate limits the frequency range, not how strong a signal can be.</p>
+</div>
+</details>
+</article>
+<article id="e4c09">
+<h2>E4C09</h2>
+<p class="stem">Which of the following choices is a good reason for selecting a high IF for a superheterodyne HF or VHF communications receiver?</p>
+<ol class="opts">
+<li><span class="l">A</span> Fewer components in the receiver</li>
+<li><span class="l">B</span> Reduced drift</li>
+<li><span class="l">C</span> Easier for front-end circuitry to eliminate image responses</li>
+<li><span class="l">D</span> Improved receiver noise figure</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>C</strong>. Easier for front-end circuitry to eliminate image responses</p>
+<div class="ex">
+<p><strong>Why C is right.</strong> C. With a high IF, the image frequency lies far from the wanted signal, so the front-end filter can reject it easily.</p>
+<p>A superheterodyne mixes the incoming signal with a local oscillator to make a fixed intermediate frequency (IF). A second, unwanted input frequency, the image, also mixes to that IF; it sits twice the IF away from the wanted signal. A high IF pushes the image far away, where the input filter weakens it.</p>
+<p><strong>Why not D?</strong> Noise figure depends mostly on the first amplifier and mixer, not on the IF chosen.</p>
+</div>
+</details>
+</article>
+<article id="e4c10">
+<h2>E4C10</h2>
+<p class="stem">What is an advantage of having a variety of receiver bandwidths from which to select?</p>
+<ol class="opts">
+<li><span class="l">A</span> The noise figure of the RF amplifier can be adjusted to match the modulation type, thus increasing receiver sensitivity</li>
+<li><span class="l">B</span> Receiver power consumption can be reduced when wider bandwidth is not required</li>
+<li><span class="l">C</span> Receive bandwidth can be set to match the modulation bandwidth, maximizing signal-to-noise ratio and minimizing interference</li>
+<li><span class="l">D</span> Multiple frequencies can be received simultaneously if desired</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>C</strong>. Receive bandwidth can be set to match the modulation bandwidth, maximizing signal-to-noise ratio and minimizing interference</p>
+<div class="ex">
+<p><strong>Why C is right.</strong> C. Matching the filter to the signal&#x27;s width lets in all of the signal but as little noise and nearby interference as possible.</p>
+<p>A CW signal needs a few hundred hertz, SSB voice about 2.4 kHz, and AM about 6 kHz. Extra bandwidth only adds noise and neighbors, while too little cuts off part of the signal. Choosing the right filter for each mode gives the best signal-to-noise ratio.</p>
+<p><strong>Why not A?</strong> Selecting a bandwidth does not change the RF amplifier&#x27;s noise figure.</p>
+</div>
+</details>
+</article>
+<article id="e4c11">
+<h2>E4C11</h2>
+<p class="stem">Why does input attenuation reduce receiver overload on the lower frequency HF bands with little or no impact on signal-to-noise ratio?</p>
+<ol class="opts">
+<li><span class="l">A</span> The attenuator has a low-pass filter to increase the strength of lower frequency signals</li>
+<li><span class="l">B</span> The attenuator has a noise filter to suppress interference</li>
+<li><span class="l">C</span> Signals are attenuated separately from the noise</li>
+<li><span class="l">D</span> Atmospheric noise is generally greater than internally generated noise even after attenuation</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>D</strong>. Atmospheric noise is generally greater than internally generated noise even after attenuation</p>
+<div class="ex">
+<p><strong>Why D is right.</strong> D. On the low HF bands, outside atmospheric noise is far stronger than the receiver&#x27;s own noise, so cutting signal and noise together keeps their ratio the same.</p>
+<p>An attenuator lowers the signal and the outside noise arriving with it by the same amount. As long as that outside noise stays above the receiver&#x27;s internal noise, the signal-to-noise ratio does not change. Meanwhile, strong signals drop to levels the receiver can handle without overload.</p>
+<p><strong>Why not C?</strong> An attenuator treats signal and noise alike; it cannot separate them.</p>
+</div>
+</details>
+</article>
+<article id="e4c12">
+<h2>E4C12</h2>
+<p class="stem">How does a narrow-band roofing filter affect receiver performance?</p>
+<ol class="opts">
+<li><span class="l">A</span> It improves sensitivity by reducing front-end noise</li>
+<li><span class="l">B</span> It improves intelligibility by using low Q circuitry to reduce ringing</li>
+<li><span class="l">C</span> It improves blocking dynamic range by attenuating strong signals near the receive frequency</li>
+<li><span class="l">D</span> All these choices are correct</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>C</strong>. It improves blocking dynamic range by attenuating strong signals near the receive frequency</p>
+<div class="ex">
+<p><strong>Why C is right.</strong> C. A narrow roofing filter early in the receiver stops strong nearby signals before later stages, so those stages do not compress.</p>
+<p>Blocking dynamic range is the span between the weakest signal you can hear and the strongest nearby signal that starts reducing the receiver&#x27;s gain. A roofing filter, often a crystal filter a few kHz wide, sits right after the first mixer. Signals outside its passband never reach the amplifiers and DSP that follow.</p>
+<p><strong>Why not A?</strong> The filter does not lower the noise made by the front end itself.</p>
+</div>
+</details>
+</article>
+<article id="e4c13">
+<h2>E4C13</h2>
+<p class="stem">What is reciprocal mixing?</p>
+<ol class="opts">
+<li><span class="l">A</span> Two out-of-band signals mixing to generate an in-band spurious signal</li>
+<li><span class="l">B</span> In-phase signals cancelling in a mixer resulting in loss of receiver sensitivity</li>
+<li><span class="l">C</span> Two digital signals combining from alternate time slots</li>
+<li><span class="l">D</span> Local oscillator phase noise mixing with adjacent strong signals to create interference to desired signals</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>D</strong>. Local oscillator phase noise mixing with adjacent strong signals to create interference to desired signals</p>
+<div class="ex">
+<p><strong>Why D is right.</strong> D. Reciprocal mixing happens when the noise around a local oscillator mixes with a strong nearby signal and lands on the frequency you want.</p>
+<p>A real local oscillator is not one pure frequency; it has phase noise, a faint skirt on either side. When a strong signal near your frequency mixes with that skirt, it produces noise inside your passband. You hear the hiss rise when the strong station transmits, even though it is outside your filter.</p>
+<p><strong>Why not A?</strong> Two signals mixing into a new in-band signal is intermodulation, not reciprocal mixing.</p>
+</div>
+</details>
+</article>
+<article id="e4c14">
+<h2>E4C14</h2>
+<p class="stem">What is the purpose of the receiver IF Shift control?</p>
+<ol class="opts">
+<li><span class="l">A</span> To permit listening on a different frequency from the transmitting frequency</li>
+<li><span class="l">B</span> To change frequency rapidly</li>
+<li><span class="l">C</span> To reduce interference from stations transmitting on adjacent frequencies</li>
+<li><span class="l">D</span> To tune in stations slightly off frequency without changing the transmit frequency</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>C</strong>. To reduce interference from stations transmitting on adjacent frequencies</p>
+<div class="ex">
+<p><strong>Why C is right.</strong> C. IF shift slides the filter&#x27;s passband up or down relative to the signal so a station on an adjacent frequency falls outside it.</p>
+<p>The receive frequency stays the same, but the filter window moves. If an interfering signal sits slightly above your station, shift the passband down so the interference drops off the edge. You may lose a little high or low audio, but the signal is often easier to understand.</p>
+<p><strong>Why not D?</strong> Tuning an off-frequency station without moving your transmit frequency is RIT, receiver incremental tuning.</p>
+</div>
+</details>
+</article>
+<nav class="pager" aria-label="Groups"><p><a href="../e4b/">Previous: E4B Measurement technique and limitations: instrument accuracy and performance limitations; probes; techniques to minimize errors; measurement of Q; instrument calibration; S parameters; vector network analyzers; RF signals</a></p><p><a href="../e4d/">Next: E4D Receiver performance characteristics: dynamic range; intermodulation and cross-modulation interference; third-order intercept; desensitization; preselector; sensitivity; link margin</a></p></nav>
+<footer>
+<p>QSO Ready is an independent study app for the US amateur radio license exams. Questions: NCVEC Question Pool Committee,
+released to the public domain. Rule quotes: 47 CFR, eCFR as of 2026-10-29. Content version 1.</p>
+<p><a href="../../">QSO Ready home</a> · <a href="../../privacy/">Privacy policy</a> · <a href="mailto:hello@saurabhupadhyay.in">hello@saurabhupadhyay.in</a></p>
+</footer>
+</main>
+</body>
+</html>

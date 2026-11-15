@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>G8A Carriers and modulation: AM, FM, and single sideband; modulation envelope; digital modulation; overmodulation; link budgets and link margins: General questions explained · QSO Ready</title>
+<meta name="description" content="General pool group G8A (Carriers and modulation: AM, FM, and single sideband; modulation envelope; digital modulation; overmodulation; link budgets and link margins): all 14 questions with correct answers and plain-English explanations.">
+<link rel="canonical" href="https://saurabhupadhyay.in/qso-ready/general/g8a/">
+<link rel="stylesheet" href="../../site.css">
+</head>
+<body>
+<main>
+<p class="notice">Not affiliated with or endorsed by the FCC, NCVEC, ARRL or any VEC. Questions are the NCVEC pools word for word (public domain); explanations are our own. Exam rules and fees can change: check with your VE team.</p>
+<nav class="crumbs" aria-label="Breadcrumb"><a href="../../">QSO Ready</a> › <a href="../">General</a> › G8A</nav>
+<h1>G8A: Carriers and modulation: AM, FM, and single sideband; modulation envelope; digital modulation; overmodulation; link budgets and link margins</h1>
+<p>Group G8A of the General pool (2023–2027) has 14 active questions. One of them is on every General exam. Each is shown word for word; open it to see the correct answer and our explanation.</p>
+<article id="g8a01">
+<h2>G8A01</h2>
+<p class="stem">How is direct binary FSK modulation generated?</p>
+<ol class="opts">
+<li><span class="l">A</span> By keying an FM transmitter with a sub-audible tone</li>
+<li><span class="l">B</span> By changing an oscillator’s frequency directly with a digital control signal</li>
+<li><span class="l">C</span> By using a transceiver’s computer data interface protocol to change frequencies</li>
+<li><span class="l">D</span> By reconfiguring the CW keying input to act as a tone generator</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>B</strong>. By changing an oscillator’s frequency directly with a digital control signal</p>
+<div class="ex">
+<p><strong>Why B is right.</strong> B. &#x27;Direct&#x27; means the data line itself sets the oscillator&#x27;s frequency, with no audio tones in between.</p>
+<p>FSK stands for frequency shift keying. In the direct method, the oscillator moves to one frequency for a 1 and another for a 0. Other methods feed audio tones into an SSB or FM transmitter instead.</p>
+<p><strong>Why not A?</strong> A sub-audible tone keys a repeater&#x27;s access, not the data bits of an FSK signal.</p>
+</div>
+</details>
+</article>
+<article id="g8a02">
+<h2>G8A02</h2>
+<p class="stem">What is the name of the process that changes the phase angle of an RF signal to convey information?</p>
+<ol class="opts">
+<li><span class="l">A</span> Phase convolution</li>
+<li><span class="l">B</span> Phase modulation</li>
+<li><span class="l">C</span> Phase transformation</li>
+<li><span class="l">D</span> Phase inversion</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>B</strong>. Phase modulation</p>
+<div class="ex">
+<p><strong>Why B is right.</strong> B. Modulation is the name for varying a carrier to carry information, and the word in front names what varies, so varying phase is phase modulation.</p>
+<p>Phase is where a wave is in its cycle at a given moment. Phase modulation shifts that timing a little ahead or behind in step with the audio or data. The receiver reads those shifts to recover the message.</p>
+<p><strong>Why not D?</strong> Phase inversion names one 180-degree flip, not the general process of varying phase to carry information.</p>
+</div>
+</details>
+</article>
+<article id="g8a03">
+<h2>G8A03</h2>
+<p class="stem">What is the name of the process that changes the instantaneous frequency of an RF wave to convey information?</p>
+<ol class="opts">
+<li><span class="l">A</span> Frequency convolution</li>
+<li><span class="l">B</span> Frequency transformation</li>
+<li><span class="l">C</span> Frequency conversion</li>
+<li><span class="l">D</span> Frequency modulation</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>D</strong>. Frequency modulation</p>
+<div class="ex">
+<p><strong>Why D is right.</strong> D. Changing the instantaneous frequency to carry information is frequency modulation.</p>
+<p>In FM, the carrier&#x27;s frequency moves up and down around its center in step with the audio. Louder audio moves it farther. The amplitude stays the same, so the receiver reads only the frequency changes.</p>
+<p><strong>Why not C?</strong> Frequency conversion moves a whole signal to a new frequency in a mixer; it carries no message by itself.</p>
+</div>
+</details>
+</article>
+<article id="g8a04">
+<h2>G8A04</h2>
+<p class="stem">What emission is produced by a reactance modulator connected to a transmitter RF amplifier stage?</p>
+<ol class="opts">
+<li><span class="l">A</span> Multiplex modulation</li>
+<li><span class="l">B</span> Phase modulation</li>
+<li><span class="l">C</span> Amplitude modulation</li>
+<li><span class="l">D</span> Pulse modulation</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>B</strong>. Phase modulation</p>
+<div class="ex">
+<p><strong>Why B is right.</strong> B. A reactance modulator on an RF amplifier stage produces phase modulation.</p>
+<p>A reactance modulator acts like a capacitor or coil whose value follows the audio. On an amplifier stage, that changing reactance shifts the timing, or phase, of the RF passing through. If it were placed on the oscillator instead, it would shift frequency and make FM.</p>
+<p><strong>Why not C?</strong> The reactance changes timing, not the strength of the signal, so it is not AM.</p>
+</div>
+</details>
+</article>
+<article id="g8a05">
+<h2>G8A05</h2>
+<p class="stem">What type of modulation varies the instantaneous power level of the RF signal?</p>
+<ol class="opts">
+<li><span class="l">A</span> Power modulation</li>
+<li><span class="l">B</span> Phase modulation</li>
+<li><span class="l">C</span> Frequency modulation</li>
+<li><span class="l">D</span> Amplitude modulation</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>D</strong>. Amplitude modulation</p>
+<div class="ex">
+<p><strong>Why D is right.</strong> D. Amplitude modulation varies the signal&#x27;s instantaneous power level.</p>
+<p>In AM, the strength of the RF wave rises and falls with the audio. A stronger moment means more power at that instant. Phase and frequency modulation keep the amplitude steady.</p>
+<p><strong>Why not A?</strong> Power modulation is not a standard name for a modulation type.</p>
+</div>
+</details>
+</article>
+<article id="g8a06">
+<h2>G8A06</h2>
+<p class="stem">Which of the following is characteristic of QPSK31?</p>
+<ol class="opts">
+<li><span class="l">A</span> It is sideband sensitive</li>
+<li><span class="l">B</span> Its encoding provides error correction</li>
+<li><span class="l">C</span> Its bandwidth is approximately the same as BPSK31</li>
+<li><span class="l">D</span> All these choices are correct</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>D</strong>. All these choices are correct</p>
+<div class="ex">
+<p><strong>Why D is right.</strong> D. QPSK31 needs the correct sideband, uses error correction, and is about as wide as BPSK31.</p>
+<p>QPSK31 uses four phase states instead of two. Reversing sideband flips the phase direction, so both stations must use the same sideband. The extra states carry error-correcting code, not extra speed. It sends 31.25 symbols per second, the same as BPSK31, so its width is about the same.</p>
+<p><strong>Why not B?</strong> Error correction is true, but A and C are also true, so B alone is incomplete.</p>
+</div>
+</details>
+</article>
+<article id="g8a07">
+<h2>G8A07</h2>
+<p class="stem">Which of the following phone emissions uses the narrowest bandwidth?</p>
+<ol class="opts">
+<li><span class="l">A</span> Single sideband</li>
+<li><span class="l">B</span> Vestigial sideband</li>
+<li><span class="l">C</span> Phase modulation</li>
+<li><span class="l">D</span> Frequency modulation</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>A</strong>. Single sideband</p>
+<div class="ex">
+<p><strong>Why A is right.</strong> A. Single sideband uses the narrowest bandwidth of these voice modes.</p>
+<p>SSB sends only one sideband and no carrier, so a voice signal needs about 3 kHz. Vestigial sideband keeps part of the second sideband, so it is wider. FM and phase modulation spread the voice over a much wider range.</p>
+<p><strong>Why not B?</strong> Vestigial sideband keeps a piece of the other sideband, making it wider than SSB.</p>
+</div>
+</details>
+</article>
+<article id="g8a08">
+<h2>G8A08</h2>
+<p class="stem">Which of the following is an effect of overmodulation?</p>
+<ol class="opts">
+<li><span class="l">A</span> Insufficient audio</li>
+<li><span class="l">B</span> Insufficient bandwidth</li>
+<li><span class="l">C</span> Frequency drift</li>
+<li><span class="l">D</span> Excessive bandwidth</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>D</strong>. Excessive bandwidth</p>
+<div class="ex">
+<p><strong>Why D is right.</strong> D. Overmodulation makes the signal take up too much bandwidth.</p>
+<p>Overmodulation happens when the audio drives the transmitter past what it can follow cleanly. The waveform gets clipped and distorted. Distortion creates new frequencies, called splatter, that spread out and interfere with nearby stations.</p>
+<p><strong>Why not B?</strong> Overmodulation makes the signal too wide, not too narrow.</p>
+</div>
+</details>
+</article>
+<article id="g8a09">
+<h2>G8A09</h2>
+<p class="stem">What type of modulation is used by FT8?</p>
+<ol class="opts">
+<li><span class="l">A</span> 8-tone frequency shift keying</li>
+<li><span class="l">B</span> Vestigial sideband</li>
+<li><span class="l">C</span> Amplitude compressed AM</li>
+<li><span class="l">D</span> 8-bit direct sequence spread spectrum</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>A</strong>. 8-tone frequency shift keying</p>
+<div class="ex">
+<p><strong>Why A is right.</strong> A. Each FT8 symbol is one of eight audio tones, so the data rides on which tone is sent.</p>
+<p>FT8 is a weak-signal digital mode, and switching among tones is a form of frequency shift keying. The signal is about 50 Hz wide.</p>
+<p><strong>Why not D?</strong> FT8 is not spread spectrum; it stays in a narrow slice of the band.</p>
+</div>
+</details>
+</article>
+<article id="g8a10">
+<h2>G8A10</h2>
+<p class="stem">What is meant by the term “flat-topping,” when referring to an amplitude-modulated phone signal?</p>
+<ol class="opts">
+<li><span class="l">A</span> Signal distortion caused by insufficient collector current</li>
+<li><span class="l">B</span> The transmitter’s automatic level control (ALC) is properly adjusted</li>
+<li><span class="l">C</span> Signal distortion caused by excessive drive or speech levels</li>
+<li><span class="l">D</span> The transmitter’s carrier is properly suppressed</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>C</strong>. Signal distortion caused by excessive drive or speech levels</p>
+<div class="ex">
+<p><strong>Why C is right.</strong> C. Too much drive asks the amplifier for more peak power than it can give, so the waveform peaks are cut off flat.</p>
+<p>That clipping is distortion. It comes from too much drive or speech level, makes the signal sound rough, and spreads it wider than it should be.</p>
+<p><strong>Why not B?</strong> A properly set ALC helps prevent flat-topping; it does not describe it.</p>
+</div>
+</details>
+</article>
+<article id="g8a11">
+<h2>G8A11</h2>
+<p class="stem">What is the modulation envelope of an AM signal?</p>
+<ol class="opts">
+<li><span class="l">A</span> The waveform created by connecting the peak values of the modulated signal</li>
+<li><span class="l">B</span> The carrier frequency that contains the signal</li>
+<li><span class="l">C</span> Spurious signals that envelop nearby frequencies</li>
+<li><span class="l">D</span> The bandwidth of the modulated signal</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>A</strong>. The waveform created by connecting the peak values of the modulated signal</p>
+<div class="ex">
+<p><strong>Why A is right.</strong> A. Joining the RF peaks traces a slow outline that rises and falls with the audio, and that outline is the envelope.</p>
+<p>On a scope, an AM signal&#x27;s RF wave rises and falls in strength. The shape traced over the peaks copies the audio that modulated it.</p>
+<p><strong>Why not B?</strong> The carrier is the RF wave inside the envelope, not the envelope itself.</p>
+</div>
+</details>
+</article>
+<article id="g8a12">
+<h2>G8A12</h2>
+<p class="stem">What is QPSK modulation?</p>
+<ol class="opts">
+<li><span class="l">A</span> Modulation using quasi-parallel to serial conversion to reduce bandwidth</li>
+<li><span class="l">B</span> Modulation using quadra-pole sideband keying to generate spread spectrum signals</li>
+<li><span class="l">C</span> Modulation using Fast Fourier Transforms to generate frequencies at the first, second, third, and fourth harmonics of the carrier frequency to improve noise immunity</li>
+<li><span class="l">D</span> Modulation in which digital data is transmitted using 0-, 90-, 180- and 270-degrees phase shift to represent pairs of bits</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>D</strong>. Modulation in which digital data is transmitted using 0-, 90-, 180- and 270-degrees phase shift to represent pairs of bits</p>
+<div class="ex">
+<p><strong>Why D is right.</strong> D. Two bits have four combinations, and four phases a quarter cycle apart give each combination its own phase.</p>
+<p>Q stands for quadrature: the four phases sit a quarter cycle, 90 degrees, apart, at 0, 90, 180 and 270 degrees. The bit pairs are 00, 01, 10 and 11, so every symbol carries two bits.</p>
+<p><strong>Why not C?</strong> QPSK does not use harmonics of the carrier; it changes the phase of one carrier.</p>
+</div>
+</details>
+</article>
+<article id="g8a13">
+<h2>G8A13</h2>
+<p class="stem">What is a link budget?</p>
+<ol class="opts">
+<li><span class="l">A</span> The financial costs associated with operating a radio link</li>
+<li><span class="l">B</span> The sum of antenna gains minus system losses</li>
+<li><span class="l">C</span> The sum of transmit power and antenna gains minus system losses as seen at the receiver</li>
+<li><span class="l">D</span> The difference between transmit power and receiver sensitivity</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>C</strong>. The sum of transmit power and antenna gains minus system losses as seen at the receiver</p>
+<div class="ex">
+<p><strong>Why C is right.</strong> C. To predict what arrives, you start with transmitter power, add both antenna gains, and subtract every loss along the way.</p>
+<p>A link budget is usually worked in dB, so gains and losses add and subtract. Losses include feed line loss and path loss. The result is the expected signal at the receiver.</p>
+<p><strong>Why not B?</strong> B leaves out the transmit power, so it cannot give a received signal level.</p>
+</div>
+</details>
+</article>
+<article id="g8a14">
+<h2>G8A14</h2>
+<p class="stem">What is link margin?</p>
+<ol class="opts">
+<li><span class="l">A</span> The opposite of fade margin</li>
+<li><span class="l">B</span> The difference between received power level and minimum required signal level at the input to the receiver</li>
+<li><span class="l">C</span> Transmit power minus receiver sensitivity</li>
+<li><span class="l">D</span> Receiver sensitivity plus 3 dB</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>B</strong>. The difference between received power level and minimum required signal level at the input to the receiver</p>
+<div class="ex">
+<p><strong>Why B is right.</strong> B. Margin is the cushion: how many dB the signal can fade before it drops below what the receiver needs.</p>
+<p>Suppose the receiver needs a certain signal level to work well. If the signal arriving is 10 dB stronger than that, the link margin is 10 dB.</p>
+<p><strong>Why not C?</strong> Transmit power minus sensitivity ignores the path and antenna losses between stations.</p>
+</div>
+</details>
+</article>
+<nav class="pager" aria-label="Groups"><p><a href="../g7c/">Previous: G7C Transceiver design; filters; oscillators; digital signal processing (DSP)</a></p><p><a href="../g8b/">Next: G8B Frequency changing; bandwidths of various modes; deviation; intermodulation</a></p></nav>
+<footer>
+<p>QSO Ready is an independent study app for the US amateur radio license exams. Questions: NCVEC Question Pool Committee,
+released to the public domain. Rule quotes: 47 CFR, eCFR as of 2026-10-29. Content version 1.</p>
+<p><a href="../../">QSO Ready home</a> · <a href="../../privacy/">Privacy policy</a> · <a href="mailto:hello@saurabhupadhyay.in">hello@saurabhupadhyay.in</a></p>
+</footer>
+</main>
+</body>
+</html>

@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>E8C Digital signals: digital communication modes; information rate vs. bandwidth; error correction; constellation diagrams: Amateur Extra questions explained · QSO Ready</title>
+<meta name="description" content="Amateur Extra pool group E8C (Digital signals: digital communication modes; information rate vs. bandwidth; error correction; constellation diagrams): all 15 questions with correct answers and plain-English explanations.">
+<link rel="canonical" href="https://saurabhupadhyay.in/qso-ready/extra/e8c/">
+<link rel="stylesheet" href="../../site.css">
+</head>
+<body>
+<main>
+<p class="notice">Not affiliated with or endorsed by the FCC, NCVEC, ARRL or any VEC. Questions are the NCVEC pools word for word (public domain); explanations are our own. Exam rules and fees can change: check with your VE team.</p>
+<nav class="crumbs" aria-label="Breadcrumb"><a href="../../">QSO Ready</a> › <a href="../">Amateur Extra</a> › E8C</nav>
+<h1>E8C: Digital signals: digital communication modes; information rate vs. bandwidth; error correction; constellation diagrams</h1>
+<p>Group E8C of the Amateur Extra pool (2024–2028) has 15 active questions. One of them is on every Amateur Extra exam. Each is shown word for word; open it to see the correct answer and our explanation.</p>
+<article id="e8c01">
+<h2>E8C01</h2>
+<p class="stem">What is Quadrature Amplitude Modulation or QAM?</p>
+<ol class="opts">
+<li><span class="l">A</span> A technique for digital data compression used in digital television which removes redundancy in the data by comparing bit amplitudes</li>
+<li><span class="l">B</span> Transmission of data by modulating the amplitude of two carriers of the same frequency but 90 degrees out of phase</li>
+<li><span class="l">C</span> A method of performing single sideband modulation by shifting the phase of the carrier and modulation components of the signal</li>
+<li><span class="l">D</span> A technique for analog modulation of television video signals using phase modulation and compression</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>B</strong>. Transmission of data by modulating the amplitude of two carriers of the same frequency but 90 degrees out of phase</p>
+<div class="ex">
+<p><strong>Why B is right.</strong> B. Two carriers a quarter cycle apart can be separated again at the receiver, so each can carry its own amplitude, which is what QAM does.</p>
+<p>Two carriers 90 degrees apart can be separated again at the receiver, so each can carry its own amplitude. Together their two amplitudes pick one point on a grid. Each grid point stands for a group of bits. More points mean more bits per symbol, but they sit closer together and need a cleaner signal.</p>
+<p><strong>Why not C?</strong> Phase-shifting the carrier and audio is the phasing method of making SSB, which is analog voice, not QAM.</p>
+</div>
+</details>
+</article>
+<article id="e8c02">
+<h2>E8C02</h2>
+<p class="stem">What is the definition of symbol rate in a digital transmission?</p>
+<ol class="opts">
+<li><span class="l">A</span> The number of control characters in a message packet</li>
+<li><span class="l">B</span> The maximum rate at which the forward error correction code can make corrections</li>
+<li><span class="l">C</span> The rate at which the waveform changes to convey information</li>
+<li><span class="l">D</span> The number of characters carried per second by the station-to-station link</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>C</strong>. The rate at which the waveform changes to convey information</p>
+<div class="ex">
+<p><strong>Why C is right.</strong> C. Symbol rate counts how many times per second the signal changes state, since each change is one unit of information.</p>
+<p>A symbol is one state of the waveform, such as a tone, a phase or an amplitude. The transmitter holds a symbol, then switches to the next. The number of switches per second is the symbol rate, measured in baud. One symbol can carry one bit or several bits, depending on how many states the mode uses.</p>
+<p><strong>Why not D?</strong> Characters per second depend on the code and bits per symbol, so they are not the symbol rate.</p>
+</div>
+</details>
+</article>
+<article id="e8c03">
+<h2>E8C03</h2>
+<p class="stem">Why should the phase of a PSK signal be changed at the zero crossing of the RF signal?</p>
+<ol class="opts">
+<li><span class="l">A</span> To minimize bandwidth</li>
+<li><span class="l">B</span> To simplify modulation</li>
+<li><span class="l">C</span> To improve carrier suppression</li>
+<li><span class="l">D</span> All these choices are correct</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>A</strong>. To minimize bandwidth</p>
+<div class="ex">
+<p><strong>Why A is right.</strong> A. Flipping phase when the wave passes through zero avoids a sudden jump in voltage, and sudden jumps spread energy over a wide band.</p>
+<p>If the phase flips at a peak, the voltage snaps from top to bottom in an instant. A sharp edge like that contains many high-frequency parts, so the signal splatters wide. If the flip happens as the wave crosses zero, the voltage stays smooth and the signal stays narrow.</p>
+<p><strong>Why not C?</strong> Carrier suppression depends on the balance of the modulator, not on when the phase changes.</p>
+</div>
+</details>
+</article>
+<article id="e8c04">
+<h2>E8C04</h2>
+<p class="stem">What technique minimizes the bandwidth of a PSK31 signal?</p>
+<ol class="opts">
+<li><span class="l">A</span> Zero-sum character encoding</li>
+<li><span class="l">B</span> Reed-Solomon character encoding</li>
+<li><span class="l">C</span> Use of sinusoidal data pulses</li>
+<li><span class="l">D</span> Use of linear data pulses</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>C</strong>. Use of sinusoidal data pulses</p>
+<div class="ex">
+<p><strong>Why C is right.</strong> C. PSK31 shapes its amplitude with smooth sine-shaped pulses, so phase changes happen gently and the spectrum stays narrow.</p>
+<p>At each phase reversal, PSK31 fades the signal down to zero and back up along a cosine-shaped curve. There are no sharp corners in the envelope, so very little energy spreads beyond the main signal. The result is a signal only a few tens of hertz wide. Straight-line pulse edges have corners that widen the spectrum.</p>
+<p><strong>Why not D?</strong> Linear pulses have sharp corners where they start and stop, which adds bandwidth instead of saving it.</p>
+</div>
+</details>
+</article>
+<article id="e8c05">
+<h2>E8C05</h2>
+<p class="stem">What is the approximate bandwidth of a 13-WPM International Morse Code transmission?</p>
+<ol class="opts">
+<li><span class="l">A</span> 13 Hz</li>
+<li><span class="l">B</span> 26 Hz</li>
+<li><span class="l">C</span> 52 Hz</li>
+<li><span class="l">D</span> 104 Hz</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>C</strong>. 52 Hz</p>
+<div class="ex">
+<p><strong>Why C is right.</strong> C. Morse at 13 WPM keys at about 10.4 baud, and a well-shaped CW signal needs about 5 times its baud rate, near 52 Hz.</p>
+<p>Rule of thumb: Morse speed in baud is about 0.8 times the words per minute. A CW signal&#x27;s bandwidth is roughly that baud rate times a shaping factor K. K = 5 is the usual value for normal keying that holds up under fading. Together these give bandwidth of about 4 times the WPM.</p>
+<pre class="worked">BW = K × baud, with baud = 0.8 × WPM and K = 5
+baud = 0.8 × 13 = 10.4
+BW = 5 × 10.4 Hz
+= 52 Hz</pre>
+<p><strong>Why not A?</strong> 13 Hz matches the WPM number but ignores the sidebands the keying creates.</p>
+</div>
+</details>
+</article>
+<article id="e8c06">
+<h2>E8C06</h2>
+<p class="stem">What is the bandwidth of an FT8 signal?</p>
+<ol class="opts">
+<li><span class="l">A</span> 10 Hz</li>
+<li><span class="l">B</span> 50 Hz</li>
+<li><span class="l">C</span> 600 Hz</li>
+<li><span class="l">D</span> 2.4 kHz</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>B</strong>. 50 Hz</p>
+<div class="ex">
+<p><strong>Why B is right.</strong> B. FT8 uses eight tones 6.25 Hz apart, so its signal fills about 50 Hz.</p>
+<p>FT8 is a weak-signal digital mode that sends one of eight audio tones at a time. Each tone is 6.25 Hz from the next, and 8 times 6.25 Hz is 50 Hz. Many FT8 stations fit side by side within a 3 kHz SSB receiver passband, which is why one screen can show dozens of signals.</p>
+<p><strong>Why not D?</strong> 2.4 kHz is about the width of a voice SSB signal or receiver passband, not one FT8 signal.</p>
+</div>
+</details>
+</article>
+<article id="e8c07">
+<h2>E8C07</h2>
+<p class="stem">What is the bandwidth of a 4,800-Hz frequency shift, 9,600-baud ASCII FM transmission?</p>
+<ol class="opts">
+<li><span class="l">A</span> 15.36 kHz</li>
+<li><span class="l">B</span> 9.6 kHz</li>
+<li><span class="l">C</span> 4.8 kHz</li>
+<li><span class="l">D</span> 5.76 kHz</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>A</strong>. 15.36 kHz</p>
+<div class="ex">
+<p><strong>Why A is right.</strong> A. FSK bandwidth is about the baud rate plus 1.2 times the shift, which gives 9600 + 5760 = 15,360 Hz.</p>
+<p>A frequency-shift signal needs room for the two tones and for the sidebands made by switching between them. A common estimate, from the FCC&#x27;s necessary-bandwidth formula, is baud rate plus 1.2 times the total shift. Change hertz to kilohertz at the end.</p>
+<pre class="worked">BW = baud + 1.2 × shift
+BW = 9600 + 1.2 × 4800 Hz
+BW = 9600 + 5760 = 15,360 Hz
+= 15.36 kHz</pre>
+<p><strong>Why not B?</strong> 9.6 kHz counts only the baud rate and leaves out the frequency shift.</p>
+</div>
+</details>
+</article>
+<article id="e8c08">
+<h2>E8C08</h2>
+<p class="stem">How does ARQ accomplish error correction?</p>
+<ol class="opts">
+<li><span class="l">A</span> Special binary codes provide automatic correction</li>
+<li><span class="l">B</span> Special polynomial codes provide automatic correction</li>
+<li><span class="l">C</span> If errors are detected, redundant data is substituted</li>
+<li><span class="l">D</span> If errors are detected, a retransmission is requested</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>D</strong>. If errors are detected, a retransmission is requested</p>
+<div class="ex">
+<p><strong>Why D is right.</strong> D. ARQ (automatic repeat request) fixes errors by having the receiver ask for a block again when its check fails.</p>
+<p>Each data block carries a short check value. The receiving station recalculates it. If it matches, the station sends an acknowledgment. If it does not match, the station asks for a repeat, and the sender transmits the block again. This needs a two-way link, unlike forward error correction, which repairs errors from extra data sent up front.</p>
+<p><strong>Why not C?</strong> Using extra data sent along with the message to fix errors is forward error correction, not ARQ.</p>
+</div>
+</details>
+</article>
+<article id="e8c09">
+<h2>E8C09</h2>
+<p class="stem">Which digital code allows only one bit to change between sequential code values?</p>
+<ol class="opts">
+<li><span class="l">A</span> Binary Coded Decimal Code</li>
+<li><span class="l">B</span> Extended Binary Coded Decimal Interchange Code</li>
+<li><span class="l">C</span> Extended ASCII</li>
+<li><span class="l">D</span> Gray code</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>D</strong>. Gray code</p>
+<div class="ex">
+<p><strong>Why D is right.</strong> D. Gray code orders its values so that moving to the next one flips exactly one bit, which avoids false readings mid-change.</p>
+<p>In plain binary, going from 3 (011) to 4 (100) flips three bits at once. If a sensor reads during that change, it may catch a mix and report a wrong number. Gray code avoids that: neighbors always differ by one bit. Rotary position encoders often use it.</p>
+<p><strong>Why not A?</strong> Binary Coded Decimal stores each decimal digit in four bits and often flips several bits between values.</p>
+</div>
+</details>
+</article>
+<article id="e8c10">
+<h2>E8C10</h2>
+<p class="stem">How can data rate be increased without increasing bandwidth?</p>
+<ol class="opts">
+<li><span class="l">A</span> It is impossible</li>
+<li><span class="l">B</span> Increasing analog-to-digital conversion resolution</li>
+<li><span class="l">C</span> Using a more efficient digital code</li>
+<li><span class="l">D</span> Using forward error correction</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>C</strong>. Using a more efficient digital code</p>
+<div class="ex">
+<p><strong>Why C is right.</strong> C. A more efficient code sends the same message with fewer bits, so more information moves through the same bandwidth.</p>
+<p>Bandwidth limits how many symbols per second you can send. You can still carry more information by using fewer bits per character, or by fitting more bits into each symbol. Both are choices of coding. Forward error correction does the opposite: it adds extra bits to protect the data, which lowers the useful data rate.</p>
+<p><strong>Why not D?</strong> Forward error correction adds redundant bits, so it reduces the data rate for a given bandwidth.</p>
+</div>
+</details>
+</article>
+<article id="e8c11">
+<h2>E8C11</h2>
+<p class="stem">What is the relationship between symbol rate and baud?</p>
+<ol class="opts">
+<li><span class="l">A</span> They are the same</li>
+<li><span class="l">B</span> Baud is twice the symbol rate</li>
+<li><span class="l">C</span> Baud rate is half the symbol rate</li>
+<li><span class="l">D</span> The relationship depends on the specific code used</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>A</strong>. They are the same</p>
+<div class="ex">
+<p><strong>Why A is right.</strong> A. Baud is the unit for symbols per second, so a symbol rate and a baud rate are the same number.</p>
+<p>A signal sending 300 symbols each second runs at 300 baud. What can differ is the bit rate. If each symbol carries two bits, the bit rate is 600 bits per second while the baud rate stays 300. Mixing up baud and bits per second is the common mistake.</p>
+<p><strong>Why not D?</strong> The code changes the bit rate, not the relationship between baud and symbol rate.</p>
+</div>
+</details>
+</article>
+<article id="e8c12">
+<h2>E8C12</h2>
+<p class="stem">What factors affect the bandwidth of a transmitted CW signal?</p>
+<ol class="opts">
+<li><span class="l">A</span> IF bandwidth and Q</li>
+<li><span class="l">B</span> Modulation index and output power</li>
+<li><span class="l">C</span> Keying speed and shape factor (rise and fall time)</li>
+<li><span class="l">D</span> All these choices are correct</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>C</strong>. Keying speed and shape factor (rise and fall time)</p>
+<div class="ex">
+<p><strong>Why C is right.</strong> C. Faster keying and sharper on-off edges both add sidebands, so speed and rise and fall time set CW bandwidth.</p>
+<p>A CW signal is a carrier switched on and off. Each switch creates sidebands. More switches per second push them farther out. Very quick rise and fall times add even more distant sidebands, heard as key clicks. Gently shaped edges and moderate speed keep the signal narrow.</p>
+<p><strong>Why not B?</strong> Output power changes how loud the signal is, not how wide; modulation index applies to FM and PM.</p>
+</div>
+</details>
+</article>
+<article id="e8c13">
+<h2>E8C13</h2>
+<p class="stem">What is described by the constellation diagram of a QAM or QPSK signal?</p>
+<ol class="opts">
+<li><span class="l">A</span> How many carriers may be present at the same time</li>
+<li><span class="l">B</span> The possible phase and amplitude states for each symbol</li>
+<li><span class="l">C</span> Frequency response of the signal stream</li>
+<li><span class="l">D</span> The number of bits used for error correction in the protocol</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>B</strong>. The possible phase and amplitude states for each symbol</p>
+<div class="ex">
+<p><strong>Why B is right.</strong> B. A constellation diagram plots each allowed symbol as a point whose angle is its phase and whose distance from center is its amplitude.</p>
+<p>QPSK has four points, all at the same distance from the center but at four phases. 16-QAM has sixteen points in a grid, using several amplitudes and phases. On a live signal, noise smears each dot into a cloud. If the clouds touch, the receiver starts making errors.</p>
+<p><strong>Why not C?</strong> Frequency response is shown on a plot of level against frequency, not on a phase and amplitude map.</p>
+</div>
+</details>
+</article>
+<article id="e8c14">
+<h2>E8C14</h2>
+<p class="stem">What type of addresses do nodes have in a mesh network?</p>
+<ol class="opts">
+<li><span class="l">A</span> Email</li>
+<li><span class="l">B</span> Trust server</li>
+<li><span class="l">C</span> Internet Protocol (IP)</li>
+<li><span class="l">D</span> Talk group</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>C</strong>. Internet Protocol (IP)</p>
+<div class="ex">
+<p><strong>Why C is right.</strong> C. Ham mesh networks run standard internet protocols, so each node is reached by an Internet Protocol (IP) address.</p>
+<p>A mesh network links radio nodes, often modified Wi-Fi routers on ham frequencies, so data can hop node to node. Because they use the same networking methods as the internet, each node gets an IP address. Computers, cameras and servers connected to a node can then exchange data across the mesh.</p>
+<p><strong>Why not D?</strong> Talk groups are used to route digital voice on systems like DMR, not to address mesh nodes.</p>
+</div>
+</details>
+</article>
+<article id="e8c15">
+<h2>E8C15</h2>
+<p class="stem">What technique do individual nodes use to form a mesh network?</p>
+<ol class="opts">
+<li><span class="l">A</span> Forward error correction and Viterbi codes</li>
+<li><span class="l">B</span> Acting as store-and-forward digipeaters</li>
+<li><span class="l">C</span> Discovery and link establishment protocols</li>
+<li><span class="l">D</span> Custom code plugs for the local trunking systems</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>C</strong>. Discovery and link establishment protocols</p>
+<div class="ex">
+<p><strong>Why C is right.</strong> C. Mesh nodes find their neighbors and set up links on their own, using discovery and link-establishment protocols.</p>
+<p>When a node powers up, it announces itself and listens for others. Nodes share which neighbors they can hear and how good each link is. From that, each node builds a map of routes. If a node goes off the air, the others notice and route around it with no manual setup.</p>
+<p><strong>Why not B?</strong> Store-and-forward digipeaters relay packets along set paths; they do not build a self-organizing network.</p>
+</div>
+</details>
+</article>
+<nav class="pager" aria-label="Groups"><p><a href="../e8b/">Previous: E8B Modulation and demodulation: modulation methods; modulation index and deviation ratio; frequency- and time-division multiplexing; orthogonal frequency-division multiplexing (OFDM)</a></p><p><a href="../e8d/">Next: E8D Keying defects and overmodulation of digital signals; digital codes; spread spectrum</a></p></nav>
+<footer>
+<p>QSO Ready is an independent study app for the US amateur radio license exams. Questions: NCVEC Question Pool Committee,
+released to the public domain. Rule quotes: 47 CFR, eCFR as of 2026-10-29. Content version 1.</p>
+<p><a href="../../">QSO Ready home</a> · <a href="../../privacy/">Privacy policy</a> · <a href="mailto:hello@saurabhupadhyay.in">hello@saurabhupadhyay.in</a></p>
+</footer>
+</main>
+</body>
+</html>

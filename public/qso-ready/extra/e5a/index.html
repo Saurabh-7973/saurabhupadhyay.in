@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>E5A Resonance and Q: characteristics of resonant circuits; series and parallel resonance; definitions and effects of Q; half-power bandwidth: Amateur Extra questions explained · QSO Ready</title>
+<meta name="description" content="Amateur Extra pool group E5A (Resonance and Q: characteristics of resonant circuits; series and parallel resonance; definitions and effects of Q; half-power bandwidth): all 13 questions with correct answers and plain-English explanations.">
+<link rel="canonical" href="https://saurabhupadhyay.in/qso-ready/extra/e5a/">
+<link rel="stylesheet" href="../../site.css">
+</head>
+<body>
+<main>
+<p class="notice">Not affiliated with or endorsed by the FCC, NCVEC, ARRL or any VEC. Questions are the NCVEC pools word for word (public domain); explanations are our own. Exam rules and fees can change: check with your VE team.</p>
+<nav class="crumbs" aria-label="Breadcrumb"><a href="../../">QSO Ready</a> › <a href="../">Amateur Extra</a> › E5A</nav>
+<h1>E5A: Resonance and Q: characteristics of resonant circuits; series and parallel resonance; definitions and effects of Q; half-power bandwidth</h1>
+<p>Group E5A of the Amateur Extra pool (2024–2028) has 13 active questions. One of them is on every Amateur Extra exam. Each is shown word for word; open it to see the correct answer and our explanation.</p>
+<article id="e5a01">
+<h2>E5A01</h2>
+<p class="stem">What can cause the voltage across reactances in a series RLC circuit to be higher than the voltage applied to the entire circuit?</p>
+<ol class="opts">
+<li><span class="l">A</span> Resonance</li>
+<li><span class="l">B</span> Capacitance</li>
+<li><span class="l">C</span> Low quality factor (Q)</li>
+<li><span class="l">D</span> Resistance</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>A</strong>. Resonance</p>
+<div class="ex">
+<p><strong>Why A is right.</strong> A. At resonance a large current flows, and each reactance builds a big voltage; the two voltages cancel in the total, so each can exceed the applied voltage.</p>
+<p>In a series circuit the same current flows through every part. At resonance the inductive and capacitive reactances (their opposition to AC) are equal and cancel, so only resistance limits the current. That large current times each reactance gives a big voltage across each part. Because those voltages are opposite in phase, they cancel in the total.</p>
+<p><strong>Why not C?</strong> Low Q means more resistance, which lowers the current and the voltage rise.</p>
+</div>
+</details>
+</article>
+<article id="e5a02">
+<h2>E5A02</h2>
+<p class="stem">What is the resonant frequency of an RLC circuit if R is 22 ohms, L is 50 microhenries, and C is 40 picofarads?</p>
+<ol class="opts">
+<li><span class="l">A</span> 44.72 MHz</li>
+<li><span class="l">B</span> 22.36 MHz</li>
+<li><span class="l">C</span> 3.56 MHz</li>
+<li><span class="l">D</span> 1.78 MHz</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>C</strong>. 3.56 MHz</p>
+<div class="ex">
+<p><strong>Why C is right.</strong> C. Resonance depends only on L and C; 50 microhenries and 40 picofarads resonate near 3.56 MHz.</p>
+<p>At resonance the inductive and capacitive reactances are equal. Solving that for frequency gives the formula below. The 22-ohm resistance changes how sharp the peak is, not where it falls.</p>
+<pre class="worked">f = 1 / (2π × √(L × C))
+L × C = (50 × 10^-6 H) × (40 × 10^-12 F) = 2.0 × 10^-15
+√(2.0 × 10^-15) = 4.472 × 10^-8
+2π × 4.472 × 10^-8 = 2.810 × 10^-7 (π = 3.1416)
+f = 1 / (2.810 × 10^-7) = 3,558,813 Hz
+= 3.56 MHz</pre>
+<p><strong>Why not D?</strong> 1.78 MHz is half the correct value, as if the result were divided by 2 a second time.</p>
+</div>
+</details>
+</article>
+<article id="e5a03">
+<h2>E5A03</h2>
+<p class="stem">What is the magnitude of the impedance of a series RLC circuit at resonance?</p>
+<ol class="opts">
+<li><span class="l">A</span> High, compared to the circuit resistance</li>
+<li><span class="l">B</span> Approximately equal to capacitive reactance</li>
+<li><span class="l">C</span> Approximately equal to inductive reactance</li>
+<li><span class="l">D</span> Approximately equal to circuit resistance</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>D</strong>. Approximately equal to circuit resistance</p>
+<div class="ex">
+<p><strong>Why D is right.</strong> D. At series resonance the two reactances cancel, leaving only the resistance to oppose the current.</p>
+<p>Inductive reactance is written +jX and capacitive reactance -jX. When they are equal they add to zero. The impedance (total opposition to AC) is then the circuit resistance alone, its lowest value. That is why a series resonant circuit lets the most current flow at resonance.</p>
+<p><strong>Why not A?</strong> High impedance at resonance describes a parallel circuit, not a series one.</p>
+</div>
+</details>
+</article>
+<article id="e5a04">
+<h2>E5A04</h2>
+<p class="stem">What is the magnitude of the impedance of a parallel RLC circuit at resonance?</p>
+<ol class="opts">
+<li><span class="l">A</span> Approximately equal to circuit resistance</li>
+<li><span class="l">B</span> Approximately equal to inductive reactance</li>
+<li><span class="l">C</span> Low compared to the circuit resistance</li>
+<li><span class="l">D</span> High compared to the circuit resistance</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>A</strong>. Approximately equal to circuit resistance</p>
+<div class="ex">
+<p><strong>Why A is right.</strong> A. At parallel resonance the inductor and capacitor currents cancel, so the source sees only the resistance.</p>
+<p>In a parallel RLC circuit, the inductor and capacitor draw equal currents that are opposite in phase. Those currents cancel where the branches join, so the LC pair acts like an open circuit. What remains is the parallel resistance, which is also the circuit&#x27;s highest impedance.</p>
+<p><strong>Why not C?</strong> Impedance is at its peak at parallel resonance, so it cannot be low compared with R.</p>
+</div>
+</details>
+</article>
+<article id="e5a05">
+<h2>E5A05</h2>
+<p class="stem">What is the result of increasing the Q of an impedance-matching circuit?</p>
+<ol class="opts">
+<li><span class="l">A</span> Matching bandwidth is decreased</li>
+<li><span class="l">B</span> Matching bandwidth is increased</li>
+<li><span class="l">C</span> Losses increase</li>
+<li><span class="l">D</span> Harmonics increase</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>A</strong>. Matching bandwidth is decreased</p>
+<div class="ex">
+<p><strong>Why A is right.</strong> A. Higher Q makes the circuit more frequency-selective, so it stays matched over a narrower range of frequencies.</p>
+<p>Q compares the energy stored in a circuit&#x27;s reactances with the energy lost each cycle. Bandwidth is about the center frequency divided by Q. Raise Q and the bandwidth shrinks, so a high-Q matching network needs retuning sooner as you move across a band.</p>
+<p><strong>Why not B?</strong> Bandwidth goes down, not up, as Q rises.</p>
+</div>
+</details>
+</article>
+<article id="e5a06">
+<h2>E5A06</h2>
+<p class="stem">What is the magnitude of the circulating current within the components of a parallel LC circuit at resonance?</p>
+<ol class="opts">
+<li><span class="l">A</span> It is at a minimum</li>
+<li><span class="l">B</span> It is at a maximum</li>
+<li><span class="l">C</span> It equals 1 divided by the quantity 2 times pi, times the square root of (inductance L multiplied by capacitance C)</li>
+<li><span class="l">D</span> It equals 2 times pi, times the square root of (inductance L multiplied by capacitance C)</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>B</strong>. It is at a maximum</p>
+<div class="ex">
+<p><strong>Why B is right.</strong> B. At parallel resonance energy swings back and forth between the coil and the capacitor, and the current in that loop is at its peak.</p>
+<p>The inductor and capacitor trade stored energy every half cycle. Seen from the source their currents are equal and opposite, so little current flows in from outside. Inside the loop, though, the current circulating between them is about Q times the input current, its maximum.</p>
+<p><strong>Why not A?</strong> The minimum is the input current from the source, not the current circulating inside.</p>
+</div>
+</details>
+</article>
+<article id="e5a07">
+<h2>E5A07</h2>
+<p class="stem">What is the magnitude of the current at the input of a parallel RLC circuit at resonance?</p>
+<ol class="opts">
+<li><span class="l">A</span> Minimum</li>
+<li><span class="l">B</span> Maximum</li>
+<li><span class="l">C</span> R/L</li>
+<li><span class="l">D</span> L/R</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>A</strong>. Minimum</p>
+<div class="ex">
+<p><strong>Why A is right.</strong> A. At parallel resonance the branch currents cancel at the input, so the source supplies the least current.</p>
+<p>The coil and capacitor currents are 180 degrees apart, so at resonance they cancel where the branches join. The source only supplies the current lost in resistance. Since impedance is highest here, input current is lowest.</p>
+<p><strong>Why not B?</strong> Maximum input current happens at series resonance, where impedance is lowest.</p>
+</div>
+</details>
+</article>
+<article id="e5a08">
+<h2>E5A08</h2>
+<p class="stem">What is the phase relationship between the current through and the voltage across a series resonant circuit at resonance?</p>
+<ol class="opts">
+<li><span class="l">A</span> The voltage leads the current by 90 degrees</li>
+<li><span class="l">B</span> The current leads the voltage by 90 degrees</li>
+<li><span class="l">C</span> The voltage and current are in phase</li>
+<li><span class="l">D</span> The voltage and current are 180 degrees out of phase</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>C</strong>. The voltage and current are in phase</p>
+<div class="ex">
+<p><strong>Why C is right.</strong> C. At resonance the reactances cancel, so the circuit acts like a pure resistance, and voltage and current are in phase.</p>
+<p>Inductance makes voltage lead current; capacitance makes it lag. In a series circuit at resonance these effects are equal and opposite. What remains is resistance, where voltage and current rise and fall together, a phase angle of zero.</p>
+<p><strong>Why not A?</strong> Voltage leading by 90 degrees describes a pure inductor.</p>
+</div>
+</details>
+</article>
+<article id="e5a09">
+<h2>E5A09</h2>
+<p class="stem">How is the Q of an RLC parallel resonant circuit calculated?</p>
+<ol class="opts">
+<li><span class="l">A</span> Reactance of either the inductance or capacitance divided by the resistance</li>
+<li><span class="l">B</span> Reactance of either the inductance or capacitance multiplied by the resistance</li>
+<li><span class="l">C</span> Resistance divided by the reactance of either the inductance or capacitance</li>
+<li><span class="l">D</span> Reactance of the inductance multiplied by the reactance of the capacitance</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>C</strong>. Resistance divided by the reactance of either the inductance or capacitance</p>
+<div class="ex">
+<p><strong>Why C is right.</strong> C. For a parallel circuit, Q = R / X, using the reactance of either the coil or the capacitor, since they are equal at resonance.</p>
+<p>In a parallel circuit the resistance sits across the tuned circuit. A larger parallel resistance drains less energy, so Q goes up as R gets bigger. That is the reverse of a series circuit, where Q = X / R and more resistance lowers Q.</p>
+<p><strong>Why not A?</strong> X divided by R is the formula for a series circuit.</p>
+</div>
+</details>
+</article>
+<article id="e5a10">
+<h2>E5A10</h2>
+<p class="stem">What is the resonant frequency of an RLC circuit if R is 33 ohms, L is 50 microhenries, and C is 10 picofarads?</p>
+<ol class="opts">
+<li><span class="l">A</span> 7.12 MHz</li>
+<li><span class="l">B</span> 23.5 kHz</li>
+<li><span class="l">C</span> 7.12 kHz</li>
+<li><span class="l">D</span> 23.5 MHz</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>A</strong>. 7.12 MHz</p>
+<div class="ex">
+<p><strong>Why A is right.</strong> A. Using only L and C, 50 microhenries and 10 picofarads resonate near 7.12 MHz.</p>
+<p>Resonance is where inductive and capacitive reactance are equal. The 33-ohm resistor affects the sharpness of the peak but not its frequency. Watch the powers of ten: micro is 10^-6 and pico is 10^-12.</p>
+<pre class="worked">f = 1 / (2π × √(L × C))
+L × C = (50 × 10^-6 H) × (10 × 10^-12 F) = 5.0 × 10^-16
+√(5.0 × 10^-16) = 2.236 × 10^-8
+2π × 2.236 × 10^-8 = 1.405 × 10^-7 (π = 3.1416)
+f = 1 / (1.405 × 10^-7) = 7,117,625 Hz
+= 7.12 MHz</pre>
+<p><strong>Why not C?</strong> 7.12 kHz has the right digits but is 1,000 times too low, a unit slip.</p>
+</div>
+</details>
+</article>
+<article id="e5a11">
+<h2>E5A11</h2>
+<p class="stem">What is the half-power bandwidth of a resonant circuit that has a resonant frequency of 7.1 MHz and a Q of 150?</p>
+<ol class="opts">
+<li><span class="l">A</span> 157.8 Hz</li>
+<li><span class="l">B</span> 315.6 Hz</li>
+<li><span class="l">C</span> 47.3 kHz</li>
+<li><span class="l">D</span> 23.67 kHz</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>C</strong>. 47.3 kHz</p>
+<div class="ex">
+<p><strong>Why C is right.</strong> C. Bandwidth equals the resonant frequency divided by Q, and 7.1 MHz / 150 is about 47.3 kHz.</p>
+<p>Half-power bandwidth is the span between the two frequencies where power falls to half (3 dB below) the peak. Higher Q makes this span narrower.</p>
+<pre class="worked">BW = f / Q
+BW = 7,100,000 Hz / 150
+BW = 47,333 Hz
+= 47.3 kHz</pre>
+<p><strong>Why not D?</strong> 23.67 kHz is half the answer; the formula has no factor of 2.</p>
+</div>
+</details>
+</article>
+<article id="e5a12">
+<h2>E5A12</h2>
+<p class="stem">What is the half-power bandwidth of a resonant circuit that has a resonant frequency of 3.7 MHz and a Q of 118?</p>
+<ol class="opts">
+<li><span class="l">A</span> 436.6 kHz</li>
+<li><span class="l">B</span> 218.3 kHz</li>
+<li><span class="l">C</span> 31.4 kHz</li>
+<li><span class="l">D</span> 15.7 kHz</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>C</strong>. 31.4 kHz</p>
+<div class="ex">
+<p><strong>Why C is right.</strong> C. Dividing 3.7 MHz by a Q of 118 gives a half-power bandwidth of about 31.4 kHz.</p>
+<p>The half-power points are where the response is 3 dB below its peak. The space between them shrinks as Q grows, so bandwidth is the resonant frequency divided by Q.</p>
+<pre class="worked">BW = f / Q
+BW = 3,700,000 Hz / 118
+BW = 31,356 Hz
+= 31.4 kHz</pre>
+<p><strong>Why not D?</strong> 15.7 kHz is half the correct value; the formula has no factor of 2.</p>
+</div>
+</details>
+</article>
+<article id="e5a13">
+<h2>E5A13</h2>
+<p class="stem">What is an effect of increasing Q in a series resonant circuit?</p>
+<ol class="opts">
+<li><span class="l">A</span> Fewer components are needed for the same performance</li>
+<li><span class="l">B</span> Parasitic effects are minimized</li>
+<li><span class="l">C</span> Internal voltages increase</li>
+<li><span class="l">D</span> Phase shift can become uncontrolled</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>C</strong>. Internal voltages increase</p>
+<div class="ex">
+<p><strong>Why C is right.</strong> C. Higher Q in a series resonant circuit means more voltage builds up across the coil and capacitor inside it.</p>
+<p>At series resonance the voltage across each reactance is about Q times the applied voltage. With a Q of 100, a 10 V source can put about 1,000 V across the capacitor. Parts must be rated for that, which matters in antenna tuners and filters.</p>
+<p><strong>Why not A?</strong> Q describes losses and selectivity; it does not reduce how many parts you need.</p>
+</div>
+</details>
+</article>
+<nav class="pager" aria-label="Groups"><p><a href="../e4e/">Previous: E4E Noise and interference: external RF interference; electrical and computer noise; line noise; DSP filtering and noise reduction; common-mode current; surge protectors; single point ground panel</a></p><p><a href="../e5b/">Next: E5B Time constants and phase relationships: RL and RC time constants; phase angle in reactive circuits and components; admittance and susceptance</a></p></nav>
+<footer>
+<p>QSO Ready is an independent study app for the US amateur radio license exams. Questions: NCVEC Question Pool Committee,
+released to the public domain. Rule quotes: 47 CFR, eCFR as of 2026-10-29. Content version 1.</p>
+<p><a href="../../">QSO Ready home</a> · <a href="../../privacy/">Privacy policy</a> · <a href="mailto:hello@saurabhupadhyay.in">hello@saurabhupadhyay.in</a></p>
+</footer>
+</main>
+</body>
+</html>

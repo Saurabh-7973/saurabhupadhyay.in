@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>E2B Television practices: fast-scan television standards and techniques; slow scan television standards and techniques: Amateur Extra questions explained · QSO Ready</title>
+<meta name="description" content="Amateur Extra pool group E2B (Television practices: fast-scan television standards and techniques; slow scan television standards and techniques): all 12 questions with correct answers and plain-English explanations.">
+<link rel="canonical" href="https://saurabhupadhyay.in/qso-ready/extra/e2b/">
+<link rel="stylesheet" href="../../site.css">
+</head>
+<body>
+<main>
+<p class="notice">Not affiliated with or endorsed by the FCC, NCVEC, ARRL or any VEC. Questions are the NCVEC pools word for word (public domain); explanations are our own. Exam rules and fees can change: check with your VE team.</p>
+<nav class="crumbs" aria-label="Breadcrumb"><a href="../../">QSO Ready</a> › <a href="../">Amateur Extra</a> › E2B</nav>
+<h1>E2B: Television practices: fast-scan television standards and techniques; slow scan television standards and techniques</h1>
+<p>Group E2B of the Amateur Extra pool (2024–2028) has 12 active questions. One of them is on every Amateur Extra exam. Each is shown word for word; open it to see the correct answer and our explanation.</p>
+<article id="e2b01">
+<h2>E2B01</h2>
+<p class="stem">In digital television, what does a coding rate of 3/4 mean?</p>
+<ol class="opts">
+<li><span class="l">A</span> 25% of the data sent is forward error correction data</li>
+<li><span class="l">B</span> Data compression reduces data rate by 3/4</li>
+<li><span class="l">C</span> 1/4 of the time interval is used as a guard interval</li>
+<li><span class="l">D</span> Three, four-bit words are used to transmit each pixel</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>A</strong>. 25% of the data sent is forward error correction data</p>
+<div class="ex">
+<p><strong>Why A is right.</strong> A. A 3/4 code means 3 of every 4 bits carry picture data and the remaining 1 in 4 is added error-correction data, which is 25%.</p>
+<p>Forward error correction (FEC) adds extra bits so the receiver can repair errors without asking for a resend. The coding rate is the useful fraction of the bit stream. Whatever is left over is FEC overhead.</p>
+<pre class="worked">FEC share = 1 - coding rate
+1 - 3/4 = 1/4
+1/4 = 25%
+= 25%</pre>
+<p><strong>Why not B?</strong> The rate describes error-correction overhead, not compression.</p>
+</div>
+</details>
+</article>
+<article id="e2b02">
+<h2>E2B02</h2>
+<p class="stem">How many horizontal lines make up a fast-scan (NTSC) television frame?</p>
+<ol class="opts">
+<li><span class="l">A</span> 30</li>
+<li><span class="l">B</span> 60</li>
+<li><span class="l">C</span> 525</li>
+<li><span class="l">D</span> 1080</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>C</strong>. 525</p>
+<div class="ex">
+<p><strong>Why C is right.</strong> C. The NTSC standard, the older US analog TV system, defines each frame as 525 lines.</p>
+<p>Each frame is sent as two interlaced fields of 262.5 lines each, at about 30 frames per second. Some lines carry no picture; they give time for the beam to return to the top.</p>
+<p><strong>Why not A?</strong> 30 is roughly the number of frames per second, not lines per frame.</p>
+</div>
+</details>
+</article>
+<article id="e2b03">
+<h2>E2B03</h2>
+<p class="stem">How is an interlaced scanning pattern generated in a fast-scan (NTSC) television system?</p>
+<ol class="opts">
+<li><span class="l">A</span> By scanning two fields simultaneously</li>
+<li><span class="l">B</span> By scanning each field from bottom-to-top</li>
+<li><span class="l">C</span> By scanning lines from left-to-right in one field and right-to-left in the next</li>
+<li><span class="l">D</span> By scanning odd-numbered lines in one field and even-numbered lines in the next</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>D</strong>. By scanning odd-numbered lines in one field and even-numbered lines in the next</p>
+<div class="ex">
+<p><strong>Why D is right.</strong> D. Sending odd lines in one field and even lines in the next refreshes the screen twice per frame, which cuts flicker without adding bandwidth.</p>
+<p>Each field is scanned top to bottom and left to right as usual. The two fields mesh into one frame.</p>
+<p><strong>Why not C?</strong> Every line is scanned left to right; the fields differ in which lines they draw, not in direction.</p>
+</div>
+</details>
+</article>
+<article id="e2b04">
+<h2>E2B04</h2>
+<p class="stem">How is color information sent in analog SSTV?</p>
+<ol class="opts">
+<li><span class="l">A</span> Color lines are sent sequentially</li>
+<li><span class="l">B</span> Color information is sent on a 2.8 kHz subcarrier</li>
+<li><span class="l">C</span> Color is sent in a color burst at the end of each line</li>
+<li><span class="l">D</span> Color is amplitude modulated on the frequency modulated intensity signal</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>A</strong>. Color lines are sent sequentially</p>
+<div class="ex">
+<p><strong>Why A is right.</strong> A. Analog SSTV is a single audio tone stream, so it carries color by sending each row once per color component, one after another.</p>
+<p>A typical mode sends a green line, then blue, then red for every row. The receiving software stacks them to rebuild the full-color row.</p>
+<p><strong>Why not C?</strong> A color burst is part of fast-scan analog TV, not SSTV.</p>
+</div>
+</details>
+</article>
+<article id="e2b05">
+<h2>E2B05</h2>
+<p class="stem">Which of the following describes the use of vestigial sideband in analog fast-scan TV transmissions?</p>
+<ol class="opts">
+<li><span class="l">A</span> The vestigial sideband carries the audio information</li>
+<li><span class="l">B</span> The vestigial sideband contains chroma information</li>
+<li><span class="l">C</span> Vestigial sideband reduces the bandwidth while increasing the fidelity of low frequency video components</li>
+<li><span class="l">D</span> Vestigial sideband provides high frequency emphasis to sharpen the picture</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>C</strong>. Vestigial sideband reduces the bandwidth while increasing the fidelity of low frequency video components</p>
+<div class="ex">
+<p><strong>Why C is right.</strong> C. Keeping a sliver of the second sideband narrows the signal yet protects the low video frequencies that lie close to the carrier.</p>
+<p>Video content runs from nearly 0 Hz up to several megahertz. A filter steep enough to remove one whole sideband would also damage the lowest video frequencies right beside the carrier. Vestigial sideband sends one full sideband plus a small part of the other. Compared with full AM, that cuts the bandwidth by about a third while keeping those low frequencies intact.</p>
+<p><strong>Why not A?</strong> The sound in analog TV rides on its own separate carrier, not in the vestige.</p>
+</div>
+</details>
+</article>
+<article id="e2b06">
+<h2>E2B06</h2>
+<p class="stem">What is vestigial sideband modulation?</p>
+<ol class="opts">
+<li><span class="l">A</span> Amplitude modulation in which one complete sideband and a portion of the other are transmitted</li>
+<li><span class="l">B</span> A type of modulation in which one sideband is inverted</li>
+<li><span class="l">C</span> Narrow-band FM modulation achieved by filtering one sideband from the audio before frequency modulating the carrier</li>
+<li><span class="l">D</span> Spread spectrum modulation achieved by applying FM modulation following single sideband amplitude modulation</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>A</strong>. Amplitude modulation in which one complete sideband and a portion of the other are transmitted</p>
+<div class="ex">
+<p><strong>Why A is right.</strong> A. Vestige means a small leftover piece, and in this form of AM a filter leaves a piece of one sideband beside the other full sideband.</p>
+<p>It sits between full double-sideband AM and single sideband in bandwidth.</p>
+<p><strong>Why not C?</strong> Vestigial sideband is a kind of AM, not FM.</p>
+</div>
+</details>
+</article>
+<article id="e2b07">
+<h2>E2B07</h2>
+<p class="stem">Which types of modulation are used for amateur television DVB-T signals?</p>
+<ol class="opts">
+<li><span class="l">A</span> FM and FSK</li>
+<li><span class="l">B</span> QAM and QPSK</li>
+<li><span class="l">C</span> AM and OOK</li>
+<li><span class="l">D</span> All these choices are correct</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>B</strong>. QAM and QPSK</p>
+<div class="ex">
+<p><strong>Why B is right.</strong> B. DVB-T places data on many carriers, each modulated with QPSK or QAM.</p>
+<p>DVB-T is a digital TV standard. QPSK (quadrature phase shift keying) sends 2 bits per symbol by choosing one of four phases. QAM (quadrature amplitude modulation) changes both phase and amplitude to carry more bits per symbol. Strong signals can use QAM for more data; weaker paths fall back to QPSK.</p>
+<p><strong>Why not A?</strong> FM and FSK are not the modulation used inside DVB-T.</p>
+</div>
+</details>
+</article>
+<article id="e2b08">
+<h2>E2B08</h2>
+<p class="stem">What technique allows commercial analog TV receivers to be used for fast-scan TV operations on the 70-centimeter band?</p>
+<ol class="opts">
+<li><span class="l">A</span> Transmitting on channels shared with cable TV</li>
+<li><span class="l">B</span> Using converted satellite TV dishes</li>
+<li><span class="l">C</span> Transmitting on the abandoned TV channel 2</li>
+<li><span class="l">D</span> Using USB and demodulating the signal with a computer sound card</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>A</strong>. Transmitting on channels shared with cable TV</p>
+<div class="ex">
+<p><strong>Why A is right.</strong> A. Some cable TV channels fall inside the 70 cm band, so a cable-ready analog TV can tune an amateur signal sent on one of them.</p>
+<p>Cable systems use frequencies that over-the-air TV does not, and a few of those channels land between 420 and 450 MHz. An analog TV with a cable tuner already covers them. If an amateur station transmits a standard TV signal on one of those channel frequencies, the TV shows the picture with no converter.</p>
+<p><strong>Why not C?</strong> Channel 2 is around 55 MHz, far below the 70 cm band.</p>
+</div>
+</details>
+</article>
+<article id="e2b09">
+<h2>E2B09</h2>
+<p class="stem">What kind of receiver can be used to receive and decode SSTV using the Digital Radio Mondiale (DRM) protocol?</p>
+<ol class="opts">
+<li><span class="l">A</span> CDMA</li>
+<li><span class="l">B</span> AREDN</li>
+<li><span class="l">C</span> AM</li>
+<li><span class="l">D</span> SSB</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>D</strong>. SSB</p>
+<div class="ex">
+<p><strong>Why D is right.</strong> D. DRM SSTV is a digital audio signal that fits in a voice channel, so an ordinary SSB receiver feeding a computer sound card can receive it.</p>
+<p>Digital Radio Mondiale (DRM) here is used to send picture files as a group of audio tones about as wide as a voice signal. The radio only needs to pass that audio cleanly. The decoding is done by software on the computer.</p>
+<p><strong>Why not C?</strong> An AM receiver&#x27;s detection and filtering are not suited to this sideband-based digital signal.</p>
+</div>
+</details>
+</article>
+<article id="e2b10">
+<h2>E2B10</h2>
+<p class="stem">What aspect of an analog slow-scan television signal encodes the brightness of the picture?</p>
+<ol class="opts">
+<li><span class="l">A</span> Tone frequency</li>
+<li><span class="l">B</span> Tone amplitude</li>
+<li><span class="l">C</span> Sync amplitude</li>
+<li><span class="l">D</span> Sync frequency</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>A</strong>. Tone frequency</p>
+<div class="ex">
+<p><strong>Why A is right.</strong> A. Tone frequency is used for brightness because it stays the same when a signal fades, while amplitude does not.</p>
+<p>A lower tone means darker and a higher tone means brighter. In common modes, about 1500 Hz is black and about 2300 Hz is white.</p>
+<p><strong>Why not B?</strong> Amplitude changes with fading, so it would make a poor brightness signal.</p>
+</div>
+</details>
+</article>
+<article id="e2b11">
+<h2>E2B11</h2>
+<p class="stem">What is the function of the vertical interval signaling (VIS) code sent as part of an SSTV transmission?</p>
+<ol class="opts">
+<li><span class="l">A</span> To lock the color burst oscillator in color SSTV images</li>
+<li><span class="l">B</span> To identify the SSTV mode being used</li>
+<li><span class="l">C</span> To provide vertical synchronization</li>
+<li><span class="l">D</span> To identify the call sign of the station transmitting</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>B</strong>. To identify the SSTV mode being used</p>
+<div class="ex">
+<p><strong>Why B is right.</strong> B. There are many SSTV modes with different timings, so the VIS code at the start of a picture names the mode for the receiving software.</p>
+<p>VIS stands for vertical interval signaling. It lets the software pick the right mode by itself instead of making you guess.</p>
+<p><strong>Why not D?</strong> Station ID is not carried in the VIS code.</p>
+</div>
+</details>
+</article>
+<article id="e2b12">
+<h2>E2B12</h2>
+<p class="stem">What signals SSTV receiving software to begin a new picture line?</p>
+<ol class="opts">
+<li><span class="l">A</span> Specific tone frequencies</li>
+<li><span class="l">B</span> Elapsed time</li>
+<li><span class="l">C</span> Specific tone amplitudes</li>
+<li><span class="l">D</span> A two-tone signal</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>A</strong>. Specific tone frequencies</p>
+<div class="ex">
+<p><strong>Why A is right.</strong> A. A sync pulse at a specific tone frequency, lower than any picture tone, tells the software a new line starts.</p>
+<p>Because brightness uses tones between about 1500 and 2300 Hz, a tone outside that range, typically about 1200 Hz, cannot be mistaken for picture data. When the software hears it, it starts the next line. This keeps the picture lined up even if timing drifts.</p>
+<p><strong>Why not C?</strong> SSTV does not use tone amplitude to carry meaning, because fading changes amplitude.</p>
+</div>
+</details>
+</article>
+<nav class="pager" aria-label="Groups"><p><a href="../e2a/">Previous: E2A Amateur radio in space: amateur satellites; orbital mechanics; frequencies and modes; satellite hardware; satellite operations</a></p><p><a href="../e2c/">Next: E2C Contest and DX operating; remote operation techniques; log data format; contact confirmation; RF network systems</a></p></nav>
+<footer>
+<p>QSO Ready is an independent study app for the US amateur radio license exams. Questions: NCVEC Question Pool Committee,
+released to the public domain. Rule quotes: 47 CFR, eCFR as of 2026-10-29. Content version 1.</p>
+<p><a href="../../">QSO Ready home</a> · <a href="../../privacy/">Privacy policy</a> · <a href="mailto:hello@saurabhupadhyay.in">hello@saurabhupadhyay.in</a></p>
+</footer>
+</main>
+</body>
+</html>

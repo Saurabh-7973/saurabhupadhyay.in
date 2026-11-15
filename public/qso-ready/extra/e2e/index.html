@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>E2E Operating methods: digital modes and procedures for HF: Amateur Extra questions explained · QSO Ready</title>
+<meta name="description" content="Amateur Extra pool group E2E (Operating methods: digital modes and procedures for HF): all 13 questions with correct answers and plain-English explanations.">
+<link rel="canonical" href="https://saurabhupadhyay.in/qso-ready/extra/e2e/">
+<link rel="stylesheet" href="../../site.css">
+</head>
+<body>
+<main>
+<p class="notice">Not affiliated with or endorsed by the FCC, NCVEC, ARRL or any VEC. Questions are the NCVEC pools word for word (public domain); explanations are our own. Exam rules and fees can change: check with your VE team.</p>
+<nav class="crumbs" aria-label="Breadcrumb"><a href="../../">QSO Ready</a> › <a href="../">Amateur Extra</a> › E2E</nav>
+<h1>E2E: Operating methods: digital modes and procedures for HF</h1>
+<p>Group E2E of the Amateur Extra pool (2024–2028) has 13 active questions. One of them is on every Amateur Extra exam. Each is shown word for word; open it to see the correct answer and our explanation.</p>
+<article id="e2e01">
+<h2>E2E01</h2>
+<p class="stem">Which of the following types of modulation is used for data emissions below 30 MHz?</p>
+<ol class="opts">
+<li><span class="l">A</span> DTMF tones modulating an FM signal</li>
+<li><span class="l">B</span> FSK</li>
+<li><span class="l">C</span> Pulse modulation</li>
+<li><span class="l">D</span> Spread spectrum</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>B</strong>. FSK</p>
+<div class="ex">
+<p><strong>Why B is right.</strong> B. FSK fits in a narrow HF channel and is allowed there, while spread spectrum and pulse are not authorized below 30 MHz.</p>
+<p>In FSK, the transmitter shifts between frequencies to send ones and zeros, as RTTY does. Many HF data modes use some form of FSK.</p>
+<p><strong>Why not D?</strong> Spread spectrum is not permitted below 30 MHz.</p>
+</div>
+</details>
+</article>
+<article id="e2e02">
+<h2>E2E02</h2>
+<p class="stem">Which of the following synchronizes WSJT-X digital mode transmit/receive timing?</p>
+<ol class="opts">
+<li><span class="l">A</span> Alignment of frequency shifts</li>
+<li><span class="l">B</span> Synchronization of computer clocks</li>
+<li><span class="l">C</span> Sync-field transmission</li>
+<li><span class="l">D</span> Sync-pulse timing</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>B</strong>. Synchronization of computer clocks</p>
+<div class="ex">
+<p><strong>Why B is right.</strong> B. WSJT-X modes send and receive in fixed time slots, so the computer clock must be set accurately.</p>
+<p>Modes such as FT8 start each transmission at a set second of the minute. If your clock is off by more than about a second, other stations cannot decode you, and you cannot decode them. Most users sync their clock to an internet time server or GPS.</p>
+<p><strong>Why not C?</strong> The timing comes from the computer clock, not a transmitted sync field.</p>
+</div>
+</details>
+</article>
+<article id="e2e03">
+<h2>E2E03</h2>
+<p class="stem">To what does the &quot;4&quot; in FT4 refer?</p>
+<ol class="opts">
+<li><span class="l">A</span> Multiples of 4 bits of user information</li>
+<li><span class="l">B</span> Four-tone continuous-phase frequency shift keying</li>
+<li><span class="l">C</span> Four transmit/receive cycles per minute</li>
+<li><span class="l">D</span> All these choices are correct</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>B</strong>. Four-tone continuous-phase frequency shift keying</p>
+<div class="ex">
+<p><strong>Why B is right.</strong> B. FT4 is named for its modulation: four tones, with smooth, continuous-phase shifts between them.</p>
+<p>Shifting without phase jumps keeps the signal clean and narrow. FT4&#x27;s shorter cycles suit contests.</p>
+<p><strong>Why not C?</strong> FT4 cycles are 7.5 seconds long, so a minute holds eight of them, not four.</p>
+</div>
+</details>
+</article>
+<article id="e2e04">
+<h2>E2E04</h2>
+<p class="stem">Which of the following is characteristic of the FST4 mode?</p>
+<ol class="opts">
+<li><span class="l">A</span> Four-tone Gaussian frequency shift keying</li>
+<li><span class="l">B</span> Variable transmit/receive periods</li>
+<li><span class="l">C</span> Seven different tone spacings</li>
+<li><span class="l">D</span> All these choices are correct</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>D</strong>. All these choices are correct</p>
+<div class="ex">
+<p><strong>Why D is right.</strong> D. FST4 uses four-tone Gaussian FSK, offers several transmit and receive period lengths, and has a range of tone spacings, so all choices are correct.</p>
+<p>Gaussian FSK smooths the tone changes so the signal stays narrow. Longer periods let FST4 decode weaker signals. Wider tone spacing helps on paths with more frequency spreading.</p>
+</div>
+</details>
+</article>
+<article id="e2e05">
+<h2>E2E05</h2>
+<p class="stem">Which of these digital modes does not support keyboard-to-keyboard operation?</p>
+<ol class="opts">
+<li><span class="l">A</span> WSPR</li>
+<li><span class="l">B</span> RTTY</li>
+<li><span class="l">C</span> PSK31</li>
+<li><span class="l">D</span> MFSK16</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>A</strong>. WSPR</p>
+<div class="ex">
+<p><strong>Why A is right.</strong> A. WSPR is a beacon mode that sends only call sign, grid square and power, so you cannot type messages to another station.</p>
+<p>WSPR (Weak Signal Propagation Reporter) is for testing propagation. Stations send fixed reports and others report what they hear to an online map. There is no free-text exchange.</p>
+<p><strong>Why not B?</strong> RTTY is a classic typing mode.</p>
+</div>
+</details>
+</article>
+<article id="e2e06">
+<h2>E2E06</h2>
+<p class="stem">What is the length of an FT8 transmission cycle?</p>
+<ol class="opts">
+<li><span class="l">A</span> It varies with the amount of data</li>
+<li><span class="l">B</span> 8 seconds</li>
+<li><span class="l">C</span> 15 seconds</li>
+<li><span class="l">D</span> 30 seconds</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>C</strong>. 15 seconds</p>
+<div class="ex">
+<p><strong>Why C is right.</strong> C. FT8 locks transmissions to clock-timed slots, and the standard slot is 15 seconds, four to a minute.</p>
+<p>Each station sends during one slot, then listens in the next. The signal lasts about 12.6 seconds, leaving time to decode and reply.</p>
+<p><strong>Why not D?</strong> 30 seconds is a full transmit and receive pair, not one cycle.</p>
+</div>
+</details>
+</article>
+<article id="e2e07">
+<h2>E2E07</h2>
+<p class="stem">How does Q65 differ from JT65?</p>
+<ol class="opts">
+<li><span class="l">A</span> Keyboard-to keyboard operation is supported</li>
+<li><span class="l">B</span> Quadrature modulation is used</li>
+<li><span class="l">C</span> Multiple receive cycles are averaged</li>
+<li><span class="l">D</span> All these choices are correct</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>C</strong>. Multiple receive cycles are averaged</p>
+<div class="ex">
+<p><strong>Why C is right.</strong> C. Q65 can average several receive cycles, adding up a weak repeated message until it decodes.</p>
+<p>If the same message comes in over several cycles, Q65 adds them together. Noise is random and tends to cancel, while the signal adds up. This helps on weak paths such as EME.</p>
+<p><strong>Why not B?</strong> Q65 uses tones (FSK), not quadrature modulation.</p>
+</div>
+</details>
+</article>
+<article id="e2e08">
+<h2>E2E08</h2>
+<p class="stem">Which of the following HF digital modes can be used to transfer binary files?</p>
+<ol class="opts">
+<li><span class="l">A</span> PSK31</li>
+<li><span class="l">B</span> PACTOR</li>
+<li><span class="l">C</span> RTTY</li>
+<li><span class="l">D</span> AMTOR</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>B</strong>. PACTOR</p>
+<div class="ex">
+<p><strong>Why B is right.</strong> B. PACTOR can send binary files because it checks each block and resends any with errors.</p>
+<p>PACTOR uses ARQ (automatic repeat request). The receiving station checks every block and asks for a resend when one is bad. That gives error-free data, which binary files require.</p>
+<p><strong>Why not C?</strong> RTTY has no error checking and uses a code with only letters and figures.</p>
+</div>
+</details>
+</article>
+<article id="e2e09">
+<h2>E2E09</h2>
+<p class="stem">Which of the following HF digital modes uses variable-length character coding?</p>
+<ol class="opts">
+<li><span class="l">A</span> RTTY</li>
+<li><span class="l">B</span> PACTOR</li>
+<li><span class="l">C</span> MT63</li>
+<li><span class="l">D</span> PSK31</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>D</strong>. PSK31</p>
+<div class="ex">
+<p><strong>Why D is right.</strong> D. PSK31 uses varicode, where common letters get short codes and rare ones get longer codes.</p>
+<p>Giving short codes to letters like e and t speeds up typical text. RTTY uses fixed 5-bit codes for every character. PSK31 is a narrow keyboard mode often used on HF.</p>
+<p><strong>Why not A?</strong> RTTY uses a fixed-length 5-bit code.</p>
+</div>
+</details>
+</article>
+<article id="e2e10">
+<h2>E2E10</h2>
+<p class="stem">Which of these digital modes has the narrowest bandwidth?</p>
+<ol class="opts">
+<li><span class="l">A</span> MFSK16</li>
+<li><span class="l">B</span> 170 Hz shift, 45-baud RTTY</li>
+<li><span class="l">C</span> FT8</li>
+<li><span class="l">D</span> PACTOR IV</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>C</strong>. FT8</p>
+<div class="ex">
+<p><strong>Why C is right.</strong> C. FT8 is the narrowest of these, at about 50 Hz wide.</p>
+<p>FT8 moves among eight closely spaced tones. MFSK16 is about 316 Hz wide. 170 Hz shift RTTY is around 250 Hz. PACTOR IV uses about 2.4 kHz.</p>
+<p><strong>Why not D?</strong> PACTOR IV is the widest of the four.</p>
+</div>
+</details>
+</article>
+<article id="e2e11">
+<h2>E2E11</h2>
+<p class="stem">What is the difference between direct FSK and audio FSK?</p>
+<ol class="opts">
+<li><span class="l">A</span> Direct FSK modulates the transmitter VFO</li>
+<li><span class="l">B</span> Direct FSK occupies less bandwidth</li>
+<li><span class="l">C</span> Direct FSK can transmit higher baud rates</li>
+<li><span class="l">D</span> All these choices are correct</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>A</strong>. Direct FSK modulates the transmitter VFO</p>
+<div class="ex">
+<p><strong>Why A is right.</strong> A. Direct FSK shifts the transmitter&#x27;s own oscillator, while audio FSK feeds tones into an SSB transmitter.</p>
+<p>With direct FSK, the transmitter&#x27;s VFO (variable frequency oscillator) is moved by the data line. With audio FSK (AFSK), a computer makes audio tones, and the SSB transmitter shifts them up to RF. Done right, both make the same signal on the air.</p>
+<p><strong>Why not B?</strong> Both methods can give the same bandwidth.</p>
+</div>
+</details>
+</article>
+<article id="e2e12">
+<h2>E2E12</h2>
+<p class="stem">How do ALE stations establish contact?</p>
+<ol class="opts">
+<li><span class="l">A</span> ALE constantly scans a list of frequencies, activating the radio when the designated call sign is received</li>
+<li><span class="l">B</span> ALE radios monitor an internet site for the frequency they are being paged on</li>
+<li><span class="l">C</span> ALE radios send a constant tone code to establish a frequency for future use</li>
+<li><span class="l">D</span> ALE radios activate when they hear their signal echoed by back scatter</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>A</strong>. ALE constantly scans a list of frequencies, activating the radio when the designated call sign is received</p>
+<div class="ex">
+<p><strong>Why A is right.</strong> A. ALE radios are addressed by call sign, so they scan their channel list and wake up only when they hear their own address.</p>
+<p>ALE (automatic link establishment) radios also test which channel works best. When called, they stop and set up the link on that channel.</p>
+<p><strong>Why not D?</strong> ALE uses scanning and addressing, not backscatter echoes.</p>
+</div>
+</details>
+</article>
+<article id="e2e13">
+<h2>E2E13</h2>
+<p class="stem">Which of these digital modes has the highest data throughput under clear communication conditions?</p>
+<ol class="opts">
+<li><span class="l">A</span> MFSK16</li>
+<li><span class="l">B</span> 170 Hz shift, 45 baud RTTY</li>
+<li><span class="l">C</span> FT8</li>
+<li><span class="l">D</span> PACTOR IV</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>D</strong>. PACTOR IV</p>
+<div class="ex">
+<p><strong>Why D is right.</strong> D. PACTOR IV adapts to the path, using fast modulation and compression on a clean channel, so it moves far more data than the others.</p>
+<p>RTTY and MFSK16 are slow keyboard modes. FT8 sends only short fixed messages.</p>
+<p><strong>Why not C?</strong> FT8 sends only short messages each 15 seconds.</p>
+</div>
+</details>
+</article>
+<nav class="pager" aria-label="Groups"><p><a href="../e2d/">Previous: E2D Operating methods: digital modes and procedures for VHF and UHF; APRS; EME procedures; meteor scatter procedures</a></p><p><a href="../e3a/">Next: E3A Electromagnetic Waves and Specialized Propagation: Earth-Moon-Earth (EME) communications; meteor scatter; microwave tropospheric and scatter propagation; auroral propagation; daily variation of ionospheric propagation; circular polarization</a></p></nav>
+<footer>
+<p>QSO Ready is an independent study app for the US amateur radio license exams. Questions: NCVEC Question Pool Committee,
+released to the public domain. Rule quotes: 47 CFR, eCFR as of 2026-10-29. Content version 1.</p>
+<p><a href="../../">QSO Ready home</a> · <a href="../../privacy/">Privacy policy</a> · <a href="mailto:hello@saurabhupadhyay.in">hello@saurabhupadhyay.in</a></p>
+</footer>
+</main>
+</body>
+</html>

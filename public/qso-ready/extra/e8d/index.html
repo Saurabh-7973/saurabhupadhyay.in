@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>E8D Keying defects and overmodulation of digital signals; digital codes; spread spectrum: Amateur Extra questions explained · QSO Ready</title>
+<meta name="description" content="Amateur Extra pool group E8D (Keying defects and overmodulation of digital signals; digital codes; spread spectrum): all 11 questions with correct answers and plain-English explanations.">
+<link rel="canonical" href="https://saurabhupadhyay.in/qso-ready/extra/e8d/">
+<link rel="stylesheet" href="../../site.css">
+</head>
+<body>
+<main>
+<p class="notice">Not affiliated with or endorsed by the FCC, NCVEC, ARRL or any VEC. Questions are the NCVEC pools word for word (public domain); explanations are our own. Exam rules and fees can change: check with your VE team.</p>
+<nav class="crumbs" aria-label="Breadcrumb"><a href="../../">QSO Ready</a> › <a href="../">Amateur Extra</a> › E8D</nav>
+<h1>E8D: Keying defects and overmodulation of digital signals; digital codes; spread spectrum</h1>
+<p>Group E8D of the Amateur Extra pool (2024–2028) has 11 active questions. One of them is on every Amateur Extra exam. Each is shown word for word; open it to see the correct answer and our explanation.</p>
+<article id="e8d01">
+<h2>E8D01</h2>
+<p class="stem">Why are received spread spectrum signals resistant to interference?</p>
+<ol class="opts">
+<li><span class="l">A</span> Signals not using the spread spectrum algorithm are suppressed in the receiver</li>
+<li><span class="l">B</span> The high power used by a spread spectrum transmitter keeps its signal from being easily overpowered</li>
+<li><span class="l">C</span> Built-in error correction codes minimize interference</li>
+<li><span class="l">D</span> If the receiver detects interference, it will signal the transmitter to change frequencies</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>A</strong>. Signals not using the spread spectrum algorithm are suppressed in the receiver</p>
+<div class="ex">
+<p><strong>Why A is right.</strong> A. The receiver un-spreads only signals built with its own spreading code, so other signals stay spread out and weak.</p>
+<p>A spread spectrum transmitter spreads its signal over a wide band using a pseudorandom code. The receiver applies the same code, which collapses the wanted signal back into a narrow, strong one. Any signal without that code gets spread out by the same step. Its energy then lands mostly outside the narrow filter, so it is pushed down.</p>
+<p><strong>Why not B?</strong> Spread spectrum signals are usually low power per hertz; the protection comes from the code, not from strength.</p>
+</div>
+</details>
+</article>
+<article id="e8d02">
+<h2>E8D02</h2>
+<p class="stem">What spread spectrum communications technique uses a high-speed binary bit stream to shift the phase of an RF carrier?</p>
+<ol class="opts">
+<li><span class="l">A</span> Frequency hopping</li>
+<li><span class="l">B</span> Direct sequence</li>
+<li><span class="l">C</span> Binary phase-shift keying</li>
+<li><span class="l">D</span> Phase compandored spread spectrum</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>B</strong>. Direct sequence</p>
+<div class="ex">
+<p><strong>Why B is right.</strong> B. Direct sequence mixes the data with a fast pseudorandom bit stream that flips the carrier&#x27;s phase, spreading it wide.</p>
+<p>The spreading code runs many times faster than the data. Each fast bit, called a chip, shifts the carrier&#x27;s phase. Those rapid shifts spread the signal across a wide band. The receiver uses the same chip sequence to undo the spreading. The faster the chip rate, the wider the signal.</p>
+<p><strong>Why not C?</strong> Binary phase-shift keying is the basic phase-flip modulation; by itself it is not a spreading technique.</p>
+</div>
+</details>
+</article>
+<article id="e8d03">
+<h2>E8D03</h2>
+<p class="stem">Which describes spread spectrum frequency hopping?</p>
+<ol class="opts">
+<li><span class="l">A</span> If interference is detected by the receiver, it will signal the transmitter to change frequencies</li>
+<li><span class="l">B</span> RF signals are clipped to generate a wide band of harmonics which provides redundancy to correct errors</li>
+<li><span class="l">C</span> A binary bit stream is used to shift the phase of an RF carrier very rapidly in a pseudorandom sequence</li>
+<li><span class="l">D</span> Rapidly varying the frequency of a transmitted signal according to a pseudorandom sequence</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>D</strong>. Rapidly varying the frequency of a transmitted signal according to a pseudorandom sequence</p>
+<div class="ex">
+<p><strong>Why D is right.</strong> D. Interference on any one channel touches only a small part of a hopping signal, because its frequency keeps changing in a pseudorandom pattern both stations share.</p>
+<p>Transmitter and receiver share the same hop pattern and timing. They jump together many times each second. A listener on any one channel hears only brief bursts. Interference on one channel ruins only a small part of the data, which error correction can often repair. The hops follow the plan; they are not triggered by interference.</p>
+<p><strong>Why not C?</strong> Using a fast bit stream to shift the carrier&#x27;s phase describes direct sequence, not frequency hopping.</p>
+</div>
+</details>
+</article>
+<article id="e8d04">
+<h2>E8D04</h2>
+<p class="stem">What is the primary effect of extremely short rise or fall time on a CW signal?</p>
+<ol class="opts">
+<li><span class="l">A</span> More difficult to copy</li>
+<li><span class="l">B</span> The generation of RF harmonics</li>
+<li><span class="l">C</span> The generation of key clicks</li>
+<li><span class="l">D</span> More difficult to tune</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>C</strong>. The generation of key clicks</p>
+<div class="ex">
+<p><strong>Why C is right.</strong> C. A carrier that turns on or off almost instantly produces wide sidebands, heard on nearby frequencies as key clicks.</p>
+<p>A sharp edge in the signal&#x27;s envelope holds energy at many frequencies. Each time the key closes or opens, that energy spreads well beyond the CW signal. Operators listening nearby hear a click or thump with every keystroke. The fix is to shape the edges so the carrier rises and falls over a few milliseconds.</p>
+<p><strong>Why not B?</strong> Harmonics are multiples of the carrier frequency caused by nonlinearity; key clicks sit close to the signal itself.</p>
+</div>
+</details>
+</article>
+<article id="e8d05">
+<h2>E8D05</h2>
+<p class="stem">What is the most common method of reducing key clicks?</p>
+<ol class="opts">
+<li><span class="l">A</span> Increase keying waveform rise and fall times</li>
+<li><span class="l">B</span> Insert low-pass filters at the transmitter output</li>
+<li><span class="l">C</span> Reduce keying waveform rise and fall times</li>
+<li><span class="l">D</span> Insert high-pass filters at the transmitter output</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>A</strong>. Increase keying waveform rise and fall times</p>
+<div class="ex">
+<p><strong>Why A is right.</strong> A. Slowing the rise and fall of each keyed element smooths the envelope, which removes the sharp edges that cause clicks.</p>
+<p>Key clicks come from sidebands created by abrupt switching. If the carrier ramps up and down over a few milliseconds, those sidebands shrink. Transmitters do this with a shaping circuit or in software. A low-pass filter on the output cannot help, because clicks are close to the operating frequency and pass right through it.</p>
+<p><strong>Why not B?</strong> A low-pass output filter removes harmonics far above the signal, but clicks are near the signal and pass through it.</p>
+</div>
+</details>
+</article>
+<article id="e8d06">
+<h2>E8D06</h2>
+<p class="stem">What is the advantage of including parity bits in ASCII characters?</p>
+<ol class="opts">
+<li><span class="l">A</span> Faster transmission rate</li>
+<li><span class="l">B</span> Signal-to-noise ratio is improved</li>
+<li><span class="l">C</span> A larger character set is available</li>
+<li><span class="l">D</span> Some types of errors can be detected</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>D</strong>. Some types of errors can be detected</p>
+<div class="ex">
+<p><strong>Why D is right.</strong> D. A parity bit makes the count of 1s even or odd, so a single flipped bit breaks the pattern and shows an error.</p>
+<p>With even parity, the sender adds a 1 or a 0 so each character has an even number of 1 bits. The receiver counts them. An odd count means something changed in transit. Parity cannot tell which bit was wrong, and two flipped bits cancel out and go unnoticed. That is why it detects only some errors.</p>
+<p><strong>Why not A?</strong> A parity bit adds one more bit per character, so it slightly slows the data, not speeds it up.</p>
+</div>
+</details>
+</article>
+<article id="e8d07">
+<h2>E8D07</h2>
+<p class="stem">What is a common cause of overmodulation of AFSK signals?</p>
+<ol class="opts">
+<li><span class="l">A</span> Excessive numbers of retries</li>
+<li><span class="l">B</span> Excessive frequency deviation</li>
+<li><span class="l">C</span> Bit errors in the modem</li>
+<li><span class="l">D</span> Excessive transmit audio levels</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>D</strong>. Excessive transmit audio levels</p>
+<div class="ex">
+<p><strong>Why D is right.</strong> D. Driving the transmitter with too much audio pushes it into distortion, which overmodulates an AFSK signal.</p>
+<p>AFSK (audio frequency-shift keying) feeds audio tones into an SSB or FM transmitter. If the audio level is too high, the transmitter&#x27;s audio stages or its automatic level control get pushed too hard. The tones distort and create extra products that widen the signal. Set the audio so the transmitter runs below the point where ALC starts acting hard.</p>
+<p><strong>Why not C?</strong> Bit errors happen at the receiving end; they do not change how loudly the transmitter is driven.</p>
+</div>
+</details>
+</article>
+<article id="e8d08">
+<h2>E8D08</h2>
+<p class="stem">What parameter evaluates distortion of an AFSK signal caused by excessive input audio levels?</p>
+<ol class="opts">
+<li><span class="l">A</span> Signal-to-noise ratio</li>
+<li><span class="l">B</span> Baud error rate</li>
+<li><span class="l">C</span> Repeat Request Rate (RRR)</li>
+<li><span class="l">D</span> Intermodulation Distortion (IMD)</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>D</strong>. Intermodulation Distortion (IMD)</p>
+<div class="ex">
+<p><strong>Why D is right.</strong> D. Overdriven audio mixes the tones together into new, unwanted frequencies, and IMD measures how strong those products are.</p>
+<p>Intermodulation distortion (IMD) happens when two or more tones pass through a stage that is not linear. The stage creates sum and difference products, some close to the wanted tones. On a PSK or other digital signal those products widen the signal and splatter onto neighbors. Many digital-mode programs display an IMD reading for this reason.</p>
+<p><strong>Why not A?</strong> Signal-to-noise ratio compares the signal with background noise; it does not measure distortion the transmitter adds.</p>
+</div>
+</details>
+</article>
+<article id="e8d09">
+<h2>E8D09</h2>
+<p class="stem">What is considered an acceptable maximum IMD level for an idling PSK signal?</p>
+<ol class="opts">
+<li><span class="l">A</span> +5 dB</li>
+<li><span class="l">B</span> +10 dB</li>
+<li><span class="l">C</span> +15 dB</li>
+<li><span class="l">D</span> -30 dB</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>D</strong>. -30 dB</p>
+<div class="ex">
+<p><strong>Why D is right.</strong> D. Distortion products 30 dB or more below the main signal are small enough to keep a PSK signal clean and narrow.</p>
+<p>IMD is reported as the strength of the unwanted products relative to the wanted signal, so it is a negative number in dB. The more negative, the cleaner. A value near -30 dB is a common target for an idling PSK signal. Readings closer to zero, like -20 dB, mean the transmitter is being overdriven.</p>
+<p><strong>Why not A?</strong> A positive IMD value would mean the distortion is stronger than the signal itself, which is never acceptable.</p>
+</div>
+</details>
+</article>
+<article id="e8d10">
+<h2>E8D10</h2>
+<p class="stem">What are some of the differences between the Baudot digital code and ASCII?</p>
+<ol class="opts">
+<li><span class="l">A</span> Baudot uses 4 data bits per character, ASCII uses 7 or 8; Baudot uses 1 character as a letters/figures shift code, ASCII has no letters/figures code</li>
+<li><span class="l">B</span> Baudot uses 5 data bits per character, ASCII uses 7 or 8; Baudot uses 2 characters as letters/figures shift codes, ASCII has no letters/figures shift code</li>
+<li><span class="l">C</span> Baudot uses 6 data bits per character, ASCII uses 7 or 8; Baudot has no letters/figures shift code, ASCII uses 2 letters/figures shift codes</li>
+<li><span class="l">D</span> Baudot uses 7 data bits per character, ASCII uses 8; Baudot has no letters/figures shift code, ASCII uses 2 letters/figures shift codes</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>B</strong>. Baudot uses 5 data bits per character, ASCII uses 7 or 8; Baudot uses 2 characters as letters/figures shift codes, ASCII has no letters/figures shift code</p>
+<div class="ex">
+<p><strong>Why B is right.</strong> B. Baudot packs each character into 5 bits and uses LTRS and FIGS codes to switch sets; ASCII&#x27;s 7 or 8 bits need no shift.</p>
+<p>Five bits allow only 32 combinations, too few for letters, numbers and punctuation. Baudot solves this with two special characters: one switches to the letters set, the other to the figures set. ASCII uses 7 bits, giving 128 codes, or 8 bits in extended form. That is enough room to give every character its own code.</p>
+<p><strong>Why not A?</strong> Baudot uses 5 data bits, not 4, and it needs two shift codes, one for each set.</p>
+</div>
+</details>
+</article>
+<article id="e8d11">
+<h2>E8D11</h2>
+<p class="stem">What is one advantage of using ASCII code for data communications?</p>
+<ol class="opts">
+<li><span class="l">A</span> It includes built-in error correction features</li>
+<li><span class="l">B</span> It contains fewer information bits per character than any other code</li>
+<li><span class="l">C</span> It is possible to transmit both uppercase and lowercase text</li>
+<li><span class="l">D</span> It uses one character as a shift code to send numeric and special characters</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>C</strong>. It is possible to transmit both uppercase and lowercase text</p>
+<div class="ex">
+<p><strong>Why C is right.</strong> C. ASCII has enough codes to give upper and lower case letters their own values, so both can be sent.</p>
+<p>With 7 bits, ASCII has 128 codes. That covers capital letters, small letters, digits, punctuation and control characters. Older 5-bit codes like Baudot have room for only one case of letters. ASCII by itself does not correct errors; that needs extra coding or a protocol.</p>
+<p><strong>Why not D?</strong> Using a shift code to reach numbers and symbols is how Baudot works, not ASCII.</p>
+</div>
+</details>
+</article>
+<nav class="pager" aria-label="Groups"><p><a href="../e8c/">Previous: E8C Digital signals: digital communication modes; information rate vs. bandwidth; error correction; constellation diagrams</a></p><p><a href="../e9a/">Next: E9A Basic antenna parameters: radiation resistance, gain, beamwidth, efficiency; effective radiated power (ERP) and effective isotropic radiated power (EIRP)</a></p></nav>
+<footer>
+<p>QSO Ready is an independent study app for the US amateur radio license exams. Questions: NCVEC Question Pool Committee,
+released to the public domain. Rule quotes: 47 CFR, eCFR as of 2026-10-29. Content version 1.</p>
+<p><a href="../../">QSO Ready home</a> · <a href="../../privacy/">Privacy policy</a> · <a href="mailto:hello@saurabhupadhyay.in">hello@saurabhupadhyay.in</a></p>
+</footer>
+</main>
+</body>
+</html>

@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>G7A Power supplies; schematic symbols: General questions explained · QSO Ready</title>
+<meta name="description" content="General pool group G7A (Power supplies; schematic symbols): all 13 questions with correct answers and plain-English explanations.">
+<link rel="canonical" href="https://saurabhupadhyay.in/qso-ready/general/g7a/">
+<link rel="stylesheet" href="../../site.css">
+</head>
+<body>
+<main>
+<p class="notice">Not affiliated with or endorsed by the FCC, NCVEC, ARRL or any VEC. Questions are the NCVEC pools word for word (public domain); explanations are our own. Exam rules and fees can change: check with your VE team.</p>
+<nav class="crumbs" aria-label="Breadcrumb"><a href="../../">QSO Ready</a> › <a href="../">General</a> › G7A</nav>
+<h1>G7A: Power supplies; schematic symbols</h1>
+<p>Group G7A of the General pool (2023–2027) has 13 active questions. One of them is on every General exam. Each is shown word for word; open it to see the correct answer and our explanation.</p>
+<article id="g7a01">
+<h2>G7A01</h2>
+<p class="stem">What is the function of a power supply bleeder resistor?</p>
+<ol class="opts">
+<li><span class="l">A</span> It acts as a fuse for excess voltage</li>
+<li><span class="l">B</span> It discharges the filter capacitors when power is removed</li>
+<li><span class="l">C</span> It removes shock hazards from the induction coils</li>
+<li><span class="l">D</span> It eliminates ground loop current</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>B</strong>. It discharges the filter capacitors when power is removed</p>
+<div class="ex">
+<p><strong>Why B is right.</strong> B. The resistor sits across the filter capacitors, so their stored charge always has a path to drain away once the supply is off.</p>
+<p>Large filter capacitors can hold a dangerous voltage long after the plug is pulled. The bleeder wastes a tiny current all the time, but it makes servicing the supply much safer.</p>
+<p><strong>Why not A?</strong> A fuse opens on too much current; a bleeder never opens and does not protect against overvoltage.</p>
+</div>
+</details>
+</article>
+<article id="g7a02">
+<h2>G7A02</h2>
+<p class="stem">Which of the following components are used in a power supply filter network?</p>
+<ol class="opts">
+<li><span class="l">A</span> Diodes</li>
+<li><span class="l">B</span> Transformers and transducers</li>
+<li><span class="l">C</span> Capacitors and inductors</li>
+<li><span class="l">D</span> All these choices are correct</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>C</strong>. Capacitors and inductors</p>
+<div class="ex">
+<p><strong>Why C is right.</strong> C. Capacitors and inductors smooth the pulsing output of the rectifier.</p>
+<p>After the diodes, the voltage still rises and falls in pulses. A capacitor stores charge on each peak and releases it in the dips. An inductor, also called a choke, resists quick changes in current. Together they turn the bumpy output into steady DC.</p>
+<p><strong>Why not A?</strong> Diodes are the rectifier that comes before the filter, not part of the filter itself.</p>
+</div>
+</details>
+</article>
+<article id="g7a03">
+<h2>G7A03</h2>
+<p class="stem">Which type of rectifier circuit uses two diodes and a center-tapped transformer?</p>
+<ol class="opts">
+<li><span class="l">A</span> Full-wave</li>
+<li><span class="l">B</span> Full-wave bridge</li>
+<li><span class="l">C</span> Half-wave</li>
+<li><span class="l">D</span> Synchronous</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>A</strong>. Full-wave</p>
+<div class="ex">
+<p><strong>Why A is right.</strong> A. Two diodes on a center-tapped winding make a full-wave rectifier.</p>
+<p>The center tap splits the transformer secondary into two halves. On one half of each AC cycle, one diode conducts; on the other half, the second diode conducts. Both halves of the wave reach the load, so it is full-wave.</p>
+<p><strong>Why not B?</strong> A bridge rectifier uses four diodes and does not need a center tap.</p>
+</div>
+</details>
+</article>
+<article id="g7a04">
+<h2>G7A04</h2>
+<p class="stem">What is characteristic of a half-wave rectifier in a power supply?</p>
+<ol class="opts">
+<li><span class="l">A</span> Only one diode is required</li>
+<li><span class="l">B</span> The ripple frequency is twice that of a full-wave rectifier</li>
+<li><span class="l">C</span> More current can be drawn from the half-wave rectifier</li>
+<li><span class="l">D</span> The output voltage is two times the peak input voltage</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>A</strong>. Only one diode is required</p>
+<div class="ex">
+<p><strong>Why A is right.</strong> A. It uses only one half of each AC cycle, and one diode pointing one way is enough to pass that half and block the other.</p>
+<p>Its output has big gaps between pulses that are harder to filter, but the circuit is cheap and simple.</p>
+<p><strong>Why not B?</strong> Its ripple frequency is half that of a full-wave rectifier, not twice.</p>
+</div>
+</details>
+</article>
+<article id="g7a05">
+<h2>G7A05</h2>
+<p class="stem">What portion of the AC cycle is converted to DC by a half-wave rectifier?</p>
+<ol class="opts">
+<li><span class="l">A</span> 90 degrees</li>
+<li><span class="l">B</span> 180 degrees</li>
+<li><span class="l">C</span> 270 degrees</li>
+<li><span class="l">D</span> 360 degrees</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>B</strong>. 180 degrees</p>
+<div class="ex">
+<p><strong>Why B is right.</strong> B. A half-wave rectifier passes one half of the cycle, which is 180 degrees.</p>
+<p>A full AC cycle is 360 degrees. The diode conducts only while the input has one polarity, which is half of the cycle. Half of 360 degrees is 180 degrees. During the other 180 degrees, the output is zero.</p>
+<p><strong>Why not D?</strong> 360 degrees would mean the whole cycle is used, which is what a full-wave rectifier does.</p>
+</div>
+</details>
+</article>
+<article id="g7a06">
+<h2>G7A06</h2>
+<p class="stem">What portion of the AC cycle is converted to DC by a full-wave rectifier?</p>
+<ol class="opts">
+<li><span class="l">A</span> 90 degrees</li>
+<li><span class="l">B</span> 180 degrees</li>
+<li><span class="l">C</span> 270 degrees</li>
+<li><span class="l">D</span> 360 degrees</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>D</strong>. 360 degrees</p>
+<div class="ex">
+<p><strong>Why D is right.</strong> D. A full-wave rectifier uses both halves of the cycle, all 360 degrees.</p>
+<p>A full-wave rectifier flips the negative half of the AC wave so it comes out with the same polarity as the positive half. Nothing is thrown away, so the whole 360-degree cycle reaches the output as DC pulses.</p>
+<p><strong>Why not B?</strong> 180 degrees is half the cycle, which is what a single-diode half-wave rectifier delivers.</p>
+</div>
+</details>
+</article>
+<article id="g7a07">
+<h2>G7A07</h2>
+<p class="stem">What is the output waveform of an unfiltered full-wave rectifier connected to a resistive load?</p>
+<ol class="opts">
+<li><span class="l">A</span> A series of DC pulses at twice the frequency of the AC input</li>
+<li><span class="l">B</span> A series of DC pulses at the same frequency as the AC input</li>
+<li><span class="l">C</span> A sine wave at half the frequency of the AC input</li>
+<li><span class="l">D</span> A steady DC voltage</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>A</strong>. A series of DC pulses at twice the frequency of the AC input</p>
+<div class="ex">
+<p><strong>Why A is right.</strong> A. Each half of the AC cycle comes out as its own same-polarity pulse, so every input cycle gives two pulses.</p>
+<p>So a 60 Hz input gives 120 pulses per second. With no filter capacitor, the voltage across a resistor drops to zero between pulses.</p>
+<p><strong>Why not D?</strong> A steady DC voltage only appears after a filter smooths the pulses.</p>
+</div>
+</details>
+</article>
+<article id="g7a08">
+<h2>G7A08</h2>
+<p class="stem">Which of the following is characteristic of a switchmode power supply as compared to a linear power supply?</p>
+<ol class="opts">
+<li><span class="l">A</span> Faster switching time makes higher output voltage possible</li>
+<li><span class="l">B</span> Fewer circuit components are required</li>
+<li><span class="l">C</span> High-frequency operation allows the use of smaller components</li>
+<li><span class="l">D</span> Inherently more stable</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>C</strong>. High-frequency operation allows the use of smaller components</p>
+<div class="ex">
+<p><strong>Why C is right.</strong> C. Transformers and filter parts can be far smaller when they handle tens of kilohertz instead of 60 Hz.</p>
+<p>A switchmode supply turns the input on and off thousands of times per second or faster. That is why these supplies are much lighter than a linear supply with a heavy 60 Hz iron transformer.</p>
+<p><strong>Why not B?</strong> A switchmode supply usually has more parts than a linear one, not fewer.</p>
+</div>
+</details>
+</article>
+<article id="g7a09">
+<h2>G7A09</h2>
+<p class="stem">Which symbol in figure G7-1 represents a field effect transistor?</p>
+<figure><img src="../../figures/G7-1.webp" width="1000" height="686" loading="lazy" alt="Figure G7-1 has eleven numbered symbols. Symbol 1 is a circle with an inward gate arrow: a field effect transistor. Symbol 2 is a circle with an outward emitter arrow: an NPN transistor. Symbol 3 is a triangle pointing at a bar: a diode. Symbol 4 is a diode with a curved plate at its bar: a varactor. Symbol 5 is a diode whose bar has bent tips: a Zener diode. Symbol 6 is two coils with two lines between them: a solid core transformer. Symbol 7 is one coil with a wire from its middle: a tapped inductor. Symbols 8 and 10 are pairs of plates, one curved: capacitors. Symbol 9 is a zigzag: a resistor. Symbol 11 is a zigzag with an arrow at its side: a potentiometer (variable resistor) whose arrow is the sliding contact. Other resistors and capacitors in the drawing have no numbers."><figcaption>Figure G7-1</figcaption></figure>
+<ol class="opts">
+<li><span class="l">A</span> Symbol 2</li>
+<li><span class="l">B</span> Symbol 5</li>
+<li><span class="l">C</span> Symbol 1</li>
+<li><span class="l">D</span> Symbol 4</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>C</strong>. Symbol 1</p>
+<div class="ex">
+<p><strong>Why C is right.</strong> C. Symbol 1 is the field effect transistor.</p>
+<p>In figure G7-1, symbol 1 is a circle with a vertical bar inside. A line enters from the left with an arrow pointing toward the bar; that is the gate. Two lines leave the bar on the right; those are the drain and source. This is a junction FET, a transistor controlled by voltage on the gate.</p>
+<p><strong>Why not A?</strong> Symbol 2 is a circle with a slanted arrow on one lead, which marks a bipolar transistor, not a FET.</p>
+</div>
+</details>
+</article>
+<article id="g7a10">
+<h2>G7A10</h2>
+<p class="stem">Which symbol in figure G7-1 represents a Zener diode?</p>
+<figure><img src="../../figures/G7-1.webp" width="1000" height="686" loading="lazy" alt="Figure G7-1 has eleven numbered symbols. Symbol 1 is a circle with an inward gate arrow: a field effect transistor. Symbol 2 is a circle with an outward emitter arrow: an NPN transistor. Symbol 3 is a triangle pointing at a bar: a diode. Symbol 4 is a diode with a curved plate at its bar: a varactor. Symbol 5 is a diode whose bar has bent tips: a Zener diode. Symbol 6 is two coils with two lines between them: a solid core transformer. Symbol 7 is one coil with a wire from its middle: a tapped inductor. Symbols 8 and 10 are pairs of plates, one curved: capacitors. Symbol 9 is a zigzag: a resistor. Symbol 11 is a zigzag with an arrow at its side: a potentiometer (variable resistor) whose arrow is the sliding contact. Other resistors and capacitors in the drawing have no numbers."><figcaption>Figure G7-1</figcaption></figure>
+<ol class="opts">
+<li><span class="l">A</span> Symbol 4</li>
+<li><span class="l">B</span> Symbol 1</li>
+<li><span class="l">C</span> Symbol 11</li>
+<li><span class="l">D</span> Symbol 5</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>D</strong>. Symbol 5</p>
+<div class="ex">
+<p><strong>Why D is right.</strong> D. Symbol 5 is the Zener diode.</p>
+<p>In figure G7-1, symbol 5 is a triangle pointing at a bar, like a normal diode, but the bar has small bent tips at each end, like a stretched letter Z. A Zener diode holds a fixed voltage when current flows through it backward, so it is used as a voltage regulator.</p>
+<p><strong>Why not A?</strong> Symbol 4 has two lines at the bar, one curved, marking a varactor (a diode used as a tuning capacitor).</p>
+</div>
+</details>
+</article>
+<article id="g7a11">
+<h2>G7A11</h2>
+<p class="stem">Which symbol in figure G7-1 represents an NPN junction transistor?</p>
+<figure><img src="../../figures/G7-1.webp" width="1000" height="686" loading="lazy" alt="Figure G7-1 has eleven numbered symbols. Symbol 1 is a circle with an inward gate arrow: a field effect transistor. Symbol 2 is a circle with an outward emitter arrow: an NPN transistor. Symbol 3 is a triangle pointing at a bar: a diode. Symbol 4 is a diode with a curved plate at its bar: a varactor. Symbol 5 is a diode whose bar has bent tips: a Zener diode. Symbol 6 is two coils with two lines between them: a solid core transformer. Symbol 7 is one coil with a wire from its middle: a tapped inductor. Symbols 8 and 10 are pairs of plates, one curved: capacitors. Symbol 9 is a zigzag: a resistor. Symbol 11 is a zigzag with an arrow at its side: a potentiometer (variable resistor) whose arrow is the sliding contact. Other resistors and capacitors in the drawing have no numbers."><figcaption>Figure G7-1</figcaption></figure>
+<ol class="opts">
+<li><span class="l">A</span> Symbol 1</li>
+<li><span class="l">B</span> Symbol 2</li>
+<li><span class="l">C</span> Symbol 7</li>
+<li><span class="l">D</span> Symbol 11</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>B</strong>. Symbol 2</p>
+<div class="ex">
+<p><strong>Why B is right.</strong> B. Symbol 2 is the NPN junction transistor.</p>
+<p>In figure G7-1, symbol 2 is a circle with a vertical bar on the left side, which is the base. Two slanted lines leave the bar on the right. The lower one, the emitter, has an arrow pointing outward, away from the bar. An outward emitter arrow means NPN.</p>
+<p><strong>Why not A?</strong> Symbol 1 is a FET; its arrow is on the gate line pointing in, and it has no emitter.</p>
+</div>
+</details>
+</article>
+<article id="g7a12">
+<h2>G7A12</h2>
+<p class="stem">Which symbol in Figure G7-1 represents a solid core transformer?</p>
+<figure><img src="../../figures/G7-1.webp" width="1000" height="686" loading="lazy" alt="Figure G7-1 has eleven numbered symbols. Symbol 1 is a circle with an inward gate arrow: a field effect transistor. Symbol 2 is a circle with an outward emitter arrow: an NPN transistor. Symbol 3 is a triangle pointing at a bar: a diode. Symbol 4 is a diode with a curved plate at its bar: a varactor. Symbol 5 is a diode whose bar has bent tips: a Zener diode. Symbol 6 is two coils with two lines between them: a solid core transformer. Symbol 7 is one coil with a wire from its middle: a tapped inductor. Symbols 8 and 10 are pairs of plates, one curved: capacitors. Symbol 9 is a zigzag: a resistor. Symbol 11 is a zigzag with an arrow at its side: a potentiometer (variable resistor) whose arrow is the sliding contact. Other resistors and capacitors in the drawing have no numbers."><figcaption>Figure G7-1</figcaption></figure>
+<ol class="opts">
+<li><span class="l">A</span> Symbol 4</li>
+<li><span class="l">B</span> Symbol 7</li>
+<li><span class="l">C</span> Symbol 6</li>
+<li><span class="l">D</span> Symbol 1</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>C</strong>. Symbol 6</p>
+<div class="ex">
+<p><strong>Why C is right.</strong> C. Symbol 6 is the solid core transformer.</p>
+<p>In figure G7-1, symbol 6 shows two coils, each drawn as a row of loops, facing each other. Between them are two straight parallel lines. Those lines stand for a solid core of iron or ferrite that links the coils. A transformer with no core would show the coils with nothing between them.</p>
+<p><strong>Why not B?</strong> Symbol 7 is a single coil with a wire tapped off its middle, not two coils sharing a core.</p>
+</div>
+</details>
+</article>
+<article id="g7a13">
+<h2>G7A13</h2>
+<p class="stem">Which symbol in Figure G7-1 represents a tapped inductor?</p>
+<figure><img src="../../figures/G7-1.webp" width="1000" height="686" loading="lazy" alt="Figure G7-1 has eleven numbered symbols. Symbol 1 is a circle with an inward gate arrow: a field effect transistor. Symbol 2 is a circle with an outward emitter arrow: an NPN transistor. Symbol 3 is a triangle pointing at a bar: a diode. Symbol 4 is a diode with a curved plate at its bar: a varactor. Symbol 5 is a diode whose bar has bent tips: a Zener diode. Symbol 6 is two coils with two lines between them: a solid core transformer. Symbol 7 is one coil with a wire from its middle: a tapped inductor. Symbols 8 and 10 are pairs of plates, one curved: capacitors. Symbol 9 is a zigzag: a resistor. Symbol 11 is a zigzag with an arrow at its side: a potentiometer (variable resistor) whose arrow is the sliding contact. Other resistors and capacitors in the drawing have no numbers."><figcaption>Figure G7-1</figcaption></figure>
+<ol class="opts">
+<li><span class="l">A</span> Symbol 7</li>
+<li><span class="l">B</span> Symbol 11</li>
+<li><span class="l">C</span> Symbol 6</li>
+<li><span class="l">D</span> Symbol 1</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>A</strong>. Symbol 7</p>
+<div class="ex">
+<p><strong>Why A is right.</strong> A. Symbol 7 is the tapped inductor.</p>
+<p>In figure G7-1, symbol 7 is one coil drawn as a row of loops, near the bottom left of the drawing. A third wire leaves partway along the coil, between its ends. That connection is the tap. It lets a circuit use only part of the coil&#x27;s turns.</p>
+<p><strong>Why not C?</strong> Symbol 6 has two coils with straight lines between them, which makes it a transformer.</p>
+</div>
+</details>
+</article>
+<nav class="pager" aria-label="Groups"><p><a href="../g6b/">Previous: G6B Analog and digital integrated circuits (ICs); microwave ICs (MMICs); display devices; RF connectors; ferrite cores</a></p><p><a href="../g7b/">Next: G7B Digital circuits; amplifiers and oscillators</a></p></nav>
+<footer>
+<p>QSO Ready is an independent study app for the US amateur radio license exams. Questions: NCVEC Question Pool Committee,
+released to the public domain. Rule quotes: 47 CFR, eCFR as of 2026-10-29. Content version 1.</p>
+<p><a href="../../">QSO Ready home</a> · <a href="../../privacy/">Privacy policy</a> · <a href="mailto:hello@saurabhupadhyay.in">hello@saurabhupadhyay.in</a></p>
+</footer>
+</main>
+</body>
+</html>

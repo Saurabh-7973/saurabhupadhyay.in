@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>E7A Digital circuits: digital circuit principles and logic circuits; classes of logic elements; positive and negative logic; frequency dividers; truth tables: Amateur Extra questions explained · QSO Ready</title>
+<meta name="description" content="Amateur Extra pool group E7A (Digital circuits: digital circuit principles and logic circuits; classes of logic elements; positive and negative logic; frequency dividers; truth tables): all 11 questions with correct answers and plain-English explanations.">
+<link rel="canonical" href="https://saurabhupadhyay.in/qso-ready/extra/e7a/">
+<link rel="stylesheet" href="../../site.css">
+</head>
+<body>
+<main>
+<p class="notice">Not affiliated with or endorsed by the FCC, NCVEC, ARRL or any VEC. Questions are the NCVEC pools word for word (public domain); explanations are our own. Exam rules and fees can change: check with your VE team.</p>
+<nav class="crumbs" aria-label="Breadcrumb"><a href="../../">QSO Ready</a> › <a href="../">Amateur Extra</a> › E7A</nav>
+<h1>E7A: Digital circuits: digital circuit principles and logic circuits; classes of logic elements; positive and negative logic; frequency dividers; truth tables</h1>
+<p>Group E7A of the Amateur Extra pool (2024–2028) has 11 active questions. One of them is on every Amateur Extra exam. Each is shown word for word; open it to see the correct answer and our explanation.</p>
+<article id="e7a01">
+<h2>E7A01</h2>
+<p class="stem">Which circuit is bistable?</p>
+<ol class="opts">
+<li><span class="l">A</span> An AND gate</li>
+<li><span class="l">B</span> An OR gate</li>
+<li><span class="l">C</span> A flip-flop</li>
+<li><span class="l">D</span> A bipolar amplifier</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>C</strong>. A flip-flop</p>
+<div class="ex">
+<p><strong>Why C is right.</strong> C. A flip-flop has two stable states and stays in either one until an input tells it to change.</p>
+<p>Bistable means two states that each hold steady on their own. A flip-flop cross-connects two gates or transistors so its output feeds back and locks itself high or low. That memory makes it the basic building block of counters and registers. Plain gates have no memory; their outputs follow the inputs at every instant.</p>
+<p><strong>Why not A?</strong> An AND gate has no feedback, so it cannot hold a state once its inputs change.</p>
+</div>
+</details>
+</article>
+<article id="e7a02">
+<h2>E7A02</h2>
+<p class="stem">What is the function of a decade counter?</p>
+<ol class="opts">
+<li><span class="l">A</span> It produces one output pulse for every 10 input pulses</li>
+<li><span class="l">B</span> It decodes a decimal number for display on a seven-segment LED display</li>
+<li><span class="l">C</span> It produces 10 output pulses for every input pulse</li>
+<li><span class="l">D</span> It decodes a binary number for display on a seven-segment LED display</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>A</strong>. It produces one output pulse for every 10 input pulses</p>
+<div class="ex">
+<p><strong>Why A is right.</strong> A. A decade counter steps through ten states and then rolls over, giving one carry pulse for every ten pulses in.</p>
+<p>Decade means ten. The counter goes from 0 to 9, and on the tenth pulse it resets to 0 and sends a carry pulse. That divides the input frequency by 10. Chaining counters gives division by 100, 1,000 and so on, which is handy in frequency counters.</p>
+<p><strong>Why not B?</strong> Turning a number into segment patterns is the job of a decoder or display driver, not the counter.</p>
+</div>
+</details>
+</article>
+<article id="e7a03">
+<h2>E7A03</h2>
+<p class="stem">Which of the following can divide the frequency of a pulse train by 2?</p>
+<ol class="opts">
+<li><span class="l">A</span> An XOR gate</li>
+<li><span class="l">B</span> A flip-flop</li>
+<li><span class="l">C</span> An OR gate</li>
+<li><span class="l">D</span> A multiplexer</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>B</strong>. A flip-flop</p>
+<div class="ex">
+<p><strong>Why B is right.</strong> B. A flip-flop wired to toggle changes state once per input pulse, so its output makes one full cycle for every two input pulses.</p>
+<p>In toggle mode, each clock edge flips the output: high, then low. Two input pulses produce one full output cycle, so the output frequency is half the input. This is the simplest digital frequency divider.</p>
+<p><strong>Why not A?</strong> An XOR gate has no memory, so it cannot keep track of every second pulse.</p>
+</div>
+</details>
+</article>
+<article id="e7a04">
+<h2>E7A04</h2>
+<p class="stem">How many flip-flops are required to divide a signal frequency by 16?</p>
+<ol class="opts">
+<li><span class="l">A</span> 4</li>
+<li><span class="l">B</span> 6</li>
+<li><span class="l">C</span> 8</li>
+<li><span class="l">D</span> 16</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>A</strong>. 4</p>
+<div class="ex">
+<p><strong>Why A is right.</strong> A. Each flip-flop halves the frequency, and four halvings give 2 x 2 x 2 x 2 = 16.</p>
+<p>Chain the flip-flops so each one&#x27;s output clocks the next. Every stage divides by 2, so n stages divide by 2 to the power n. Sixteen is 2 to the fourth power.</p>
+<pre class="worked">division ratio = 2^n
+2^n = 16
+n = log2(16) = 4
+= 4</pre>
+<p><strong>Why not D?</strong> Sixteen flip-flops would divide by 2 to the 16th power, which is 65,536.</p>
+</div>
+</details>
+</article>
+<article id="e7a05">
+<h2>E7A05</h2>
+<p class="stem">Which of the following circuits continuously alternates between two states without an external clock signal?</p>
+<ol class="opts">
+<li><span class="l">A</span> Monostable multivibrator</li>
+<li><span class="l">B</span> J-K flip-flop</li>
+<li><span class="l">C</span> T flip-flop</li>
+<li><span class="l">D</span> Astable multivibrator</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>D</strong>. Astable multivibrator</p>
+<div class="ex">
+<p><strong>Why D is right.</strong> D. An astable multivibrator has no stable state, so it keeps flipping between its two states on its own.</p>
+<p>Astable means not stable. Two switching stages with timing capacitors push each other back and forth, and resistor and capacitor values set how long each state lasts. The result is a free-running square wave with no clock needed. A monostable needs a trigger, and flip-flops need a clock or other input.</p>
+<p><strong>Why not A?</strong> A monostable rests in one state and changes only briefly after a trigger.</p>
+</div>
+</details>
+</article>
+<article id="e7a06">
+<h2>E7A06</h2>
+<p class="stem">What is a characteristic of a monostable multivibrator?</p>
+<ol class="opts">
+<li><span class="l">A</span> It switches temporarily to an alternate state for a set time</li>
+<li><span class="l">B</span> It produces a continuous square wave</li>
+<li><span class="l">C</span> It stores one bit of data</li>
+<li><span class="l">D</span> It maintains a constant output voltage, regardless of variations in the input voltage</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>A</strong>. It switches temporarily to an alternate state for a set time</p>
+<div class="ex">
+<p><strong>Why A is right.</strong> A. A monostable has one resting state; a trigger flips it to the other state for a time set by a resistor and capacitor, then it returns.</p>
+<p>Mono means one: there is only one stable state. Each trigger produces one output pulse of fixed length. These one-shot circuits stretch short pulses, clean up switch bounce and create time delays.</p>
+<p><strong>Why not C?</strong> Storing a bit needs two stable states, which is what a flip-flop has.</p>
+</div>
+</details>
+</article>
+<article id="e7a07">
+<h2>E7A07</h2>
+<p class="stem">What logical operation does a NAND gate perform?</p>
+<ol class="opts">
+<li><span class="l">A</span> It produces a 0 at its output only if all inputs are 0</li>
+<li><span class="l">B</span> It produces a 1 at its output only if all inputs are 1</li>
+<li><span class="l">C</span> It produces a 0 at its output if some but not all inputs are 1</li>
+<li><span class="l">D</span> It produces a 0 at its output only if all inputs are 1</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>D</strong>. It produces a 0 at its output only if all inputs are 1</p>
+<div class="ex">
+<p><strong>Why D is right.</strong> D. NAND is AND followed by NOT, and AND gives 1 only when every input is 1, so NAND gives 0 only in that case.</p>
+<p>For a two-input NAND, inputs 00, 01 and 10 give 1, and input 11 gives 0. Any 0 at an input forces the output to 1. NAND gates can be combined to build every other logic function, which is one reason they are so common.</p>
+<p><strong>Why not B?</strong> An output of 1 only when all inputs are 1 describes a plain AND gate.</p>
+</div>
+</details>
+</article>
+<article id="e7a08">
+<h2>E7A08</h2>
+<p class="stem">What logical operation does an OR gate perform?</p>
+<ol class="opts">
+<li><span class="l">A</span> It produces a 1 at its output if any input is 1</li>
+<li><span class="l">B</span> It produces a 0 at its output if all inputs are 1</li>
+<li><span class="l">C</span> It produces a 0 at its output if some but not all inputs are 1</li>
+<li><span class="l">D</span> It produces a 1 at its output if all inputs are 0</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>A</strong>. It produces a 1 at its output if any input is 1</p>
+<div class="ex">
+<p><strong>Why A is right.</strong> A. An OR gate needs only one input at 1 to make its output 1; the output stays 0 only when every input is 0.</p>
+<p>Two-input OR truth table: 00 gives 0, while 01, 10 and 11 all give 1. Picture two switches wired side by side to a lamp: closing either one lights it.</p>
+<p><strong>Why not D?</strong> An output of 1 for all-zero inputs describes a NOR gate, the opposite of OR.</p>
+</div>
+</details>
+</article>
+<article id="e7a09">
+<h2>E7A09</h2>
+<p class="stem">What logical operation is performed by a two-input exclusive NOR gate?</p>
+<ol class="opts">
+<li><span class="l">A</span> It produces a 0 at its output only if all inputs are 0</li>
+<li><span class="l">B</span> It produces a 1 at its output only if all inputs are 1</li>
+<li><span class="l">C</span> It produces a 0 at its output if one and only one of its inputs is 1</li>
+<li><span class="l">D</span> It produces a 1 at its output if one and only one input is 1</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>C</strong>. It produces a 0 at its output if one and only one of its inputs is 1</p>
+<div class="ex">
+<p><strong>Why C is right.</strong> C. Exclusive NOR outputs 1 when its two inputs match, so a single 1 among them, a mismatch, gives 0.</p>
+<p>XOR outputs 1 when the inputs differ. XNOR inverts that: 00 gives 1 and 11 gives 1, while 01 and 10 give 0. That makes it a one-bit equality checker.</p>
+<p><strong>Why not D?</strong> An output of 1 when exactly one input is 1 is plain XOR, not XNOR.</p>
+</div>
+</details>
+</article>
+<article id="e7a10">
+<h2>E7A10</h2>
+<p class="stem">What is a truth table?</p>
+<ol class="opts">
+<li><span class="l">A</span> A list of inputs and corresponding outputs for an op-amp</li>
+<li><span class="l">B</span> A list of inputs and corresponding outputs for a digital device</li>
+<li><span class="l">C</span> A diagram showing logic states when the digital gate output is true</li>
+<li><span class="l">D</span> A table of logic symbols that indicate the logic states of an op-amp</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>B</strong>. A list of inputs and corresponding outputs for a digital device</p>
+<div class="ex">
+<p><strong>Why B is right.</strong> B. A digital device&#x27;s inputs and outputs can only be 1 or 0, so every input combination and its result can be listed row by row.</p>
+<p>With n inputs there are 2 to the n combinations, so a two-input gate has four rows. Reading across a row tells you exactly what the device does. It works for gates, flip-flops and larger logic, but not for op-amps, whose outputs vary smoothly instead of being 1 or 0.</p>
+<p><strong>Why not A?</strong> Op-amps are analog parts with outputs that vary smoothly, so a table of 1s and 0s does not describe them.</p>
+</div>
+</details>
+</article>
+<article id="e7a11">
+<h2>E7A11</h2>
+<p class="stem">What does “positive logic” mean in reference to logic devices?</p>
+<ol class="opts">
+<li><span class="l">A</span> The logic devices have high noise immunity</li>
+<li><span class="l">B</span> High voltage represents a 1, low voltage a 0</li>
+<li><span class="l">C</span> The logic circuit is in the “true” condition</li>
+<li><span class="l">D</span> 1s and 0s are defined as different positive voltage levels</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>B</strong>. High voltage represents a 1, low voltage a 0</p>
+<div class="ex">
+<p><strong>Why B is right.</strong> B. Positive logic is a naming convention: the more positive of the two voltage levels is read as 1, whatever the actual voltages are.</p>
+<p>A logic circuit only sees voltage levels, so a convention is needed to say which level means 1. Positive logic assigns 1 to high; negative logic assigns 1 to low. The same circuit acts as an AND gate in one convention and an OR gate in the other.</p>
+<p><strong>Why not D?</strong> Both levels can be positive voltages in either convention; what matters is which level counts as 1.</p>
+</div>
+</details>
+</article>
+<nav class="pager" aria-label="Groups"><p><a href="../e6f/">Previous: E6F Electro-optical technology: photoconductivity; photovoltaic devices; optical sensors and encoders; optically isolated switching</a></p><p><a href="../e7b/">Next: E7B Amplifiers: class of operation; vacuum tube and solid-state circuits; distortion and intermodulation; spurious and parasitic suppression; switching-type amplifiers</a></p></nav>
+<footer>
+<p>QSO Ready is an independent study app for the US amateur radio license exams. Questions: NCVEC Question Pool Committee,
+released to the public domain. Rule quotes: 47 CFR, eCFR as of 2026-10-29. Content version 1.</p>
+<p><a href="../../">QSO Ready home</a> · <a href="../../privacy/">Privacy policy</a> · <a href="mailto:hello@saurabhupadhyay.in">hello@saurabhupadhyay.in</a></p>
+</footer>
+</main>
+</body>
+</html>

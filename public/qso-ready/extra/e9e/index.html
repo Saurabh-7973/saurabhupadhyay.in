@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>E9E Impedance matching: matching antennas to feed lines; phasing lines; power dividers: Amateur Extra questions explained · QSO Ready</title>
+<meta name="description" content="Amateur Extra pool group E9E (Impedance matching: matching antennas to feed lines; phasing lines; power dividers): all 10 questions with correct answers and plain-English explanations.">
+<link rel="canonical" href="https://saurabhupadhyay.in/qso-ready/extra/e9e/">
+<link rel="stylesheet" href="../../site.css">
+</head>
+<body>
+<main>
+<p class="notice">Not affiliated with or endorsed by the FCC, NCVEC, ARRL or any VEC. Questions are the NCVEC pools word for word (public domain); explanations are our own. Exam rules and fees can change: check with your VE team.</p>
+<nav class="crumbs" aria-label="Breadcrumb"><a href="../../">QSO Ready</a> › <a href="../">Amateur Extra</a> › E9E</nav>
+<h1>E9E: Impedance matching: matching antennas to feed lines; phasing lines; power dividers</h1>
+<p>Group E9E of the Amateur Extra pool (2024–2028) has 10 active questions. One of them is on every Amateur Extra exam. Each is shown word for word; open it to see the correct answer and our explanation.</p>
+<article id="e9e01">
+<h2>E9E01</h2>
+<p class="stem">Which matching system for Yagi antennas requires the driven element to be insulated from the boom?</p>
+<ol class="opts">
+<li><span class="l">A</span> Gamma</li>
+<li><span class="l">B</span> Beta or hairpin</li>
+<li><span class="l">C</span> Shunt-fed</li>
+<li><span class="l">D</span> T-match</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>B</strong>. Beta or hairpin</p>
+<div class="ex">
+<p><strong>Why B is right.</strong> B. A beta or hairpin match feeds a driven element split in the middle, so the two halves must be insulated from the metal boom.</p>
+<p>In a hairpin match, the coax connects across a gap at the center of the driven element. A U-shaped wire, the hairpin, bridges that gap and acts as a small inductor. If the element ran unbroken through a metal boom, the boom would short the two halves together. Gamma and T matches tap a solid element instead, so it can be bolted to the boom.</p>
+<p><strong>Why not A?</strong> A gamma match feeds a continuous element at its grounded center, so the element can touch the boom.</p>
+</div>
+</details>
+</article>
+<article id="e9e02">
+<h2>E9E02</h2>
+<p class="stem">What antenna matching system matches coaxial cable to an antenna by connecting the shield to the center of the antenna and the conductor a fraction of a wavelength to one side?</p>
+<ol class="opts">
+<li><span class="l">A</span> Gamma match</li>
+<li><span class="l">B</span> Delta match</li>
+<li><span class="l">C</span> T-match</li>
+<li><span class="l">D</span> Stub match</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>A</strong>. Gamma match</p>
+<div class="ex">
+<p><strong>Why A is right.</strong> A. A gamma match bonds the coax shield to the element&#x27;s center and runs the center conductor to a tap partway along one side.</p>
+<p>The center of a half-wave element has zero voltage, so the shield can attach there along with the boom. A rod parallel to one half carries the center conductor out to a tap point. Moving the tap outward raises the impedance it sees, so you can slide it to match 50-ohm coax. A series capacitor tunes out the rod&#x27;s inductance.</p>
+<p><strong>Why not C?</strong> A T-match uses two rods, one on each side, and is fed with balanced line, not one coax tap on one side.</p>
+</div>
+</details>
+</article>
+<article id="e9e03">
+<h2>E9E03</h2>
+<p class="stem">What matching system uses a short length of transmission line connected in parallel with the feed line at or near the feed point?</p>
+<ol class="opts">
+<li><span class="l">A</span> Gamma match</li>
+<li><span class="l">B</span> Delta match</li>
+<li><span class="l">C</span> T-match</li>
+<li><span class="l">D</span> Stub match</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>D</strong>. Stub match</p>
+<div class="ex">
+<p><strong>Why D is right.</strong> D. A stub match places a short section of line across the feed line near the antenna to cancel the mismatch there.</p>
+<p>A short or open length of line acts like a capacitor or an inductor, depending on its length. Placed in parallel with the feed line at the right spot, it cancels the reactance there. What remains matches the feed line&#x27;s impedance. The stub&#x27;s length and position can be found with a Smith chart.</p>
+<p><strong>Why not B?</strong> A delta match fans the feed line wires out to tap points on the element; it uses no parallel line section.</p>
+</div>
+</details>
+</article>
+<article id="e9e04">
+<h2>E9E04</h2>
+<p class="stem">What is the purpose of the series capacitor in a gamma match?</p>
+<ol class="opts">
+<li><span class="l">A</span> To provide DC isolation between the feed line and the antenna</li>
+<li><span class="l">B</span> To cancel unwanted inductive reactance</li>
+<li><span class="l">C</span> To provide a rejection notch that prevents the radiation of harmonics</li>
+<li><span class="l">D</span> To transform the antenna impedance to a higher value</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>B</strong>. To cancel unwanted inductive reactance</p>
+<div class="ex">
+<p><strong>Why B is right.</strong> B. The gamma rod adds inductive reactance in series with the feed, and the capacitor adds an equal opposite reactance to cancel it.</p>
+<p>The gamma rod and the element section beside it form a short piece of line that acts like an inductor. That inductance would leave a mismatch even when the tap is at the right resistance. A series capacitor&#x27;s reactance has the opposite sign. Adjusting it until the two cancel leaves a purely resistive match.</p>
+<p><strong>Why not A?</strong> The shield already connects to the element, so the capacitor is not there for DC isolation.</p>
+</div>
+</details>
+</article>
+<article id="e9e05">
+<h2>E9E05</h2>
+<p class="stem">What Yagi driven element feed point impedance is required to use a beta or hairpin matching system?</p>
+<ol class="opts">
+<li><span class="l">A</span> Capacitive (driven element electrically shorter than 1/2 wavelength)</li>
+<li><span class="l">B</span> Inductive (driven element electrically longer than 1/2 wavelength)</li>
+<li><span class="l">C</span> Purely resistive</li>
+<li><span class="l">D</span> Purely reactive</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>A</strong>. Capacitive (driven element electrically shorter than 1/2 wavelength)</p>
+<div class="ex">
+<p><strong>Why A is right.</strong> A. The hairpin is an inductor across the feed point, so it needs a driven element tuned short, whose feed point looks capacitive.</p>
+<p>A Yagi&#x27;s driven element often has a feed point resistance below 50 ohms. Shortening it a little adds capacitive reactance. The hairpin&#x27;s inductance, placed in parallel, combines with that capacitance like an L-network. The pair steps the low resistance up toward 50 ohms and cancels the reactance.</p>
+<p><strong>Why not B?</strong> An inductive element would add to the hairpin&#x27;s inductance instead of combining with it to match.</p>
+</div>
+</details>
+</article>
+<article id="e9e06">
+<h2>E9E06</h2>
+<p class="stem">Which of these transmission line impedances would be suitable for constructing a quarter-wave Q-section for matching a 100-ohm feed point impedance to a 50-ohm transmission line?</p>
+<ol class="opts">
+<li><span class="l">A</span> 50 ohms</li>
+<li><span class="l">B</span> 62 ohms</li>
+<li><span class="l">C</span> 75 ohms</li>
+<li><span class="l">D</span> 90 ohms</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>C</strong>. 75 ohms</p>
+<div class="ex">
+<p><strong>Why C is right.</strong> C. A quarter-wave matching line needs an impedance equal to the square root of 100 times 50, about 70.7 ohms, and 75-ohm line is closest.</p>
+<p>A quarter-wave section transforms a load: the impedance seen at its input is its own impedance squared, divided by the load. To make 100 ohms look like 50 ohms, solve for the line impedance. The ideal value is not a standard cable, but common 75-ohm coax is close enough to give a low SWR.</p>
+<pre class="worked">Zq = square root of (Zin × Zload)
+Zq = square root of (50 × 100) ohms
+Zq = square root of 5000 = 70.7 ohms
+nearest choice: 75 ohms
+= 70.7 ohms</pre>
+<p><strong>Why not B?</strong> 62 ohms is farther from the ideal 70.7 ohms than 75 ohms is.</p>
+</div>
+</details>
+</article>
+<article id="e9e07">
+<h2>E9E07</h2>
+<p class="stem">What parameter describes the interaction of a load and transmission line?</p>
+<ol class="opts">
+<li><span class="l">A</span> Characteristic impedance</li>
+<li><span class="l">B</span> Reflection coefficient</li>
+<li><span class="l">C</span> Velocity factor</li>
+<li><span class="l">D</span> Dielectric constant</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>B</strong>. Reflection coefficient</p>
+<div class="ex">
+<p><strong>Why B is right.</strong> B. The reflection coefficient tells how much of the wave on a line bounces back from the load, which depends on both of them.</p>
+<p>When a load&#x27;s impedance differs from the line&#x27;s characteristic impedance, part of the wave reflects. The reflection coefficient gives the size and phase of that reflection. Zero means a perfect match; 1 means everything reflects, as with an open or short. SWR can be calculated from it.</p>
+<p><strong>Why not A?</strong> Characteristic impedance belongs to the line alone; it does not involve the load.</p>
+</div>
+</details>
+</article>
+<article id="e9e08">
+<h2>E9E08</h2>
+<p class="stem">What is a use for a Wilkinson divider?</p>
+<ol class="opts">
+<li><span class="l">A</span> To divide the operating frequency of a transmitter signal so it can be used on a lower frequency band</li>
+<li><span class="l">B</span> To feed high-impedance antennas from a low-impedance source</li>
+<li><span class="l">C</span> To divide power equally between two 50-ohm loads while maintaining 50-ohm input impedance</li>
+<li><span class="l">D</span> To divide the frequency of the input to a counter to increase its frequency range</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>C</strong>. To divide power equally between two 50-ohm loads while maintaining 50-ohm input impedance</p>
+<div class="ex">
+<p><strong>Why C is right.</strong> C. Each quarter-wave arm turns a 50-ohm load into 100 ohms, and two 100-ohm arms in parallel give 50 ohms, so power splits evenly with a matched input.</p>
+<p>A common form uses two quarter-wave line sections, one to each output, plus a resistor joining the outputs. The resistor carries no current when both loads match, but absorbs power if one output is mismatched, which keeps the outputs isolated. Hams use it to feed two antennas in a stack or array.</p>
+<p><strong>Why not A?</strong> A Wilkinson divider splits power, not frequency; frequency division uses a different circuit.</p>
+</div>
+</details>
+</article>
+<article id="e9e09">
+<h2>E9E09</h2>
+<p class="stem">Which of the following is used to shunt feed a grounded tower at its base?</p>
+<ol class="opts">
+<li><span class="l">A</span> Double-bazooka match</li>
+<li><span class="l">B</span> Beta or hairpin match</li>
+<li><span class="l">C</span> Gamma match</li>
+<li><span class="l">D</span> All these choices are correct</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>C</strong>. Gamma match</p>
+<div class="ex">
+<p><strong>Why C is right.</strong> C. A gamma match taps the tower partway up while its base stays grounded, so it can shunt-feed a grounded tower.</p>
+<p>A tower bolted to ground has near-zero impedance at its base, so you cannot feed it there directly. A wire running parallel to the tower connects to it some distance up, where the impedance is higher. A series capacitor at the bottom tunes out the wire&#x27;s inductance. That is the gamma match idea applied to a vertical.</p>
+<p><strong>Why not B?</strong> A hairpin match needs a split, insulated feed point, but a grounded tower has no gap to bridge.</p>
+</div>
+</details>
+</article>
+<article id="e9e10">
+<h2>E9E10</h2>
+<p class="withdrawn">Withdrawn by NCVEC on 2024-01-31. It is not used on exams.</p>
+</article>
+<article id="e9e11">
+<h2>E9E11</h2>
+<p class="stem">What is the purpose of using multiple driven elements connected through phasing lines?</p>
+<ol class="opts">
+<li><span class="l">A</span> To control the antenna’s radiation pattern</li>
+<li><span class="l">B</span> To prevent harmonic radiation from the transmitter</li>
+<li><span class="l">C</span> To allow single-band antennas to operate on other bands</li>
+<li><span class="l">D</span> To create a low-angle radiation pattern</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>A</strong>. To control the antenna’s radiation pattern</p>
+<div class="ex">
+<p><strong>Why A is right.</strong> A. Phasing lines set the timing between driven elements, and that timing decides where their signals add or cancel.</p>
+<p>Each phasing line delays the signal by an amount set by its electrical length. Feeding elements with different delays steers the main lobe and places nulls. Changing or switching the lines can turn a pattern from broadside to end-fire, or reverse its direction, without moving the antennas.</p>
+<p><strong>Why not D?</strong> Phasing can shape the pattern in many ways; a low angle is not its general purpose.</p>
+</div>
+</details>
+</article>
+<nav class="pager" aria-label="Groups"><p><a href="../e9d/">Previous: E9D Yagi antennas; parabolic reflectors; feed point impedance and loading of electrically short antennas; antenna Q; RF grounding</a></p><p><a href="../e9f/">Next: E9F Transmission lines: characteristics of open and shorted feed lines; coax versus open wire; velocity factor; electrical length; coaxial cable dielectrics; microstrip</a></p></nav>
+<footer>
+<p>QSO Ready is an independent study app for the US amateur radio license exams. Questions: NCVEC Question Pool Committee,
+released to the public domain. Rule quotes: 47 CFR, eCFR as of 2026-10-29. Content version 1.</p>
+<p><a href="../../">QSO Ready home</a> · <a href="../../privacy/">Privacy policy</a> · <a href="mailto:hello@saurabhupadhyay.in">hello@saurabhupadhyay.in</a></p>
+</footer>
+</main>
+</body>
+</html>

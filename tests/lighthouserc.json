@@ -13,7 +13,9 @@
         "http://127.0.0.1:8080/privacy",
         "http://127.0.0.1:8080/refund",
         "http://127.0.0.1:8080/dhara-kosh/",
-        "http://127.0.0.1:8080/dhara-kosh/privacy/"
+        "http://127.0.0.1:8080/dhara-kosh/privacy/",
+        "http://127.0.0.1:8080/qso-ready/",
+        "http://127.0.0.1:8080/qso-ready/privacy/"
       ],
       "numberOfRuns": 3
     },

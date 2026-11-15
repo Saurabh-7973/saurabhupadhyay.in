@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>G7B Digital circuits; amplifiers and oscillators: General questions explained · QSO Ready</title>
+<meta name="description" content="General pool group G7B (Digital circuits; amplifiers and oscillators): all 11 questions with correct answers and plain-English explanations.">
+<link rel="canonical" href="https://saurabhupadhyay.in/qso-ready/general/g7b/">
+<link rel="stylesheet" href="../../site.css">
+</head>
+<body>
+<main>
+<p class="notice">Not affiliated with or endorsed by the FCC, NCVEC, ARRL or any VEC. Questions are the NCVEC pools word for word (public domain); explanations are our own. Exam rules and fees can change: check with your VE team.</p>
+<nav class="crumbs" aria-label="Breadcrumb"><a href="../../">QSO Ready</a> › <a href="../">General</a> › G7B</nav>
+<h1>G7B: Digital circuits; amplifiers and oscillators</h1>
+<p>Group G7B of the General pool (2023–2027) has 11 active questions. One of them is on every General exam. Each is shown word for word; open it to see the correct answer and our explanation.</p>
+<article id="g7b01">
+<h2>G7B01</h2>
+<p class="stem">What is the purpose of neutralizing an amplifier?</p>
+<ol class="opts">
+<li><span class="l">A</span> To limit the modulation index</li>
+<li><span class="l">B</span> To eliminate self-oscillations</li>
+<li><span class="l">C</span> To cut off the final amplifier during standby periods</li>
+<li><span class="l">D</span> To keep the carrier on frequency</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>B</strong>. To eliminate self-oscillations</p>
+<div class="ex">
+<p><strong>Why B is right.</strong> B. Neutralizing cancels feedback that would make the amplifier oscillate on its own.</p>
+<p>Inside an amplifying device, a little output signal leaks back to the input through internal capacitance. If that leak arrives with the wrong timing, the stage can start making its own signal, called self-oscillation. Neutralizing feeds back an equal signal of opposite phase to cancel the leak.</p>
+<p><strong>Why not D?</strong> Keeping the carrier on frequency is the job of the oscillator, not neutralization.</p>
+</div>
+</details>
+</article>
+<article id="g7b02">
+<h2>G7B02</h2>
+<p class="stem">Which of these classes of amplifiers has the highest efficiency?</p>
+<ol class="opts">
+<li><span class="l">A</span> Class A</li>
+<li><span class="l">B</span> Class B</li>
+<li><span class="l">C</span> Class AB</li>
+<li><span class="l">D</span> Class C</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>D</strong>. Class C</p>
+<div class="ex">
+<p><strong>Why D is right.</strong> D. Class C has the highest efficiency of the four.</p>
+<p>Efficiency means how much of the DC power becomes RF output instead of heat. Class C conducts for less than half of each cycle, so the device sits idle most of the time and wastes little power. Class A conducts all the time and is the least efficient.</p>
+<p><strong>Why not B?</strong> Class B conducts for about half the cycle, so it is better than A or AB but not as efficient as C.</p>
+</div>
+</details>
+</article>
+<article id="g7b03">
+<h2>G7B03</h2>
+<p class="stem">Which of the following describes the function of a two-input AND gate?</p>
+<ol class="opts">
+<li><span class="l">A</span> Output is high when either or both inputs are low</li>
+<li><span class="l">B</span> Output is high only when both inputs are high</li>
+<li><span class="l">C</span> Output is low when either or both inputs are high</li>
+<li><span class="l">D</span> Output is low only when both inputs are high</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>B</strong>. Output is high only when both inputs are high</p>
+<div class="ex">
+<p><strong>Why B is right.</strong> B. &#x27;AND&#x27; means input one and input two must both be high; a single low input holds the output low.</p>
+<p>A logic gate works with two levels, high and low. Any other mix of inputs gives a low output.</p>
+<p><strong>Why not C?</strong> Low output when either input is high describes a NOR gate, not AND.</p>
+</div>
+</details>
+</article>
+<article id="g7b04">
+<h2>G7B04</h2>
+<p class="stem">In a Class A amplifier, what percentage of the time does the amplifying device conduct?</p>
+<ol class="opts">
+<li><span class="l">A</span> 100%</li>
+<li><span class="l">B</span> More than 50% but less than 100%</li>
+<li><span class="l">C</span> 50%</li>
+<li><span class="l">D</span> Less than 50%</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>A</strong>. 100%</p>
+<div class="ex">
+<p><strong>Why A is right.</strong> A. A Class A device conducts for the whole cycle, 100% of the time.</p>
+<p>Class A biases the transistor or tube so current always flows, even with no signal. This keeps the output a faithful copy of the input, with low distortion. The cost is poor efficiency, since power is used even when nothing is being amplified.</p>
+<p><strong>Why not B?</strong> More than 50% but less than 100% describes Class AB.</p>
+</div>
+</details>
+</article>
+<article id="g7b05">
+<h2>G7B05</h2>
+<p class="stem">How many states does a 3-bit binary counter have?</p>
+<ol class="opts">
+<li><span class="l">A</span> 3</li>
+<li><span class="l">B</span> 6</li>
+<li><span class="l">C</span> 8</li>
+<li><span class="l">D</span> 16</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>C</strong>. 8</p>
+<div class="ex">
+<p><strong>Why C is right.</strong> C. Three bits can form 8 different patterns, so the counter has 8 states.</p>
+<p>Each bit can be 0 or 1, so each added bit doubles the number of patterns. A 3-bit counter steps from 000 up to 111 and then starts over. That is 0 through 7, which is eight states.</p>
+<pre class="worked">states = 2^n, where n is the number of bits
+n = 3
+states = 2^3 = 2 × 2 × 2
+states = 8
+= 8</pre>
+<p><strong>Why not A?</strong> 3 is the number of bits, not the number of patterns those bits can make.</p>
+</div>
+</details>
+</article>
+<article id="g7b06">
+<h2>G7B06</h2>
+<p class="stem">What is a shift register?</p>
+<ol class="opts">
+<li><span class="l">A</span> A clocked array of circuits that passes data in steps along the array</li>
+<li><span class="l">B</span> An array of operational amplifiers used for tri-state arithmetic operations</li>
+<li><span class="l">C</span> A digital mixer</li>
+<li><span class="l">D</span> An analog mixer</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>A</strong>. A clocked array of circuits that passes data in steps along the array</p>
+<div class="ex">
+<p><strong>Why A is right.</strong> A. Its flip-flops share one clock, so each tick copies every stored bit into the next cell down the line.</p>
+<p>A shift register is a row of memory cells, called flip-flops. It can turn a serial stream of bits into parallel form, or the other way around.</p>
+<p><strong>Why not C?</strong> A mixer combines two signals to make new frequencies; it does not store or step data.</p>
+</div>
+</details>
+</article>
+<article id="g7b07">
+<h2>G7B07</h2>
+<p class="stem">Which of the following are basic components of a sine wave oscillator?</p>
+<ol class="opts">
+<li><span class="l">A</span> An amplifier and a divider</li>
+<li><span class="l">B</span> A frequency multiplier and a mixer</li>
+<li><span class="l">C</span> A circulator and a filter operating in a feed-forward loop</li>
+<li><span class="l">D</span> A filter and an amplifier operating in a feedback loop</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>D</strong>. A filter and an amplifier operating in a feedback loop</p>
+<div class="ex">
+<p><strong>Why D is right.</strong> D. The amplifier replaces the energy lost on each trip around the loop, and the filter lets only one frequency keep circulating.</p>
+<p>The filter is often a coil and capacitor. Only the frequency that goes around the loop with the right phase builds up, and it becomes a steady sine wave.</p>
+<p><strong>Why not C?</strong> A feed-forward loop does not send output back to the input, so it cannot sustain an oscillation.</p>
+</div>
+</details>
+</article>
+<article id="g7b08">
+<h2>G7B08</h2>
+<p class="stem">How is the efficiency of an RF power amplifier determined?</p>
+<ol class="opts">
+<li><span class="l">A</span> Divide the DC input power by the DC output power</li>
+<li><span class="l">B</span> Divide the RF output power by the DC input power</li>
+<li><span class="l">C</span> Multiply the RF input power by the reciprocal of the RF output power</li>
+<li><span class="l">D</span> Add the RF input power to the DC output power</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>B</strong>. Divide the RF output power by the DC input power</p>
+<div class="ex">
+<p><strong>Why B is right.</strong> B. Efficiency compares what you get, RF out, with what you pay for, DC power drawn from the supply.</p>
+<p>For example, 60 W of RF from 100 W of DC input is 60% efficient. The rest becomes heat.</p>
+<p><strong>Why not A?</strong> Both terms in A are DC values, and the division is upside down.</p>
+</div>
+</details>
+</article>
+<article id="g7b09">
+<h2>G7B09</h2>
+<p class="stem">What determines the frequency of an LC oscillator?</p>
+<ol class="opts">
+<li><span class="l">A</span> The number of stages in the counter</li>
+<li><span class="l">B</span> The number of stages in the divider</li>
+<li><span class="l">C</span> The inductance and capacitance in the tank circuit</li>
+<li><span class="l">D</span> The time delay of the lag circuit</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>C</strong>. The inductance and capacitance in the tank circuit</p>
+<div class="ex">
+<p><strong>Why C is right.</strong> C. Energy swaps back and forth between the coil and the capacitor at one natural rate, and that rate is the output frequency.</p>
+<p>A tank circuit is an inductor and a capacitor connected together. Its natural frequency is called resonance. More inductance or more capacitance lowers that frequency.</p>
+<p><strong>Why not D?</strong> A lag circuit&#x27;s time delay sets the frequency in an RC oscillator, not in an LC oscillator.</p>
+</div>
+</details>
+</article>
+<article id="g7b10">
+<h2>G7B10</h2>
+<p class="stem">Which of the following describes a linear amplifier?</p>
+<ol class="opts">
+<li><span class="l">A</span> Any RF power amplifier used in conjunction with an amateur transceiver</li>
+<li><span class="l">B</span> An amplifier in which the output preserves the input waveform</li>
+<li><span class="l">C</span> A Class C high efficiency amplifier</li>
+<li><span class="l">D</span> An amplifier used as a frequency multiplier</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>B</strong>. An amplifier in which the output preserves the input waveform</p>
+<div class="ex">
+<p><strong>Why B is right.</strong> B. &#x27;Linear&#x27; means the output is always the same multiple of the input, so the waveform&#x27;s shape is kept.</p>
+<p>Any change in amplitude at the input shows up the same way at the output. This matters for SSB and AM, where the information is carried in the signal&#x27;s amplitude.</p>
+<p><strong>Why not C?</strong> Class C distorts the waveform, so it is not a linear amplifier.</p>
+</div>
+</details>
+</article>
+<article id="g7b11">
+<h2>G7B11</h2>
+<p class="stem">For which of the following modes is a Class C power stage appropriate for amplifying a modulated signal?</p>
+<ol class="opts">
+<li><span class="l">A</span> SSB</li>
+<li><span class="l">B</span> FM</li>
+<li><span class="l">C</span> AM</li>
+<li><span class="l">D</span> All these choices are correct</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>B</strong>. FM</p>
+<div class="ex">
+<p><strong>Why B is right.</strong> B. FM is the mode where a Class C stage works well.</p>
+<p>An FM signal has the same amplitude all the time; the information is in its frequency. Class C distorts amplitude, but that does no harm when amplitude carries nothing. SSB and AM carry information in amplitude, so they need a linear amplifier.</p>
+<p><strong>Why not A?</strong> SSB depends on amplitude changes, which a Class C stage would distort.</p>
+</div>
+</details>
+</article>
+<nav class="pager" aria-label="Groups"><p><a href="../g7a/">Previous: G7A Power supplies; schematic symbols</a></p><p><a href="../g7c/">Next: G7C Transceiver design; filters; oscillators; digital signal processing (DSP)</a></p></nav>
+<footer>
+<p>QSO Ready is an independent study app for the US amateur radio license exams. Questions: NCVEC Question Pool Committee,
+released to the public domain. Rule quotes: 47 CFR, eCFR as of 2026-10-29. Content version 1.</p>
+<p><a href="../../">QSO Ready home</a> · <a href="../../privacy/">Privacy policy</a> · <a href="mailto:hello@saurabhupadhyay.in">hello@saurabhupadhyay.in</a></p>
+</footer>
+</main>
+</body>
+</html>

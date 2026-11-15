@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>E7B Amplifiers: class of operation; vacuum tube and solid-state circuits; distortion and intermodulation; spurious and parasitic suppression; switching-type amplifiers: Amateur Extra questions explained · QSO Ready</title>
+<meta name="description" content="Amateur Extra pool group E7B (Amplifiers: class of operation; vacuum tube and solid-state circuits; distortion and intermodulation; spurious and parasitic suppression; switching-type amplifiers): all 12 questions with correct answers and plain-English explanations.">
+<link rel="canonical" href="https://saurabhupadhyay.in/qso-ready/extra/e7b/">
+<link rel="stylesheet" href="../../site.css">
+</head>
+<body>
+<main>
+<p class="notice">Not affiliated with or endorsed by the FCC, NCVEC, ARRL or any VEC. Questions are the NCVEC pools word for word (public domain); explanations are our own. Exam rules and fees can change: check with your VE team.</p>
+<nav class="crumbs" aria-label="Breadcrumb"><a href="../../">QSO Ready</a> › <a href="../">Amateur Extra</a> › E7B</nav>
+<h1>E7B: Amplifiers: class of operation; vacuum tube and solid-state circuits; distortion and intermodulation; spurious and parasitic suppression; switching-type amplifiers</h1>
+<p>Group E7B of the Amateur Extra pool (2024–2028) has 12 active questions. One of them is on every Amateur Extra exam. Each is shown word for word; open it to see the correct answer and our explanation.</p>
+<article id="e7b01">
+<h2>E7B01</h2>
+<p class="stem">For what portion of the signal cycle does each active element in a push-pull, Class AB amplifier conduct?</p>
+<ol class="opts">
+<li><span class="l">A</span> More than 180 degrees but less than 360 degrees</li>
+<li><span class="l">B</span> Exactly 180 degrees</li>
+<li><span class="l">C</span> The entire cycle</li>
+<li><span class="l">D</span> Less than 180 degrees</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>A</strong>. More than 180 degrees but less than 360 degrees</p>
+<div class="ex">
+<p><strong>Why A is right.</strong> A. Class AB is biased slightly on, so each device conducts for its half of the wave plus a little more, between 180 and 360 degrees.</p>
+<p>Class A conducts all 360 degrees and class B exactly 180. Class AB sits between. In push-pull, one device handles the positive half and the other the negative half. The small overlap near each zero crossing removes crossover distortion, the kink class B can show where one device hands off to the other.</p>
+<p><strong>Why not B?</strong> Conduction for exactly 180 degrees is class B.</p>
+</div>
+</details>
+</article>
+<article id="e7b02">
+<h2>E7B02</h2>
+<p class="stem">What is a Class D amplifier?</p>
+<ol class="opts">
+<li><span class="l">A</span> An amplifier that uses switching technology to achieve high efficiency</li>
+<li><span class="l">B</span> A low power amplifier that uses a differential amplifier for improved linearity</li>
+<li><span class="l">C</span> An amplifier that uses drift-mode FETs for high efficiency</li>
+<li><span class="l">D</span> An amplifier biased to be relatively free from distortion</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>A</strong>. An amplifier that uses switching technology to achieve high efficiency</p>
+<div class="ex">
+<p><strong>Why A is right.</strong> A. A class D amplifier drives its transistors fully on or fully off, so very little power is lost as heat.</p>
+<p>A switch that is fully on has almost no voltage across it; fully off, it has almost no current through it. Either way, voltage times current, the heat, stays small. The output is a train of pulses whose width or timing carries the signal, and a filter smooths it back into the wanted waveform.</p>
+<p><strong>Why not D?</strong> Biasing for low distortion describes class A, not a switching design.</p>
+</div>
+</details>
+</article>
+<article id="e7b03">
+<h2>E7B03</h2>
+<p class="stem">What circuit is required at the output of an RF switching amplifier?</p>
+<ol class="opts">
+<li><span class="l">A</span> A filter to remove harmonic content</li>
+<li><span class="l">B</span> A high-pass filter to compensate for low gain at low frequencies</li>
+<li><span class="l">C</span> A matched load resistor to prevent damage by switching transients</li>
+<li><span class="l">D</span> A temperature compensating load resistor to improve linearity</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>A</strong>. A filter to remove harmonic content</p>
+<div class="ex">
+<p><strong>Why A is right.</strong> A. A switching amplifier puts out square-shaped pulses full of harmonics, so a filter must remove them before the antenna.</p>
+<p>A square wave contains the fundamental frequency plus odd harmonics at 3, 5 and 7 times that frequency. Those would radiate on other bands and cause interference. A low-pass or band-pass output network passes the operating frequency and rejects the harmonics.</p>
+<p><strong>Why not B?</strong> The problem is unwanted energy above the operating frequency, not weak gain below it.</p>
+</div>
+</details>
+</article>
+<article id="e7b04">
+<h2>E7B04</h2>
+<p class="stem">What is the operating point of a Class A common emitter amplifier?</p>
+<ol class="opts">
+<li><span class="l">A</span> Approximately halfway between saturation and cutoff</li>
+<li><span class="l">B</span> Approximately halfway between the emitter voltage and the base voltage</li>
+<li><span class="l">C</span> At a point where the bias resistor equals the load resistor</li>
+<li><span class="l">D</span> At a point where the load line intersects the zero bias current curve</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>A</strong>. Approximately halfway between saturation and cutoff</p>
+<div class="ex">
+<p><strong>Why A is right.</strong> A. Biasing midway between saturation (fully on) and cutoff (fully off) lets the output swing equally up and down without clipping.</p>
+<p>In class A the transistor conducts for the whole cycle. Placing its resting point, called the Q point, at the center of its range gives the largest undistorted swing both ways. Bias too near either end and one peak flattens. The cost is a steady current even with no signal, so efficiency is low.</p>
+<p><strong>Why not B?</strong> Bias is set relative to the transistor&#x27;s on and off limits, not to the gap between emitter and base voltage.</p>
+</div>
+</details>
+</article>
+<article id="e7b05">
+<h2>E7B05</h2>
+<p class="stem">What can be done to prevent unwanted oscillations in an RF power amplifier?</p>
+<ol class="opts">
+<li><span class="l">A</span> Tune the stage for minimum loading</li>
+<li><span class="l">B</span> Tune both the input and output for maximum power</li>
+<li><span class="l">C</span> Install parasitic suppressors and/or neutralize the stage</li>
+<li><span class="l">D</span> Use a phase inverter in the output filter</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>C</strong>. Install parasitic suppressors and/or neutralize the stage</p>
+<div class="ex">
+<p><strong>Why C is right.</strong> C. Parasitic suppressors damp stray VHF resonances and neutralization cancels internal feedback, removing the two main causes of self-oscillation.</p>
+<p>An amplifier oscillates when some output leaks back to its input in phase. Capacitance inside the tube or transistor gives such a path; neutralizing adds an equal and opposite feedback to cancel it. Lead inductance and stray capacitance can also resonate at VHF; a parasitic suppressor, often a small coil with a resistor across it, adds loss there.</p>
+<p><strong>Why not B?</strong> Tuning for maximum power does nothing to remove feedback paths.</p>
+</div>
+</details>
+</article>
+<article id="e7b06">
+<h2>E7B06</h2>
+<p class="stem">What is a characteristic of a grounded-grid amplifier?</p>
+<ol class="opts">
+<li><span class="l">A</span> High power gain</li>
+<li><span class="l">B</span> Low input impedance</li>
+<li><span class="l">C</span> High electrostatic damage protection</li>
+<li><span class="l">D</span> Low bandwidth</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>B</strong>. Low input impedance</p>
+<div class="ex">
+<p><strong>Why B is right.</strong> B. In a grounded-grid stage the drive goes into the cathode, which carries the full tube current, so the input impedance is low.</p>
+<p>The control grid is held at RF ground and the signal is applied to the cathode. The driver must supply the whole cathode current swing, so the input looks like a low resistance, often not far from 50 ohms. That makes it easy to drive from a transceiver and very stable.</p>
+<p><strong>Why not A?</strong> Power gain is only moderate, because much of the drive power passes straight through to the output.</p>
+</div>
+</details>
+</article>
+<article id="e7b07">
+<h2>E7B07</h2>
+<p class="stem">Which of the following is the likely result of using a Class C amplifier to amplify a single-sideband phone signal?</p>
+<ol class="opts">
+<li><span class="l">A</span> Reduced intermodulation products</li>
+<li><span class="l">B</span> Increased overall intelligibility</li>
+<li><span class="l">C</span> Reduced third-order intermodulation</li>
+<li><span class="l">D</span> Signal distortion and excessive bandwidth</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>D</strong>. Signal distortion and excessive bandwidth</p>
+<div class="ex">
+<p><strong>Why D is right.</strong> D. Class C conducts for well under half a cycle and does not track amplitude, so an SSB signal comes out distorted and spread wide.</p>
+<p>SSB carries its information in changing amplitude. A class C stage is nonlinear: its output does not rise and fall in proportion to its input. That bending of the waveform creates new frequencies, called intermodulation products, that widen the signal and garble the audio. SSB needs a linear amplifier, class A, AB or B.</p>
+<p><strong>Why not A?</strong> Nonlinearity creates more intermodulation products, never fewer.</p>
+</div>
+</details>
+</article>
+<article id="e7b08">
+<h2>E7B08</h2>
+<p class="stem">Why are switching amplifiers more efficient than linear amplifiers?</p>
+<ol class="opts">
+<li><span class="l">A</span> Switching amplifiers operate at higher voltages</li>
+<li><span class="l">B</span> The switching device is at saturation or cutoff most of the time</li>
+<li><span class="l">C</span> Linear amplifiers have high gain resulting in higher harmonic content</li>
+<li><span class="l">D</span> Switching amplifiers use push-pull circuits</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>B</strong>. The switching device is at saturation or cutoff most of the time</p>
+<div class="ex">
+<p><strong>Why B is right.</strong> B. A switch is fully on (saturation) or fully off (cutoff) almost all the time, so voltage across it and current through it are rarely large together.</p>
+<p>Heat in a transistor equals the voltage across it times the current through it. A linear amplifier keeps the device partly on, with both values sizable, so it wastes power. A switch spends little time in that middle region, so its efficiency can top 90 percent.</p>
+<p><strong>Why not D?</strong> Linear amplifiers often use push-pull too, so that is not where the saving comes from.</p>
+</div>
+</details>
+</article>
+<article id="e7b09">
+<h2>E7B09</h2>
+<p class="stem">What is characteristic of an emitter follower (or common collector) amplifier?</p>
+<ol class="opts">
+<li><span class="l">A</span> Low input impedance and phase inversion from input to output</li>
+<li><span class="l">B</span> Differential inputs and single output</li>
+<li><span class="l">C</span> Acts as an OR circuit if one input is grounded</li>
+<li><span class="l">D</span> Input and output signals in-phase</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>D</strong>. Input and output signals in-phase</p>
+<div class="ex">
+<p><strong>Why D is right.</strong> D. The output is taken from the emitter, which follows the base voltage up and down, so output and input stay in phase.</p>
+<p>In a common-collector stage the emitter sits about 0.6 volt below the base and tracks it. Voltage gain is a little under 1, but current gain is high. Input impedance is high and output impedance is low, which makes it a good buffer between stages.</p>
+<p><strong>Why not A?</strong> An emitter follower has high input impedance and no inversion; inversion belongs to the common-emitter stage.</p>
+</div>
+</details>
+</article>
+<article id="e7b10">
+<h2>E7B10</h2>
+<p class="stem">In Figure E7-1, what is the purpose of R1 and R2?</p>
+<figure><img src="../../figures/E7-1.webp" width="1000" height="902" loading="lazy" alt="Figure E7-1 is a one-transistor amplifier. In the center is a circle holding an NPN bipolar transistor: its base lead points left, its collector goes up, and its emitter goes down with an arrow pointing outward. A supply terminal marked + is at the top right. Resistor R1, a zigzag, runs from the + supply line down to the base. Resistor R2 runs from the base to ground. The input terminal IN connects through capacitor C1, drawn as a straight line and a curved line, to the base. An unlabeled resistor connects the + supply to the collector. Capacitor C2 connects the collector to the output terminal OUT. Resistor R3 connects the emitter to ground, and capacitor C3 also connects the emitter to ground, in parallel with R3."><figcaption>Figure E7-1</figcaption></figure>
+<ol class="opts">
+<li><span class="l">A</span> Load resistors</li>
+<li><span class="l">B</span> Voltage divider bias</li>
+<li><span class="l">C</span> Self bias</li>
+<li><span class="l">D</span> Feedback</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>B</strong>. Voltage divider bias</p>
+<div class="ex">
+<p><strong>Why B is right.</strong> B. R1 and R2 split the supply voltage and hold the transistor&#x27;s base at a steady DC level, which sets its bias.</p>
+<p>In Figure E7-1, R1, a zigzag resistor, runs from the positive supply line down to the base of the transistor, and R2 runs from that same base point to ground. The input signal reaches this point through C1, the capacitor drawn as a straight line and a curved line. The fraction of supply voltage between the two resistors sets the base bias.</p>
+<p><strong>Why not D?</strong> Neither resistor connects the output back to the input, so neither one gives feedback.</p>
+</div>
+</details>
+</article>
+<article id="e7b11">
+<h2>E7B11</h2>
+<p class="stem">In Figure E7-1, what is the purpose of R3?</p>
+<figure><img src="../../figures/E7-1.webp" width="1000" height="902" loading="lazy" alt="Figure E7-1 is a one-transistor amplifier. In the center is a circle holding an NPN bipolar transistor: its base lead points left, its collector goes up, and its emitter goes down with an arrow pointing outward. A supply terminal marked + is at the top right. Resistor R1, a zigzag, runs from the + supply line down to the base. Resistor R2 runs from the base to ground. The input terminal IN connects through capacitor C1, drawn as a straight line and a curved line, to the base. An unlabeled resistor connects the + supply to the collector. Capacitor C2 connects the collector to the output terminal OUT. Resistor R3 connects the emitter to ground, and capacitor C3 also connects the emitter to ground, in parallel with R3."><figcaption>Figure E7-1</figcaption></figure>
+<ol class="opts">
+<li><span class="l">A</span> Fixed bias</li>
+<li><span class="l">B</span> Emitter bypass</li>
+<li><span class="l">C</span> Output load resistor</li>
+<li><span class="l">D</span> Self bias</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>D</strong>. Self bias</p>
+<div class="ex">
+<p><strong>Why D is right.</strong> D. R3, in the emitter lead, develops a voltage from the transistor&#x27;s own current that sets and steadies the bias.</p>
+<p>In Figure E7-1, R3 is the zigzag resistor from the transistor&#x27;s emitter, the lead with the arrow, to ground. Emitter current makes a voltage across R3. If current rises, for example from heat, that voltage rises, the base-to-emitter voltage shrinks, and current is pulled back down. The bias corrects itself.</p>
+<p><strong>Why not B?</strong> Emitter bypassing is done by C3, the capacitor from the emitter to ground, not by R3.</p>
+</div>
+</details>
+</article>
+<article id="e7b12">
+<h2>E7B12</h2>
+<p class="stem">What type of amplifier circuit is shown in Figure E7-1?</p>
+<figure><img src="../../figures/E7-1.webp" width="1000" height="902" loading="lazy" alt="Figure E7-1 is a one-transistor amplifier. In the center is a circle holding an NPN bipolar transistor: its base lead points left, its collector goes up, and its emitter goes down with an arrow pointing outward. A supply terminal marked + is at the top right. Resistor R1, a zigzag, runs from the + supply line down to the base. Resistor R2 runs from the base to ground. The input terminal IN connects through capacitor C1, drawn as a straight line and a curved line, to the base. An unlabeled resistor connects the + supply to the collector. Capacitor C2 connects the collector to the output terminal OUT. Resistor R3 connects the emitter to ground, and capacitor C3 also connects the emitter to ground, in parallel with R3."><figcaption>Figure E7-1</figcaption></figure>
+<ol class="opts">
+<li><span class="l">A</span> Common base</li>
+<li><span class="l">B</span> Common collector</li>
+<li><span class="l">C</span> Common emitter</li>
+<li><span class="l">D</span> Emitter follower</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>C</strong>. Common emitter</p>
+<div class="ex">
+<p><strong>Why C is right.</strong> C. The signal enters at the base and leaves from the collector, while the emitter is tied to ground for signals, so the emitter is the common lead.</p>
+<p>A transistor stage is named for the lead shared by input and output. In Figure E7-1, the input passes through capacitor C1 to the base, and the output comes from the collector through capacitor C2 to OUT. The emitter goes to ground through R3, with capacitor C3 across R3 grounding it for signals.</p>
+<p><strong>Why not B?</strong> Common collector, also called emitter follower, would take its output from the emitter, not the collector.</p>
+</div>
+</details>
+</article>
+<nav class="pager" aria-label="Groups"><p><a href="../e7a/">Previous: E7A Digital circuits: digital circuit principles and logic circuits; classes of logic elements; positive and negative logic; frequency dividers; truth tables</a></p><p><a href="../e7c/">Next: E7C Filters and matching networks: types of networks; types of filters; filter applications; filter characteristics; impedance matching</a></p></nav>
+<footer>
+<p>QSO Ready is an independent study app for the US amateur radio license exams. Questions: NCVEC Question Pool Committee,
+released to the public domain. Rule quotes: 47 CFR, eCFR as of 2026-10-29. Content version 1.</p>
+<p><a href="../../">QSO Ready home</a> · <a href="../../privacy/">Privacy policy</a> · <a href="mailto:hello@saurabhupadhyay.in">hello@saurabhupadhyay.in</a></p>
+</footer>
+</main>
+</body>
+</html>

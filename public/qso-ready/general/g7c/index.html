@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>G7C Transceiver design; filters; oscillators; digital signal processing (DSP): General questions explained · QSO Ready</title>
+<meta name="description" content="General pool group G7C (Transceiver design; filters; oscillators; digital signal processing (DSP)): all 14 questions with correct answers and plain-English explanations.">
+<link rel="canonical" href="https://saurabhupadhyay.in/qso-ready/general/g7c/">
+<link rel="stylesheet" href="../../site.css">
+</head>
+<body>
+<main>
+<p class="notice">Not affiliated with or endorsed by the FCC, NCVEC, ARRL or any VEC. Questions are the NCVEC pools word for word (public domain); explanations are our own. Exam rules and fees can change: check with your VE team.</p>
+<nav class="crumbs" aria-label="Breadcrumb"><a href="../../">QSO Ready</a> › <a href="../">General</a> › G7C</nav>
+<h1>G7C: Transceiver design; filters; oscillators; digital signal processing (DSP)</h1>
+<p>Group G7C of the General pool (2023–2027) has 14 active questions. One of them is on every General exam. Each is shown word for word; open it to see the correct answer and our explanation.</p>
+<article id="g7c01">
+<h2>G7C01</h2>
+<p class="stem">What circuit is used to select one of the sidebands from a balanced modulator?</p>
+<ol class="opts">
+<li><span class="l">A</span> Carrier oscillator</li>
+<li><span class="l">B</span> Filter</li>
+<li><span class="l">C</span> IF amplifier</li>
+<li><span class="l">D</span> RF amplifier</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>B</strong>. Filter</p>
+<div class="ex">
+<p><strong>Why B is right.</strong> B. A filter picks out one sideband from the balanced modulator&#x27;s output.</p>
+<p>A balanced modulator makes two sidebands, one above and one below the suppressed carrier frequency. To get single sideband, a narrow filter passes the wanted sideband and blocks the other. Crystal filters are often used because their edges are very steep.</p>
+<p><strong>Why not A?</strong> The carrier oscillator feeds the modulator; it cannot remove a sideband.</p>
+</div>
+</details>
+</article>
+<article id="g7c02">
+<h2>G7C02</h2>
+<p class="stem">What output is produced by a balanced modulator?</p>
+<ol class="opts">
+<li><span class="l">A</span> Frequency modulated RF</li>
+<li><span class="l">B</span> Audio with equalized frequency response</li>
+<li><span class="l">C</span> Audio extracted from the modulation signal</li>
+<li><span class="l">D</span> Double-sideband modulated RF</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>D</strong>. Double-sideband modulated RF</p>
+<div class="ex">
+<p><strong>Why D is right.</strong> D. A balanced modulator puts out double-sideband RF with the carrier suppressed.</p>
+<p>It mixes audio with an RF carrier and then cancels the carrier itself. What remains are the upper and lower sidebands. A filter later removes one of them to make SSB.</p>
+<p><strong>Why not A?</strong> Frequency modulation comes from changing an oscillator&#x27;s frequency, not from a balanced modulator.</p>
+</div>
+</details>
+</article>
+<article id="g7c03">
+<h2>G7C03</h2>
+<p class="stem">What is one reason to use an impedance matching transformer at a transmitter output?</p>
+<ol class="opts">
+<li><span class="l">A</span> To minimize transmitter power output</li>
+<li><span class="l">B</span> To present the desired impedance to the transmitter and feed line</li>
+<li><span class="l">C</span> To reduce power supply ripple</li>
+<li><span class="l">D</span> To minimize radiation resistance</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>B</strong>. To present the desired impedance to the transmitter and feed line</p>
+<div class="ex">
+<p><strong>Why B is right.</strong> B. A transmitter delivers full power safely only into the load it was designed for, so the transformer converts the antenna system&#x27;s impedance to that value.</p>
+<p>Many transmitters are designed for 50 ohms. With the impedance matched, power moves from transmitter to feed line with little reflected back.</p>
+<p><strong>Why not A?</strong> The goal is to deliver power well, not to reduce output.</p>
+</div>
+</details>
+</article>
+<article id="g7c04">
+<h2>G7C04</h2>
+<p class="stem">How is a product detector used?</p>
+<ol class="opts">
+<li><span class="l">A</span> Used in test gear to detect spurious mixing products</li>
+<li><span class="l">B</span> Used in a transmitter to perform frequency multiplication</li>
+<li><span class="l">C</span> Used in an FM receiver to filter out unwanted sidebands</li>
+<li><span class="l">D</span> Used in a single sideband receiver to extract the modulated signal</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>D</strong>. Used in a single sideband receiver to extract the modulated signal</p>
+<div class="ex">
+<p><strong>Why D is right.</strong> D. SSB arrives with no carrier, so the detector mixes it with a locally made carrier to get the audio back.</p>
+<p>A plain AM detector needs a carrier in the signal, so it cannot decode SSB. The product detector&#x27;s carrier comes from an oscillator in the receiver, and the difference between the two is the original audio.</p>
+<p><strong>Why not C?</strong> FM receivers use discriminators or similar detectors, not a product detector to filter sidebands.</p>
+</div>
+</details>
+</article>
+<article id="g7c05">
+<h2>G7C05</h2>
+<p class="stem">Which of the following is characteristic of a direct digital synthesizer (DDS)?</p>
+<ol class="opts">
+<li><span class="l">A</span> Extremely narrow tuning range</li>
+<li><span class="l">B</span> Relatively high-power output</li>
+<li><span class="l">C</span> Pure sine wave output</li>
+<li><span class="l">D</span> Variable output frequency with the stability of a crystal oscillator</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>D</strong>. Variable output frequency with the stability of a crystal oscillator</p>
+<div class="ex">
+<p><strong>Why D is right.</strong> D. The frequency is set by numbers stepped out by a crystal clock, so changing the numbers tunes it while the crystal keeps it stable.</p>
+<p>A direct digital synthesizer, or DDS, builds a waveform one sample at a time from a table of numbers. It can tune in small steps across a wide range.</p>
+<p><strong>Why not C?</strong> A DDS output has small steps and spurious signals, so it is not a pure sine wave.</p>
+</div>
+</details>
+</article>
+<article id="g7c06">
+<h2>G7C06</h2>
+<p class="stem">Which of the following is an advantage of a digital signal processing (DSP) filter compared to an analog filter?</p>
+<ol class="opts">
+<li><span class="l">A</span> A wide range of filter bandwidths and shapes can be created</li>
+<li><span class="l">B</span> Fewer digital components are required</li>
+<li><span class="l">C</span> Mixing products are greatly reduced</li>
+<li><span class="l">D</span> The DSP filter is much more effective at VHF frequencies</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>A</strong>. A wide range of filter bandwidths and shapes can be created</p>
+<div class="ex">
+<p><strong>Why A is right.</strong> A. The filter is math run on digitized samples, so a new width or shape only needs different math, not new parts.</p>
+<p>Doing the same with analog filters would need separate sets of coils, capacitors or crystals for each width and shape.</p>
+<p><strong>Why not B?</strong> Fewer digital parts is not the advantage; the gain is flexibility.</p>
+</div>
+</details>
+</article>
+<article id="g7c07">
+<h2>G7C07</h2>
+<p class="stem">What term specifies a filter’s attenuation inside its passband?</p>
+<ol class="opts">
+<li><span class="l">A</span> Insertion loss</li>
+<li><span class="l">B</span> Return loss</li>
+<li><span class="l">C</span> Q</li>
+<li><span class="l">D</span> Ultimate rejection</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>A</strong>. Insertion loss</p>
+<div class="ex">
+<p><strong>Why A is right.</strong> A. Insertion loss is how much a filter weakens signals it is meant to pass.</p>
+<p>The passband is the range of frequencies a filter should let through. No real filter is perfect, so even those signals come out a little weaker. That loss, usually given in dB, is the insertion loss.</p>
+<p><strong>Why not D?</strong> Ultimate rejection describes signals outside the passband, not inside it.</p>
+</div>
+</details>
+</article>
+<article id="g7c08">
+<h2>G7C08</h2>
+<p class="stem">Which parameter affects receiver sensitivity?</p>
+<ol class="opts">
+<li><span class="l">A</span> Input amplifier gain</li>
+<li><span class="l">B</span> Demodulator stage bandwidth</li>
+<li><span class="l">C</span> Input amplifier noise figure</li>
+<li><span class="l">D</span> All these choices are correct</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>D</strong>. All these choices are correct</p>
+<div class="ex">
+<p><strong>Why D is right.</strong> D. Gain, demodulator bandwidth and noise figure all affect sensitivity.</p>
+<p>Sensitivity is the weakest signal a receiver can detect over its own noise. A quieter first amplifier, measured by noise figure, adds less noise. Enough gain lifts weak signals for later stages. A narrower bandwidth lets in less noise.</p>
+<p><strong>Why not C?</strong> Noise figure matters, but A and B also matter, so C alone is incomplete.</p>
+</div>
+</details>
+</article>
+<article id="g7c09">
+<h2>G7C09</h2>
+<p class="stem">What is the phase difference between the I and Q RF signals that software-defined radio (SDR) equipment uses for modulation and demodulation?</p>
+<ol class="opts">
+<li><span class="l">A</span> Zero</li>
+<li><span class="l">B</span> 90 degrees</li>
+<li><span class="l">C</span> 180 degrees</li>
+<li><span class="l">D</span> 45 degrees</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>B</strong>. 90 degrees</p>
+<div class="ex">
+<p><strong>Why B is right.</strong> B. The I and Q signals are 90 degrees apart.</p>
+<p>I stands for in-phase and Q for quadrature. Quadrature means a quarter of a cycle, which is 90 degrees. With two copies a quarter cycle apart, the SDR can track both the amplitude and the phase of a signal.</p>
+<p><strong>Why not C?</strong> 180 degrees would make Q a flipped copy of I, which adds no new information.</p>
+</div>
+</details>
+</article>
+<article id="g7c10">
+<h2>G7C10</h2>
+<p class="stem">What is an advantage of using I-Q modulation with software-defined radios (SDRs)?</p>
+<ol class="opts">
+<li><span class="l">A</span> The need for high resolution analog-to-digital converters is eliminated</li>
+<li><span class="l">B</span> All types of modulation can be created with appropriate processing</li>
+<li><span class="l">C</span> Minimum detectible signal level is reduced</li>
+<li><span class="l">D</span> Automatic conversion of the signal from digital to analog</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>B</strong>. All types of modulation can be created with appropriate processing</p>
+<div class="ex">
+<p><strong>Why B is right.</strong> B. I and Q together describe a signal&#x27;s amplitude and phase at every instant, and every modulation type is some pattern of amplitude and phase.</p>
+<p>So the same SDR hardware can produce or decode AM, FM, SSB or digital modes by running different software.</p>
+<p><strong>Why not A?</strong> SDRs still need good analog-to-digital converters to sample the signal.</p>
+</div>
+</details>
+</article>
+<article id="g7c11">
+<h2>G7C11</h2>
+<p class="stem">Which of these functions is performed by software in a software-defined radio (SDR)?</p>
+<ol class="opts">
+<li><span class="l">A</span> Filtering</li>
+<li><span class="l">B</span> Detection</li>
+<li><span class="l">C</span> Modulation</li>
+<li><span class="l">D</span> All these choices are correct</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>D</strong>. All these choices are correct</p>
+<div class="ex">
+<p><strong>Why D is right.</strong> D. Filtering, detection and modulation can all be done in SDR software.</p>
+<p>In a software-defined radio, the signal is turned into numbers early in the chain. After that, a processor handles jobs that used to need separate circuits. It can filter, it can detect to recover audio or data, and it can modulate for transmitting.</p>
+<p><strong>Why not A?</strong> Filtering is done in software, but so are B and C, so A alone is incomplete.</p>
+</div>
+</details>
+</article>
+<article id="g7c12">
+<h2>G7C12</h2>
+<p class="stem">What is the frequency above which a low-pass filter’s output power is less than half the input power?</p>
+<ol class="opts">
+<li><span class="l">A</span> Notch frequency</li>
+<li><span class="l">B</span> Neper frequency</li>
+<li><span class="l">C</span> Cutoff frequency</li>
+<li><span class="l">D</span> Rolloff frequency</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>C</strong>. Cutoff frequency</p>
+<div class="ex">
+<p><strong>Why C is right.</strong> C. The cutoff frequency is where a low-pass filter&#x27;s output falls below half power.</p>
+<p>A low-pass filter passes low frequencies and blocks higher ones. The cutoff is the point where the output power is half the input, which is 3 dB down. Above it, the output keeps dropping.</p>
+<p><strong>Why not D?</strong> Rolloff describes how fast the output drops past cutoff, not the point itself.</p>
+</div>
+</details>
+</article>
+<article id="g7c13">
+<h2>G7C13</h2>
+<p class="stem">What term specifies a filter’s maximum ability to reject signals outside its passband?</p>
+<ol class="opts">
+<li><span class="l">A</span> Notch depth</li>
+<li><span class="l">B</span> Rolloff</li>
+<li><span class="l">C</span> Insertion loss</li>
+<li><span class="l">D</span> Ultimate rejection</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>D</strong>. Ultimate rejection</p>
+<div class="ex">
+<p><strong>Why D is right.</strong> D. Ultimate rejection is the most a filter can weaken signals outside its passband.</p>
+<p>Far from the passband, a filter&#x27;s attenuation stops increasing and levels off. That floor, given in dB, is the ultimate rejection. A higher number means strong unwanted signals are blocked better.</p>
+<p><strong>Why not C?</strong> Insertion loss is the loss for signals inside the passband.</p>
+</div>
+</details>
+</article>
+<article id="g7c14">
+<h2>G7C14</h2>
+<p class="stem">The bandwidth of a band-pass filter is measured between what two frequencies?</p>
+<ol class="opts">
+<li><span class="l">A</span> Upper and lower half-power</li>
+<li><span class="l">B</span> Cutoff and rolloff</li>
+<li><span class="l">C</span> Pole and zero</li>
+<li><span class="l">D</span> Image and harmonic</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>A</strong>. Upper and lower half-power</p>
+<div class="ex">
+<p><strong>Why A is right.</strong> A. The edges of a band-pass filter are defined where output power has fallen to half (3 dB down) on each side of center.</p>
+<p>A band-pass filter passes a range of frequencies. On each side, the output drops as you tune away from the center. The space between the two half-power points is the bandwidth.</p>
+<p><strong>Why not B?</strong> Cutoff and rolloff are not two frequencies; rolloff describes how steeply the output falls.</p>
+</div>
+</details>
+</article>
+<nav class="pager" aria-label="Groups"><p><a href="../g7b/">Previous: G7B Digital circuits; amplifiers and oscillators</a></p><p><a href="../g8a/">Next: G8A Carriers and modulation: AM, FM, and single sideband; modulation envelope; digital modulation; overmodulation; link budgets and link margins</a></p></nav>
+<footer>
+<p>QSO Ready is an independent study app for the US amateur radio license exams. Questions: NCVEC Question Pool Committee,
+released to the public domain. Rule quotes: 47 CFR, eCFR as of 2026-10-29. Content version 1.</p>
+<p><a href="../../">QSO Ready home</a> · <a href="../../privacy/">Privacy policy</a> · <a href="mailto:hello@saurabhupadhyay.in">hello@saurabhupadhyay.in</a></p>
+</footer>
+</main>
+</body>
+</html>

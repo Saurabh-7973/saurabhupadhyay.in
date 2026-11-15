@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>G5B The decibel; current and voltage dividers; electrical power calculations; sine wave root-mean-square (RMS) values; PEP calculations: General questions explained · QSO Ready</title>
+<meta name="description" content="General pool group G5B (The decibel; current and voltage dividers; electrical power calculations; sine wave root-mean-square (RMS) values; PEP calculations): all 14 questions with correct answers and plain-English explanations.">
+<link rel="canonical" href="https://saurabhupadhyay.in/qso-ready/general/g5b/">
+<link rel="stylesheet" href="../../site.css">
+</head>
+<body>
+<main>
+<p class="notice">Not affiliated with or endorsed by the FCC, NCVEC, ARRL or any VEC. Questions are the NCVEC pools word for word (public domain); explanations are our own. Exam rules and fees can change: check with your VE team.</p>
+<nav class="crumbs" aria-label="Breadcrumb"><a href="../../">QSO Ready</a> › <a href="../">General</a> › G5B</nav>
+<h1>G5B: The decibel; current and voltage dividers; electrical power calculations; sine wave root-mean-square (RMS) values; PEP calculations</h1>
+<p>Group G5B of the General pool (2023–2027) has 14 active questions. One of them is on every General exam. Each is shown word for word; open it to see the correct answer and our explanation.</p>
+<article id="g5b01">
+<h2>G5B01</h2>
+<p class="stem">What dB change represents a factor of two increase or decrease in power?</p>
+<ol class="opts">
+<li><span class="l">A</span> Approximately 2 dB</li>
+<li><span class="l">B</span> Approximately 3 dB</li>
+<li><span class="l">C</span> Approximately 6 dB</li>
+<li><span class="l">D</span> Approximately 9 dB</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>B</strong>. Approximately 3 dB</p>
+<div class="ex">
+<p><strong>Why B is right.</strong> B. Doubling or halving power is a change of about 3 dB.</p>
+<p>Decibels compare two powers on a logarithmic scale. To convert a power ratio to dB, take 10 times the base-10 logarithm of the ratio. For a ratio of 2, that comes to about 3 dB. Halving power is about minus 3 dB.</p>
+<pre class="worked">dB = 10 × log10(P2 / P1)
+dB = 10 × log10(2)
+dB = 10 × 0.301 = 3.01 dB
+= Approximately 3 dB</pre>
+<p><strong>Why not C?</strong> 6 dB is about four times the power, not two.</p>
+</div>
+</details>
+</article>
+<article id="g5b02">
+<h2>G5B02</h2>
+<p class="stem">How does the total current relate to the individual currents in a circuit of parallel resistors?</p>
+<ol class="opts">
+<li><span class="l">A</span> It equals the average of the branch currents</li>
+<li><span class="l">B</span> It decreases as more parallel branches are added to the circuit</li>
+<li><span class="l">C</span> It equals the sum of the currents through each branch</li>
+<li><span class="l">D</span> It is the sum of the reciprocal of each individual voltage drop</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>C</strong>. It equals the sum of the currents through each branch</p>
+<div class="ex">
+<p><strong>Why C is right.</strong> C. Every parallel branch draws its own current from the same source, so the source must supply all of them added together.</p>
+<p>Each branch sits across the same voltage. Adding more branches adds more paths, and the total current goes up.</p>
+<p><strong>Why not B?</strong> Each new branch adds current, so the total rises.</p>
+</div>
+</details>
+</article>
+<article id="g5b03">
+<h2>G5B03</h2>
+<p class="stem">How many watts of electrical power are consumed if 400 VDC is supplied to an 800-ohm load?</p>
+<ol class="opts">
+<li><span class="l">A</span> 0.5 watts</li>
+<li><span class="l">B</span> 200 watts</li>
+<li><span class="l">C</span> 400 watts</li>
+<li><span class="l">D</span> 3200 watts</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>B</strong>. 200 watts</p>
+<div class="ex">
+<p><strong>Why B is right.</strong> B. 400 squared divided by 800 gives 200 watts.</p>
+<p>When you know voltage and resistance, power is voltage squared divided by resistance. Here E is in volts, R is in ohms and P comes out in watts.</p>
+<pre class="worked">P = E² / R
+P = 400² / 800
+P = 160,000 / 800 = 200 W
+= 200 watts</pre>
+<p><strong>Why not A?</strong> 0.5 is 400 divided by 800, which gives the current in amperes, not the power.</p>
+</div>
+</details>
+</article>
+<article id="g5b04">
+<h2>G5B04</h2>
+<p class="stem">How many watts of electrical power are consumed by a 12 VDC light bulb that draws 0.2 amperes?</p>
+<ol class="opts">
+<li><span class="l">A</span> 2.4 watts</li>
+<li><span class="l">B</span> 24 watts</li>
+<li><span class="l">C</span> 6 watts</li>
+<li><span class="l">D</span> 60 watts</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>A</strong>. 2.4 watts</p>
+<div class="ex">
+<p><strong>Why A is right.</strong> A. 12 volts times 0.2 amperes is 2.4 watts.</p>
+<p>Power is voltage times current. With volts and amperes, the answer is in watts.</p>
+<pre class="worked">P = E × I
+P = 12 V × 0.2 A
+P = 2.4 W
+= 2.4 watts</pre>
+<p><strong>Why not B?</strong> 24 watts comes from a decimal slip; 12 × 0.2 is 2.4.</p>
+</div>
+</details>
+</article>
+<article id="g5b05">
+<h2>G5B05</h2>
+<p class="stem">How many watts are consumed when a current of 7.0 milliamperes flows through a 1,250-ohm resistance?</p>
+<ol class="opts">
+<li><span class="l">A</span> Approximately 61 milliwatts</li>
+<li><span class="l">B</span> Approximately 61 watts</li>
+<li><span class="l">C</span> Approximately 11 milliwatts</li>
+<li><span class="l">D</span> Approximately 11 watts</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>A</strong>. Approximately 61 milliwatts</p>
+<div class="ex">
+<p><strong>Why A is right.</strong> A. The power is about 61 milliwatts.</p>
+<p>When you know current and resistance, power is current squared times resistance. First change milliamperes to amperes: 7.0 mA is 0.0070 A. A milliwatt is one thousandth of a watt.</p>
+<pre class="worked">P = I² × R
+I = 7.0 mA = 0.0070 A
+P = 0.0070² × 1250 = 0.000049 × 1250
+P = 0.06125 W = 61.25 mW
+= 61.25 milliwatts</pre>
+<p><strong>Why not B?</strong> 61 watts forgets to convert milliamperes to amperes first.</p>
+</div>
+</details>
+</article>
+<article id="g5b06">
+<h2>G5B06</h2>
+<p class="stem">What is the PEP produced by 200 volts peak-to-peak across a 50-ohm dummy load?</p>
+<ol class="opts">
+<li><span class="l">A</span> 1.4 watts</li>
+<li><span class="l">B</span> 100 watts</li>
+<li><span class="l">C</span> 353.5 watts</li>
+<li><span class="l">D</span> 400 watts</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>B</strong>. 100 watts</p>
+<div class="ex">
+<p><strong>Why B is right.</strong> B. 200 volts peak-to-peak across 50 ohms gives a PEP of 100 watts.</p>
+<p>PEP, peak envelope power, is the average power during one RF cycle at the highest point of the signal. Peak voltage is half the peak-to-peak value. For a sine wave, RMS voltage, the heating-equivalent value, is peak divided by the square root of 2. Then power is RMS voltage squared over resistance.</p>
+<pre class="worked">PEP = (Vpeak / √2)² / R
+Vpeak = 200 V / 2 = 100 V
+Vrms = 100 V / √2 = 70.71 V
+PEP = 70.71² / 50 = 5000 / 50 = 100 W
+= 100 watts</pre>
+<p><strong>Why not D?</strong> 400 watts comes from treating the 200 volts peak-to-peak as if it were the peak voltage.</p>
+</div>
+</details>
+</article>
+<article id="g5b07">
+<h2>G5B07</h2>
+<p class="stem">What value of an AC signal produces the same power dissipation in a resistor as a DC voltage of the same value?</p>
+<ol class="opts">
+<li><span class="l">A</span> The peak-to-peak value</li>
+<li><span class="l">B</span> The peak value</li>
+<li><span class="l">C</span> The RMS value</li>
+<li><span class="l">D</span> The reciprocal of the RMS value</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>C</strong>. The RMS value</p>
+<div class="ex">
+<p><strong>Why C is right.</strong> C. The RMS value of AC heats a resistor the same as an equal DC voltage.</p>
+<p>RMS stands for root mean square. It is a way of averaging an AC wave that matches its heating effect. So 120 volts RMS AC warms a resistor exactly as much as 120 volts DC.</p>
+<p><strong>Why not B?</strong> A sine wave reaches its peak only for an instant, so the peak value overstates the heating.</p>
+</div>
+</details>
+</article>
+<article id="g5b08">
+<h2>G5B08</h2>
+<p class="stem">What is the peak-to-peak voltage of a sine wave with an RMS voltage of 120 volts?</p>
+<ol class="opts">
+<li><span class="l">A</span> 84.8 volts</li>
+<li><span class="l">B</span> 169.7 volts</li>
+<li><span class="l">C</span> 240.0 volts</li>
+<li><span class="l">D</span> 339.4 volts</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>D</strong>. 339.4 volts</p>
+<div class="ex">
+<p><strong>Why D is right.</strong> D. 120 volts RMS is 339.4 volts peak-to-peak.</p>
+<p>For a sine wave, peak voltage is RMS voltage times the square root of 2, about 1.4142. Peak-to-peak runs from the top of the wave to the bottom, which is twice the peak.</p>
+<pre class="worked">Vpp = 2 × √2 × Vrms
+Vpeak = 120 V × 1.4142 = 169.7 V
+Vpp = 2 × 169.7 V = 339.4 V
+= 339.4 volts</pre>
+<p><strong>Why not B?</strong> 169.7 volts is the peak value, only half the peak-to-peak.</p>
+</div>
+</details>
+</article>
+<article id="g5b09">
+<h2>G5B09</h2>
+<p class="stem">What is the RMS voltage of a sine wave with a value of 17 volts peak?</p>
+<ol class="opts">
+<li><span class="l">A</span> 8.5 volts</li>
+<li><span class="l">B</span> 12 volts</li>
+<li><span class="l">C</span> 24 volts</li>
+<li><span class="l">D</span> 34 volts</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>B</strong>. 12 volts</p>
+<div class="ex">
+<p><strong>Why B is right.</strong> B. 17 volts peak is about 12 volts RMS.</p>
+<p>For a sine wave, RMS voltage is the peak voltage divided by the square root of 2, about 1.4142. RMS is the value that gives the same heating as DC.</p>
+<pre class="worked">Vrms = Vpeak / √2
+Vrms = 17 V / 1.4142
+Vrms = 12.02 V, about 12 V
+= 12 volts</pre>
+<p><strong>Why not D?</strong> 34 volts is twice the peak, which is the peak-to-peak value.</p>
+</div>
+</details>
+</article>
+<article id="g5b10">
+<h2>G5B10</h2>
+<p class="stem">What percentage of power loss is equivalent to a loss of 1 dB?</p>
+<ol class="opts">
+<li><span class="l">A</span> 10.9 percent</li>
+<li><span class="l">B</span> 12.2 percent</li>
+<li><span class="l">C</span> 20.6 percent</li>
+<li><span class="l">D</span> 25.9 percent</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>C</strong>. 20.6 percent</p>
+<div class="ex">
+<p><strong>Why C is right.</strong> C. A 1 dB loss leaves about 79.4 percent of the power, so 20.6 percent is lost.</p>
+<p>A loss of 1 dB means the remaining power is 10 raised to minus 1 tenth times the original. Subtract that fraction from 1 to find the part that was lost.</p>
+<pre class="worked">loss = (1 - 10^(-dB / 10)) × 100%
+remaining = 10^(-1 / 10) = 0.7943
+loss = (1 - 0.7943) × 100% = 20.6%
+= 20.6 percent</pre>
+<p><strong>Why not D?</strong> 25.9 percent is the loss you would get from about 1.3 dB, not 1 dB.</p>
+</div>
+</details>
+</article>
+<article id="g5b11">
+<h2>G5B11</h2>
+<p class="stem">What is the ratio of PEP to average power for an unmodulated carrier?</p>
+<ol class="opts">
+<li><span class="l">A</span> 0.707</li>
+<li><span class="l">B</span> 1.00</li>
+<li><span class="l">C</span> 1.414</li>
+<li><span class="l">D</span> 2.00</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>B</strong>. 1.00</p>
+<div class="ex">
+<p><strong>Why B is right.</strong> B. For an unmodulated carrier, PEP and average power are equal, a ratio of 1.00.</p>
+<p>PEP is the average power during one RF cycle at the peak of the signal&#x27;s envelope. The envelope is the outline of the signal&#x27;s peaks. An unmodulated carrier never changes in strength, so every cycle is the same as the peak cycle. Its PEP equals its average power.</p>
+<pre class="worked">ratio = PEP / average power
+steady carrier: every RF cycle has the same peak
+PEP = average power
+ratio = 1.00
+= 1.00</pre>
+<p><strong>Why not C?</strong> 1.414 is the ratio of a sine wave&#x27;s peak voltage to its RMS voltage, not a power ratio.</p>
+</div>
+</details>
+</article>
+<article id="g5b12">
+<h2>G5B12</h2>
+<p class="stem">What is the RMS voltage across a 50-ohm dummy load dissipating 1200 watts?</p>
+<ol class="opts">
+<li><span class="l">A</span> 173 volts</li>
+<li><span class="l">B</span> 245 volts</li>
+<li><span class="l">C</span> 346 volts</li>
+<li><span class="l">D</span> 692 volts</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>B</strong>. 245 volts</p>
+<div class="ex">
+<p><strong>Why B is right.</strong> B. A 50-ohm load taking 1200 watts has about 245 volts RMS across it.</p>
+<p>Power equals voltage squared divided by resistance. Turn that around and voltage is the square root of power times resistance. Using RMS power gives RMS voltage.</p>
+<pre class="worked">E = √(P × R)
+E = √(1200 × 50)
+E = √60,000 = 244.9 V, about 245 V
+= 245 volts</pre>
+<p><strong>Why not C?</strong> 346 volts is about the peak voltage, which is the RMS value times 1.414.</p>
+</div>
+</details>
+</article>
+<article id="g5b13">
+<h2>G5B13</h2>
+<p class="stem">What is the output PEP of an unmodulated carrier if the average power is 1060 watts?</p>
+<ol class="opts">
+<li><span class="l">A</span> 530 watts</li>
+<li><span class="l">B</span> 1060 watts</li>
+<li><span class="l">C</span> 1500 watts</li>
+<li><span class="l">D</span> 2120 watts</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>B</strong>. 1060 watts</p>
+<div class="ex">
+<p><strong>Why B is right.</strong> B. An unmodulated carrier&#x27;s PEP equals its average power, 1060 watts.</p>
+<p>A carrier with no modulation stays at one steady strength. Its peak cycle is the same as every other cycle, so the PEP equals the average power. The ratio is 1.00.</p>
+<pre class="worked">PEP = average power × 1.00
+PEP = 1060 W × 1.00
+PEP = 1060 W
+= 1060 watts</pre>
+<p><strong>Why not D?</strong> 2120 watts would double the power, but a steady carrier has no peaks above its average.</p>
+</div>
+</details>
+</article>
+<article id="g5b14">
+<h2>G5B14</h2>
+<p class="stem">What is the output PEP of 500 volts peak-to-peak across a 50-ohm load?</p>
+<ol class="opts">
+<li><span class="l">A</span> 8.75 watts</li>
+<li><span class="l">B</span> 625 watts</li>
+<li><span class="l">C</span> 2500 watts</li>
+<li><span class="l">D</span> 5000 watts</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>B</strong>. 625 watts</p>
+<div class="ex">
+<p><strong>Why B is right.</strong> B. 500 volts peak-to-peak across 50 ohms gives a PEP of 625 watts.</p>
+<p>Peak voltage is half the peak-to-peak value. RMS voltage of a sine wave is peak divided by the square root of 2. PEP is then RMS voltage squared divided by the load resistance.</p>
+<pre class="worked">PEP = (Vpeak / √2)² / R
+Vpeak = 500 V / 2 = 250 V
+Vrms = 250 V / √2 = 176.8 V
+PEP = 176.8² / 50 = 31,250 / 50 = 625 W
+= 625 watts</pre>
+<p><strong>Why not C?</strong> 2500 watts comes from treating the 500 volts peak-to-peak as if it were the peak voltage.</p>
+</div>
+</details>
+</article>
+<nav class="pager" aria-label="Groups"><p><a href="../g5a/">Previous: G5A Reactance; inductance; capacitance; impedance; impedance transformation; resonance</a></p><p><a href="../g5c/">Next: G5C Resistors, capacitors, and inductors in series and parallel; transformers</a></p></nav>
+<footer>
+<p>QSO Ready is an independent study app for the US amateur radio license exams. Questions: NCVEC Question Pool Committee,
+released to the public domain. Rule quotes: 47 CFR, eCFR as of 2026-10-29. Content version 1.</p>
+<p><a href="../../">QSO Ready home</a> · <a href="../../privacy/">Privacy policy</a> · <a href="mailto:hello@saurabhupadhyay.in">hello@saurabhupadhyay.in</a></p>
+</footer>
+</main>
+</body>
+</html>

@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>E1A Frequency privileges; signal frequency range; automatic message forwarding; stations aboard ships or aircraft; power restriction on 630- and 2200-meter bands: Amateur Extra questions explained · QSO Ready</title>
+<meta name="description" content="Amateur Extra pool group E1A (Frequency privileges; signal frequency range; automatic message forwarding; stations aboard ships or aircraft; power restriction on 630- and 2200-meter bands): all 11 questions with correct answers and plain-English explanations.">
+<link rel="canonical" href="https://saurabhupadhyay.in/qso-ready/extra/e1a/">
+<link rel="stylesheet" href="../../site.css">
+</head>
+<body>
+<main>
+<p class="notice">Not affiliated with or endorsed by the FCC, NCVEC, ARRL or any VEC. Questions are the NCVEC pools word for word (public domain); explanations are our own. Exam rules and fees can change: check with your VE team.</p>
+<nav class="crumbs" aria-label="Breadcrumb"><a href="../../">QSO Ready</a> › <a href="../">Amateur Extra</a> › E1A</nav>
+<h1>E1A: Frequency privileges; signal frequency range; automatic message forwarding; stations aboard ships or aircraft; power restriction on 630- and 2200-meter bands</h1>
+<p>Group E1A of the Amateur Extra pool (2024–2028) has 11 active questions. One of them is on every Amateur Extra exam. Each is shown word for word; open it to see the correct answer and our explanation.</p>
+<article id="e1a01">
+<h2>E1A01</h2>
+<p class="stem">Why is it not legal to transmit a 3 kHz bandwidth USB signal with a carrier frequency of 14.348 MHz?</p>
+<ol class="opts">
+<li><span class="l">A</span> USB is not used on 20-meter phone</li>
+<li><span class="l">B</span> The lower 1 kHz of the signal is outside the 20-meter band</li>
+<li><span class="l">C</span> 14.348 MHz is outside the 20-meter band</li>
+<li><span class="l">D</span> The upper 1 kHz of the signal is outside the 20-meter band</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>D</strong>. The upper 1 kHz of the signal is outside the 20-meter band</p>
+<div class="ex">
+<p><strong>Why D is right.</strong> D. An upper sideband signal spreads upward from its carrier, so a 3 kHz wide signal at 14.348 MHz reaches 14.351 MHz, 1 kHz past the 14.350 MHz band edge.</p>
+<p>Your display shows the carrier frequency, but the voice energy of USB sits above it. The whole signal, not only the carrier, must stay inside the band. On 20 meters the top edge is 14.350 MHz, so a 3 kHz USB signal needs a carrier no higher than 14.347 MHz.</p>
+<pre class="worked">top of signal = carrier + bandwidth
+14.348 MHz + 0.003 MHz = 14.351 MHz
+14.351 MHz - 14.350 MHz = 1 kHz over
+= 1 kHz</pre>
+<blockquote><p>“Emissions resulting from modulation must be confined to the band or segment available to the control operator.”</p><p class="cite">47 CFR 97.307(b)</p></blockquote>
+<p><strong>Why not B?</strong> On USB nothing extends below the carrier, so the lower part is not the problem.</p>
+</div>
+</details>
+</article>
+<article id="e1a02">
+<h2>E1A02</h2>
+<p class="stem">When using a transceiver that displays the carrier frequency of phone signals, which of the following displayed frequencies represents the lowest frequency at which a properly adjusted LSB emission will be totally within the band?</p>
+<ol class="opts">
+<li><span class="l">A</span> The exact lower band edge</li>
+<li><span class="l">B</span> 300 Hz above the lower band edge</li>
+<li><span class="l">C</span> 1 kHz above the lower band edge</li>
+<li><span class="l">D</span> 3 kHz above the lower band edge</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>D</strong>. 3 kHz above the lower band edge</p>
+<div class="ex">
+<p><strong>Why D is right.</strong> D. A lower sideband voice signal spreads about 3 kHz below its carrier, so the carrier must be at least 3 kHz above the lower edge.</p>
+<p>With LSB, the displayed frequency is the top of your signal and the voice energy sits below it. If the display reads exactly the band edge, almost the whole signal is outside the band. Setting the carrier 3 kHz up keeps every part of a normal voice signal inside.</p>
+<pre class="worked">lowest carrier = lower edge + signal width below the carrier
+LSB voice extends about 3 kHz below the carrier
+carrier &gt;= lower edge + 3 kHz
+= 3 kHz</pre>
+<blockquote><p>“Emissions resulting from modulation must be confined to the band or segment available to the control operator.”</p><p class="cite">47 CFR 97.307(b)</p></blockquote>
+<p><strong>Why not A?</strong> At the exact edge, nearly all of an LSB signal lies below the band.</p>
+</div>
+</details>
+</article>
+<article id="e1a03">
+<h2>E1A03</h2>
+<p class="stem">What is the highest legal carrier frequency on the 20-meter band for transmitting a 2.8 kHz wide USB data signal?</p>
+<ol class="opts">
+<li><span class="l">A</span> 14.0708 MHz</li>
+<li><span class="l">B</span> 14.1002 MHz</li>
+<li><span class="l">C</span> 14.1472 MHz</li>
+<li><span class="l">D</span> 14.3490 MHz</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>C</strong>. 14.1472 MHz</p>
+<div class="ex">
+<p><strong>Why C is right.</strong> C. Data on 20 meters must stay at or below 14.150 MHz, and a USB signal spreads 2.8 kHz above its carrier, so the highest carrier is 14.1472 MHz.</p>
+<p>The 20 meter RTTY and data segment runs from 14.00 to 14.15 MHz. With USB, the signal sits above the carrier. Subtract the signal width from the top of the segment to find the highest carrier that keeps the whole signal inside.</p>
+<pre class="worked">highest carrier = segment top - bandwidth
+14.150 MHz - 0.0028 MHz = 14.1472 MHz
+= 14.1472 MHz</pre>
+<blockquote><p>“20 m | 14.00-14.15 MHz | RTTY, data | (f)(3)”</p><p class="cite">47 CFR 97.305(c)</p></blockquote>
+<p><strong>Why not D?</strong> 14.3490 MHz is in the phone segment, where data is not authorized.</p>
+</div>
+</details>
+</article>
+<article id="e1a04">
+<h2>E1A04</h2>
+<p class="stem">May an Extra class operator answer the CQ of a station on 3.601 MHz LSB phone?</p>
+<ol class="opts">
+<li><span class="l">A</span> Yes, the entire signal will be inside the SSB allocation for Extra class operators</li>
+<li><span class="l">B</span> Yes, the displayed frequency is within the 75-meter phone band segment</li>
+<li><span class="l">C</span> No, the sideband components will extend beyond the edge of the phone band segment</li>
+<li><span class="l">D</span> No, US stations are not permitted to use phone emissions below 3.610 MHz</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>C</strong>. No, the sideband components will extend beyond the edge of the phone band segment</p>
+<div class="ex">
+<p><strong>Why C is right.</strong> C. On LSB the signal reaches about 3 kHz below 3.601 MHz, down to about 3.598 MHz, which is below the 3.600 MHz start of the phone segment.</p>
+<p>For an Extra class operator, phone on 75 meters begins at 3.600 MHz. Being able to transmit on the displayed frequency is not enough; the whole sideband must fit. To answer an LSB station near the edge, its carrier would need to be at least 3.603 MHz.</p>
+<blockquote><p>“75 m | 3.600-3.800 | 3.600-4.000 | 3.600-3.900 | (a)”</p><p class="cite">47 CFR 97.301(b)</p></blockquote>
+<p><strong>Why not B?</strong> The display shows the carrier, but the rest of an LSB signal sits below it.</p>
+</div>
+</details>
+</article>
+<article id="e1a05">
+<h2>E1A05</h2>
+<p class="stem">Who must be in physical control of the station apparatus of an amateur station aboard any vessel or craft that is documented or registered in the United States?</p>
+<ol class="opts">
+<li><span class="l">A</span> Only a person with an FCC Marine Radio license grant</li>
+<li><span class="l">B</span> Only a person named in an amateur station license grant</li>
+<li><span class="l">C</span> Any person holding an FCC issued amateur license or who is authorized for alien reciprocal operation</li>
+<li><span class="l">D</span> Any person named in an amateur station license grant or a person holding an unrestricted Radiotelephone Operator Permit</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>C</strong>. Any person holding an FCC issued amateur license or who is authorized for alien reciprocal operation</p>
+<div class="ex">
+<p><strong>Why C is right.</strong> C. The rule allows a person named in an amateur license grant, or a person authorized for alien reciprocal operation, to be in control.</p>
+<p>Amateur operation aboard a US-registered vessel or craft falls under FCC amateur rules. So the same people who may control a station on land may control it there: anyone with an FCC amateur license, or a foreign amateur allowed to operate in the US by a reciprocal arrangement.</p>
+<blockquote><p>“under the physical control of a person named in an amateur station license grant on the ULS consolidated license database or a person authorized for alien reciprocal operation”</p><p class="cite">47 CFR 97.5(a)</p></blockquote>
+<p><strong>Why not D?</strong> A commercial radiotelephone permit does not authorize amateur operation.</p>
+</div>
+</details>
+</article>
+<article id="e1a06">
+<h2>E1A06</h2>
+<p class="stem">What is the required transmit frequency of a CW signal for channelized 60 meter operation?</p>
+<ol class="opts">
+<li><span class="l">A</span> At the lowest frequency of the channel</li>
+<li><span class="l">B</span> At the center frequency of the channel</li>
+<li><span class="l">C</span> At the highest frequency of the channel</li>
+<li><span class="l">D</span> On any frequency where the signal’s sidebands are within the channel</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>B</strong>. At the center frequency of the channel</p>
+<div class="ex">
+<p><strong>Why B is right.</strong> B. For CW on a 60 meter channel, the rule sets the carrier on the channel&#x27;s center frequency.</p>
+<p>Phone and data stations may set their carrier 1.5 kHz below center so a USB signal is centered in the channel. CW is narrow and needs no offset, so it goes right on center. Since February 2026 this rule sits in 97.303(h)(3), which also opens a 5351.5 to 5366.5 kHz segment; the CW channel rule did not change.</p>
+<blockquote><p>“For CW emissions (emission designator 150HA1A), the carrier frequency is set to the center frequency.”</p><p class="cite">47 CFR 97.303(h)(3)</p></blockquote>
+<p><strong>Why not D?</strong> CW on a channel must be on center, not anywhere inside it.</p>
+</div>
+</details>
+</article>
+<article id="e1a07">
+<h2>E1A07</h2>
+<p class="stem">What is the maximum power permitted on the 2200-meter band?</p>
+<ol class="opts">
+<li><span class="l">A</span> 50 watts PEP (peak envelope power)</li>
+<li><span class="l">B</span> 100 watts PEP (peak envelope power)</li>
+<li><span class="l">C</span> 1 watt EIRP (equivalent isotropic radiated power)</li>
+<li><span class="l">D</span> 5 watts EIRP (equivalent isotropic radiated power)</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>C</strong>. 1 watt EIRP (equivalent isotropic radiated power)</p>
+<div class="ex">
+<p><strong>Why C is right.</strong> C. The 2200 meter rule caps the power leaving the antenna at 1 W EIRP, even though it lets the transmitter itself run up to 1.5 kW PEP.</p>
+<p>EIRP (equivalent isotropic radiated power) compares what your antenna radiates with an ideal antenna that radiates equally in all directions. At 136 kHz practical antennas are very inefficient, so a big transmitter still radiates very little. The radiated limit is the one that counts.</p>
+<blockquote><p>“No station may transmit in the 135.7-137.8 kHz (2200 m) band with a transmitter power exceeding 1.5 kW PEP or a radiated power exceeding 1 W EIRP.”</p><p class="cite">47 CFR 97.313(k)</p></blockquote>
+<p><strong>Why not D?</strong> 5 watts EIRP is the 630 meter limit.</p>
+</div>
+</details>
+</article>
+<article id="e1a08">
+<h2>E1A08</h2>
+<p class="stem">If a station in a message forwarding system inadvertently forwards a message that is in violation of FCC rules, who is primarily accountable for the rules violation?</p>
+<ol class="opts">
+<li><span class="l">A</span> The control operator of the packet bulletin board station</li>
+<li><span class="l">B</span> The control operator of the originating station</li>
+<li><span class="l">C</span> The control operators of all the stations in the system</li>
+<li><span class="l">D</span> The control operators of all the stations in the system not authenticating the source from which they accept communications</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>B</strong>. The control operator of the originating station</p>
+<div class="ex">
+<p><strong>Why B is right.</strong> B. Forwarding stations cannot screen every message they relay, so the rule puts primary accountability on the control operator of the station that originated it.</p>
+<p>In a message forwarding system, messages pass automatically through many stations. Forwarding stations are not held accountable for violations they relay without knowing, but they must stop passing a bad message once they learn of it.</p>
+<blockquote><p>“the control operator of the station originating a message is primarily accountable for any violation of the rules in this part contained in the message”</p><p class="cite">47 CFR 97.219(b)</p></blockquote>
+<p><strong>Why not A?</strong> The bulletin board station only relays; the originator is primarily accountable.</p>
+</div>
+</details>
+</article>
+<article id="e1a09">
+<h2>E1A09</h2>
+<p class="stem">Except in some parts of Alaska, what is the maximum power permitted on the 630-meter band?</p>
+<ol class="opts">
+<li><span class="l">A</span> 50 watts PEP (peak envelope power)</li>
+<li><span class="l">B</span> 100 watts PEP (peak envelope power)</li>
+<li><span class="l">C</span> 1 watt EIRP (equivalent isotropic radiated power)</li>
+<li><span class="l">D</span> 5 watts EIRP (equivalent isotropic radiated power)</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>D</strong>. 5 watts EIRP (equivalent isotropic radiated power)</p>
+<div class="ex">
+<p><strong>Why D is right.</strong> D. The 630 meter rule limits radiated power to 5 W EIRP everywhere except the part of Alaska near Russia, where the cap is 1 W EIRP.</p>
+<p>EIRP compares your radiated power with an ideal antenna that radiates equally in all directions. The rule also caps transmitter output at 500 W PEP. The lower Alaska limit applies within 800 km of the Russian Federation.</p>
+<blockquote><p>“No station may transmit in the 472-479 kHz (630 m) band with a transmitter power exceeding 500 W PEP or a radiated power exceeding 5 W EIRP”</p><p class="cite">47 CFR 97.313(l)</p></blockquote>
+<p><strong>Why not C?</strong> 1 watt EIRP is the limit only in that part of Alaska, and on 2200 meters.</p>
+</div>
+</details>
+</article>
+<article id="e1a10">
+<h2>E1A10</h2>
+<p class="stem">If an amateur station is installed aboard a ship or aircraft, what condition must be met before the station is operated?</p>
+<ol class="opts">
+<li><span class="l">A</span> Its operation must be approved by the master of the ship or the pilot in command of the aircraft</li>
+<li><span class="l">B</span> The amateur station operator must agree not to transmit when the main radio of the ship or aircraft is in use</li>
+<li><span class="l">C</span> The amateur station must have a power supply that is completely independent of the main ship or aircraft power supply</li>
+<li><span class="l">D</span> The amateur station must operate only in specific segments of the amateur service HF and VHF bands</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>A</strong>. Its operation must be approved by the master of the ship or the pilot in command of the aircraft</p>
+<div class="ex">
+<p><strong>Why A is right.</strong> A. The master or pilot in command is responsible for the safety of the craft, so the rule requires that person&#x27;s approval of the station&#x27;s installation and operation.</p>
+<p>The amateur station must also be separate from and independent of the craft&#x27;s other radio equipment, and it must not interfere with that equipment.</p>
+<blockquote><p>“The installation and operation of an amateur station on a ship or aircraft must be approved by the master of the ship or pilot in command of the aircraft.”</p><p class="cite">47 CFR 97.11(a)</p></blockquote>
+<p><strong>Why not C?</strong> The rule requires separate radio apparatus, not a separate power supply.</p>
+</div>
+</details>
+</article>
+<article id="e1a11">
+<h2>E1A11</h2>
+<p class="stem">What licensing is required when operating an amateur station aboard a US-registered vessel in international waters?</p>
+<ol class="opts">
+<li><span class="l">A</span> Any amateur license with an FCC Marine or Aircraft endorsement</li>
+<li><span class="l">B</span> Any FCC-issued amateur license</li>
+<li><span class="l">C</span> Only General class or higher amateur licenses</li>
+<li><span class="l">D</span> An unrestricted Radiotelephone Operator Permit</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>B</strong>. Any FCC-issued amateur license</p>
+<div class="ex">
+<p><strong>Why B is right.</strong> B. Amateur rules cover any vessel documented or registered in the US, wherever it sails, so the license you already hold works there.</p>
+<p>You operate with the privileges of your own license class. No special endorsement or commercial permit is needed.</p>
+<blockquote><p>“Within 50 km of the Earth&#x27;s surface and aboard any vessel or craft that is documented or registered in the United States”</p><p class="cite">47 CFR 97.5(a)(2)</p></blockquote>
+<p><strong>Why not C?</strong> No minimum class is required; each class uses its own privileges.</p>
+</div>
+</details>
+</article>
+<nav class="pager" aria-label="Groups"><p><a href="../e1b/">Next: E1B Station restrictions and special operations: restrictions on station location; general operating restrictions; spurious emissions; antenna structure restrictions; RACES operations</a></p></nav>
+<footer>
+<p>QSO Ready is an independent study app for the US amateur radio license exams. Questions: NCVEC Question Pool Committee,
+released to the public domain. Rule quotes: 47 CFR, eCFR as of 2026-10-29. Content version 1.</p>
+<p><a href="../../">QSO Ready home</a> · <a href="../../privacy/">Privacy policy</a> · <a href="mailto:hello@saurabhupadhyay.in">hello@saurabhupadhyay.in</a></p>
+</footer>
+</main>
+</body>
+</html>

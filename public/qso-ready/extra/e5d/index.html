@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>E5D RF effects in components and circuits: skin effect; real and reactive power; electrical length of conductors: Amateur Extra questions explained · QSO Ready</title>
+<meta name="description" content="Amateur Extra pool group E5D (RF effects in components and circuits: skin effect; real and reactive power; electrical length of conductors): all 12 questions with correct answers and plain-English explanations.">
+<link rel="canonical" href="https://saurabhupadhyay.in/qso-ready/extra/e5d/">
+<link rel="stylesheet" href="../../site.css">
+</head>
+<body>
+<main>
+<p class="notice">Not affiliated with or endorsed by the FCC, NCVEC, ARRL or any VEC. Questions are the NCVEC pools word for word (public domain); explanations are our own. Exam rules and fees can change: check with your VE team.</p>
+<nav class="crumbs" aria-label="Breadcrumb"><a href="../../">QSO Ready</a> › <a href="../">Amateur Extra</a> › E5D</nav>
+<h1>E5D: RF effects in components and circuits: skin effect; real and reactive power; electrical length of conductors</h1>
+<p>Group E5D of the Amateur Extra pool (2024–2028) has 12 active questions. One of them is on every Amateur Extra exam. Each is shown word for word; open it to see the correct answer and our explanation.</p>
+<article id="e5d01">
+<h2>E5D01</h2>
+<p class="stem">What is the result of conductor skin effect?</p>
+<ol class="opts">
+<li><span class="l">A</span> Resistance increases as frequency increases because RF current flows closer to the surface</li>
+<li><span class="l">B</span> Resistance decreases as frequency increases because electron mobility increases</li>
+<li><span class="l">C</span> Resistance increases as temperature increases because of the change in thermal coefficient</li>
+<li><span class="l">D</span> Resistance decreases as temperature increases because of the change in thermal coefficient</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>A</strong>. Resistance increases as frequency increases because RF current flows closer to the surface</p>
+<div class="ex">
+<p><strong>Why A is right.</strong> A. At higher frequencies RF current crowds into a thin layer near the conductor&#x27;s surface, so less metal carries it and resistance rises.</p>
+<p>Changing magnetic fields inside a wire push current outward toward the surface. The higher the frequency, the thinner this layer, called the skin depth. At HF it is a small fraction of a millimeter in copper. With less of the wire in use, its RF resistance goes up.</p>
+<p><strong>Why not C?</strong> Temperature changes resistance too, but that is not skin effect.</p>
+</div>
+</details>
+</article>
+<article id="e5d02">
+<h2>E5D02</h2>
+<p class="stem">Why is it important to keep lead lengths short for components used in circuits for VHF and above?</p>
+<ol class="opts">
+<li><span class="l">A</span> To increase the thermal time constant</li>
+<li><span class="l">B</span> To minimize inductive reactance</li>
+<li><span class="l">C</span> To maintain component lifetime</li>
+<li><span class="l">D</span> All these choices are correct</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>B</strong>. To minimize inductive reactance</p>
+<div class="ex">
+<p><strong>Why B is right.</strong> B. Every bit of wire has inductance, and at VHF that small inductance has enough reactance to upset the circuit.</p>
+<p>Inductive reactance rises with frequency (XL = 2πfL). A 2-centimeter lead has roughly 20 nanohenries, which is about 19 ohms of reactance at 150 MHz. That unwanted reactance can detune circuits or cause oscillation. Short leads keep it small.</p>
+<p><strong>Why not A?</strong> Lead length has little to do with how fast a part heats or cools.</p>
+</div>
+</details>
+</article>
+<article id="e5d03">
+<h2>E5D03</h2>
+<p class="stem">What is the phase relationship between current and voltage for reactive power?</p>
+<ol class="opts">
+<li><span class="l">A</span> They are out of phase</li>
+<li><span class="l">B</span> They are in phase</li>
+<li><span class="l">C</span> They are 90 degrees out of phase</li>
+<li><span class="l">D</span> They are 45 degrees out of phase</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>C</strong>. They are 90 degrees out of phase</p>
+<div class="ex">
+<p><strong>Why C is right.</strong> C. With reactive power, current and voltage are 90 degrees apart, so energy moves back and forth instead of being used.</p>
+<p>In a pure inductor or capacitor, current and voltage are a quarter cycle apart. For half of each cycle the part takes energy from the source, and for the other half it returns it. Averaged over a cycle, the net power is zero.</p>
+<p><strong>Why not D?</strong> At 45 degrees the power would be partly real and partly reactive, not purely reactive.</p>
+</div>
+</details>
+</article>
+<article id="e5d04">
+<h2>E5D04</h2>
+<p class="stem">Why are short connections used at microwave frequencies?</p>
+<ol class="opts">
+<li><span class="l">A</span> To increase neutralizing resistance</li>
+<li><span class="l">B</span> To reduce phase shift along the connection</li>
+<li><span class="l">C</span> To increase compensating capacitance</li>
+<li><span class="l">D</span> To reduce noise figure</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>B</strong>. To reduce phase shift along the connection</p>
+<div class="ex">
+<p><strong>Why B is right.</strong> B. At microwave frequencies even a short connection is a noticeable fraction of a wavelength, so keeping it short limits the phase shift along it.</p>
+<p>A signal takes time to travel along a conductor. At 10 GHz one wavelength in free space is 3 cm, so a 3 mm lead already delays the signal by about 36 degrees. Unwanted phase shift can upset matching, filters and amplifier stability.</p>
+<p><strong>Why not D?</strong> Noise figure depends on active devices and losses, not on phase shift along a lead.</p>
+</div>
+</details>
+</article>
+<article id="e5d05">
+<h2>E5D05</h2>
+<p class="stem">What parasitic characteristic causes electrolytic capacitors to be unsuitable for use at RF?</p>
+<ol class="opts">
+<li><span class="l">A</span> Skin effect</li>
+<li><span class="l">B</span> Shunt capacitance</li>
+<li><span class="l">C</span> Inductance</li>
+<li><span class="l">D</span> Dielectric leakage</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>C</strong>. Inductance</p>
+<div class="ex">
+<p><strong>Why C is right.</strong> C. Electrolytic capacitors have a lot of built-in inductance from their rolled foil and leads, so at RF they stop acting like capacitors.</p>
+<p>An electrolytic is made of long strips of foil wound into a roll, which behaves partly like a coil. Above some frequency its inductive reactance outweighs its capacitive reactance, and the part acts like an inductor. That is why small ceramic capacitors are used for RF bypassing.</p>
+<p><strong>Why not D?</strong> Leakage matters at DC; it is not what limits electrolytics at RF.</p>
+</div>
+</details>
+</article>
+<article id="e5d06">
+<h2>E5D06</h2>
+<p class="stem">What parasitic characteristic creates an inductor’s self-resonance?</p>
+<ol class="opts">
+<li><span class="l">A</span> Skin effect</li>
+<li><span class="l">B</span> Dielectric loss</li>
+<li><span class="l">C</span> Coupling</li>
+<li><span class="l">D</span> Inter-turn capacitance</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>D</strong>. Inter-turn capacitance</p>
+<div class="ex">
+<p><strong>Why D is right.</strong> D. The small capacitance between neighboring turns of wire resonates with the coil&#x27;s own inductance.</p>
+<p>Each turn of a coil sits next to the turns beside it, with insulation between, forming tiny capacitors. Together they act like one capacitor across the whole inductor. Where that capacitance and the inductance resonate, the coil stops acting like an inductor; above it, the coil acts like a capacitor.</p>
+<p><strong>Why not A?</strong> Skin effect raises resistance but does not create a resonance.</p>
+</div>
+</details>
+</article>
+<article id="e5d07">
+<h2>E5D07</h2>
+<p class="stem">What combines to create the self-resonance of a component?</p>
+<ol class="opts">
+<li><span class="l">A</span> The component’s resistance and reactance</li>
+<li><span class="l">B</span> The component’s nominal and parasitic reactance</li>
+<li><span class="l">C</span> The component’s inductance and capacitance</li>
+<li><span class="l">D</span> The component’s electrical length and impedance</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>B</strong>. The component’s nominal and parasitic reactance</p>
+<div class="ex">
+<p><strong>Why B is right.</strong> B. Self-resonance happens where a part&#x27;s intended reactance and its unwanted (parasitic) reactance are equal and cancel.</p>
+<p>Every real component has its main property, called nominal, plus small unwanted ones. A capacitor has lead inductance; an inductor has capacitance between turns. At some frequency those two reactances are equal and the part resonates by itself. Above that frequency it acts like the opposite kind of component.</p>
+<p><strong>Why not C?</strong> C names inductance and capacitance in general; self-resonance is specifically the part&#x27;s intended reactance meeting its unwanted parasitic one.</p>
+</div>
+</details>
+</article>
+<article id="e5d08">
+<h2>E5D08</h2>
+<p class="stem">What is the primary cause of loss in film capacitors at RF?</p>
+<ol class="opts">
+<li><span class="l">A</span> Inductance</li>
+<li><span class="l">B</span> Dielectric loss</li>
+<li><span class="l">C</span> Self-discharge</li>
+<li><span class="l">D</span> Skin effect</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>D</strong>. Skin effect</p>
+<div class="ex">
+<p><strong>Why D is right.</strong> D. Low-loss film dielectrics such as polypropylene waste very little energy, so at RF the main loss is the resistance of the plates and leads, which skin effect raises.</p>
+<p>Skin effect pushes RF current into the surface of a conductor, so less metal carries it and its resistance rises with frequency. In a film capacitor that resistance turns some of the RF current into heat.</p>
+<p><strong>Why not B?</strong> Dielectric loss is small in the low-loss films used at RF, so it is not the main loss here.</p>
+</div>
+</details>
+</article>
+<article id="e5d09">
+<h2>E5D09</h2>
+<p class="stem">What happens to reactive power in ideal inductors and capacitors?</p>
+<ol class="opts">
+<li><span class="l">A</span> It is dissipated as heat in the circuit</li>
+<li><span class="l">B</span> Energy is stored in magnetic or electric fields, but power is not dissipated</li>
+<li><span class="l">C</span> It is canceled by Coulomb forces in the capacitor and inductor</li>
+<li><span class="l">D</span> It is dissipated in the formation of inductive and capacitive fields</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>B</strong>. Energy is stored in magnetic or electric fields, but power is not dissipated</p>
+<div class="ex">
+<p><strong>Why B is right.</strong> B. An ideal inductor stores energy in its magnetic field and an ideal capacitor in its electric field, then gives it all back, so none is lost as heat.</p>
+<p>Reactive power flows into the component during part of each cycle and back to the source during the next. With no resistance, nothing turns into heat. Real parts have a little resistance and warm slightly, but ideal parts have none.</p>
+<p><strong>Why not A?</strong> Heat comes only from resistance, which ideal parts lack.</p>
+</div>
+</details>
+</article>
+<article id="e5d10">
+<h2>E5D10</h2>
+<p class="stem">As a conductor’s diameter increases, what is the effect on its electrical length?</p>
+<ol class="opts">
+<li><span class="l">A</span> Thickness has no effect on electrical length</li>
+<li><span class="l">B</span> It varies randomly</li>
+<li><span class="l">C</span> It decreases</li>
+<li><span class="l">D</span> It increases</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>D</strong>. It increases</p>
+<div class="ex">
+<p><strong>Why D is right.</strong> D. A thicker conductor has more capacitance to its surroundings, which slows the wave on it, so it acts electrically longer.</p>
+<p>Electrical length is a conductor&#x27;s length measured in wavelengths at a given frequency. A fat wire has more capacitance, especially at its ends, and that lowers the speed of the wave along it. So a thick dipole resonates lower than a thin one of the same physical length.</p>
+<p><strong>Why not A?</strong> Thickness does matter; thick antenna elements must be cut shorter to resonate at the same frequency.</p>
+</div>
+</details>
+</article>
+<article id="e5d11">
+<h2>E5D11</h2>
+<p class="stem">How much real power is consumed in a circuit consisting of a 100-ohm resistor in series with a 100-ohm inductive reactance drawing 1 ampere?</p>
+<ol class="opts">
+<li><span class="l">A</span> 70.7 watts</li>
+<li><span class="l">B</span> 100 watts</li>
+<li><span class="l">C</span> 141.4 watts</li>
+<li><span class="l">D</span> 200 watts</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>B</strong>. 100 watts</p>
+<div class="ex">
+<p><strong>Why B is right.</strong> B. Only the resistor turns energy into heat, so real power is current squared times resistance, 100 watts.</p>
+<p>The inductive reactance stores energy and returns it each cycle, so it uses no real power. The same 1-ampere current flows through the resistor, and that is where the power is spent.</p>
+<pre class="worked">P = I^2 × R
+P = (1 A)^2 × 100 ohms
+P = 100 W
+= 100 watts</pre>
+<p><strong>Why not C?</strong> 141.4 watts is the apparent power, which wrongly counts the reactance as if it used power.</p>
+</div>
+</details>
+</article>
+<article id="e5d12">
+<h2>E5D12</h2>
+<p class="stem">What is reactive power?</p>
+<ol class="opts">
+<li><span class="l">A</span> Power consumed in circuit Q</li>
+<li><span class="l">B</span> Power consumed by an inductor’s wire resistance</li>
+<li><span class="l">C</span> The power consumed in inductors and capacitors</li>
+<li><span class="l">D</span> Wattless, nonproductive power</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>D</strong>. Wattless, nonproductive power</p>
+<div class="ex">
+<p><strong>Why D is right.</strong> D. Reactive power is called wattless because it moves back and forth between source and reactance without doing any work.</p>
+<p>In inductors and capacitors, energy flows in during part of each cycle and back out in the next. The average is zero, so no heat or useful output results. Reactive power is measured in volt-amperes reactive (VAR), not watts, but it still loads wires with extra current.</p>
+<p><strong>Why not C?</strong> Ideal inductors and capacitors do not consume power; they store it and return it.</p>
+</div>
+</details>
+</article>
+<nav class="pager" aria-label="Groups"><p><a href="../e5c/">Previous: E5C Coordinate systems and phasors in electronics: rectangular coordinates; polar coordinates; phasors; logarithmic axes</a></p><p><a href="../e6a/">Next: E6A Semiconductor materials and devices: semiconductor materials; bipolar junction transistors; operation and types of field-effect transistors</a></p></nav>
+<footer>
+<p>QSO Ready is an independent study app for the US amateur radio license exams. Questions: NCVEC Question Pool Committee,
+released to the public domain. Rule quotes: 47 CFR, eCFR as of 2026-10-29. Content version 1.</p>
+<p><a href="../../">QSO Ready home</a> · <a href="../../privacy/">Privacy policy</a> · <a href="mailto:hello@saurabhupadhyay.in">hello@saurabhupadhyay.in</a></p>
+</footer>
+</main>
+</body>
+</html>

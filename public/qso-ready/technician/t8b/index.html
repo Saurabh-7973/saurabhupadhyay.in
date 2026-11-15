@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>T8B Amateur satellite operation: Doppler shift, basic orbits, operating protocols, modulation mode selection, transmitter power considerations, telemetry, satellite tracking programs, beacons, uplink and downlink mode definitions, spin fading, definition of “LEO”, setting uplink power: Technician questions explained · QSO Ready</title>
+<meta name="description" content="Technician pool group T8B (Amateur satellite operation: Doppler shift, basic orbits, operating protocols, modulation mode selection, transmitter power considerations, telemetry, satellite tracking programs, beacons, uplink and downlink mode definitions, spin fading, definition of “LEO”, setting uplink power): all 12 questions with correct answers and plain-English explanations.">
+<link rel="canonical" href="https://saurabhupadhyay.in/qso-ready/technician/t8b/">
+<link rel="stylesheet" href="../../site.css">
+</head>
+<body>
+<main>
+<p class="notice">Not affiliated with or endorsed by the FCC, NCVEC, ARRL or any VEC. Questions are the NCVEC pools word for word (public domain); explanations are our own. Exam rules and fees can change: check with your VE team.</p>
+<nav class="crumbs" aria-label="Breadcrumb"><a href="../../">QSO Ready</a> › <a href="../">Technician</a> › T8B</nav>
+<h1>T8B: Amateur satellite operation: Doppler shift, basic orbits, operating protocols, modulation mode selection, transmitter power considerations, telemetry, satellite tracking programs, beacons, uplink and downlink mode definitions, spin fading, definition of “LEO”, setting uplink power</h1>
+<p>Group T8B of the Technician pool (2026–2030) has 12 active questions. One of them is on every Technician exam. Each is shown word for word; open it to see the correct answer and our explanation.</p>
+<article id="t8b01">
+<h2>T8B01</h2>
+<p class="stem">What telemetry information is typically transmitted by satellite beacons?</p>
+<ol class="opts">
+<li><span class="l">A</span> The signal strength of received signals</li>
+<li><span class="l">B</span> Time of day accurate to plus or minus 1/10 second</li>
+<li><span class="l">C</span> Health and status of the satellite</li>
+<li><span class="l">D</span> All these choices are correct</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>C</strong>. Health and status of the satellite</p>
+<div class="ex">
+<p><strong>Why C is right.</strong> C. Satellite beacons usually send health and status information.</p>
+<p>Telemetry is data a spacecraft sends about itself. Typical items are battery voltage, solar panel current and temperatures. Ground stations decode it to check that the satellite is working well.</p>
+<p><strong>Why not A?</strong> The satellite does not report how strong each user&#x27;s received signal is.</p>
+</div>
+</details>
+</article>
+<article id="t8b02">
+<h2>T8B02</h2>
+<p class="stem">What is the impact of using excessive effective radiated power on a satellite uplink?</p>
+<ol class="opts">
+<li><span class="l">A</span> Possibility of commanding the satellite to an improper mode</li>
+<li><span class="l">B</span> Blocking access by other users</li>
+<li><span class="l">C</span> Overloading the satellite batteries</li>
+<li><span class="l">D</span> Possibility of rebooting the satellite control computer</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>B</strong>. Blocking access by other users</p>
+<div class="ex">
+<p><strong>Why B is right.</strong> B. Too much uplink power can block other users.</p>
+<p>A satellite has limited transmit power, shared by everyone using it at once. If your uplink signal is too strong, the satellite spends more of its power repeating you. Other stations get less, and some may be pushed out entirely. Use only the power needed to be heard.</p>
+<p><strong>Why not C?</strong> The satellite does not charge its batteries from your signal, so you cannot overload them this way.</p>
+</div>
+</details>
+</article>
+<article id="t8b03">
+<h2>T8B03</h2>
+<p class="stem">Which of the following are provided by satellite tracking programs?</p>
+<ol class="opts">
+<li><span class="l">A</span> Maps showing the real-time position of the satellite track over Earth</li>
+<li><span class="l">B</span> The time, azimuth, and elevation of the start, maximum altitude, and end of a pass</li>
+<li><span class="l">C</span> The apparent frequency of the satellite transmission, including effects of Doppler shift</li>
+<li><span class="l">D</span> All these choices are correct</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>D</strong>. All these choices are correct</p>
+<div class="ex">
+<p><strong>Why D is right.</strong> D. All these choices are correct.</p>
+<p>A tracking program uses orbit data to work out where a satellite is and where it will be. From that it can draw the satellite&#x27;s path on a map, list when a pass starts, peaks and ends with antenna pointing angles, and estimate the frequency shift you will hear as the satellite moves.</p>
+</div>
+</details>
+</article>
+<article id="t8b04">
+<h2>T8B04</h2>
+<p class="stem">What mode of transmission is commonly used by amateur radio satellites?</p>
+<ol class="opts">
+<li><span class="l">A</span> SSB</li>
+<li><span class="l">B</span> FM</li>
+<li><span class="l">C</span> CW/data</li>
+<li><span class="l">D</span> All these choices are correct</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>D</strong>. All these choices are correct</p>
+<div class="ex">
+<p><strong>Why D is right.</strong> D. All these choices are correct.</p>
+<p>Amateur satellites carry many types of signals. Some repeat FM voice like a repeater in orbit. Others repeat a band of signals so many SSB and CW contacts can happen at once. Many also send data or telemetry.</p>
+</div>
+</details>
+</article>
+<article id="t8b05">
+<h2>T8B05</h2>
+<p class="stem">What is a satellite beacon?</p>
+<ol class="opts">
+<li><span class="l">A</span> The primary transmit antenna on the satellite</li>
+<li><span class="l">B</span> An indicator light that shows where to point your antenna</li>
+<li><span class="l">C</span> A reflective surface on the satellite</li>
+<li><span class="l">D</span> A transmission from a satellite that contains status information</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>D</strong>. A transmission from a satellite that contains status information</p>
+<div class="ex">
+<p><strong>Why D is right.</strong> D. A satellite beacon is a transmission that contains status information.</p>
+<p>A beacon is a signal the satellite sends on its own, without anyone talking through it. It often carries telemetry about the spacecraft. Hams also use the beacon to find the satellite, check its signal strength and adjust their tuning.</p>
+<p><strong>Why not B?</strong> A beacon is a radio signal, not a light.</p>
+</div>
+</details>
+</article>
+<article id="t8b06">
+<h2>T8B06</h2>
+<p class="stem">Which of the following are inputs to a satellite tracking program?</p>
+<ol class="opts">
+<li><span class="l">A</span> The satellite transmitted power</li>
+<li><span class="l">B</span> The Keplerian elements</li>
+<li><span class="l">C</span> The last observed time of zero Doppler shift</li>
+<li><span class="l">D</span> All these choices are correct</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>B</strong>. The Keplerian elements</p>
+<div class="ex">
+<p><strong>Why B is right.</strong> B. The Keplerian elements are fed into a tracking program.</p>
+<p>Keplerian elements are a short set of numbers that describe a satellite&#x27;s orbit, such as its shape, its tilt and where the satellite was at a set time. A tracking program uses these numbers, plus your location and the time, to predict passes. Update them often, since orbits slowly change.</p>
+<p><strong>Why not A?</strong> The satellite&#x27;s transmit power does not tell the program where the satellite is.</p>
+</div>
+</details>
+</article>
+<article id="t8b07">
+<h2>T8B07</h2>
+<p class="stem">What is Doppler shift in reference to satellite communications?</p>
+<ol class="opts">
+<li><span class="l">A</span> A change in the satellite orbit</li>
+<li><span class="l">B</span> A mode where the satellite receives signals on one band and transmits on another</li>
+<li><span class="l">C</span> An observed change in signal frequency caused by relative motion between the satellite and Earth station</li>
+<li><span class="l">D</span> A special digital communications mode for some satellites</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>C</strong>. An observed change in signal frequency caused by relative motion between the satellite and Earth station</p>
+<div class="ex">
+<p><strong>Why C is right.</strong> C. Doppler shift is a change in the received frequency caused by motion between the satellite and your station.</p>
+<p>When a satellite moves toward you, its signal arrives a little higher in frequency. As it moves away, the frequency drops. You hear the same effect when a siren passes you. Satellite operators retune during a pass to follow this shift.</p>
+<p><strong>Why not A?</strong> Doppler shift changes the frequency you hear, not the satellite&#x27;s orbit.</p>
+</div>
+</details>
+</article>
+<article id="t8b08">
+<h2>T8B08</h2>
+<p class="stem">What does it mean if a satellite is operating in U/V mode?</p>
+<ol class="opts">
+<li><span class="l">A</span> The satellite uplink is in the 15-meter band and the downlink is in the 10-meter band</li>
+<li><span class="l">B</span> The satellite uplink is in the 70-centimeter band and the downlink is in the 2-meter band</li>
+<li><span class="l">C</span> The satellite operates using ultraviolet frequencies</li>
+<li><span class="l">D</span> The satellite frequencies are usually variable</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>B</strong>. The satellite uplink is in the 70-centimeter band and the downlink is in the 2-meter band</p>
+<div class="ex">
+<p><strong>Why B is right.</strong> B. U/V mode means a 70-centimeter uplink and a 2-meter downlink.</p>
+<p>Satellite modes are named by two letters: the uplink band first, then the downlink band. U stands for UHF, which includes 70 centimeters (about 435 MHz). V stands for VHF, which includes 2 meters (about 145 MHz). So you transmit on 70 cm and listen on 2 m.</p>
+<p><strong>Why not C?</strong> U and V name radio bands, not ultraviolet light.</p>
+<p class="hook">Remember: First letter up, second letter down.</p>
+</div>
+</details>
+</article>
+<article id="t8b09">
+<h2>T8B09</h2>
+<p class="stem">What causes spin fading of satellite signals?</p>
+<ol class="opts">
+<li><span class="l">A</span> Circular polarized noise interference radiated from the sun</li>
+<li><span class="l">B</span> Rotation of the satellite and its antennas</li>
+<li><span class="l">C</span> Doppler shift of the received signal</li>
+<li><span class="l">D</span> Interfering signals within the satellite uplink band</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>B</strong>. Rotation of the satellite and its antennas</p>
+<div class="ex">
+<p><strong>Why B is right.</strong> B. Spin fading comes from the satellite and its antennas rotating.</p>
+<p>Many small satellites slowly spin or tumble. As they turn, their antennas point toward you and then away. The signal you hear rises and falls in a regular rhythm because of that rotation.</p>
+<p><strong>Why not C?</strong> Doppler shift moves the frequency, but it does not make the signal fade in and out.</p>
+</div>
+</details>
+</article>
+<article id="t8b10">
+<h2>T8B10</h2>
+<p class="stem">What does the term LEO mean in reference to communication satellites?</p>
+<ol class="opts">
+<li><span class="l">A</span> Low Energy Orbit, which conserves battery power</li>
+<li><span class="l">B</span> Low Elevation Orbit, which appears close to the horizon from the earth station</li>
+<li><span class="l">C</span> Low Equilibrium Orbit, which has a slightly unstable period</li>
+<li><span class="l">D</span> Low Earth Orbit, which has a period of around 100 minutes</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>D</strong>. Low Earth Orbit, which has a period of around 100 minutes</p>
+<div class="ex">
+<p><strong>Why D is right.</strong> D. LEO means Low Earth Orbit, with a period of around 100 minutes.</p>
+<p>Satellites in low Earth orbit circle only a few hundred kilometers up. At that height they must move very fast to stay in orbit, so they go around Earth in roughly 90 to 100 minutes. From the ground, a pass lasts only minutes.</p>
+<p><strong>Why not B?</strong> The E in LEO stands for Earth, not elevation.</p>
+</div>
+</details>
+</article>
+<article id="t8b11">
+<h2>T8B11</h2>
+<p class="stem">Who is permitted to receive telemetry from an amateur radio satellite?</p>
+<ol class="opts">
+<li><span class="l">A</span> Anyone</li>
+<li><span class="l">B</span> Only the satellite control operator</li>
+<li><span class="l">C</span> Only the control operator or a licensed radio amateur who has received the encryption key from the control operator</li>
+<li><span class="l">D</span> Only a licensed radio amateur who has received the encryption key from AMSAT</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>A</strong>. Anyone</p>
+<div class="ex">
+<p><strong>Why A is right.</strong> A. Anyone may receive telemetry from an amateur satellite.</p>
+<p>Amateur radio is an open service. Its signals are meant to be heard, and telemetry from amateur satellites is open for anyone to listen to and decode. Students and listeners around the world collect this data to help track how the satellite is doing.</p>
+<p><strong>Why not C?</strong> No encryption key is needed to receive amateur satellite telemetry.</p>
+</div>
+</details>
+</article>
+<article id="t8b12">
+<h2>T8B12</h2>
+<p class="stem">Which of the following is a way to determine whether your satellite uplink power into a linear transponder satellite is neither too low nor too high?</p>
+<ol class="opts">
+<li><span class="l">A</span> Check your signal strength report in the telemetry data</li>
+<li><span class="l">B</span> Listen for distortion on your downlink signal</li>
+<li><span class="l">C</span> Your signal strength on the downlink should be about the same as the beacon</li>
+<li><span class="l">D</span> Compare your signal to others on the downlink using an internet SDR receiver</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>C</strong>. Your signal strength on the downlink should be about the same as the beacon</p>
+<div class="ex">
+<p><strong>Why C is right.</strong> C. Your downlink signal should be about as strong as the beacon.</p>
+<p>On a linear transponder, many signals share the satellite&#x27;s limited power. The beacon gives you a steady reference level. If your own signal coming back down is about as strong as the beacon, your uplink power is about right. Much stronger means you are taking more than your share.</p>
+<p><strong>Why not B?</strong> Distortion can have other causes, so it is not a reliable way to judge your power level.</p>
+</div>
+</details>
+</article>
+<nav class="pager" aria-label="Groups"><p><a href="../t8a/">Previous: T8A Basic characteristics of FM and SSB; Bandwidth of various modulation modes: CW, SSB, FM, fast-scan TV; Choice of emission type: selection of USB vs LSB, use of SSB for weak signal work, use of FM for VHF packet and repeaters</a></p><p><a href="../t8c/">Next: T8C Operating activities: radio direction finding, contests, linking over the internet, exchanging grid locators</a></p></nav>
+<footer>
+<p>QSO Ready is an independent study app for the US amateur radio license exams. Questions: NCVEC Question Pool Committee,
+released to the public domain. Rule quotes: 47 CFR, eCFR as of 2026-10-29. Content version 1.</p>
+<p><a href="../../">QSO Ready home</a> · <a href="../../privacy/">Privacy policy</a> · <a href="mailto:hello@saurabhupadhyay.in">hello@saurabhupadhyay.in</a></p>
+</footer>
+</main>
+</body>
+</html>

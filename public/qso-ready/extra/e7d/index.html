@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>E7D Power supplies and voltage regulators; solar array charge controllers: Amateur Extra questions explained · QSO Ready</title>
+<meta name="description" content="Amateur Extra pool group E7D (Power supplies and voltage regulators; solar array charge controllers): all 15 questions with correct answers and plain-English explanations.">
+<link rel="canonical" href="https://saurabhupadhyay.in/qso-ready/extra/e7d/">
+<link rel="stylesheet" href="../../site.css">
+</head>
+<body>
+<main>
+<p class="notice">Not affiliated with or endorsed by the FCC, NCVEC, ARRL or any VEC. Questions are the NCVEC pools word for word (public domain); explanations are our own. Exam rules and fees can change: check with your VE team.</p>
+<nav class="crumbs" aria-label="Breadcrumb"><a href="../../">QSO Ready</a> › <a href="../">Amateur Extra</a> › E7D</nav>
+<h1>E7D: Power supplies and voltage regulators; solar array charge controllers</h1>
+<p>Group E7D of the Amateur Extra pool (2024–2028) has 15 active questions. One of them is on every Amateur Extra exam. Each is shown word for word; open it to see the correct answer and our explanation.</p>
+<article id="e7d01">
+<h2>E7D01</h2>
+<p class="stem">How does a linear electronic voltage regulator work?</p>
+<ol class="opts">
+<li><span class="l">A</span> It has a ramp voltage as its output</li>
+<li><span class="l">B</span> It eliminates the need for a pass transistor</li>
+<li><span class="l">C</span> The control element duty cycle is proportional to the line or load conditions</li>
+<li><span class="l">D</span> The conduction of a control element is varied to maintain a constant output voltage</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>D</strong>. The conduction of a control element is varied to maintain a constant output voltage</p>
+<div class="ex">
+<p><strong>Why D is right.</strong> D. Feedback keeps the control transistor partly on and adjusts how much it conducts, so it drops whatever extra voltage would otherwise reach the output.</p>
+<p>Think of the control element as a variable resistor in the supply path. If the load draws more or the input drops, feedback lets the element conduct more; if the output rises, it conducts less. The extra voltage is dropped across the element and turns into heat.</p>
+<p><strong>Why not C?</strong> Changing a duty cycle is how a switching regulator works.</p>
+</div>
+</details>
+</article>
+<article id="e7d02">
+<h2>E7D02</h2>
+<p class="stem">How does a switchmode voltage regulator work?</p>
+<ol class="opts">
+<li><span class="l">A</span> By alternating the output between positive and negative voltages</li>
+<li><span class="l">B</span> By varying the duty cycle of pulses input to a filter</li>
+<li><span class="l">C</span> By varying the conductivity of a pass element</li>
+<li><span class="l">D</span> By switching between two Zener diode reference voltages</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>B</strong>. By varying the duty cycle of pulses input to a filter</p>
+<div class="ex">
+<p><strong>Why B is right.</strong> B. A switchmode regulator chops the input into pulses and adjusts their on-time, and a filter averages them into steady DC.</p>
+<p>Duty cycle is the fraction of each cycle the switch is on. If the output sags, the controller widens the pulses; if it rises, it narrows them. An inductor and capacitor smooth the pulses into DC. Because the switch is always fully on or fully off, little power turns into heat.</p>
+<p><strong>Why not C?</strong> Varying how well a pass element conducts is the linear method.</p>
+</div>
+</details>
+</article>
+<article id="e7d03">
+<h2>E7D03</h2>
+<p class="stem">What device is used as a stable voltage reference?</p>
+<ol class="opts">
+<li><span class="l">A</span> A Zener diode</li>
+<li><span class="l">B</span> A digital-to-analog converter</li>
+<li><span class="l">C</span> An SCR</li>
+<li><span class="l">D</span> An analog-to-digital converter</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>A</strong>. A Zener diode</p>
+<div class="ex">
+<p><strong>Why A is right.</strong> A. A Zener diode held in reverse breakdown keeps a nearly constant voltage across itself over a wide range of currents.</p>
+<p>Most diodes are not meant to conduct backward. A Zener is built to break down at a set reverse voltage, such as 5.1 or 12 volts. Past that point, current can change a lot while the voltage barely moves, which makes it a handy reference for regulators.</p>
+<p><strong>Why not C?</strong> An SCR is a switch that latches on when triggered; it does not hold a fixed voltage.</p>
+</div>
+</details>
+</article>
+<article id="e7d04">
+<h2>E7D04</h2>
+<p class="stem">Which of the following describes a three-terminal voltage regulator?</p>
+<ol class="opts">
+<li><span class="l">A</span> A series current source</li>
+<li><span class="l">B</span> A series regulator</li>
+<li><span class="l">C</span> A shunt regulator</li>
+<li><span class="l">D</span> A shunt current source</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>B</strong>. A series regulator</p>
+<div class="ex">
+<p><strong>Why B is right.</strong> B. A three-terminal regulator puts its pass transistor in series between input and output, so it is a series regulator.</p>
+<p>Its three pins are input, output and ground or adjust. Inside are a voltage reference, an error amplifier and a series pass transistor that drops the extra voltage. A shunt regulator instead connects across the output and draws extra current.</p>
+<p><strong>Why not C?</strong> A shunt regulator sits across the load, not in line with it.</p>
+</div>
+</details>
+</article>
+<article id="e7d05">
+<h2>E7D05</h2>
+<p class="stem">Which of the following types of linear voltage regulator operates by loading the unregulated voltage source?</p>
+<ol class="opts">
+<li><span class="l">A</span> A constant current source</li>
+<li><span class="l">B</span> A series regulator</li>
+<li><span class="l">C</span> A shunt current source</li>
+<li><span class="l">D</span> A shunt regulator</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>D</strong>. A shunt regulator</p>
+<div class="ex">
+<p><strong>Why D is right.</strong> D. A shunt regulator sits across the load and draws whatever current is needed to pull the source voltage down to the set value.</p>
+<p>The source feeds a series resistor, and the shunt element connects from the output to ground. When the load takes less current, the shunt takes more, and the reverse. Total current through the resistor stays about the same, so the source is always loaded. A Zener diode with a resistor is the simplest example.</p>
+<p><strong>Why not B?</strong> A series regulator drops voltage in line with the load instead of loading the source.</p>
+</div>
+</details>
+</article>
+<article id="e7d06">
+<h2>E7D06</h2>
+<p class="stem">What is the purpose of Q1 in the circuit shown in Figure E7-2?</p>
+<figure><img src="../../figures/E7-2.webp" width="1000" height="805" loading="lazy" alt="Figure E7-2 is a regulated power supply. A terminal at the upper left is labeled +25, the input. Capacitor C1, marked 4000, connects from the input line to ground. Resistor R1 runs from the input line down to a junction point. From that junction, capacitor C2, marked 4000, goes to ground, and a wire runs right to the base of transistor Q1. Zener diode D1, drawn in a circle as a triangle with a bent bar, connects from the same junction down to ground, with its bar (cathode) at the top. Q1, the circled transistor, sits in series between the lines: its left lead is on the +25 input line, its right lead is on the output line, and its base lead comes out the bottom. The output terminal at upper right is labeled +12. Capacitor C3, marked 0.01, and resistor R2 each connect from the output line to ground."><figcaption>Figure E7-2</figcaption></figure>
+<ol class="opts">
+<li><span class="l">A</span> It provides negative feedback to improve regulation</li>
+<li><span class="l">B</span> It provides a constant load for the voltage source</li>
+<li><span class="l">C</span> It controls the current to keep the output voltage constant</li>
+<li><span class="l">D</span> It provides regulation by switching or “chopping” the input DC voltage</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>C</strong>. It controls the current to keep the output voltage constant</p>
+<div class="ex">
+<p><strong>Why C is right.</strong> C. Q1 is the series pass transistor: it adjusts how much current it passes so the output holds at 12 volts as load or input changes.</p>
+<p>In Figure E7-2, Q1 is the circled transistor with its collector on the +25 volt input line and its emitter, the lead with the arrow, on the +12 volt output line. Its base is held steady by Zener diode D1. The emitter follows the base, staying about 0.6 volt below it, so the output stays steady.</p>
+<p><strong>Why not D?</strong> Q1 conducts smoothly and never chops the input on and off, so this is not a switching circuit.</p>
+</div>
+</details>
+</article>
+<article id="e7d07">
+<h2>E7D07</h2>
+<p class="stem">What is the purpose of C2 in the circuit shown in Figure E7-2?</p>
+<figure><img src="../../figures/E7-2.webp" width="1000" height="805" loading="lazy" alt="Figure E7-2 is a regulated power supply. A terminal at the upper left is labeled +25, the input. Capacitor C1, marked 4000, connects from the input line to ground. Resistor R1 runs from the input line down to a junction point. From that junction, capacitor C2, marked 4000, goes to ground, and a wire runs right to the base of transistor Q1. Zener diode D1, drawn in a circle as a triangle with a bent bar, connects from the same junction down to ground, with its bar (cathode) at the top. Q1, the circled transistor, sits in series between the lines: its left lead is on the +25 input line, its right lead is on the output line, and its base lead comes out the bottom. The output terminal at upper right is labeled +12. Capacitor C3, marked 0.01, and resistor R2 each connect from the output line to ground."><figcaption>Figure E7-2</figcaption></figure>
+<ol class="opts">
+<li><span class="l">A</span> It bypasses rectifier output ripple around D1</li>
+<li><span class="l">B</span> It is a brute force filter for the output</li>
+<li><span class="l">C</span> To prevent self-oscillation</li>
+<li><span class="l">D</span> To provide fixed DC bias for Q1</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>A</strong>. It bypasses rectifier output ripple around D1</p>
+<div class="ex">
+<p><strong>Why A is right.</strong> A. C2 sits across Zener diode D1 and smooths leftover ripple at Q1&#x27;s base, so the reference voltage stays clean.</p>
+<p>In Figure E7-2, C2 is the capacitor connected from the point where R1, D1 and the base of Q1 meet, down to ground. D1, the circled diode with a bent bar, also runs from that point to ground, so C2 is in parallel with it. Ripple at the base would pass through Q1 to the output; C2 shunts it to ground.</p>
+<p><strong>Why not B?</strong> C2 sits at Q1&#x27;s base, not on the output line, and it is not the main filter; that job belongs to C1 at the input.</p>
+</div>
+</details>
+</article>
+<article id="e7d08">
+<h2>E7D08</h2>
+<p class="stem">What type of circuit is shown in Figure E7-2?</p>
+<figure><img src="../../figures/E7-2.webp" width="1000" height="805" loading="lazy" alt="Figure E7-2 is a regulated power supply. A terminal at the upper left is labeled +25, the input. Capacitor C1, marked 4000, connects from the input line to ground. Resistor R1 runs from the input line down to a junction point. From that junction, capacitor C2, marked 4000, goes to ground, and a wire runs right to the base of transistor Q1. Zener diode D1, drawn in a circle as a triangle with a bent bar, connects from the same junction down to ground, with its bar (cathode) at the top. Q1, the circled transistor, sits in series between the lines: its left lead is on the +25 input line, its right lead is on the output line, and its base lead comes out the bottom. The output terminal at upper right is labeled +12. Capacitor C3, marked 0.01, and resistor R2 each connect from the output line to ground."><figcaption>Figure E7-2</figcaption></figure>
+<ol class="opts">
+<li><span class="l">A</span> Switching voltage regulator</li>
+<li><span class="l">B</span> Common emitter amplifier</li>
+<li><span class="l">C</span> Linear voltage regulator</li>
+<li><span class="l">D</span> Common base amplifier</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>C</strong>. Linear voltage regulator</p>
+<div class="ex">
+<p><strong>Why C is right.</strong> C. The circuit drops the extra voltage smoothly across a pass transistor controlled by a Zener reference, which is a linear regulator.</p>
+<p>In Figure E7-2: C1 filters the +25 volt input, R1 feeds current to Zener diode D1, C2 smooths that reference, Q1 passes current from input to output, and C3 and load resistor R2 sit on the +12 volt output. Nothing switches on and off, and the roughly 13 volts across Q1 becomes heat.</p>
+<p><strong>Why not A?</strong> There is no inductor, oscillator or switching driver, so it is not a switching regulator.</p>
+</div>
+</details>
+</article>
+<article id="e7d09">
+<h2>E7D09</h2>
+<p class="stem">How is battery operating time calculated?</p>
+<ol class="opts">
+<li><span class="l">A</span> Average current divided by capacity in amp-hours</li>
+<li><span class="l">B</span> Average current divided by internal resistance</li>
+<li><span class="l">C</span> Capacity in amp-hours divided by average current</li>
+<li><span class="l">D</span> Internal resistance divided by average current</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>C</strong>. Capacity in amp-hours divided by average current</p>
+<div class="ex">
+<p><strong>Why C is right.</strong> C. Amp-hours divided by amps leaves hours, so capacity over average current gives the run time.</p>
+<p>An amp-hour is one amp flowing for one hour. A 20 amp-hour battery feeding an average of 4 amps lasts about 20 / 4 = 5 hours. Real batteries give somewhat less, since usable capacity drops at high current and in the cold.</p>
+<p><strong>Why not A?</strong> Current divided by capacity gives 1 over hours, the upside-down result.</p>
+</div>
+</details>
+</article>
+<article id="e7d10">
+<h2>E7D10</h2>
+<p class="stem">Why is a switching type power supply less expensive and lighter than an equivalent linear power supply?</p>
+<ol class="opts">
+<li><span class="l">A</span> The inverter design does not require an output filter circuit</li>
+<li><span class="l">B</span> The control circuitry uses less current, therefore smaller heat sinks are required</li>
+<li><span class="l">C</span> The high frequency inverter design uses much smaller transformers and filter components for an equivalent power output</li>
+<li><span class="l">D</span> It recovers power from the unused portion of the AC cycle, thus using fewer components</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>C</strong>. The high frequency inverter design uses much smaller transformers and filter components for an equivalent power output</p>
+<div class="ex">
+<p><strong>Why C is right.</strong> C. Running the transformer at tens of kilohertz instead of 60 Hz lets it and the filter parts be much smaller and lighter.</p>
+<p>A transformer moves a certain amount of energy each cycle. At a higher frequency there are many more cycles per second, so a far smaller core can carry the same power. Filter capacitors and inductors shrink too, because high-frequency ripple is easier to smooth. Less copper and iron means less weight and cost.</p>
+<p><strong>Why not A?</strong> Switching supplies still need output filters to smooth their pulses.</p>
+</div>
+</details>
+</article>
+<article id="e7d11">
+<h2>E7D11</h2>
+<p class="stem">What is the purpose of an inverter connected to a solar panel output?</p>
+<ol class="opts">
+<li><span class="l">A</span> Reduce AC ripple on the output</li>
+<li><span class="l">B</span> Maintain voltage with varying illumination levels</li>
+<li><span class="l">C</span> Prevent discharge when panel is not illuminated</li>
+<li><span class="l">D</span> Convert the panel’s output from DC to AC</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>D</strong>. Convert the panel’s output from DC to AC</p>
+<div class="ex">
+<p><strong>Why D is right.</strong> D. Solar panels produce DC, and an inverter changes it to AC for household equipment or the power grid.</p>
+<p>An inverter switches the DC on and off rapidly and shapes the result into an alternating waveform, often a 60 Hz sine wave. Holding the charging voltage steady as light changes, and stopping reverse discharge at night, are jobs for a charge controller and a blocking diode, not the inverter.</p>
+<p><strong>Why not B?</strong> Keeping voltage steady as sunlight changes is a charge controller&#x27;s job.</p>
+</div>
+</details>
+</article>
+<article id="e7d12">
+<h2>E7D12</h2>
+<p class="stem">What is the dropout voltage of a linear voltage regulator?</p>
+<ol class="opts">
+<li><span class="l">A</span> Minimum input voltage for rated power dissipation</li>
+<li><span class="l">B</span> Maximum output voltage drop when the input voltage is varied over its specified range</li>
+<li><span class="l">C</span> Minimum input-to-output voltage required to maintain regulation</li>
+<li><span class="l">D</span> Maximum that the output voltage may decrease at rated load</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>C</strong>. Minimum input-to-output voltage required to maintain regulation</p>
+<div class="ex">
+<p><strong>Why C is right.</strong> C. A linear regulator can only drop voltage, so once the input-to-output gap shrinks below this headroom the pass transistor is fully on and the output follows the input down.</p>
+<p>A linear regulator needs some headroom to work. If a 12 volt regulator has 2 volts of dropout, its input must stay at 14 volts or more. Below that, the output falls along with the input. Low-dropout, or LDO, regulators need well under 1 volt.</p>
+<p><strong>Why not A?</strong> Dropout is about keeping regulation, not about power dissipation.</p>
+</div>
+</details>
+</article>
+<article id="e7d13">
+<h2>E7D13</h2>
+<p class="stem">Which of the following calculates power dissipated by a series linear voltage regulator?</p>
+<ol class="opts">
+<li><span class="l">A</span> Input voltage multiplied by input current</li>
+<li><span class="l">B</span> Input voltage divided by output current</li>
+<li><span class="l">C</span> Voltage difference from input to output multiplied by output current</li>
+<li><span class="l">D</span> Output voltage multiplied by output current</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>C</strong>. Voltage difference from input to output multiplied by output current</p>
+<div class="ex">
+<p><strong>Why C is right.</strong> C. All the load current flows through the pass element, which drops the input-to-output difference, so its heat is that voltage times the current.</p>
+<p>Power is voltage times current. For example, with 18 volts in, 12 volts out and 2 amps: (18 - 12) x 2 = 12 watts of heat in the regulator, while the load gets 12 x 2 = 24 watts. That wasted heat is why linear regulators need heat sinks.</p>
+<p><strong>Why not D?</strong> Output voltage times output current is the power delivered to the load, not the power lost in the regulator.</p>
+</div>
+</details>
+</article>
+<article id="e7d14">
+<h2>E7D14</h2>
+<p class="stem">What is the purpose of connecting equal-value resistors across power supply filter capacitors connected in series?</p>
+<ol class="opts">
+<li><span class="l">A</span> Equalize the voltage across each capacitor</li>
+<li><span class="l">B</span> Discharge the capacitors when voltage is removed</li>
+<li><span class="l">C</span> Provide a minimum load on the supply</li>
+<li><span class="l">D</span> All these choices are correct</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>D</strong>. All these choices are correct</p>
+<div class="ex">
+<p><strong>Why D is right.</strong> D. Matched resistors across series capacitors balance their voltages, drain their stored charge and lightly load the supply, so every choice applies.</p>
+<p>Capacitors in series split voltage according to their leakage, which varies, so one could get too much voltage and fail. Equal resistors force an even split. The same resistors drain the charge after power-off, protecting anyone who touches the supply, and their small steady current gives the supply a minimum load.</p>
+</div>
+</details>
+</article>
+<article id="e7d15">
+<h2>E7D15</h2>
+<p class="stem">What is the purpose of a step-start circuit in a high-voltage power supply?</p>
+<ol class="opts">
+<li><span class="l">A</span> To provide a dual-voltage output for reduced power applications</li>
+<li><span class="l">B</span> To compensate for variations of the incoming line voltage</li>
+<li><span class="l">C</span> To prevent arcing across the input power switch or relay contacts</li>
+<li><span class="l">D</span> To allow the filter capacitors to charge gradually</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>D</strong>. To allow the filter capacitors to charge gradually</p>
+<div class="ex">
+<p><strong>Why D is right.</strong> D. A step-start circuit first feeds the supply through a resistor, limiting the surge while the large filter capacitors charge, then bypasses the resistor.</p>
+<p>Empty capacitors act almost like a short circuit at switch-on. Without help, the surge can blow fuses, stress the rectifier diodes and strain the transformer. A series resistor limits that first rush of current; after a moment a relay shorts it out for normal operation.</p>
+<p><strong>Why not B?</strong> Changes in line voltage are handled by regulation, not by a start-up delay.</p>
+</div>
+</details>
+</article>
+<nav class="pager" aria-label="Groups"><p><a href="../e7c/">Previous: E7C Filters and matching networks: types of networks; types of filters; filter applications; filter characteristics; impedance matching</a></p><p><a href="../e7e/">Next: E7E Modulation and demodulation: reactance, phase, and balanced modulators; detectors; mixers</a></p></nav>
+<footer>
+<p>QSO Ready is an independent study app for the US amateur radio license exams. Questions: NCVEC Question Pool Committee,
+released to the public domain. Rule quotes: 47 CFR, eCFR as of 2026-10-29. Content version 1.</p>
+<p><a href="../../">QSO Ready home</a> · <a href="../../privacy/">Privacy policy</a> · <a href="mailto:hello@saurabhupadhyay.in">hello@saurabhupadhyay.in</a></p>
+</footer>
+</main>
+</body>
+</html>

@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>E7G Operational amplifiers: characteristics and applications: Amateur Extra questions explained · QSO Ready</title>
+<meta name="description" content="Amateur Extra pool group E7G (Operational amplifiers: characteristics and applications): all 12 questions with correct answers and plain-English explanations.">
+<link rel="canonical" href="https://saurabhupadhyay.in/qso-ready/extra/e7g/">
+<link rel="stylesheet" href="../../site.css">
+</head>
+<body>
+<main>
+<p class="notice">Not affiliated with or endorsed by the FCC, NCVEC, ARRL or any VEC. Questions are the NCVEC pools word for word (public domain); explanations are our own. Exam rules and fees can change: check with your VE team.</p>
+<nav class="crumbs" aria-label="Breadcrumb"><a href="../../">QSO Ready</a> › <a href="../">Amateur Extra</a> › E7G</nav>
+<h1>E7G: Operational amplifiers: characteristics and applications</h1>
+<p>Group E7G of the Amateur Extra pool (2024–2028) has 12 active questions. One of them is on every Amateur Extra exam. Each is shown word for word; open it to see the correct answer and our explanation.</p>
+<article id="e7g01">
+<h2>E7G01</h2>
+<p class="stem">What is the typical output impedance of an op-amp?</p>
+<ol class="opts">
+<li><span class="l">A</span> Very low</li>
+<li><span class="l">B</span> Very high</li>
+<li><span class="l">C</span> 100 ohms</li>
+<li><span class="l">D</span> 10,000 ohms</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>A</strong>. Very low</p>
+<div class="ex">
+<p><strong>Why A is right.</strong> A. The output stage is built to drive loads without its voltage sagging, and negative feedback lowers its effective output impedance even further.</p>
+<p>Low output impedance means the output voltage hardly changes when a load is connected. In most op-amp circuits, feedback brings the effective value down to a few ohms or less. In the ideal model it is zero.</p>
+<p><strong>Why not B?</strong> High output impedance would make the output drop under load, the opposite of what op-amps are built for.</p>
+</div>
+</details>
+</article>
+<article id="e7g02">
+<h2>E7G02</h2>
+<p class="stem">What is the frequency response of the circuit in E7-3 if a capacitor is added across the feedback resistor?</p>
+<figure><img src="../../figures/E7-3.webp" width="1000" height="931" loading="lazy" alt="Figure E7-3 is an operational amplifier circuit. The op-amp is a triangle pointing right, with two inputs on its left side: the upper one marked minus (inverting) and the lower one marked plus (non-inverting). An input terminal at the far left connects through resistor R1, a zigzag, to the minus input. Resistor RF, the feedback resistor, runs from the minus input up and over the top of the triangle to the output at the triangle&#x27;s right tip. The output connects to an output terminal on the right. The plus input connects straight down to ground. Below the output terminal, a second terminal is connected to ground as the signal return."><figcaption>Figure E7-3</figcaption></figure>
+<ol class="opts">
+<li><span class="l">A</span> High-pass filter</li>
+<li><span class="l">B</span> Low-pass filter</li>
+<li><span class="l">C</span> Band-pass filter</li>
+<li><span class="l">D</span> Notch filter</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>B</strong>. Low-pass filter</p>
+<div class="ex">
+<p><strong>Why B is right.</strong> B. A capacitor across the feedback resistor lowers the feedback impedance at high frequencies, cutting the gain there.</p>
+<p>In Figure E7-3, RF is the zigzag resistor from the op-amp&#x27;s output back to its minus input, and gain is RF divided by R1. A capacitor across RF has reactance that falls as frequency rises. At low frequencies RF sets the gain; at high frequencies the capacitor bypasses RF and the gain drops, so low frequencies pass.</p>
+<p><strong>Why not A?</strong> The capacitor reduces high-frequency gain, so highs are cut, not passed.</p>
+</div>
+</details>
+</article>
+<article id="e7g03">
+<h2>E7G03</h2>
+<p class="stem">What is the typical input impedance of an op-amp?</p>
+<ol class="opts">
+<li><span class="l">A</span> 100 ohms</li>
+<li><span class="l">B</span> 10,000 ohms</li>
+<li><span class="l">C</span> Very low</li>
+<li><span class="l">D</span> Very high</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>D</strong>. Very high</p>
+<div class="ex">
+<p><strong>Why D is right.</strong> D. Op-amp inputs draw almost no current, so they present a very high input impedance.</p>
+<p>Bipolar op-amps have input impedances of a megohm or more, and FET-input types go far higher. The op-amp therefore barely loads whatever drives it. In ideal circuit analysis the input current is taken as zero.</p>
+<p><strong>Why not C?</strong> Low input impedance would load the source, which op-amps are designed to avoid.</p>
+</div>
+</details>
+</article>
+<article id="e7g04">
+<h2>E7G04</h2>
+<p class="stem">What is meant by the term “op-amp input offset voltage”?</p>
+<ol class="opts">
+<li><span class="l">A</span> The output voltage of the op-amp minus its input voltage</li>
+<li><span class="l">B</span> The difference between the output voltage of the op-amp and the input voltage required in the immediately following stage</li>
+<li><span class="l">C</span> The differential input voltage needed to bring the open loop output voltage to zero</li>
+<li><span class="l">D</span> The potential between the amplifier input terminals of the op-amp in an open loop condition</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>C</strong>. The differential input voltage needed to bring the open loop output voltage to zero</p>
+<div class="ex">
+<p><strong>Why C is right.</strong> C. Small mismatches in the input transistors act like a tiny built-in voltage between the inputs; the outside voltage that cancels it and zeroes the open-loop output is the offset.</p>
+<p>Tiny mismatches between the input transistors mean that, with the inputs tied together, the huge open-loop gain still drives the output toward one supply limit. A few millivolts or less across the inputs brings it back to zero; that voltage is the offset. High-gain DC circuits are most affected.</p>
+<p><strong>Why not A?</strong> Output minus input is a voltage difference across the whole amplifier, not an input property.</p>
+</div>
+</details>
+</article>
+<article id="e7g05">
+<h2>E7G05</h2>
+<p class="stem">How can unwanted ringing and audio instability be prevented in an op-amp audio filter?</p>
+<ol class="opts">
+<li><span class="l">A</span> Restrict both gain and Q</li>
+<li><span class="l">B</span> Restrict gain but increase Q</li>
+<li><span class="l">C</span> Restrict Q but increase gain</li>
+<li><span class="l">D</span> Increase both gain and Q</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>A</strong>. Restrict both gain and Q</p>
+<div class="ex">
+<p><strong>Why A is right.</strong> A. High gain and high Q both push an active filter toward ringing and oscillation, so both should be kept modest.</p>
+<p>Q describes how sharp and resonant a filter is. A high-Q filter stores energy and keeps ringing after a sudden sound. Extra gain sends more signal around the feedback loop, moving the circuit closer to oscillating on its own. Moderate values give a stable, clean response.</p>
+<p><strong>Why not D?</strong> Raising both gain and Q makes ringing and instability worse.</p>
+</div>
+</details>
+</article>
+<article id="e7g06">
+<h2>E7G06</h2>
+<p class="stem">What is the gain-bandwidth of an operational amplifier?</p>
+<ol class="opts">
+<li><span class="l">A</span> The maximum frequency for a filter circuit using that type of amplifier</li>
+<li><span class="l">B</span> The frequency at which the open-loop gain of the amplifier equals one</li>
+<li><span class="l">C</span> The gain of the amplifier at a filter’s cutoff frequency</li>
+<li><span class="l">D</span> The frequency at which the amplifier’s offset voltage is zero</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>B</strong>. The frequency at which the open-loop gain of the amplifier equals one</p>
+<div class="ex">
+<p><strong>Why B is right.</strong> B. Above a low corner, open-loop gain falls in step with frequency, so gain times frequency stays constant and equals the frequency where the gain reaches 1.</p>
+<p>Above a low corner frequency, open-loop gain falls in proportion to frequency, so gain times frequency stays about constant. A part with 1 MHz gain-bandwidth can give a gain of 10 up to about 100 kHz, or a gain of 100 up to about 10 kHz.</p>
+<p><strong>Why not D?</strong> Offset voltage is a DC error and is not tied to a frequency.</p>
+</div>
+</details>
+</article>
+<article id="e7g07">
+<h2>E7G07</h2>
+<p class="stem">What voltage gain can be expected from the circuit in Figure E7-3 when R1 is 10 ohms and RF is 470 ohms?</p>
+<figure><img src="../../figures/E7-3.webp" width="1000" height="931" loading="lazy" alt="Figure E7-3 is an operational amplifier circuit. The op-amp is a triangle pointing right, with two inputs on its left side: the upper one marked minus (inverting) and the lower one marked plus (non-inverting). An input terminal at the far left connects through resistor R1, a zigzag, to the minus input. Resistor RF, the feedback resistor, runs from the minus input up and over the top of the triangle to the output at the triangle&#x27;s right tip. The output connects to an output terminal on the right. The plus input connects straight down to ground. Below the output terminal, a second terminal is connected to ground as the signal return."><figcaption>Figure E7-3</figcaption></figure>
+<ol class="opts">
+<li><span class="l">A</span> 0.21</li>
+<li><span class="l">B</span> 4700</li>
+<li><span class="l">C</span> 47</li>
+<li><span class="l">D</span> 24</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>C</strong>. 47</p>
+<div class="ex">
+<p><strong>Why C is right.</strong> C. In this inverting circuit the gain size equals the feedback resistor divided by the input resistor, and 470 divided by 10 is 47.</p>
+<p>In Figure E7-3, input resistor R1, a zigzag, runs from the input to the op-amp&#x27;s minus input, and feedback resistor RF runs from the output back to that same minus input, while the plus input goes to ground. Feedback holds the minus input near 0 volts, so all current through R1 must also flow through RF.</p>
+<pre class="worked">|G| = RF / R1
+|G| = 470 ohms / 10 ohms
+= 47</pre>
+<p><strong>Why not B?</strong> 4700 is the product of the two resistances, not their ratio.</p>
+</div>
+</details>
+</article>
+<article id="e7g08">
+<h2>E7G08</h2>
+<p class="stem">How does the gain of an ideal operational amplifier vary with frequency?</p>
+<ol class="opts">
+<li><span class="l">A</span> It increases linearly with increasing frequency</li>
+<li><span class="l">B</span> It decreases linearly with increasing frequency</li>
+<li><span class="l">C</span> It decreases logarithmically with increasing frequency</li>
+<li><span class="l">D</span> It does not vary with frequency</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>D</strong>. It does not vary with frequency</p>
+<div class="ex">
+<p><strong>Why D is right.</strong> D. An ideal op-amp is defined to have unlimited gain and bandwidth, so its gain is the same at every frequency.</p>
+<p>Real op-amps lose gain as frequency rises, which is what gain-bandwidth describes. The ideal model removes such limits so circuit behavior depends only on the parts around the op-amp. It is a useful starting point for design.</p>
+<p><strong>Why not B?</strong> Gain falling with frequency describes real op-amps, not the ideal one.</p>
+</div>
+</details>
+</article>
+<article id="e7g09">
+<h2>E7G09</h2>
+<p class="stem">What will be the output voltage of the circuit shown in Figure E7-3 if R1 is 1,000 ohms, RF is 10,000 ohms, and 0.23 volts DC is applied to the input?</p>
+<figure><img src="../../figures/E7-3.webp" width="1000" height="931" loading="lazy" alt="Figure E7-3 is an operational amplifier circuit. The op-amp is a triangle pointing right, with two inputs on its left side: the upper one marked minus (inverting) and the lower one marked plus (non-inverting). An input terminal at the far left connects through resistor R1, a zigzag, to the minus input. Resistor RF, the feedback resistor, runs from the minus input up and over the top of the triangle to the output at the triangle&#x27;s right tip. The output connects to an output terminal on the right. The plus input connects straight down to ground. Below the output terminal, a second terminal is connected to ground as the signal return."><figcaption>Figure E7-3</figcaption></figure>
+<ol class="opts">
+<li><span class="l">A</span> 0.23 volts</li>
+<li><span class="l">B</span> 2.3 volts</li>
+<li><span class="l">C</span> -0.23 volts</li>
+<li><span class="l">D</span> -2.3 volts</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>D</strong>. -2.3 volts</p>
+<div class="ex">
+<p><strong>Why D is right.</strong> D. The gain is 10, and the inverting circuit flips the sign, so 0.23 volts in gives minus 2.3 volts out.</p>
+<p>In Figure E7-3, input resistor R1, a zigzag, runs from the input to the op-amp&#x27;s minus input, and feedback resistor RF runs from the output back to that same minus input, while the plus input goes to ground. A positive input pushes current toward the minus input, so the output must go negative to pull that current away through RF.</p>
+<pre class="worked">Vout = -(RF / R1) x Vin
+Vout = -(10,000 ohms / 1,000 ohms) x 0.23 V
+Vout = -10 x 0.23 V
+= -2.3 volts</pre>
+<p><strong>Why not B?</strong> 2.3 volts is the right size but the wrong sign; this circuit inverts.</p>
+</div>
+</details>
+</article>
+<article id="e7g10">
+<h2>E7G10</h2>
+<p class="stem">What absolute voltage gain can be expected from the circuit in Figure E7-3 when R1 is 1,800 ohms and RF is 68 kilohms?</p>
+<figure><img src="../../figures/E7-3.webp" width="1000" height="931" loading="lazy" alt="Figure E7-3 is an operational amplifier circuit. The op-amp is a triangle pointing right, with two inputs on its left side: the upper one marked minus (inverting) and the lower one marked plus (non-inverting). An input terminal at the far left connects through resistor R1, a zigzag, to the minus input. Resistor RF, the feedback resistor, runs from the minus input up and over the top of the triangle to the output at the triangle&#x27;s right tip. The output connects to an output terminal on the right. The plus input connects straight down to ground. Below the output terminal, a second terminal is connected to ground as the signal return."><figcaption>Figure E7-3</figcaption></figure>
+<ol class="opts">
+<li><span class="l">A</span> 1</li>
+<li><span class="l">B</span> 0.03</li>
+<li><span class="l">C</span> 38</li>
+<li><span class="l">D</span> 76</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>C</strong>. 38</p>
+<div class="ex">
+<p><strong>Why C is right.</strong> C. Absolute gain is RF divided by R1, and 68,000 divided by 1,800 is about 38.</p>
+<p>Change kilohms to ohms first: 68 kilohms is 68,000 ohms. In Figure E7-3, input resistor R1, a zigzag, runs from the input to the op-amp&#x27;s minus input, and feedback resistor RF runs from the output back to that same minus input, while the plus input goes to ground. Absolute gain ignores the minus sign from inversion.</p>
+<pre class="worked">|G| = RF / R1
+|G| = 68,000 ohms / 1,800 ohms
+|G| = 37.8, which rounds to 38
+= 38</pre>
+<p><strong>Why not D?</strong> 76 is twice the correct ratio.</p>
+</div>
+</details>
+</article>
+<article id="e7g11">
+<h2>E7G11</h2>
+<p class="stem">What absolute voltage gain can be expected from the circuit in Figure E7-3 when R1 is 3,300 ohms and RF is 47 kilohms?</p>
+<figure><img src="../../figures/E7-3.webp" width="1000" height="931" loading="lazy" alt="Figure E7-3 is an operational amplifier circuit. The op-amp is a triangle pointing right, with two inputs on its left side: the upper one marked minus (inverting) and the lower one marked plus (non-inverting). An input terminal at the far left connects through resistor R1, a zigzag, to the minus input. Resistor RF, the feedback resistor, runs from the minus input up and over the top of the triangle to the output at the triangle&#x27;s right tip. The output connects to an output terminal on the right. The plus input connects straight down to ground. Below the output terminal, a second terminal is connected to ground as the signal return."><figcaption>Figure E7-3</figcaption></figure>
+<ol class="opts">
+<li><span class="l">A</span> 28</li>
+<li><span class="l">B</span> 14</li>
+<li><span class="l">C</span> 7</li>
+<li><span class="l">D</span> 0.07</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>B</strong>. 14</p>
+<div class="ex">
+<p><strong>Why B is right.</strong> B. Absolute gain is RF divided by R1, and 47,000 divided by 3,300 is about 14.</p>
+<p>Change kilohms to ohms first: 47 kilohms is 47,000 ohms. In Figure E7-3, input resistor R1, a zigzag, runs from the input to the op-amp&#x27;s minus input, and feedback resistor RF runs from the output back to that same minus input, while the plus input goes to ground. Absolute gain ignores the minus sign from inversion.</p>
+<pre class="worked">|G| = RF / R1
+|G| = 47,000 ohms / 3,300 ohms
+|G| = 14.2, which rounds to 14
+= 14</pre>
+<p><strong>Why not A?</strong> 28 is twice the correct ratio.</p>
+</div>
+</details>
+</article>
+<article id="e7g12">
+<h2>E7G12</h2>
+<p class="stem">What is an operational amplifier?</p>
+<ol class="opts">
+<li><span class="l">A</span> A high-gain, direct-coupled differential amplifier with very high input impedance and very low output impedance</li>
+<li><span class="l">B</span> A digital audio amplifier whose characteristics are determined by components external to the amplifier</li>
+<li><span class="l">C</span> An amplifier used to increase the average output of frequency modulated amateur signals to the legal limit</li>
+<li><span class="l">D</span> A RF amplifier used in the UHF and microwave regions</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>A</strong>. A high-gain, direct-coupled differential amplifier with very high input impedance and very low output impedance</p>
+<div class="ex">
+<p><strong>Why A is right.</strong> A. An op-amp amplifies the voltage difference between its two inputs, down to DC, with enormous gain, while barely loading its source and easily driving its load.</p>
+<p>Direct-coupled means there are no capacitors between stages, so DC is amplified as well as AC. Open-loop gain is often 100,000 or more. External resistors and capacitors set the actual gain or filter shape. The name comes from early use doing math operations in analog computers.</p>
+<p><strong>Why not B?</strong> Op-amps are analog devices, not digital audio amplifiers.</p>
+</div>
+</details>
+</article>
+<nav class="pager" aria-label="Groups"><p><a href="../e7f/">Previous: E7F Software defined radio fundamentals: digital signal processing (DSP) filtering, modulation, and demodulation; analog-digital conversion; digital filters</a></p><p><a href="../e7h/">Next: E7H Oscillators and signal sources: types of oscillators; synthesizers and phase-locked loops; direct digital synthesizers; stabilizing thermal drift; microphonics; high-accuracy oscillators</a></p></nav>
+<footer>
+<p>QSO Ready is an independent study app for the US amateur radio license exams. Questions: NCVEC Question Pool Committee,
+released to the public domain. Rule quotes: 47 CFR, eCFR as of 2026-10-29. Content version 1.</p>
+<p><a href="../../">QSO Ready home</a> · <a href="../../privacy/">Privacy policy</a> · <a href="mailto:hello@saurabhupadhyay.in">hello@saurabhupadhyay.in</a></p>
+</footer>
+</main>
+</body>
+</html>

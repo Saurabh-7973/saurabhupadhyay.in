@@ -5,7 +5,7 @@
   "description": "Checks for the site in ../public. Nothing here is served.",
   "scripts": {
     "serve": "node serve.mjs",
-    "html": "html-validate --config .htmlvalidate.json '../public/*.html' '../public/dhara-kosh/**/*.html'",
+    "html": "html-validate --config .htmlvalidate.json '../public/*.html' '../public/dhara-kosh/**/*.html' '../public/qso-ready/**/*.html'",
     "e2e": "playwright test",
     "lighthouse": "lhci autorun"
   },

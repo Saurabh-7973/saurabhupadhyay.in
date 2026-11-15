@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>G8C Digital emission modes: General questions explained · QSO Ready</title>
+<meta name="description" content="General pool group G8C (Digital emission modes): all 15 questions with correct answers and plain-English explanations.">
+<link rel="canonical" href="https://saurabhupadhyay.in/qso-ready/general/g8c/">
+<link rel="stylesheet" href="../../site.css">
+</head>
+<body>
+<main>
+<p class="notice">Not affiliated with or endorsed by the FCC, NCVEC, ARRL or any VEC. Questions are the NCVEC pools word for word (public domain); explanations are our own. Exam rules and fees can change: check with your VE team.</p>
+<nav class="crumbs" aria-label="Breadcrumb"><a href="../../">QSO Ready</a> › <a href="../">General</a> › G8C</nav>
+<h1>G8C: Digital emission modes</h1>
+<p>Group G8C of the General pool (2023–2027) has 15 active questions. One of them is on every General exam. Each is shown word for word; open it to see the correct answer and our explanation.</p>
+<article id="g8c01">
+<h2>G8C01</h2>
+<p class="withdrawn">Withdrawn by NCVEC on 2024-11-08. It is not used on exams.</p>
+</article>
+<article id="g8c02">
+<h2>G8C02</h2>
+<p class="stem">Which digital mode is used as a low-power beacon for assessing HF propagation?</p>
+<ol class="opts">
+<li><span class="l">A</span> WSPR</li>
+<li><span class="l">B</span> MFSK16</li>
+<li><span class="l">C</span> PSK31</li>
+<li><span class="l">D</span> SSB-SC</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>A</strong>. WSPR</p>
+<div class="ex">
+<p><strong>Why A is right.</strong> A. WSPR stations send slow, low-power beacons that others decode far below the noise and report online, which maps where a band is open.</p>
+<p>Each WSPR transmission carries the call sign, location and power, so the reports show who heard whom and how strongly.</p>
+<p><strong>Why not C?</strong> PSK31 is a keyboard chat mode, not a beacon system.</p>
+</div>
+</details>
+</article>
+<article id="g8c03">
+<h2>G8C03</h2>
+<p class="stem">What part of a packet radio frame contains the routing and handling information?</p>
+<ol class="opts">
+<li><span class="l">A</span> Directory</li>
+<li><span class="l">B</span> Preamble</li>
+<li><span class="l">C</span> Header</li>
+<li><span class="l">D</span> Trailer</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>C</strong>. Header</p>
+<div class="ex">
+<p><strong>Why C is right.</strong> C. The header holds the routing and handling information in a packet frame.</p>
+<p>A packet is like a letter in an envelope. The header is the address on the envelope: who it is from, who it is to, and how to pass it along. The data that follows is the letter itself.</p>
+<p><strong>Why not D?</strong> A trailer, if present, holds error-check data at the end of the frame.</p>
+</div>
+</details>
+</article>
+<article id="g8c04">
+<h2>G8C04</h2>
+<p class="stem">Which of the following describes Baudot code?</p>
+<ol class="opts">
+<li><span class="l">A</span> A 7-bit code with start, stop, and parity bits</li>
+<li><span class="l">B</span> A code using error detection and correction</li>
+<li><span class="l">C</span> A 5-bit code with additional start and stop bits</li>
+<li><span class="l">D</span> A code using SELCAL and LISTEN</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>C</strong>. A 5-bit code with additional start and stop bits</p>
+<div class="ex">
+<p><strong>Why C is right.</strong> C. Five bits give 32 patterns, enough for letters plus a shift code for figures, and start and stop bits mark each character&#x27;s edges.</p>
+<p>Shift codes switch between a letters set and a figures set. Baudot is the code used for RTTY.</p>
+<p><strong>Why not A?</strong> A 7-bit code with parity describes ASCII, not Baudot.</p>
+</div>
+</details>
+</article>
+<article id="g8c05">
+<h2>G8C05</h2>
+<p class="stem">In an ARQ mode, what is meant by a NAK response to a transmitted packet?</p>
+<ol class="opts">
+<li><span class="l">A</span> Request retransmission of the packet</li>
+<li><span class="l">B</span> Packet was received without error</li>
+<li><span class="l">C</span> Receiving station connected and ready for transmissions</li>
+<li><span class="l">D</span> Entire file received correctly</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>A</strong>. Request retransmission of the packet</p>
+<div class="ex">
+<p><strong>Why A is right.</strong> A. NAK means &#x27;not acknowledged&#x27;: the receiver found errors, so it asks for that packet again.</p>
+<p>ARQ stands for automatic repeat request. After each packet, the receiver checks it for errors. A good packet gets ACK, meaning acknowledged.</p>
+<p><strong>Why not B?</strong> A packet received without error gets an ACK, not a NAK.</p>
+</div>
+</details>
+</article>
+<article id="g8c06">
+<h2>G8C06</h2>
+<p class="stem">What action results from a failure to exchange information due to excessive transmission attempts when using an ARQ mode?</p>
+<ol class="opts">
+<li><span class="l">A</span> The checksum overflows</li>
+<li><span class="l">B</span> The connection is dropped</li>
+<li><span class="l">C</span> Packets will be routed incorrectly</li>
+<li><span class="l">D</span> Encoding reverts to the default character set</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>B</strong>. The connection is dropped</p>
+<div class="ex">
+<p><strong>Why B is right.</strong> B. ARQ software allows only a set number of retries, and when they run out it gives up and ends the link.</p>
+<p>ARQ keeps resending a packet until it gets through. If conditions are so poor that it fails again and again, the link is dropped rather than retrying forever.</p>
+<p><strong>Why not A?</strong> A checksum is a fixed-size error check; it does not overflow from retries.</p>
+</div>
+</details>
+</article>
+<article id="g8c07">
+<h2>G8C07</h2>
+<p class="stem">Which of the following narrow-band digital modes can receive signals with very low signal-to-noise ratios?</p>
+<ol class="opts">
+<li><span class="l">A</span> MSK144</li>
+<li><span class="l">B</span> FT8</li>
+<li><span class="l">C</span> AMTOR</li>
+<li><span class="l">D</span> MFSK32</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>B</strong>. FT8</p>
+<div class="ex">
+<p><strong>Why B is right.</strong> B. FT8 can decode signals with very low signal-to-noise ratios.</p>
+<p>FT8 sends slowly, uses narrow tones and adds strong error-correcting code. That lets it decode signals well below the noise you can hear, around 20 dB under it in a typical SSB bandwidth.</p>
+<p><strong>Why not C?</strong> AMTOR is an older error-checking mode that needs a much stronger signal.</p>
+</div>
+</details>
+</article>
+<article id="g8c08">
+<h2>G8C08</h2>
+<p class="stem">Which of the following statements is true about PSK31?</p>
+<ol class="opts">
+<li><span class="l">A</span> Upper case letters are sent with more power</li>
+<li><span class="l">B</span> Upper case letters use longer Varicode bit sequences and thus slow down transmission</li>
+<li><span class="l">C</span> Error correction is used to ensure accurate message reception</li>
+<li><span class="l">D</span> Higher power is needed as compared to RTTY for similar error rates</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>B</strong>. Upper case letters use longer Varicode bit sequences and thus slow down transmission</p>
+<div class="ex">
+<p><strong>Why B is right.</strong> B. Varicode gives the shortest patterns to the most common characters, and capitals are much rarer than lowercase in normal text.</p>
+<p>PSK31 uses Varicode, a character code where common characters get short bit patterns. So typing in all capitals is slower.</p>
+<p><strong>Why not A?</strong> PSK31 sends every character at the same power; only the length of the code differs.</p>
+</div>
+</details>
+</article>
+<article id="g8c09">
+<h2>G8C09</h2>
+<p class="stem">Which is true of mesh network microwave nodes?</p>
+<ol class="opts">
+<li><span class="l">A</span> Having more nodes increases signal strengths</li>
+<li><span class="l">B</span> If one node fails, a packet may still reach its target station via an alternate node</li>
+<li><span class="l">C</span> Links between two nodes in a network may have different frequencies and bandwidths</li>
+<li><span class="l">D</span> More nodes reduce overall microwave out of band interference</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>B</strong>. If one node fails, a packet may still reach its target station via an alternate node</p>
+<div class="ex">
+<p><strong>Why B is right.</strong> B. Each node links to several others, so routing software can steer a packet around a dead node.</p>
+<p>A mesh network links many nodes, each connected to several others. Software finds a route through the web of links, so no single node is a weak point.</p>
+<p><strong>Why not A?</strong> Adding nodes adds paths, but it does not make each signal stronger.</p>
+</div>
+</details>
+</article>
+<article id="g8c10">
+<h2>G8C10</h2>
+<p class="stem">How does forward error correction (FEC) allow the receiver to correct data errors?</p>
+<ol class="opts">
+<li><span class="l">A</span> By controlling transmitter output power for optimum signal strength</li>
+<li><span class="l">B</span> By using the Varicode character set</li>
+<li><span class="l">C</span> By transmitting redundant information with the data</li>
+<li><span class="l">D</span> By using a parity bit with each character</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>C</strong>. By transmitting redundant information with the data</p>
+<div class="ex">
+<p><strong>Why C is right.</strong> C. The extra bits are built from the data by a known rule, so the receiver can work out which bits noise flipped and fix them.</p>
+<p>FEC stands for forward error correction. No request to resend is needed, which helps on fading or one-way links.</p>
+<p><strong>Why not D?</strong> A single parity bit can detect some errors but cannot tell which bit to fix.</p>
+</div>
+</details>
+</article>
+<article id="g8c11">
+<h2>G8C11</h2>
+<p class="stem">How are the two separate frequencies of a Frequency Shift Keyed (FSK) signal identified?</p>
+<ol class="opts">
+<li><span class="l">A</span> Dot and dash</li>
+<li><span class="l">B</span> On and off</li>
+<li><span class="l">C</span> High and low</li>
+<li><span class="l">D</span> Mark and space</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>D</strong>. Mark and space</p>
+<div class="ex">
+<p><strong>Why D is right.</strong> D. The two FSK frequencies are called mark and space.</p>
+<p>These names come from early telegraph printers. Mark is one frequency and space is the other. In RTTY, the signal switches between them to send the bits of each character.</p>
+<p><strong>Why not A?</strong> Dot and dash are the elements of Morse code, not FSK frequencies.</p>
+</div>
+</details>
+</article>
+<article id="g8c12">
+<h2>G8C12</h2>
+<p class="stem">Which type of code is used for sending characters in a PSK31 signal?</p>
+<ol class="opts">
+<li><span class="l">A</span> Varicode</li>
+<li><span class="l">B</span> Viterbi</li>
+<li><span class="l">C</span> Volumetric</li>
+<li><span class="l">D</span> Binary</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>A</strong>. Varicode</p>
+<div class="ex">
+<p><strong>Why A is right.</strong> A. PSK31 sends characters using Varicode.</p>
+<p>Varicode gives each character a bit pattern whose length depends on how often it is used. Common letters get short patterns, so normal text moves faster. Two zero bits in a row mark the gap between characters.</p>
+<p><strong>Why not B?</strong> Viterbi is a method for decoding error-correcting codes, not a character code.</p>
+</div>
+</details>
+</article>
+<article id="g8c13">
+<h2>G8C13</h2>
+<p class="stem">What is indicated on a waterfall display by one or more vertical lines on either side of a data mode or RTTY signal?</p>
+<ol class="opts">
+<li><span class="l">A</span> Long path propagation</li>
+<li><span class="l">B</span> Backscatter propagation</li>
+<li><span class="l">C</span> Insufficient modulation</li>
+<li><span class="l">D</span> Overmodulation</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>D</strong>. Overmodulation</p>
+<div class="ex">
+<p><strong>Why D is right.</strong> D. Extra vertical lines beside a data signal on a waterfall point to overmodulation.</p>
+<p>A clean data signal shows as a tidy trace of a set width. Too much audio drive distorts it and creates extra frequencies. Those appear as fainter lines on each side, spreading into nearby channels.</p>
+<p><strong>Why not C?</strong> Too little modulation makes a weak trace; it does not add side lines.</p>
+</div>
+</details>
+</article>
+<article id="g8c14">
+<h2>G8C14</h2>
+<p class="stem">Which of the following describes a waterfall display?</p>
+<ol class="opts">
+<li><span class="l">A</span> Frequency is horizontal, signal strength is vertical, time is intensity</li>
+<li><span class="l">B</span> Frequency is vertical, signal strength is intensity, time is horizontal</li>
+<li><span class="l">C</span> Frequency is horizontal, signal strength is intensity, time is vertical</li>
+<li><span class="l">D</span> Frequency is vertical, signal strength is horizontal, time is intensity</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>C</strong>. Frequency is horizontal, signal strength is intensity, time is vertical</p>
+<div class="ex">
+<p><strong>Why C is right.</strong> C. Each new row is one snapshot of the band, so time builds up vertically as rows scroll, while brightness or color shows strength.</p>
+<p>Frequency runs left to right across the display. Older rows scroll down like falling water.</p>
+<p><strong>Why not A?</strong> On a waterfall, the vertical direction shows time, not signal strength.</p>
+</div>
+</details>
+</article>
+<article id="g8c15">
+<h2>G8C15</h2>
+<p class="stem">What does an FT8 signal report of +3 mean?</p>
+<ol class="opts">
+<li><span class="l">A</span> The signal is 3 times the noise level of an equivalent SSB signal</li>
+<li><span class="l">B</span> The signal is S3 (weak signals)</li>
+<li><span class="l">C</span> The signal-to-noise ratio is equivalent to +3dB in a 2.5 kHz bandwidth</li>
+<li><span class="l">D</span> The signal is 3 dB over S9</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>C</strong>. The signal-to-noise ratio is equivalent to +3dB in a 2.5 kHz bandwidth</p>
+<div class="ex">
+<p><strong>Why C is right.</strong> C. FT8 scales its noise measurement to a standard 2.5 kHz width so reports compare across stations, and +3 is 3 dB above that noise.</p>
+<p>FT8 software reports how far a signal is above or below the noise, in dB. A report of +3 is a strong FT8 signal.</p>
+<p><strong>Why not D?</strong> FT8 reports are signal-to-noise numbers, not S-meter readings.</p>
+</div>
+</details>
+</article>
+<article id="g8c16">
+<h2>G8C16</h2>
+<p class="stem">Which of the following provide digital voice modes?</p>
+<ol class="opts">
+<li><span class="l">A</span> WSPR, MFSK16, and EasyPAL</li>
+<li><span class="l">B</span> FT8, FT4, and FST4</li>
+<li><span class="l">C</span> Winlink, PACTOR II, and PACTOR III</li>
+<li><span class="l">D</span> DMR, D-STAR, and SystemFusion</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>D</strong>. DMR, D-STAR, and SystemFusion</p>
+<div class="ex">
+<p><strong>Why D is right.</strong> D. All three digitize your voice, send it as data, and turn it back into audio at the receiver.</p>
+<p>DMR, D-STAR and System Fusion are common on VHF and UHF radios and repeaters.</p>
+<p><strong>Why not B?</strong> FT8, FT4 and FST4 send short text messages, not voice.</p>
+</div>
+</details>
+</article>
+<nav class="pager" aria-label="Groups"><p><a href="../g8b/">Previous: G8B Frequency changing; bandwidths of various modes; deviation; intermodulation</a></p><p><a href="../g9a/">Next: G9A Feed lines: characteristic impedance and attenuation; standing wave ratio (SWR) calculation, measurement, and effects; antenna feed point matching</a></p></nav>
+<footer>
+<p>QSO Ready is an independent study app for the US amateur radio license exams. Questions: NCVEC Question Pool Committee,
+released to the public domain. Rule quotes: 47 CFR, eCFR as of 2026-10-29. Content version 1.</p>
+<p><a href="../../">QSO Ready home</a> · <a href="../../privacy/">Privacy policy</a> · <a href="mailto:hello@saurabhupadhyay.in">hello@saurabhupadhyay.in</a></p>
+</footer>
+</main>
+</body>
+</html>

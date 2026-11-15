@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>E8A Fourier analysis; RMS measurements; average RF power and peak envelope power (PEP); analog/digital conversion: Amateur Extra questions explained · QSO Ready</title>
+<meta name="description" content="Amateur Extra pool group E8A (Fourier analysis; RMS measurements; average RF power and peak envelope power (PEP); analog/digital conversion): all 11 questions with correct answers and plain-English explanations.">
+<link rel="canonical" href="https://saurabhupadhyay.in/qso-ready/extra/e8a/">
+<link rel="stylesheet" href="../../site.css">
+</head>
+<body>
+<main>
+<p class="notice">Not affiliated with or endorsed by the FCC, NCVEC, ARRL or any VEC. Questions are the NCVEC pools word for word (public domain); explanations are our own. Exam rules and fees can change: check with your VE team.</p>
+<nav class="crumbs" aria-label="Breadcrumb"><a href="../../">QSO Ready</a> › <a href="../">Amateur Extra</a> › E8A</nav>
+<h1>E8A: Fourier analysis; RMS measurements; average RF power and peak envelope power (PEP); analog/digital conversion</h1>
+<p>Group E8A of the Amateur Extra pool (2024–2028) has 11 active questions. One of them is on every Amateur Extra exam. Each is shown word for word; open it to see the correct answer and our explanation.</p>
+<article id="e8a01">
+<h2>E8A01</h2>
+<p class="stem">What technique shows that a square wave is made up of a sine wave and its odd harmonics?</p>
+<ol class="opts">
+<li><span class="l">A</span> Fourier analysis</li>
+<li><span class="l">B</span> Vector analysis</li>
+<li><span class="l">C</span> Numerical analysis</li>
+<li><span class="l">D</span> Differential analysis</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>A</strong>. Fourier analysis</p>
+<div class="ex">
+<p><strong>Why A is right.</strong> A. Fourier analysis breaks any repeating waveform into a sum of sine waves at the fundamental and its multiples.</p>
+<p>A square wave looks nothing like a sine wave, yet it can be rebuilt from one. Add a sine at the base frequency, then smaller sines at 3, 5, 7 times that frequency, and the sum sharpens into a square shape. Fourier analysis is the math that finds which harmonics are present and how strong each one is.</p>
+<p><strong>Why not B?</strong> Vector analysis adds quantities with size and direction; it does not split a waveform into harmonics.</p>
+</div>
+</details>
+</article>
+<article id="e8a02">
+<h2>E8A02</h2>
+<p class="stem">Which of the following is a type of analog-to-digital conversion?</p>
+<ol class="opts">
+<li><span class="l">A</span> Successive approximation</li>
+<li><span class="l">B</span> Harmonic regeneration</li>
+<li><span class="l">C</span> Level shifting</li>
+<li><span class="l">D</span> Phase reversal</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>A</strong>. Successive approximation</p>
+<div class="ex">
+<p><strong>Why A is right.</strong> A. A successive-approximation converter finds the digital value by testing one bit at a time, from the largest to the smallest.</p>
+<p>The converter guesses the top bit, compares a test voltage with the input, and keeps or clears that bit. It then moves to the next bit down. After as many steps as there are bits, the code matches the input voltage. It is a common, moderate-speed way to turn an analog voltage into a number.</p>
+<p><strong>Why not C?</strong> Level shifting moves a voltage up or down to suit another circuit, but it does not produce a digital code.</p>
+</div>
+</details>
+</article>
+<article id="e8a03">
+<h2>E8A03</h2>
+<p class="stem">Which of the following describes a signal in the time domain?</p>
+<ol class="opts">
+<li><span class="l">A</span> Power at intervals of phase</li>
+<li><span class="l">B</span> Amplitude at different times</li>
+<li><span class="l">C</span> Frequency at different times</li>
+<li><span class="l">D</span> Discrete impulses in time order</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>B</strong>. Amplitude at different times</p>
+<div class="ex">
+<p><strong>Why B is right.</strong> B. The time domain plots how a signal&#x27;s strength changes from moment to moment, so it shows amplitude against time.</p>
+<p>An oscilloscope shows the time domain: the horizontal axis is time and the vertical axis is voltage. A spectrum analyzer shows the other view, the frequency domain, with amplitude plotted against frequency. Both views describe the same signal, and Fourier analysis converts one into the other.</p>
+<p><strong>Why not C?</strong> Frequency is the horizontal axis of the frequency domain, not something plotted over time in the time domain.</p>
+</div>
+</details>
+</article>
+<article id="e8a04">
+<h2>E8A04</h2>
+<p class="stem">What is “dither” with respect to analog-to-digital converters?</p>
+<ol class="opts">
+<li><span class="l">A</span> An abnormal condition where the converter cannot settle on a value to represent the signal</li>
+<li><span class="l">B</span> A small amount of noise added to the input signal to reduce quantization noise</li>
+<li><span class="l">C</span> An error caused by irregular quantization step size</li>
+<li><span class="l">D</span> A method of decimation by randomly skipping samples</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>B</strong>. A small amount of noise added to the input signal to reduce quantization noise</p>
+<div class="ex">
+<p><strong>Why B is right.</strong> B. Dither is a small, deliberate noise added before conversion so rounding errors become random instead of tied to the signal.</p>
+<p>A converter rounds each sample to the nearest step, called quantization. With a weak, steady input, that rounding error repeats with the signal and shows up as false tones. Adding a little random noise breaks up the pattern. The error spreads out as a smooth, low noise floor, and small signals below one step can still be detected after averaging.</p>
+<p><strong>Why not D?</strong> Skipping samples is decimation, which lowers the sample rate; dither is noise added to the input.</p>
+</div>
+</details>
+</article>
+<article id="e8a05">
+<h2>E8A05</h2>
+<p class="stem">What is the benefit of making voltage measurements with a true-RMS calculating meter?</p>
+<ol class="opts">
+<li><span class="l">A</span> An inverse Fourier transform can be used</li>
+<li><span class="l">B</span> The signal’s RMS noise factor is also calculated</li>
+<li><span class="l">C</span> The calculated RMS value can be converted directly into phasor form</li>
+<li><span class="l">D</span> RMS is measured for both sinusoidal and non-sinusoidal signals</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>D</strong>. RMS is measured for both sinusoidal and non-sinusoidal signals</p>
+<div class="ex">
+<p><strong>Why D is right.</strong> D. A true-RMS meter computes the heating value from the actual waveform, so it reads correctly for any wave shape.</p>
+<p>RMS (root mean square) voltage is the DC voltage that would heat a resistor the same amount. Cheaper meters measure the average or peak and scale it by a factor that is correct only for a pure sine wave. On square waves, pulses or distorted signals those meters read wrong. A true-RMS meter squares, averages and takes the square root of the real signal.</p>
+<p><strong>Why not A?</strong> An inverse Fourier transform rebuilds a time signal from its spectrum; it has nothing to do with how the meter reads RMS.</p>
+</div>
+</details>
+</article>
+<article id="e8a06">
+<h2>E8A06</h2>
+<p class="stem">What is the approximate ratio of PEP-to-average power in an unprocessed single-sideband phone signal?</p>
+<ol class="opts">
+<li><span class="l">A</span> 2.5 to 1</li>
+<li><span class="l">B</span> 25 to 1</li>
+<li><span class="l">C</span> 1 to 1</li>
+<li><span class="l">D</span> 13 to 1</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>A</strong>. 2.5 to 1</p>
+<div class="ex">
+<p><strong>Why A is right.</strong> A. Speech has brief loud peaks and many quiet moments, so its average power is well below its peak, about 2.5 to 1.</p>
+<p>PEP (peak envelope power) is the power at the highest point of the signal envelope. Average power counts the quiet gaps between syllables and the soft parts of words. For normal voice on SSB without a speech processor, the peak is roughly two and a half times the average. A speech processor raises the average and narrows that ratio.</p>
+<p><strong>Why not C?</strong> A 1 to 1 ratio fits a steady carrier, such as a held CW key, not a voice signal that rises and falls.</p>
+</div>
+</details>
+</article>
+<article id="e8a07">
+<h2>E8A07</h2>
+<p class="stem">What determines the PEP-to-average power ratio of an unprocessed single-sideband phone signal?</p>
+<ol class="opts">
+<li><span class="l">A</span> The frequency of the modulating signal</li>
+<li><span class="l">B</span> Speech characteristics</li>
+<li><span class="l">C</span> The degree of carrier suppression</li>
+<li><span class="l">D</span> Amplifier gain</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>B</strong>. Speech characteristics</p>
+<div class="ex">
+<p><strong>Why B is right.</strong> B. In SSB the output follows the voice, so the way a person talks, with peaks and pauses, sets the peak-to-average ratio.</p>
+<p>An SSB transmitter sends no carrier, so with no audio there is no output. Every bit of RF comes from the voice. A speaker with sharp peaks and long pauses gives a high ratio; a smooth, steady voice gives a lower one. The pitch of the voice does not change the ratio, and neither does amplifier gain, which scales peak and average equally.</p>
+<p><strong>Why not D?</strong> Amplifier gain raises peak and average power by the same factor, so their ratio stays the same.</p>
+</div>
+</details>
+</article>
+<article id="e8a08">
+<h2>E8A08</h2>
+<p class="stem">Why are direct or flash conversion analog-to-digital converters used for a software defined radio?</p>
+<ol class="opts">
+<li><span class="l">A</span> Very low power consumption decreases frequency drift</li>
+<li><span class="l">B</span> Immunity to out-of-sequence coding reduces spurious responses</li>
+<li><span class="l">C</span> Very high speed allows digitizing high frequencies</li>
+<li><span class="l">D</span> All these choices are correct</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>C</strong>. Very high speed allows digitizing high frequencies</p>
+<div class="ex">
+<p><strong>Why C is right.</strong> C. A flash converter compares the input against every level at once, so it can sample fast enough to digitize RF directly.</p>
+<p>A flash converter uses a bank of comparators, one for each possible level, all working at the same instant. The result is ready in a single step instead of many. That speed lets a software defined radio sample signals at high frequencies. The cost is many parts and high power use, which is why option A does not fit.</p>
+<p><strong>Why not A?</strong> Flash converters use a lot of power because of their many comparators, so low power is not their benefit.</p>
+</div>
+</details>
+</article>
+<article id="e8a09">
+<h2>E8A09</h2>
+<p class="stem">How many different input levels can be encoded by an analog-to-digital converter with 8-bit resolution?</p>
+<ol class="opts">
+<li><span class="l">A</span> 8</li>
+<li><span class="l">B</span> 8 multiplied by the gain of the input amplifier</li>
+<li><span class="l">C</span> 256 divided by the gain of the input amplifier</li>
+<li><span class="l">D</span> 256</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>D</strong>. 256</p>
+<div class="ex">
+<p><strong>Why D is right.</strong> D. Each added bit doubles the number of codes, and 8 bits give 2 to the 8th power, which is 256 levels.</p>
+<p>One bit has two values, 0 or 1. Two bits have four combinations, three bits have eight, and so on. The count is 2 raised to the number of bits. The input amplifier changes which voltage maps to which code, but it does not change how many codes exist.</p>
+<pre class="worked">levels = 2^n
+n = 8 bits
+levels = 2^8 = 2 × 2 × 2 × 2 × 2 × 2 × 2 × 2
+= 256</pre>
+<p><strong>Why not A?</strong> 8 is the number of bits, not the number of distinct codes those bits can form.</p>
+</div>
+</details>
+</article>
+<article id="e8a10">
+<h2>E8A10</h2>
+<p class="stem">What is the purpose of a low-pass filter used at the output of a digital-to-analog converter?</p>
+<ol class="opts">
+<li><span class="l">A</span> Lower the input bandwidth to increase the effective resolution</li>
+<li><span class="l">B</span> Improve accuracy by removing out-of-sequence codes from the input</li>
+<li><span class="l">C</span> Remove spurious sampling artifacts from the output signal</li>
+<li><span class="l">D</span> All these choices are correct</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>C</strong>. Remove spurious sampling artifacts from the output signal</p>
+<div class="ex">
+<p><strong>Why C is right.</strong> C. A DAC output moves in steps at the sample rate, and the low-pass filter removes those high-frequency artifacts.</p>
+<p>A digital-to-analog converter (DAC) holds each value until the next sample, so its output is a staircase. The sharp steps create unwanted copies of the signal near the sample rate and its multiples. A low-pass filter after the DAC passes the wanted signal and blocks those higher copies, which smooths the staircase into a clean wave.</p>
+<p><strong>Why not A?</strong> The filter sits at the output of the DAC, so it cannot change the bandwidth of anything going into the converter.</p>
+</div>
+</details>
+</article>
+<article id="e8a11">
+<h2>E8A11</h2>
+<p class="stem">Which of the following is a measure of the quality of an analog-to-digital converter?</p>
+<ol class="opts">
+<li><span class="l">A</span> Total harmonic distortion</li>
+<li><span class="l">B</span> Peak envelope power</li>
+<li><span class="l">C</span> Reciprocal mixing</li>
+<li><span class="l">D</span> Power factor</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>A</strong>. Total harmonic distortion</p>
+<div class="ex">
+<p><strong>Why A is right.</strong> A. Total harmonic distortion shows how much a converter&#x27;s rounding and nonlinearity add false harmonics to a clean input.</p>
+<p>Feed a pure sine wave into an analog-to-digital converter and look at the digital output&#x27;s spectrum. A perfect converter shows only that one tone. Real converters add harmonics because their steps are not perfectly even. Total harmonic distortion (THD) adds those up and compares them with the tone, so a lower THD means a better converter.</p>
+<p><strong>Why not B?</strong> Peak envelope power describes a transmitter&#x27;s output, not the accuracy of a converter.</p>
+</div>
+</details>
+</article>
+<nav class="pager" aria-label="Groups"><p><a href="../e7h/">Previous: E7H Oscillators and signal sources: types of oscillators; synthesizers and phase-locked loops; direct digital synthesizers; stabilizing thermal drift; microphonics; high-accuracy oscillators</a></p><p><a href="../e8b/">Next: E8B Modulation and demodulation: modulation methods; modulation index and deviation ratio; frequency- and time-division multiplexing; orthogonal frequency-division multiplexing (OFDM)</a></p></nav>
+<footer>
+<p>QSO Ready is an independent study app for the US amateur radio license exams. Questions: NCVEC Question Pool Committee,
+released to the public domain. Rule quotes: 47 CFR, eCFR as of 2026-10-29. Content version 1.</p>
+<p><a href="../../">QSO Ready home</a> · <a href="../../privacy/">Privacy policy</a> · <a href="mailto:hello@saurabhupadhyay.in">hello@saurabhupadhyay.in</a></p>
+</footer>
+</main>
+</body>
+</html>

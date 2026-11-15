@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>E6C Digital ICs: families of digital ICs; gates; programmable logic devices: Amateur Extra questions explained · QSO Ready</title>
+<meta name="description" content="Amateur Extra pool group E6C (Digital ICs: families of digital ICs; gates; programmable logic devices): all 11 questions with correct answers and plain-English explanations.">
+<link rel="canonical" href="https://saurabhupadhyay.in/qso-ready/extra/e6c/">
+<link rel="stylesheet" href="../../site.css">
+</head>
+<body>
+<main>
+<p class="notice">Not affiliated with or endorsed by the FCC, NCVEC, ARRL or any VEC. Questions are the NCVEC pools word for word (public domain); explanations are our own. Exam rules and fees can change: check with your VE team.</p>
+<nav class="crumbs" aria-label="Breadcrumb"><a href="../../">QSO Ready</a> › <a href="../">Amateur Extra</a> › E6C</nav>
+<h1>E6C: Digital ICs: families of digital ICs; gates; programmable logic devices</h1>
+<p>Group E6C of the Amateur Extra pool (2024–2028) has 11 active questions. One of them is on every Amateur Extra exam. Each is shown word for word; open it to see the correct answer and our explanation.</p>
+<article id="e6c01">
+<h2>E6C01</h2>
+<p class="stem">What is the function of hysteresis in a comparator?</p>
+<ol class="opts">
+<li><span class="l">A</span> To prevent input noise from causing unstable output signals</li>
+<li><span class="l">B</span> To allow the comparator to be used with AC input signals</li>
+<li><span class="l">C</span> To cause the output to continually change states</li>
+<li><span class="l">D</span> To increase the sensitivity</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>A</strong>. To prevent input noise from causing unstable output signals</p>
+<div class="ex">
+<p><strong>Why A is right.</strong> A. Hysteresis sets two thresholds, one for a rising input and one for a falling input, so small noise near the switching point cannot flip the output back and forth.</p>
+<p>Without hysteresis, an input that hovers near the threshold makes the output chatter as noise pushes it across. With hysteresis, once the output switches, the input must move back past a different level to switch it again. That gap ignores small wiggles.</p>
+<p><strong>Why not C?</strong> Constant switching is the problem hysteresis prevents.</p>
+</div>
+</details>
+</article>
+<article id="e6c02">
+<h2>E6C02</h2>
+<p class="stem">What happens when the level of a comparator’s input signal crosses the threshold voltage?</p>
+<ol class="opts">
+<li><span class="l">A</span> The IC input can be damaged</li>
+<li><span class="l">B</span> The comparator changes its output state</li>
+<li><span class="l">C</span> The reference level appears at the output</li>
+<li><span class="l">D</span> The feedback loop becomes unstable</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>B</strong>. The comparator changes its output state</p>
+<div class="ex">
+<p><strong>Why B is right.</strong> B. A comparator&#x27;s output switches state when the input crosses the threshold voltage.</p>
+<p>A comparator compares two voltages: the input and a reference. If the input is above the reference, the output goes to one state; below it, the output goes to the other. It gives a yes-or-no answer to whether the input is higher.</p>
+<p><strong>Why not C?</strong> The output is a high or low state, not a copy of the reference.</p>
+</div>
+</details>
+</article>
+<article id="e6c03">
+<h2>E6C03</h2>
+<p class="stem">What is tri-state logic?</p>
+<ol class="opts">
+<li><span class="l">A</span> Logic devices with 0, 1, and high-impedance output states</li>
+<li><span class="l">B</span> Logic devices that utilize ternary math</li>
+<li><span class="l">C</span> Logic with three output impedances which can be selected to better match the load impedance</li>
+<li><span class="l">D</span> A counter with eight states</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>A</strong>. Logic devices with 0, 1, and high-impedance output states</p>
+<div class="ex">
+<p><strong>Why A is right.</strong> A. Tri-state outputs can be 0, 1 or high impedance, which in effect disconnects the output from the line.</p>
+<p>Several chips can share one set of wires, called a bus, only if all but one stay silent. In the high-impedance state an output neither pulls the line high nor low; it looks like an open switch. A control pin, often called enable, picks which device drives the bus.</p>
+<p><strong>Why not B?</strong> Ternary math uses three-valued digits; tri-state logic is still binary with an off state.</p>
+</div>
+</details>
+</article>
+<article id="e6c04">
+<h2>E6C04</h2>
+<p class="stem">Which of the following is an advantage of BiCMOS logic?</p>
+<ol class="opts">
+<li><span class="l">A</span> Its simplicity results in much less expensive devices than standard CMOS</li>
+<li><span class="l">B</span> It is immune to electrostatic damage</li>
+<li><span class="l">C</span> It has the high input impedance of CMOS and the low output impedance of bipolar transistors</li>
+<li><span class="l">D</span> All these choices are correct</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>C</strong>. It has the high input impedance of CMOS and the low output impedance of bipolar transistors</p>
+<div class="ex">
+<p><strong>Why C is right.</strong> C. BiCMOS combines CMOS inputs, which draw almost no current, with bipolar outputs that can drive heavy loads.</p>
+<p>CMOS gates have very high input impedance, so they barely load the circuit feeding them. Bipolar transistors can supply large currents quickly, giving low output impedance. BiCMOS builds both kinds on one chip to get the strengths of each.</p>
+<p><strong>Why not A?</strong> Building two transistor types on one chip makes BiCMOS more complex and costly, not less.</p>
+</div>
+</details>
+</article>
+<article id="e6c05">
+<h2>E6C05</h2>
+<p class="stem">Which of the following digital logic families has the lowest power consumption?</p>
+<ol class="opts">
+<li><span class="l">A</span> Schottky TTL</li>
+<li><span class="l">B</span> ECL</li>
+<li><span class="l">C</span> NMOS</li>
+<li><span class="l">D</span> CMOS</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>D</strong>. CMOS</p>
+<div class="ex">
+<p><strong>Why D is right.</strong> D. CMOS uses paired transistors where one is always off, so almost no current flows except while switching.</p>
+<p>Each CMOS gate stacks an N-channel and a P-channel transistor between the supply and ground. In either steady state one of them is off, so there is no steady path for current. Power is drawn mainly while the output changes, which is why CMOS suits battery-powered equipment.</p>
+<p><strong>Why not B?</strong> ECL keeps its transistors partly on all the time for speed, so it draws a lot of power.</p>
+</div>
+</details>
+</article>
+<article id="e6c06">
+<h2>E6C06</h2>
+<p class="stem">Why do CMOS digital integrated circuits have high immunity to noise on the input signal or power supply?</p>
+<ol class="opts">
+<li><span class="l">A</span> Large bypass capacitance is inherent</li>
+<li><span class="l">B</span> The input switching threshold is about twice the power supply voltage</li>
+<li><span class="l">C</span> The input switching threshold is about half the power supply voltage</li>
+<li><span class="l">D</span> Bandwidth is very limited</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>C</strong>. The input switching threshold is about half the power supply voltage</p>
+<div class="ex">
+<p><strong>Why C is right.</strong> C. A CMOS input switches near half the supply voltage, so noise must swing nearly halfway across the supply to cause a false change.</p>
+<p>With a 5 V supply, a CMOS input switches at about 2.5 V. A clean low input sits near 0 V and a clean high near 5 V. Noise of a volt or so cannot push either one across the threshold. This safety gap is called noise margin.</p>
+<p><strong>Why not B?</strong> A threshold of twice the supply voltage could never be reached, so the input would never switch.</p>
+</div>
+</details>
+</article>
+<article id="e6c07">
+<h2>E6C07</h2>
+<p class="stem">What best describes a pull-up or pull-down resistor?</p>
+<ol class="opts">
+<li><span class="l">A</span> A resistor in a keying circuit used to reduce key clicks</li>
+<li><span class="l">B</span> A resistor connected to the positive or negative supply used to establish a voltage when an input or output is an open circuit</li>
+<li><span class="l">C</span> A resistor that ensures that an oscillator frequency does not drift</li>
+<li><span class="l">D</span> A resistor connected to an op-amp output that prevents signals from exceeding the power supply voltage</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>B</strong>. A resistor connected to the positive or negative supply used to establish a voltage when an input or output is an open circuit</p>
+<div class="ex">
+<p><strong>Why B is right.</strong> B. A pull-up or pull-down resistor ties a line to the positive or negative supply so it has a definite voltage when nothing else drives it.</p>
+<p>A logic input left unconnected floats and may read high or low at random from stray noise. A resistor to the positive supply (pull-up) or to ground (pull-down) gives it a default level. When a switch or another output drives the line, it easily overrides the resistor.</p>
+<p><strong>Why not A?</strong> Key clicks are reduced by shaping the keying waveform, not with pull-up resistors.</p>
+</div>
+</details>
+</article>
+<article id="e6c08">
+<h2>E6C08</h2>
+<p class="stem">In Figure E6-3, which is the schematic symbol for a NAND gate?</p>
+<figure><img src="../../figures/E6-3.webp" width="1000" height="660" loading="lazy" alt="Figure E6-3 shows six logic gate symbols, inputs on the left and output on the right. Symbol 1: a D shape, flat on the input side and rounded on the output side, with two inputs; an AND gate. Symbol 2: the same D shape with a small circle, called a bubble, at the output; a NAND gate. Symbol 3: a curved back where two inputs enter and a body sweeping to a point at the output; an OR gate. Symbol 4: the OR shape with a bubble at the output; a NOR gate. Symbol 5: a small triangle with one input and a bubble at its tip; an inverter, the NOT gate. Symbol 6: a large pointed shape with a curved back, straight sides and two inputs but no output line drawn; it is not a standard gate shape and appears only as a wrong choice."><figcaption>Figure E6-3</figcaption></figure>
+<ol class="opts">
+<li><span class="l">A</span> 1</li>
+<li><span class="l">B</span> 2</li>
+<li><span class="l">C</span> 3</li>
+<li><span class="l">D</span> 4</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>B</strong>. 2</p>
+<div class="ex">
+<p><strong>Why B is right.</strong> B. Symbol 2 is the AND shape with a small circle at its output, which makes it a NAND gate.</p>
+<p>In Figure E6-3, symbol 1 is an AND gate: a D shape, flat on the input side and rounded on the output side, with two inputs. Symbol 2 has the same D shape plus a small circle, or bubble, at the output. The bubble means inversion, so NAND is NOT-AND: its output is low only when both inputs are high.</p>
+<p><strong>Why not D?</strong> Symbol 4 has the curved, pointed body with a bubble, which is a NOR gate.</p>
+</div>
+</details>
+</article>
+<article id="e6c09">
+<h2>E6C09</h2>
+<p class="stem">What is used to design the configuration of a field-programmable gate array (FPGA)?</p>
+<ol class="opts">
+<li><span class="l">A</span> Karnaugh maps</li>
+<li><span class="l">B</span> Hardware description language (HDL)</li>
+<li><span class="l">C</span> An auto-router</li>
+<li><span class="l">D</span> Machine and assembly language</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>B</strong>. Hardware description language (HDL)</p>
+<div class="ex">
+<p><strong>Why B is right.</strong> B. An FPGA&#x27;s configuration is written in a hardware description language, such as VHDL or Verilog, that describes the logic circuit.</p>
+<p>A field-programmable gate array is a chip full of logic blocks whose connections can be set after it is made. Designers describe the circuit&#x27;s behavior in HDL. Software then turns that description into a file that sets up the chip&#x27;s blocks and wiring.</p>
+<p><strong>Why not D?</strong> Machine and assembly language program a processor, not the wiring of logic blocks.</p>
+</div>
+</details>
+</article>
+<article id="e6c10">
+<h2>E6C10</h2>
+<p class="stem">In Figure E6-3, which is the schematic symbol for a NOR gate?</p>
+<figure><img src="../../figures/E6-3.webp" width="1000" height="660" loading="lazy" alt="Figure E6-3 shows six logic gate symbols, inputs on the left and output on the right. Symbol 1: a D shape, flat on the input side and rounded on the output side, with two inputs; an AND gate. Symbol 2: the same D shape with a small circle, called a bubble, at the output; a NAND gate. Symbol 3: a curved back where two inputs enter and a body sweeping to a point at the output; an OR gate. Symbol 4: the OR shape with a bubble at the output; a NOR gate. Symbol 5: a small triangle with one input and a bubble at its tip; an inverter, the NOT gate. Symbol 6: a large pointed shape with a curved back, straight sides and two inputs but no output line drawn; it is not a standard gate shape and appears only as a wrong choice."><figcaption>Figure E6-3</figcaption></figure>
+<ol class="opts">
+<li><span class="l">A</span> 1</li>
+<li><span class="l">B</span> 2</li>
+<li><span class="l">C</span> 3</li>
+<li><span class="l">D</span> 4</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>D</strong>. 4</p>
+<div class="ex">
+<p><strong>Why D is right.</strong> D. Symbol 4 is the curved, pointed OR shape with a small circle at its output, which makes it a NOR gate.</p>
+<p>In Figure E6-3, symbol 3 is an OR gate: a curved back where the two inputs enter and a body that sweeps to a point at the output. Symbol 4 has the same shape plus a small circle, or bubble, at the output. The bubble means inversion, so NOR is NOT-OR: its output is high only when both inputs are low.</p>
+<p><strong>Why not C?</strong> Symbol 3 has no bubble, so it is a plain OR gate.</p>
+</div>
+</details>
+</article>
+<article id="e6c11">
+<h2>E6C11</h2>
+<p class="stem">In Figure E6-3, which is the schematic symbol for the NOT operation (inversion)?</p>
+<figure><img src="../../figures/E6-3.webp" width="1000" height="660" loading="lazy" alt="Figure E6-3 shows six logic gate symbols, inputs on the left and output on the right. Symbol 1: a D shape, flat on the input side and rounded on the output side, with two inputs; an AND gate. Symbol 2: the same D shape with a small circle, called a bubble, at the output; a NAND gate. Symbol 3: a curved back where two inputs enter and a body sweeping to a point at the output; an OR gate. Symbol 4: the OR shape with a bubble at the output; a NOR gate. Symbol 5: a small triangle with one input and a bubble at its tip; an inverter, the NOT gate. Symbol 6: a large pointed shape with a curved back, straight sides and two inputs but no output line drawn; it is not a standard gate shape and appears only as a wrong choice."><figcaption>Figure E6-3</figcaption></figure>
+<ol class="opts">
+<li><span class="l">A</span> 2</li>
+<li><span class="l">B</span> 4</li>
+<li><span class="l">C</span> 5</li>
+<li><span class="l">D</span> 6</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>C</strong>. 5</p>
+<div class="ex">
+<p><strong>Why C is right.</strong> C. Symbol 5 is a triangle with one input and a small circle at its tip, the inverter or NOT symbol.</p>
+<p>In Figure E6-3, symbol 5 is the only one with a single input. A triangle alone stands for a buffer, which passes a signal unchanged. The bubble at the tip means inversion, so a high input gives a low output and a low input gives a high output.</p>
+<p><strong>Why not D?</strong> Symbol 6 has two inputs, so it cannot be a single-input NOT gate.</p>
+</div>
+</details>
+</article>
+<nav class="pager" aria-label="Groups"><p><a href="../e6b/">Previous: E6B Diodes</a></p><p><a href="../e6d/">Next: E6D Inductors and piezoelectricity: permeability, core material and configuration; transformers; piezoelectric devices</a></p></nav>
+<footer>
+<p>QSO Ready is an independent study app for the US amateur radio license exams. Questions: NCVEC Question Pool Committee,
+released to the public domain. Rule quotes: 47 CFR, eCFR as of 2026-10-29. Content version 1.</p>
+<p><a href="../../">QSO Ready home</a> · <a href="../../privacy/">Privacy policy</a> · <a href="mailto:hello@saurabhupadhyay.in">hello@saurabhupadhyay.in</a></p>
+</footer>
+</main>
+</body>
+</html>

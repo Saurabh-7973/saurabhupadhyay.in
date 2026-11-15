@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>E9A Basic antenna parameters: radiation resistance, gain, beamwidth, efficiency; effective radiated power (ERP) and effective isotropic radiated power (EIRP): Amateur Extra questions explained · QSO Ready</title>
+<meta name="description" content="Amateur Extra pool group E9A (Basic antenna parameters: radiation resistance, gain, beamwidth, efficiency; effective radiated power (ERP) and effective isotropic radiated power (EIRP)): all 12 questions with correct answers and plain-English explanations.">
+<link rel="canonical" href="https://saurabhupadhyay.in/qso-ready/extra/e9a/">
+<link rel="stylesheet" href="../../site.css">
+</head>
+<body>
+<main>
+<p class="notice">Not affiliated with or endorsed by the FCC, NCVEC, ARRL or any VEC. Questions are the NCVEC pools word for word (public domain); explanations are our own. Exam rules and fees can change: check with your VE team.</p>
+<nav class="crumbs" aria-label="Breadcrumb"><a href="../../">QSO Ready</a> › <a href="../">Amateur Extra</a> › E9A</nav>
+<h1>E9A: Basic antenna parameters: radiation resistance, gain, beamwidth, efficiency; effective radiated power (ERP) and effective isotropic radiated power (EIRP)</h1>
+<p>Group E9A of the Amateur Extra pool (2024–2028) has 12 active questions. One of them is on every Amateur Extra exam. Each is shown word for word; open it to see the correct answer and our explanation.</p>
+<article id="e9a01">
+<h2>E9A01</h2>
+<p class="stem">What is an isotropic radiator?</p>
+<ol class="opts">
+<li><span class="l">A</span> A calibrated, unidirectional antenna used to make precise antenna gain measurements</li>
+<li><span class="l">B</span> An omnidirectional, horizontally polarized, precisely calibrated antenna used to make field measurements of antenna gain</li>
+<li><span class="l">C</span> A hypothetical, lossless antenna having equal radiation intensity in all directions used as a reference for antenna gain</li>
+<li><span class="l">D</span> A spacecraft antenna used to direct signals toward Earth</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>C</strong>. A hypothetical, lossless antenna having equal radiation intensity in all directions used as a reference for antenna gain</p>
+<div class="ex">
+<p><strong>Why C is right.</strong> C. An isotropic radiator is an imaginary, perfect antenna that sends equal power in every direction, giving a fixed baseline for gain.</p>
+<p>No real antenna radiates equally in all directions, but the idea is useful as a yardstick. Gain stated against it is written dBi, meaning decibels over isotropic. A half-wave dipole, for example, has about 2.15 dBi in its best direction. Because the isotropic radiator is lossless and has no favored direction, every real antenna can be compared to it.</p>
+<p><strong>Why not B?</strong> An isotropic radiator is hypothetical and has no polarization preference; it cannot be built or calibrated.</p>
+</div>
+</details>
+</article>
+<article id="e9a02">
+<h2>E9A02</h2>
+<p class="stem">What is the effective radiated power (ERP) of a repeater station with 150 watts transmitter power output, 2 dB feed line loss, 2.2 dB duplexer loss, and 7 dBd antenna gain?</p>
+<ol class="opts">
+<li><span class="l">A</span> 469 watts</li>
+<li><span class="l">B</span> 78.7 watts</li>
+<li><span class="l">C</span> 420 watts</li>
+<li><span class="l">D</span> 286 watts</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>D</strong>. 286 watts</p>
+<div class="ex">
+<p><strong>Why D is right.</strong> D. The net gain is 7 - 2 - 2.2 = 2.8 dB, and 2.8 dB is a power ratio of about 1.91, so 150 W becomes about 286 W.</p>
+<p>ERP (effective radiated power) is transmitter power times all gains and losses on the way out, compared with a dipole. Because the antenna gain is in dBd (decibels over a dipole), no conversion is needed. Add gains and subtract losses in dB, then turn the total into a ratio.</p>
+<pre class="worked">ERP = P × 10^(net dB / 10)
+net = 7 dBd - 2 dB - 2.2 dB = 2.8 dB
+10^(2.8/10) = 10^0.28 = 1.905
+ERP = 150 W × 1.905 = 285.8 W, rounded to 286 W
+= 286 watts</pre>
+<p><strong>Why not A?</strong> 469 W would come from adding the antenna gain and ignoring the 4.2 dB of losses.</p>
+</div>
+</details>
+</article>
+<article id="e9a03">
+<h2>E9A03</h2>
+<p class="stem">What term describing total radiated power takes into account all gains and losses?</p>
+<ol class="opts">
+<li><span class="l">A</span> Power factor</li>
+<li><span class="l">B</span> Half-power bandwidth</li>
+<li><span class="l">C</span> Effective radiated power</li>
+<li><span class="l">D</span> Apparent power</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>C</strong>. Effective radiated power</p>
+<div class="ex">
+<p><strong>Why C is right.</strong> C. Effective radiated power starts with transmitter output and applies every loss and the antenna gain to show what is actually sent.</p>
+<p>Feed line, duplexers and other parts each eat some power. The antenna then concentrates what is left in a favored direction. ERP rolls all of that into one number: the power a reference dipole would need to give the same signal in the best direction. It is the figure repeater coordinators and rules usually care about.</p>
+<p><strong>Why not D?</strong> Apparent power is volts times amps in an AC circuit; it says nothing about antenna gain or feed line loss.</p>
+</div>
+</details>
+</article>
+<article id="e9a04">
+<h2>E9A04</h2>
+<p class="stem">Which of the following factors affect the feed point impedance of an antenna?</p>
+<ol class="opts">
+<li><span class="l">A</span> Transmission line length</li>
+<li><span class="l">B</span> Antenna height</li>
+<li><span class="l">C</span> The settings of an antenna tuner at the transmitter</li>
+<li><span class="l">D</span> The input power level</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>B</strong>. Antenna height</p>
+<div class="ex">
+<p><strong>Why B is right.</strong> B. Ground acts like a reflecting surface, and its distance from the antenna changes the currents in the antenna and so its feed point impedance.</p>
+<p>Waves reflected from the ground return to the antenna and add to or subtract from its own current. How they combine depends on height measured in wavelengths. A dipole&#x27;s feed point impedance swings above and below its free-space value as it is raised. The feed line, tuner and power level change what the transmitter sees, but not the antenna&#x27;s own impedance.</p>
+<p><strong>Why not A?</strong> Feed line length changes the impedance seen at the transmitter end, not the impedance at the antenna&#x27;s feed point.</p>
+</div>
+</details>
+</article>
+<article id="e9a05">
+<h2>E9A05</h2>
+<p class="stem">What does the term “ground gain” mean?</p>
+<ol class="opts">
+<li><span class="l">A</span> The change in signal strength caused by grounding the antenna</li>
+<li><span class="l">B</span> The gain of the antenna with respect to a dipole at ground level</li>
+<li><span class="l">C</span> To force net gain to 0 dB by grounding part of the antenna</li>
+<li><span class="l">D</span> An increase in signal strength from ground reflections in the environment of the antenna</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>D</strong>. An increase in signal strength from ground reflections in the environment of the antenna</p>
+<div class="ex">
+<p><strong>Why D is right.</strong> D. Ground gain is the boost a signal gets when waves reflected off the ground add in step with the direct wave.</p>
+<p>A horizontal antenna above ground sends some energy straight out and some down to the ground, where it bounces. At certain elevation angles the two waves arrive in phase and add up. In those directions the signal can be up to about 6 dB stronger than the same antenna in free space. Grounding the antenna is not involved.</p>
+<p><strong>Why not A?</strong> Ground gain comes from reflections, not from connecting part of the antenna to ground.</p>
+</div>
+</details>
+</article>
+<article id="e9a06">
+<h2>E9A06</h2>
+<p class="stem">What is the effective radiated power (ERP) of a repeater station with 200 watts transmitter power output, 4 dB feed line loss, 3.2 dB duplexer loss, 0.8 dB circulator loss, and 10 dBd antenna gain?</p>
+<ol class="opts">
+<li><span class="l">A</span> 317 watts</li>
+<li><span class="l">B</span> 2,000 watts</li>
+<li><span class="l">C</span> 126 watts</li>
+<li><span class="l">D</span> 300 watts</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>A</strong>. 317 watts</p>
+<div class="ex">
+<p><strong>Why A is right.</strong> A. The losses total 8 dB against 10 dBd of gain, a net 2 dB, which is a factor of about 1.585, so 200 W becomes about 317 W.</p>
+<p>Add all the losses in dB: feed line, duplexer and circulator. Subtract them from the antenna gain. The antenna gain is in dBd, so the result is ERP with no dipole conversion. Then turn the net dB into a power ratio and multiply.</p>
+<pre class="worked">ERP = P × 10^(net dB / 10)
+net = 10 dBd - 4 dB - 3.2 dB - 0.8 dB = 2 dB
+10^(2/10) = 10^0.2 = 1.585
+ERP = 200 W × 1.585 = 317 W
+= 317 watts</pre>
+<p><strong>Why not B?</strong> 2,000 W applies the full 10 dB gain and ignores all 8 dB of losses.</p>
+</div>
+</details>
+</article>
+<article id="e9a07">
+<h2>E9A07</h2>
+<p class="stem">What is the effective isotropic radiated power (EIRP) of a repeater station with 200 watts transmitter power output, 2 dB feed line loss, 2.8 dB duplexer loss, 1.2 dB circulator loss, and 7 dBi antenna gain?</p>
+<ol class="opts">
+<li><span class="l">A</span> 159 watts</li>
+<li><span class="l">B</span> 252 watts</li>
+<li><span class="l">C</span> 632 watts</li>
+<li><span class="l">D</span> 63.2 watts</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>B</strong>. 252 watts</p>
+<div class="ex">
+<p><strong>Why B is right.</strong> B. Losses total 6 dB against 7 dBi of gain, a net 1 dB, which is a factor of about 1.26, so 200 W becomes about 252 W.</p>
+<p>EIRP (effective isotropic radiated power) compares the result with an isotropic radiator, so it uses gain in dBi. The antenna gain is already in dBi, so apply it directly. Subtract feed line, duplexer and circulator losses, then convert the net dB to a ratio.</p>
+<pre class="worked">EIRP = P × 10^(net dB / 10)
+net = 7 dBi - 2 dB - 2.8 dB - 1.2 dB = 1 dB
+10^(1/10) = 10^0.1 = 1.259
+EIRP = 200 W × 1.259 = 251.8 W, rounded to 252 W
+= 252 watts</pre>
+<p><strong>Why not A?</strong> 159 W would come from a net loss of 1 dB; here the net is a 1 dB gain.</p>
+</div>
+</details>
+</article>
+<article id="e9a08">
+<h2>E9A08</h2>
+<p class="stem">Which frequency band has the smallest first Fresnel zone?</p>
+<ol class="opts">
+<li><span class="l">A</span> 5.8 GHz</li>
+<li><span class="l">B</span> 3.4 GHz</li>
+<li><span class="l">C</span> 2.4 GHz</li>
+<li><span class="l">D</span> 900 MHz</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>A</strong>. 5.8 GHz</p>
+<div class="ex">
+<p><strong>Why A is right.</strong> A. Fresnel zone size grows with wavelength, and 5.8 GHz has the shortest wavelength of the choices, so its zone is smallest.</p>
+<p>The first Fresnel zone is a football-shaped region around the straight line between two antennas. Objects inside it can block or reflect part of the signal. Its radius at any point is about the square root of the wavelength times the path distances, so it gets smaller as frequency goes up. Higher bands need less clearance around the path.</p>
+<p><strong>Why not D?</strong> 900 MHz has the longest wavelength listed, so it has the largest Fresnel zone, not the smallest.</p>
+</div>
+</details>
+</article>
+<article id="e9a09">
+<h2>E9A09</h2>
+<p class="stem">What is antenna efficiency?</p>
+<ol class="opts">
+<li><span class="l">A</span> Radiation resistance divided by transmission resistance</li>
+<li><span class="l">B</span> Radiation resistance divided by total resistance</li>
+<li><span class="l">C</span> Total resistance divided by radiation resistance</li>
+<li><span class="l">D</span> Effective radiated power divided by transmitter output</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>B</strong>. Radiation resistance divided by total resistance</p>
+<div class="ex">
+<p><strong>Why B is right.</strong> B. Efficiency is the share of input power that is radiated, which equals radiation resistance over total resistance.</p>
+<p>Radiation resistance is the part of the feed point resistance that stands for power leaving as radio waves. Loss resistance, from wire, coils and ground, stands for power turned into heat. Total resistance is the two added together. For example, 36 ohms of radiation resistance and 36 ohms of loss gives 50 percent efficiency.</p>
+<p><strong>Why not C?</strong> Total over radiation resistance is the efficiency ratio flipped, and it would give values above 100 percent.</p>
+</div>
+</details>
+</article>
+<article id="e9a10">
+<h2>E9A10</h2>
+<p class="stem">Which of the following improves the efficiency of a ground-mounted quarter-wave vertical antenna?</p>
+<ol class="opts">
+<li><span class="l">A</span> Installing a ground radial system</li>
+<li><span class="l">B</span> Isolating the coax shield from ground</li>
+<li><span class="l">C</span> Shortening the radiating element</li>
+<li><span class="l">D</span> All these choices are correct</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>A</strong>. Installing a ground radial system</p>
+<div class="ex">
+<p><strong>Why A is right.</strong> A. Radials give the antenna&#x27;s return current a low-resistance path, cutting the ground loss that wastes power.</p>
+<p>A ground-mounted quarter-wave vertical uses the ground as the other half of the antenna. Current flowing back through poor soil turns power into heat. Wires laid out from the base like spokes carry that current instead. More radials lower the loss resistance, so a larger share of the power radiates.</p>
+<p><strong>Why not C?</strong> A shorter radiator lowers radiation resistance, so losses take a larger share and efficiency drops.</p>
+</div>
+</details>
+</article>
+<article id="e9a11">
+<h2>E9A11</h2>
+<p class="stem">Which of the following determines ground losses for a ground-mounted vertical antenna operating on HF?</p>
+<ol class="opts">
+<li><span class="l">A</span> The standing wave ratio</li>
+<li><span class="l">B</span> Distance from the transmitter</li>
+<li><span class="l">C</span> Soil conductivity</li>
+<li><span class="l">D</span> Take-off angle</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>C</strong>. Soil conductivity</p>
+<div class="ex">
+<p><strong>Why C is right.</strong> C. Return currents flow through the earth near a vertical, so the soil&#x27;s conductivity sets how much power is lost as heat.</p>
+<p>Good conductors carry current with little loss. Moist, mineral-rich soil conducts fairly well; dry sand or rock conducts poorly. Over poor soil, more of the transmitter power heats the ground near the antenna. That is why radial systems matter most where the soil is poor.</p>
+<p><strong>Why not D?</strong> Take-off angle is a result of the antenna and ground; it does not cause losses in the ground.</p>
+</div>
+</details>
+</article>
+<article id="e9a12">
+<h2>E9A12</h2>
+<p class="stem">How much gain does an antenna have compared to a half-wavelength dipole if it has 6 dB gain over an isotropic radiator?</p>
+<ol class="opts">
+<li><span class="l">A</span> 3.85 dB</li>
+<li><span class="l">B</span> 6.0 dB</li>
+<li><span class="l">C</span> 8.15 dB</li>
+<li><span class="l">D</span> 2.79 dB</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>A</strong>. 3.85 dB</p>
+<div class="ex">
+<p><strong>Why A is right.</strong> A. A half-wave dipole has 2.15 dB gain over isotropic, so 6 dBi is 6 - 2.15 = 3.85 dB over a dipole.</p>
+<p>dBi measures gain against an isotropic radiator; dBd measures it against a half-wave dipole. The dipole is itself 2.15 dB above isotropic. To change dBi to dBd, subtract 2.15. To go the other way, add 2.15.</p>
+<pre class="worked">dBd = dBi - 2.15
+dBd = 6 - 2.15
+= 3.85 dB</pre>
+<p><strong>Why not C?</strong> 8.15 dB adds the 2.15 dB instead of subtracting it.</p>
+</div>
+</details>
+</article>
+<nav class="pager" aria-label="Groups"><p><a href="../e8d/">Previous: E8D Keying defects and overmodulation of digital signals; digital codes; spread spectrum</a></p><p><a href="../e9b/">Next: E9B Antenna patterns and designs: azimuth and elevation patterns; gain as a function of pattern; antenna modeling</a></p></nav>
+<footer>
+<p>QSO Ready is an independent study app for the US amateur radio license exams. Questions: NCVEC Question Pool Committee,
+released to the public domain. Rule quotes: 47 CFR, eCFR as of 2026-10-29. Content version 1.</p>
+<p><a href="../../">QSO Ready home</a> · <a href="../../privacy/">Privacy policy</a> · <a href="mailto:hello@saurabhupadhyay.in">hello@saurabhupadhyay.in</a></p>
+</footer>
+</main>
+</body>
+</html>

@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>G5C Resistors, capacitors, and inductors in series and parallel; transformers: General questions explained · QSO Ready</title>
+<meta name="description" content="General pool group G5C (Resistors, capacitors, and inductors in series and parallel; transformers): all 14 questions with correct answers and plain-English explanations.">
+<link rel="canonical" href="https://saurabhupadhyay.in/qso-ready/general/g5c/">
+<link rel="stylesheet" href="../../site.css">
+</head>
+<body>
+<main>
+<p class="notice">Not affiliated with or endorsed by the FCC, NCVEC, ARRL or any VEC. Questions are the NCVEC pools word for word (public domain); explanations are our own. Exam rules and fees can change: check with your VE team.</p>
+<nav class="crumbs" aria-label="Breadcrumb"><a href="../../">QSO Ready</a> › <a href="../">General</a> › G5C</nav>
+<h1>G5C: Resistors, capacitors, and inductors in series and parallel; transformers</h1>
+<p>Group G5C of the General pool (2023–2027) has 14 active questions. One of them is on every General exam. Each is shown word for word; open it to see the correct answer and our explanation.</p>
+<article id="g5c01">
+<h2>G5C01</h2>
+<p class="stem">What causes a voltage to appear across the secondary winding of a transformer when an AC voltage source is connected across its primary winding?</p>
+<ol class="opts">
+<li><span class="l">A</span> Capacitive coupling</li>
+<li><span class="l">B</span> Displacement current coupling</li>
+<li><span class="l">C</span> Mutual inductance</li>
+<li><span class="l">D</span> Mutual capacitance</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>C</strong>. Mutual inductance</p>
+<div class="ex">
+<p><strong>Why C is right.</strong> C. Mutual inductance couples the primary to the secondary.</p>
+<p>AC in the primary winding makes a magnetic field that keeps changing. That field passes through the secondary winding too. A changing magnetic field through a coil creates a voltage in it. Two coils linked this way share mutual inductance.</p>
+<p><strong>Why not D?</strong> A transformer couples its windings through a magnetic field, not through capacitance.</p>
+</div>
+</details>
+</article>
+<article id="g5c02">
+<h2>G5C02</h2>
+<p class="stem">What is the output voltage if an input signal is applied to the secondary winding of a 4:1 voltage step-down transformer instead of the primary winding?</p>
+<ol class="opts">
+<li><span class="l">A</span> The input voltage is multiplied by 4</li>
+<li><span class="l">B</span> The input voltage is divided by 4</li>
+<li><span class="l">C</span> Additional resistance must be added in series with the primary to prevent overload</li>
+<li><span class="l">D</span> Additional resistance must be added in parallel with the secondary to prevent overload</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>A</strong>. The input voltage is multiplied by 4</p>
+<div class="ex">
+<p><strong>Why A is right.</strong> A. Fed from its small winding, the transformer works as a 4:1 step-up instead of a step-down.</p>
+<p>A 4:1 step-down transformer has four times as many turns on the primary as on the secondary. Voltage scales with the number of turns, so the large winding gives four times the voltage.</p>
+<p><strong>Why not B?</strong> Dividing by 4 is what happens in the normal direction, primary to secondary.</p>
+</div>
+</details>
+</article>
+<article id="g5c03">
+<h2>G5C03</h2>
+<p class="stem">What is the total resistance of a 10-, a 20-, and a 50-ohm resistor connected in parallel?</p>
+<ol class="opts">
+<li><span class="l">A</span> 5.9 ohms</li>
+<li><span class="l">B</span> 0.17 ohms</li>
+<li><span class="l">C</span> 17 ohms</li>
+<li><span class="l">D</span> 80 ohms</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>A</strong>. 5.9 ohms</p>
+<div class="ex">
+<p><strong>Why A is right.</strong> A. 10, 20 and 50 ohms in parallel come to about 5.9 ohms.</p>
+<p>For resistors in parallel, add the reciprocal of each one, then take the reciprocal of the sum. The total is always smaller than the smallest resistor.</p>
+<pre class="worked">1 / R = 1 / R1 + 1 / R2 + 1 / R3
+1 / R = 1/10 + 1/20 + 1/50 = 0.10 + 0.05 + 0.02 = 0.17
+R = 1 / 0.17 = 5.88 ohms, about 5.9 ohms
+= 5.9 ohms</pre>
+<p><strong>Why not B?</strong> 0.17 is the sum of the reciprocals before you invert it.</p>
+</div>
+</details>
+</article>
+<article id="g5c04">
+<h2>G5C04</h2>
+<p class="stem">What is the approximate total resistance of a 100- and a 200-ohm resistor in parallel?</p>
+<ol class="opts">
+<li><span class="l">A</span> 300 ohms</li>
+<li><span class="l">B</span> 150 ohms</li>
+<li><span class="l">C</span> 75 ohms</li>
+<li><span class="l">D</span> 67 ohms</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>D</strong>. 67 ohms</p>
+<div class="ex">
+<p><strong>Why D is right.</strong> D. 100 and 200 ohms in parallel come to about 67 ohms.</p>
+<p>For two resistors in parallel, multiply them and divide by their sum. The result is smaller than the smaller resistor.</p>
+<pre class="worked">R = (R1 × R2) / (R1 + R2)
+R = (100 × 200) / (100 + 200)
+R = 20,000 / 300 = 66.7 ohms, about 67 ohms
+= 67 ohms</pre>
+<p><strong>Why not A?</strong> 300 ohms is the series total, not the parallel one.</p>
+</div>
+</details>
+</article>
+<article id="g5c05">
+<h2>G5C05</h2>
+<p class="stem">Why is the primary winding wire of a voltage step-up transformer usually a larger size than that of the secondary winding?</p>
+<ol class="opts">
+<li><span class="l">A</span> To improve the coupling between the primary and secondary</li>
+<li><span class="l">B</span> To accommodate the higher current of the primary</li>
+<li><span class="l">C</span> To prevent parasitic oscillations due to resistive losses in the primary</li>
+<li><span class="l">D</span> To ensure that the volume of the primary winding is equal to the volume of the secondary winding</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>B</strong>. To accommodate the higher current of the primary</p>
+<div class="ex">
+<p><strong>Why B is right.</strong> B. Power out roughly equals power in, so the low-voltage side of the transformer must carry the higher current, and that side is the primary.</p>
+<p>Power is voltage times current. In a step-up transformer the secondary has the higher voltage and so the lower current. Thicker wire has less resistance and stays cooler.</p>
+<p><strong>Why not D?</strong> Wire size is chosen for the current it carries, not to match the volume of the windings.</p>
+</div>
+</details>
+</article>
+<article id="g5c06">
+<h2>G5C06</h2>
+<p class="stem">What is the voltage output of a transformer with a 500-turn primary and a 1500-turn secondary when 120 VAC is applied to the primary?</p>
+<ol class="opts">
+<li><span class="l">A</span> 360 volts</li>
+<li><span class="l">B</span> 120 volts</li>
+<li><span class="l">C</span> 40 volts</li>
+<li><span class="l">D</span> 25.5 volts</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>A</strong>. 360 volts</p>
+<div class="ex">
+<p><strong>Why A is right.</strong> A. Three times as many secondary turns gives 3 × 120 = 360 volts.</p>
+<p>In a transformer, the voltage ratio equals the turns ratio. Multiply the primary voltage by the secondary turns divided by the primary turns.</p>
+<pre class="worked">Es = Ep × Ns / Np
+Es = 120 V × 1500 / 500
+Es = 120 V × 3 = 360 V
+= 360 volts</pre>
+<p><strong>Why not C?</strong> 40 volts comes from dividing by 3, which would be a step-down transformer.</p>
+</div>
+</details>
+</article>
+<article id="g5c07">
+<h2>G5C07</h2>
+<p class="stem">What transformer turns ratio matches an antenna’s 600-ohm feed point impedance to a 50-ohm coaxial cable?</p>
+<ol class="opts">
+<li><span class="l">A</span> 3.5 to 1</li>
+<li><span class="l">B</span> 12 to 1</li>
+<li><span class="l">C</span> 24 to 1</li>
+<li><span class="l">D</span> 144 to 1</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>A</strong>. 3.5 to 1</p>
+<div class="ex">
+<p><strong>Why A is right.</strong> A. A turns ratio of about 3.5 to 1 matches 600 ohms to 50 ohms.</p>
+<p>A transformer changes impedance by the square of its turns ratio. So to find the turns ratio, take the square root of the impedance ratio.</p>
+<pre class="worked">turns ratio = √(Zp / Zs)
+turns ratio = √(600 / 50) = √12
+turns ratio = 3.46, about 3.5 to 1
+= 3.5 to 1</pre>
+<p><strong>Why not B?</strong> 12 to 1 is the impedance ratio, not the turns ratio.</p>
+</div>
+</details>
+</article>
+<article id="g5c08">
+<h2>G5C08</h2>
+<p class="stem">What is the equivalent capacitance of two 5.0-nanofarad capacitors and one 750-picofarad capacitor connected in parallel?</p>
+<ol class="opts">
+<li><span class="l">A</span> 576.9 nanofarads</li>
+<li><span class="l">B</span> 1,733 picofarads</li>
+<li><span class="l">C</span> 3,583 picofarads</li>
+<li><span class="l">D</span> 10.750 nanofarads</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>D</strong>. 10.750 nanofarads</p>
+<div class="ex">
+<p><strong>Why D is right.</strong> D. Parallel capacitances add, giving 10.750 nanofarads.</p>
+<p>Capacitors in parallel act like one capacitor with bigger plates, so their values add. First put all values in the same unit. 750 picofarads is 0.750 nanofarads, since 1 nanofarad is 1000 picofarads.</p>
+<pre class="worked">C = C1 + C2 + C3
+750 pF = 0.750 nF
+C = 5.0 nF + 5.0 nF + 0.750 nF = 10.750 nF
+= 10.750 nanofarads</pre>
+<p><strong>Why not A?</strong> 576.9 is close to what the three would give in series, and that result is in picofarads, not nanofarads.</p>
+</div>
+</details>
+</article>
+<article id="g5c09">
+<h2>G5C09</h2>
+<p class="stem">What is the capacitance of three 100-microfarad capacitors connected in series?</p>
+<ol class="opts">
+<li><span class="l">A</span> 0.33 microfarads</li>
+<li><span class="l">B</span> 3.0 microfarads</li>
+<li><span class="l">C</span> 33.3 microfarads</li>
+<li><span class="l">D</span> 300 microfarads</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>C</strong>. 33.3 microfarads</p>
+<div class="ex">
+<p><strong>Why C is right.</strong> C. Three equal 100-microfarad capacitors in series give about 33.3 microfarads.</p>
+<p>Capacitors in series combine like resistors in parallel: add the reciprocals and invert. For equal values, divide one value by how many there are. The total is smaller than any single capacitor.</p>
+<pre class="worked">1 / C = 1 / C1 + 1 / C2 + 1 / C3
+equal values: C = 100 μF / 3
+C = 33.3 μF
+= 33.3 microfarads</pre>
+<p><strong>Why not D?</strong> 300 microfarads is the parallel total, not the series one.</p>
+</div>
+</details>
+</article>
+<article id="g5c10">
+<h2>G5C10</h2>
+<p class="stem">What is the inductance of three 10-millihenry inductors connected in parallel?</p>
+<ol class="opts">
+<li><span class="l">A</span> 0.30 henries</li>
+<li><span class="l">B</span> 3.3 henries</li>
+<li><span class="l">C</span> 3.3 millihenries</li>
+<li><span class="l">D</span> 30 millihenries</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>C</strong>. 3.3 millihenries</p>
+<div class="ex">
+<p><strong>Why C is right.</strong> C. Three equal 10-millihenry inductors in parallel give about 3.3 millihenries.</p>
+<p>Inductors in parallel combine like resistors in parallel: add the reciprocals and invert. For equal values, divide one value by how many there are. This assumes the coils are not magnetically coupled.</p>
+<pre class="worked">1 / L = 1 / L1 + 1 / L2 + 1 / L3
+equal values: L = 10 mH / 3
+L = 3.33 mH, about 3.3 mH
+= 3.3 millihenries</pre>
+<p><strong>Why not D?</strong> 30 millihenries is the series total, not the parallel one.</p>
+</div>
+</details>
+</article>
+<article id="g5c11">
+<h2>G5C11</h2>
+<p class="stem">What is the inductance of a circuit with a 20-millihenry inductor connected in series with a 50-millihenry inductor?</p>
+<ol class="opts">
+<li><span class="l">A</span> 7 millihenries</li>
+<li><span class="l">B</span> 14.3 millihenries</li>
+<li><span class="l">C</span> 70 millihenries</li>
+<li><span class="l">D</span> 1,000 millihenries</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>C</strong>. 70 millihenries</p>
+<div class="ex">
+<p><strong>Why C is right.</strong> C. Series inductances add: 20 + 50 = 70 millihenries.</p>
+<p>Inductors in series combine like resistors in series, so you add them. This assumes the coils are not magnetically coupled.</p>
+<pre class="worked">L = L1 + L2
+L = 20 mH + 50 mH
+L = 70 mH
+= 70 millihenries</pre>
+<p><strong>Why not B?</strong> 14.3 millihenries is what the two would give in parallel.</p>
+</div>
+</details>
+</article>
+<article id="g5c12">
+<h2>G5C12</h2>
+<p class="stem">What is the capacitance of a 20-microfarad capacitor connected in series with a 50-microfarad capacitor?</p>
+<ol class="opts">
+<li><span class="l">A</span> 0.07 microfarads</li>
+<li><span class="l">B</span> 14.3 microfarads</li>
+<li><span class="l">C</span> 70 microfarads</li>
+<li><span class="l">D</span> 1,000 microfarads</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>B</strong>. 14.3 microfarads</p>
+<div class="ex">
+<p><strong>Why B is right.</strong> B. 20 and 50 microfarads in series give about 14.3 microfarads.</p>
+<p>Capacitors in series combine like resistors in parallel. For two of them, multiply and divide by the sum. The total is smaller than the smaller capacitor.</p>
+<pre class="worked">C = (C1 × C2) / (C1 + C2)
+C = (20 × 50) / (20 + 50) μF
+C = 1000 / 70 = 14.29 μF, about 14.3 μF
+= 14.3 microfarads</pre>
+<p><strong>Why not C?</strong> 70 microfarads is what the two would give in parallel.</p>
+</div>
+</details>
+</article>
+<article id="g5c13">
+<h2>G5C13</h2>
+<p class="stem">Which of the following components should be added to a capacitor to increase the capacitance?</p>
+<ol class="opts">
+<li><span class="l">A</span> An inductor in series</li>
+<li><span class="l">B</span> An inductor in parallel</li>
+<li><span class="l">C</span> A capacitor in parallel</li>
+<li><span class="l">D</span> A capacitor in series</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>C</strong>. A capacitor in parallel</p>
+<div class="ex">
+<p><strong>Why C is right.</strong> C. Capacitances in parallel add, much like making the plate area bigger.</p>
+<p>Capacitors in series give a total smaller than either one.</p>
+<p><strong>Why not D?</strong> A capacitor in series lowers the total capacitance.</p>
+</div>
+</details>
+</article>
+<article id="g5c14">
+<h2>G5C14</h2>
+<p class="stem">Which of the following components should be added to an inductor to increase the inductance?</p>
+<ol class="opts">
+<li><span class="l">A</span> A capacitor in series</li>
+<li><span class="l">B</span> A capacitor in parallel</li>
+<li><span class="l">C</span> An inductor in parallel</li>
+<li><span class="l">D</span> An inductor in series</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>D</strong>. An inductor in series</p>
+<div class="ex">
+<p><strong>Why D is right.</strong> D. Inductances in series add, as resistances in series do.</p>
+<p>Inductors in parallel give a total smaller than either one. This assumes the coils are not magnetically coupled.</p>
+<p><strong>Why not C?</strong> An inductor in parallel lowers the total inductance.</p>
+</div>
+</details>
+</article>
+<nav class="pager" aria-label="Groups"><p><a href="../g5b/">Previous: G5B The decibel; current and voltage dividers; electrical power calculations; sine wave root-mean-square (RMS) values; PEP calculations</a></p><p><a href="../g6a/">Next: G6A Resistors; capacitors; inductors; rectifiers; solid-state diodes and transistors; vacuum tubes; batteries</a></p></nav>
+<footer>
+<p>QSO Ready is an independent study app for the US amateur radio license exams. Questions: NCVEC Question Pool Committee,
+released to the public domain. Rule quotes: 47 CFR, eCFR as of 2026-10-29. Content version 1.</p>
+<p><a href="../../">QSO Ready home</a> · <a href="../../privacy/">Privacy policy</a> · <a href="mailto:hello@saurabhupadhyay.in">hello@saurabhupadhyay.in</a></p>
+</footer>
+</main>
+</body>
+</html>

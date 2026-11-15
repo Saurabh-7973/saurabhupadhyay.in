@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>E9F Transmission lines: characteristics of open and shorted feed lines; coax versus open wire; velocity factor; electrical length; coaxial cable dielectrics; microstrip: Amateur Extra questions explained · QSO Ready</title>
+<meta name="description" content="Amateur Extra pool group E9F (Transmission lines: characteristics of open and shorted feed lines; coax versus open wire; velocity factor; electrical length; coaxial cable dielectrics; microstrip): all 12 questions with correct answers and plain-English explanations.">
+<link rel="canonical" href="https://saurabhupadhyay.in/qso-ready/extra/e9f/">
+<link rel="stylesheet" href="../../site.css">
+</head>
+<body>
+<main>
+<p class="notice">Not affiliated with or endorsed by the FCC, NCVEC, ARRL or any VEC. Questions are the NCVEC pools word for word (public domain); explanations are our own. Exam rules and fees can change: check with your VE team.</p>
+<nav class="crumbs" aria-label="Breadcrumb"><a href="../../">QSO Ready</a> › <a href="../">Amateur Extra</a> › E9F</nav>
+<h1>E9F: Transmission lines: characteristics of open and shorted feed lines; coax versus open wire; velocity factor; electrical length; coaxial cable dielectrics; microstrip</h1>
+<p>Group E9F of the Amateur Extra pool (2024–2028) has 12 active questions. One of them is on every Amateur Extra exam. Each is shown word for word; open it to see the correct answer and our explanation.</p>
+<article id="e9f01">
+<h2>E9F01</h2>
+<p class="stem">What is the velocity factor of a transmission line?</p>
+<ol class="opts">
+<li><span class="l">A</span> The ratio of its characteristic impedance to its termination impedance</li>
+<li><span class="l">B</span> The ratio of its termination impedance to its characteristic impedance</li>
+<li><span class="l">C</span> The velocity of a wave in the transmission line multiplied by the velocity of light in a vacuum</li>
+<li><span class="l">D</span> The velocity of a wave in the transmission line divided by the velocity of light in a vacuum</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>D</strong>. The velocity of a wave in the transmission line divided by the velocity of light in a vacuum</p>
+<div class="ex">
+<p><strong>Why D is right.</strong> D. Insulation slows a wave on a line, so the useful measure is its speed there divided by the speed of light in a vacuum.</p>
+<p>Waves on a feed line travel slower than in free space because the insulation stores some of the field energy. If a wave moves at 0.66 times the speed of light in a cable, its velocity factor is 0.66. The number is always less than 1, or equal to about 1 for an air-insulated line.</p>
+<p><strong>Why not C?</strong> Multiplying the two speeds gives no useful quantity; velocity factor is one speed divided by the other.</p>
+</div>
+</details>
+</article>
+<article id="e9f02">
+<h2>E9F02</h2>
+<p class="stem">Which of the following has the biggest effect on the velocity factor of a transmission line?</p>
+<ol class="opts">
+<li><span class="l">A</span> The characteristic impedance</li>
+<li><span class="l">B</span> The transmission line length</li>
+<li><span class="l">C</span> The insulating dielectric material</li>
+<li><span class="l">D</span> The center conductor resistivity</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>C</strong>. The insulating dielectric material</p>
+<div class="ex">
+<p><strong>Why C is right.</strong> C. The insulation between the conductors slows the wave, so the dielectric material mostly sets the velocity factor.</p>
+<p>Every insulating material has a dielectric constant, a number saying how strongly it slows electric fields. Velocity factor is roughly 1 divided by the square root of that number. Solid polyethylene gives about 0.66. Foam, with lots of air, gives about 0.8 or more. Air-insulated line is close to 1.</p>
+<p><strong>Why not B?</strong> Length changes the delay through the line, but the speed per meter stays the same.</p>
+</div>
+</details>
+</article>
+<article id="e9f03">
+<h2>E9F03</h2>
+<p class="stem">Why is the electrical length of a coaxial cable longer than its physical length?</p>
+<ol class="opts">
+<li><span class="l">A</span> Skin effect is less pronounced in the coaxial cable</li>
+<li><span class="l">B</span> Skin effect is more pronounced in the coaxial cable</li>
+<li><span class="l">C</span> Electromagnetic waves move faster in coaxial cable than in air</li>
+<li><span class="l">D</span> Electromagnetic waves move more slowly in a coaxial cable than in air</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>D</strong>. Electromagnetic waves move more slowly in a coaxial cable than in air</p>
+<div class="ex">
+<p><strong>Why D is right.</strong> D. Waves travel more slowly in coax than in air, so more wavelengths fit in the same physical length.</p>
+<p>Electrical length counts how many wavelengths fit in a line. Because a wave slows inside the cable&#x27;s insulation, each wavelength in the cable is shorter than in air. A cable one meter long therefore holds more wavelengths than one meter of air, so its electrical length is longer than its physical length.</p>
+<p><strong>Why not C?</strong> Waves move slower in coax, not faster; faster waves would make the electrical length shorter.</p>
+</div>
+</details>
+</article>
+<article id="e9f04">
+<h2>E9F04</h2>
+<p class="stem">What impedance does a 1/2-wavelength transmission line present to an RF generator when the line is shorted at the far end?</p>
+<ol class="opts">
+<li><span class="l">A</span> Very high impedance</li>
+<li><span class="l">B</span> Very low impedance</li>
+<li><span class="l">C</span> The same as the characteristic impedance of the line</li>
+<li><span class="l">D</span> The same as the output impedance of the RF generator</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>B</strong>. Very low impedance</p>
+<div class="ex">
+<p><strong>Why B is right.</strong> B. A half-wave line repeats whatever load is at its far end, so a short at the end looks like a short at the input.</p>
+<p>Along a line, impedance follows a pattern that repeats every half wavelength. At the far end of this line is a short, zero ohms. Move back a half wavelength and the pattern is in the same place, so the generator sees nearly zero ohms. Real line losses keep it from being exactly zero.</p>
+<p><strong>Why not A?</strong> Very high impedance comes from a shorted quarter-wave line, not a half-wave one.</p>
+</div>
+</details>
+</article>
+<article id="e9f05">
+<h2>E9F05</h2>
+<p class="stem">What is microstrip?</p>
+<ol class="opts">
+<li><span class="l">A</span> Special shielding material designed for microwave frequencies</li>
+<li><span class="l">B</span> Miniature coax used for low power applications</li>
+<li><span class="l">C</span> Short lengths of coax mounted on printed circuit boards to minimize time delay between microwave circuits</li>
+<li><span class="l">D</span> Precision printed circuit conductors above a ground plane that provide constant impedance interconnects at microwave frequencies</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>D</strong>. Precision printed circuit conductors above a ground plane that provide constant impedance interconnects at microwave frequencies</p>
+<div class="ex">
+<p><strong>Why D is right.</strong> D. Microstrip is a carefully sized circuit-board trace over a ground plane, which acts as a transmission line with a set impedance.</p>
+<p>At microwave frequencies even short wires behave like transmission lines. A microstrip line is a copper trace on top of a board, with solid copper underneath. The trace width, board thickness and board material set its characteristic impedance, often 50 ohms. This lets signals move between parts on the board without reflections.</p>
+<p><strong>Why not B?</strong> Microstrip is a flat trace on a board, not a miniature coaxial cable.</p>
+</div>
+</details>
+</article>
+<article id="e9f06">
+<h2>E9F06</h2>
+<p class="stem">What is the approximate physical length of an air-insulated, parallel conductor transmission line that is electrically 1/2 wavelength long at 14.10 MHz?</p>
+<ol class="opts">
+<li><span class="l">A</span> 7.0 meters</li>
+<li><span class="l">B</span> 8.5 meters</li>
+<li><span class="l">C</span> 10.6 meters</li>
+<li><span class="l">D</span> 13.3 meters</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>C</strong>. 10.6 meters</p>
+<div class="ex">
+<p><strong>Why C is right.</strong> C. Air line has a velocity factor of about 1, so its length is a free-space half wavelength at 14.10 MHz, about 10.6 meters.</p>
+<p>First find the wavelength from the speed of light, about 299.79 meters per microsecond, divided by frequency in MHz. Halve it for a half wavelength. Then multiply by the velocity factor, taken as 1.0 for air insulation. Real open-wire line with spacers is slightly slower, so it would be a bit shorter.</p>
+<pre class="worked">L = VF × c / (2 × f)
+VF = 1.0 for air, c = 299.79 m per microsecond
+wavelength = 299.79 / 14.10 = 21.26 m
+L = 1.0 × 21.26 m / 2 = 10.63 m, about 10.6 m
+= 10.6 meters</pre>
+<p><strong>Why not A?</strong> 7.0 meters would mean a velocity factor near 0.66, which fits solid-dielectric coax, not air line.</p>
+</div>
+</details>
+</article>
+<article id="e9f07">
+<h2>E9F07</h2>
+<p class="stem">How does parallel conductor transmission line compare to coaxial cable with a plastic dielectric?</p>
+<ol class="opts">
+<li><span class="l">A</span> Lower loss</li>
+<li><span class="l">B</span> Higher SWR</li>
+<li><span class="l">C</span> Smaller reflection coefficient</li>
+<li><span class="l">D</span> Lower velocity factor</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>A</strong>. Lower loss</p>
+<div class="ex">
+<p><strong>Why A is right.</strong> A. Parallel-conductor line keeps most of its field in air instead of plastic, so less power is lost as heat.</p>
+<p>In coax, the field passes through solid plastic, which absorbs some energy, and current crowds onto a thin center wire. Open-wire or ladder line uses air as most of its insulation and spaces the wires apart. Its loss stays low even at high SWR. That makes it popular for multiband antennas fed through a tuner.</p>
+<p><strong>Why not D?</strong> Air insulation gives parallel line a higher velocity factor than plastic-filled coax, not a lower one.</p>
+</div>
+</details>
+</article>
+<article id="e9f08">
+<h2>E9F08</h2>
+<p class="stem">Which of the following is a significant difference between foam dielectric coaxial cable and solid dielectric coaxial cable, assuming all other parameters are the same?</p>
+<ol class="opts">
+<li><span class="l">A</span> Foam dielectric coaxial cable has lower safe maximum operating voltage</li>
+<li><span class="l">B</span> Foam dielectric coaxial cable has lower loss per unit of length</li>
+<li><span class="l">C</span> Foam dielectric coaxial cable has higher velocity factor</li>
+<li><span class="l">D</span> All these choices are correct</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>D</strong>. All these choices are correct</p>
+<div class="ex">
+<p><strong>Why D is right.</strong> D. Foam&#x27;s air pockets lower its breakdown voltage, cut dielectric loss and speed the wave, so A, B and C are all true.</p>
+<p>Foam dielectric is plastic filled with tiny gas bubbles. Air breaks down at a lower voltage than solid plastic, so foam cable handles less voltage. Air absorbs less RF than plastic, so loss drops. Air also slows the wave less, so velocity factor goes up, often to about 0.8 or higher.</p>
+</div>
+</details>
+</article>
+<article id="e9f09">
+<h2>E9F09</h2>
+<p class="stem">What impedance does a 1/4-wavelength transmission line present to an RF generator when the line is shorted at the far end?</p>
+<ol class="opts">
+<li><span class="l">A</span> Very high impedance</li>
+<li><span class="l">B</span> Very low impedance</li>
+<li><span class="l">C</span> The same as the characteristic impedance of the transmission line</li>
+<li><span class="l">D</span> The same as the generator output impedance</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>A</strong>. Very high impedance</p>
+<div class="ex">
+<p><strong>Why A is right.</strong> A. A quarter-wave line flips the load to its opposite, so a short at the far end looks like an open, a very high impedance.</p>
+<p>Along a line, the voltage and current peaks swap places every quarter wavelength. At a short, current is high and voltage is zero. A quarter wave back, voltage is high and current is near zero. High voltage with little current means very high impedance. This is how a shorted quarter-wave stub can act as an insulator.</p>
+<p><strong>Why not B?</strong> Very low impedance comes back from a shorted half-wave line, which repeats the short.</p>
+</div>
+</details>
+</article>
+<article id="e9f10">
+<h2>E9F10</h2>
+<p class="stem">What impedance does a 1/8-wavelength transmission line present to an RF generator when the line is shorted at the far end?</p>
+<ol class="opts">
+<li><span class="l">A</span> A capacitive reactance</li>
+<li><span class="l">B</span> The same as the characteristic impedance of the line</li>
+<li><span class="l">C</span> An inductive reactance</li>
+<li><span class="l">D</span> Zero</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>C</strong>. An inductive reactance</p>
+<div class="ex">
+<p><strong>Why C is right.</strong> C. A shorted line shorter than a quarter wave acts like an inductor, so a 1/8-wavelength shorted line shows inductive reactance.</p>
+<p>Start at the short, zero ohms. Moving back from it toward a quarter wave, the impedance rises from zero toward infinity and is inductive along the way. At 1/8 wavelength the reactance equals the line&#x27;s characteristic impedance in size, and it is inductive. Short shorted stubs are often used as inductors at VHF and above.</p>
+<p><strong>Why not A?</strong> Capacitive reactance comes from an open line shorter than a quarter wave, not a shorted one.</p>
+</div>
+</details>
+</article>
+<article id="e9f11">
+<h2>E9F11</h2>
+<p class="stem">What impedance does a 1/8-wavelength transmission line present to an RF generator when the line is open at the far end?</p>
+<ol class="opts">
+<li><span class="l">A</span> The same as the characteristic impedance of the line</li>
+<li><span class="l">B</span> An inductive reactance</li>
+<li><span class="l">C</span> A capacitive reactance</li>
+<li><span class="l">D</span> Infinite</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>C</strong>. A capacitive reactance</p>
+<div class="ex">
+<p><strong>Why C is right.</strong> C. An open line shorter than a quarter wave acts like a capacitor, so a 1/8-wavelength open line shows capacitive reactance.</p>
+<p>Two conductors with an open end are like the plates of a capacitor, and that is how a short open line behaves. Moving back from the open end, impedance falls from very high toward zero at a quarter wave, staying capacitive. At 1/8 wavelength the reactance equals the line&#x27;s characteristic impedance in size.</p>
+<p><strong>Why not B?</strong> Inductive reactance comes from a shorted 1/8-wave line; the open line does the opposite.</p>
+</div>
+</details>
+</article>
+<article id="e9f12">
+<h2>E9F12</h2>
+<p class="stem">What impedance does a 1/4-wavelength transmission line present to an RF generator when the line is open at the far end?</p>
+<ol class="opts">
+<li><span class="l">A</span> The same as the characteristic impedance of the line</li>
+<li><span class="l">B</span> The same as the input impedance to the generator</li>
+<li><span class="l">C</span> Very high impedance</li>
+<li><span class="l">D</span> Very low impedance</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>D</strong>. Very low impedance</p>
+<div class="ex">
+<p><strong>Why D is right.</strong> D. A quarter-wave line turns its load into the opposite, so an open far end looks like a short, a very low impedance.</p>
+<p>At an open end, current is zero and voltage is high. A quarter wave back, the pattern has shifted so current is high and voltage is near zero. That is a very low impedance, like a short. An open quarter-wave stub placed across a line can therefore short out a single frequency.</p>
+<p><strong>Why not C?</strong> Very high impedance comes from a shorted quarter-wave line, the reverse of this case.</p>
+</div>
+</details>
+</article>
+<nav class="pager" aria-label="Groups"><p><a href="../e9e/">Previous: E9E Impedance matching: matching antennas to feed lines; phasing lines; power dividers</a></p><p><a href="../e9g/">Next: E9G The Smith chart</a></p></nav>
+<footer>
+<p>QSO Ready is an independent study app for the US amateur radio license exams. Questions: NCVEC Question Pool Committee,
+released to the public domain. Rule quotes: 47 CFR, eCFR as of 2026-10-29. Content version 1.</p>
+<p><a href="../../">QSO Ready home</a> · <a href="../../privacy/">Privacy policy</a> · <a href="mailto:hello@saurabhupadhyay.in">hello@saurabhupadhyay.in</a></p>
+</footer>
+</main>
+</body>
+</html>

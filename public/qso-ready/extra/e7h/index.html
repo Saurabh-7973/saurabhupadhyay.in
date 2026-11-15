@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>E7H Oscillators and signal sources: types of oscillators; synthesizers and phase-locked loops; direct digital synthesizers; stabilizing thermal drift; microphonics; high-accuracy oscillators: Amateur Extra questions explained · QSO Ready</title>
+<meta name="description" content="Amateur Extra pool group E7H (Oscillators and signal sources: types of oscillators; synthesizers and phase-locked loops; direct digital synthesizers; stabilizing thermal drift; microphonics; high-accuracy oscillators): all 13 questions with correct answers and plain-English explanations.">
+<link rel="canonical" href="https://saurabhupadhyay.in/qso-ready/extra/e7h/">
+<link rel="stylesheet" href="../../site.css">
+</head>
+<body>
+<main>
+<p class="notice">Not affiliated with or endorsed by the FCC, NCVEC, ARRL or any VEC. Questions are the NCVEC pools word for word (public domain); explanations are our own. Exam rules and fees can change: check with your VE team.</p>
+<nav class="crumbs" aria-label="Breadcrumb"><a href="../../">QSO Ready</a> › <a href="../">Amateur Extra</a> › E7H</nav>
+<h1>E7H: Oscillators and signal sources: types of oscillators; synthesizers and phase-locked loops; direct digital synthesizers; stabilizing thermal drift; microphonics; high-accuracy oscillators</h1>
+<p>Group E7H of the Amateur Extra pool (2024–2028) has 13 active questions. One of them is on every Amateur Extra exam. Each is shown word for word; open it to see the correct answer and our explanation.</p>
+<article id="e7h01">
+<h2>E7H01</h2>
+<p class="stem">What are three common oscillator circuits?</p>
+<ol class="opts">
+<li><span class="l">A</span> Taft, Pierce, and negative feedback</li>
+<li><span class="l">B</span> Pierce, Fenner, and Beane</li>
+<li><span class="l">C</span> Taft, Hartley, and Pierce</li>
+<li><span class="l">D</span> Colpitts, Hartley, and Pierce</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>D</strong>. Colpitts, Hartley, and Pierce</p>
+<div class="ex">
+<p><strong>Why D is right.</strong> D. Colpitts, Hartley and Pierce are standard oscillator designs, each named for its inventor and set apart by how it feeds energy back.</p>
+<p>An oscillator needs positive feedback: part of the output returned to the input in phase. A Colpitts takes its feedback from a pair of capacitors, a Hartley from a tapped coil, and a Pierce from a quartz crystal. The other names in the choices are not standard oscillator types.</p>
+<p><strong>Why not C?</strong> Taft is not an oscillator circuit, so C fails even though it includes Hartley and Pierce.</p>
+</div>
+</details>
+</article>
+<article id="e7h02">
+<h2>E7H02</h2>
+<p class="stem">What is a microphonic?</p>
+<ol class="opts">
+<li><span class="l">A</span> An IC used for amplifying microphone signals</li>
+<li><span class="l">B</span> Distortion caused by RF pickup on the microphone cable</li>
+<li><span class="l">C</span> Changes in oscillator frequency caused by mechanical vibration</li>
+<li><span class="l">D</span> Excess loading of the microphone by an oscillator</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>C</strong>. Changes in oscillator frequency caused by mechanical vibration</p>
+<div class="ex">
+<p><strong>Why C is right.</strong> C. A microphonic is a frequency change caused when vibration physically moves oscillator parts and shifts their capacitance or inductance.</p>
+<p>Tapping the radio or a loud sound nearby can shake coil turns or capacitor plates slightly. The tuned circuit&#x27;s values change, so the frequency changes. The signal then wobbles in step with the vibration, which can be heard as a ringing or warble.</p>
+<p><strong>Why not B?</strong> RF picked up on a microphone cable is feedback or interference, not a mechanical effect on the oscillator.</p>
+</div>
+</details>
+</article>
+<article id="e7h03">
+<h2>E7H03</h2>
+<p class="stem">What is a phase-locked loop?</p>
+<ol class="opts">
+<li><span class="l">A</span> An electronic servo loop consisting of a ratio detector, reactance modulator, and voltage-controlled oscillator</li>
+<li><span class="l">B</span> An electronic circuit also known as a monostable multivibrator</li>
+<li><span class="l">C</span> An electronic servo loop consisting of a phase detector, a low-pass filter, a voltage-controlled oscillator, and a stable reference oscillator</li>
+<li><span class="l">D</span> An electronic circuit consisting of a precision push-pull amplifier with a differential phase input</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>C</strong>. An electronic servo loop consisting of a phase detector, a low-pass filter, a voltage-controlled oscillator, and a stable reference oscillator</p>
+<div class="ex">
+<p><strong>Why C is right.</strong> C. A PLL compares a controllable oscillator&#x27;s phase with a stable reference and steers it until the two stay locked.</p>
+<p>The phase detector puts out a voltage that depends on the phase difference between the two signals. The low-pass filter smooths that voltage, which then tunes the voltage-controlled oscillator, or VCO. Once locked, the VCO is as stable as the reference.</p>
+<p><strong>Why not A?</strong> A ratio detector and reactance modulator are FM parts, not the elements of a phase-locked loop.</p>
+</div>
+</details>
+</article>
+<article id="e7h04">
+<h2>E7H04</h2>
+<p class="stem">How is positive feedback supplied in a Colpitts oscillator?</p>
+<ol class="opts">
+<li><span class="l">A</span> Through a tapped coil</li>
+<li><span class="l">B</span> Through link coupling</li>
+<li><span class="l">C</span> Through a capacitive divider</li>
+<li><span class="l">D</span> Through a neutralizing capacitor</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>C</strong>. Through a capacitive divider</p>
+<div class="ex">
+<p><strong>Why C is right.</strong> C. A Colpitts oscillator takes its feedback from the point between two capacitors in series across the tuned circuit.</p>
+<p>The two capacitors split the tuned circuit&#x27;s voltage, much like a voltage divider. The point between them feeds part of the signal back to the amplifier&#x27;s input. The ratio of the two capacitors sets how much feedback the circuit gets.</p>
+<p><strong>Why not A?</strong> Feedback through a tapped coil is the Hartley method.</p>
+</div>
+</details>
+</article>
+<article id="e7h05">
+<h2>E7H05</h2>
+<p class="stem">How is positive feedback supplied in a Pierce oscillator?</p>
+<ol class="opts">
+<li><span class="l">A</span> Through a tapped coil</li>
+<li><span class="l">B</span> Through link coupling</li>
+<li><span class="l">C</span> Through a neutralizing capacitor</li>
+<li><span class="l">D</span> Through a quartz crystal</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>D</strong>. Through a quartz crystal</p>
+<div class="ex">
+<p><strong>Why D is right.</strong> D. In a Pierce oscillator a quartz crystal sits in the feedback path and passes energy only very near its resonant frequency.</p>
+<p>The crystal connects between the amplifier&#x27;s output and input. Along with two small capacitors to ground, it gives the phase shift needed for oscillation. Because quartz resonates very sharply, the frequency is very stable.</p>
+<p><strong>Why not A?</strong> A tapped coil gives feedback in a Hartley oscillator.</p>
+</div>
+</details>
+</article>
+<article id="e7h06">
+<h2>E7H06</h2>
+<p class="stem">Which of these functions can be performed by a phase-locked loop?</p>
+<ol class="opts">
+<li><span class="l">A</span> Wide-band AF and RF power amplification</li>
+<li><span class="l">B</span> Frequency synthesis and FM demodulation</li>
+<li><span class="l">C</span> Photovoltaic conversion and optical coupling</li>
+<li><span class="l">D</span> Comparison of two digital input signals and digital pulse counting</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>B</strong>. Frequency synthesis and FM demodulation</p>
+<div class="ex">
+<p><strong>Why B is right.</strong> B. A PLL can generate many stable frequencies from one reference, and its control voltage follows FM, so it can also demodulate.</p>
+<p>Place a frequency divider between the VCO and the phase detector, and the loop locks the VCO to a multiple of the reference; changing the divider changes the output frequency. When the loop locks to an FM signal, its control voltage rises and falls with the modulation, recovering the audio.</p>
+<p><strong>Why not D?</strong> Counting pulses and comparing digital words are jobs for counters and logic, not a phase-locked loop.</p>
+</div>
+</details>
+</article>
+<article id="e7h07">
+<h2>E7H07</h2>
+<p class="stem">How can an oscillator’s microphonic responses be reduced?</p>
+<ol class="opts">
+<li><span class="l">A</span> Use NP0 capacitors</li>
+<li><span class="l">B</span> Reduce noise on the oscillator’s power supply</li>
+<li><span class="l">C</span> Increase the gain</li>
+<li><span class="l">D</span> Mechanically isolate the oscillator circuitry from its enclosure</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>D</strong>. Mechanically isolate the oscillator circuitry from its enclosure</p>
+<div class="ex">
+<p><strong>Why D is right.</strong> D. Mechanically isolating the oscillator keeps vibration from reaching its parts, so their values don&#x27;t shift.</p>
+<p>Shock mounts, rubber spacers and solid construction keep vibration from flexing coils and capacitors. Fixing coil windings in place with cement also helps. Electrical changes do not fix what is a mechanical problem.</p>
+<p><strong>Why not A?</strong> NP0 capacitors fight drift caused by temperature, not vibration.</p>
+</div>
+</details>
+</article>
+<article id="e7h08">
+<h2>E7H08</h2>
+<p class="stem">Which of the following components can be used to reduce thermal drift in crystal oscillators?</p>
+<ol class="opts">
+<li><span class="l">A</span> NP0 capacitors</li>
+<li><span class="l">B</span> Toroidal inductors</li>
+<li><span class="l">C</span> Wirewound resistors</li>
+<li><span class="l">D</span> Non-inductive resistors</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>A</strong>. NP0 capacitors</p>
+<div class="ex">
+<p><strong>Why A is right.</strong> A. NP0 capacitors keep nearly the same value as temperature changes, so they don&#x27;t pull the oscillator&#x27;s frequency as the circuit warms.</p>
+<p>NP0, also written C0G, means negative-positive-zero: its temperature coefficient is near zero. Many ordinary ceramic capacitors change value with heat, which retunes the oscillator. Using NP0 parts in frequency-setting spots keeps drift small.</p>
+<p><strong>Why not B?</strong> Toroidal inductors are chosen for their contained magnetic field, not for temperature stability.</p>
+</div>
+</details>
+</article>
+<article id="e7h09">
+<h2>E7H09</h2>
+<p class="stem">What type of frequency synthesizer circuit uses a phase accumulator, lookup table, digital-to-analog converter, and a low-pass anti-alias filter?</p>
+<ol class="opts">
+<li><span class="l">A</span> A direct digital synthesizer</li>
+<li><span class="l">B</span> A hybrid synthesizer</li>
+<li><span class="l">C</span> A phase-locked loop synthesizer</li>
+<li><span class="l">D</span> A direct conversion synthesizer</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>A</strong>. A direct digital synthesizer</p>
+<div class="ex">
+<p><strong>Why A is right.</strong> A. A direct digital synthesizer steps through phase, looks up the matching amplitude, converts it to voltage and filters the result into a clean wave.</p>
+<p>The phase accumulator adds a set number every clock cycle, stepping around the wave&#x27;s cycle. The lookup table turns each phase into a sample value. The digital-to-analog converter outputs those values as voltages, and the low-pass filter removes clock-related images. A bigger step size gives a higher frequency.</p>
+<p><strong>Why not C?</strong> A phase-locked loop uses a phase detector and VCO, not a lookup table.</p>
+</div>
+</details>
+</article>
+<article id="e7h10">
+<h2>E7H10</h2>
+<p class="stem">What information is contained in the lookup table of a direct digital synthesizer (DDS)?</p>
+<ol class="opts">
+<li><span class="l">A</span> The phase relationship between a reference oscillator and the output waveform</li>
+<li><span class="l">B</span> Amplitude values that represent the desired waveform</li>
+<li><span class="l">C</span> The phase relationship between a voltage-controlled oscillator and the output waveform</li>
+<li><span class="l">D</span> Frequently used receiver and transmitter frequencies</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>B</strong>. Amplitude values that represent the desired waveform</p>
+<div class="ex">
+<p><strong>Why B is right.</strong> B. The DDS lookup table holds amplitude samples of one cycle of the wanted waveform, usually a sine wave.</p>
+<p>Each phase value from the accumulator points to a table entry, and that entry is the wave&#x27;s height at that point in the cycle. The digital-to-analog converter turns these numbers into voltages, building the wave one sample at a time.</p>
+<p><strong>Why not D?</strong> Stored operating frequencies belong to a radio&#x27;s memory channels, not to the waveform table.</p>
+</div>
+</details>
+</article>
+<article id="e7h11">
+<h2>E7H11</h2>
+<p class="stem">What are the major spectral impurity components of direct digital synthesizers?</p>
+<ol class="opts">
+<li><span class="l">A</span> Broadband noise</li>
+<li><span class="l">B</span> Digital conversion noise</li>
+<li><span class="l">C</span> Spurious signals at discrete frequencies</li>
+<li><span class="l">D</span> Harmonics of the local oscillator</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>C</strong>. Spurious signals at discrete frequencies</p>
+<div class="ex">
+<p><strong>Why C is right.</strong> C. A DDS mainly produces spurs: separate unwanted tones caused by rounding of phase and amplitude values and by converter errors.</p>
+<p>A DDS builds its output from a limited number of steps. Dropping phase bits and rounding amplitudes create small errors that repeat. Repeating errors show up as distinct tones at fixed frequencies, not as a smooth noise floor. Their size and spacing depend on the frequency chosen.</p>
+<p><strong>Why not A?</strong> The errors repeat, so they land at discrete frequencies instead of spreading as broadband noise.</p>
+</div>
+</details>
+</article>
+<article id="e7h12">
+<h2>E7H12</h2>
+<p class="stem">Which of the following ensures that a crystal oscillator operates on the frequency specified by the crystal manufacturer?</p>
+<ol class="opts">
+<li><span class="l">A</span> Provide the crystal with a specified parallel inductance</li>
+<li><span class="l">B</span> Provide the crystal with a specified parallel capacitance</li>
+<li><span class="l">C</span> Bias the crystal at a specified voltage</li>
+<li><span class="l">D</span> Bias the crystal at a specified current</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>B</strong>. Provide the crystal with a specified parallel capacitance</p>
+<div class="ex">
+<p><strong>Why B is right.</strong> B. A crystal&#x27;s exact frequency depends on the capacitance across it, so the maker specifies the parallel load capacitance it was cut for.</p>
+<p>In many oscillators the crystal works with circuit capacitance in parallel. Change that capacitance and the frequency shifts slightly. Matching the specified load, such as 20 pF, puts the oscillator on its marked frequency.</p>
+<p><strong>Why not A?</strong> The maker specifies a load capacitance, not an inductance, for parallel-mode crystals.</p>
+</div>
+</details>
+</article>
+<article id="e7h13">
+<h2>E7H13</h2>
+<p class="stem">Which of the following is a technique for providing highly accurate and stable oscillators needed for microwave transmission and reception?</p>
+<ol class="opts">
+<li><span class="l">A</span> Use a GPS signal reference</li>
+<li><span class="l">B</span> Use a rubidium stabilized reference oscillator</li>
+<li><span class="l">C</span> Use a temperature-controlled high Q dielectric resonator</li>
+<li><span class="l">D</span> All these choices are correct</li>
+</ol>
+<details><summary>Show the answer and explanation</summary>
+<p class="keyline">Correct answer: <strong>D</strong>. All these choices are correct</p>
+<div class="ex">
+<p><strong>Why D is right.</strong> D. GPS references, rubidium standards and temperature-controlled dielectric resonators each give the stability microwave work needs.</p>
+<p>At 10 GHz, an error of one part per million is 10 kHz, enough to miss a narrow signal. GPS-disciplined oscillators steer to the atomic clocks on the satellites. Rubidium standards use an atomic resonance. Temperature-controlled high-Q dielectric resonators hold their frequency steady by holding temperature steady.</p>
+</div>
+</details>
+</article>
+<nav class="pager" aria-label="Groups"><p><a href="../e7g/">Previous: E7G Operational amplifiers: characteristics and applications</a></p><p><a href="../e8a/">Next: E8A Fourier analysis; RMS measurements; average RF power and peak envelope power (PEP); analog/digital conversion</a></p></nav>
+<footer>
+<p>QSO Ready is an independent study app for the US amateur radio license exams. Questions: NCVEC Question Pool Committee,
+released to the public domain. Rule quotes: 47 CFR, eCFR as of 2026-10-29. Content version 1.</p>
+<p><a href="../../">QSO Ready home</a> · <a href="../../privacy/">Privacy policy</a> · <a href="mailto:hello@saurabhupadhyay.in">hello@saurabhupadhyay.in</a></p>
+</footer>
+</main>
+</body>
+</html>

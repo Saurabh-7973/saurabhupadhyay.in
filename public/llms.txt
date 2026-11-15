@@ -1,0 +1,34 @@
+# Saurabh Upadhyay
+
+> Flutter developer in Mumbai, India (IST). He builds, releases and supports his own Android apps and developer tools. Also known as Saurabh Rajkamal Upadhyay; handle Saurabh-7973 on GitHub and Google Play, Saurabh7973 on Medium.
+
+Everything listed here is live and can be checked at the links. The same facts are in machine-readable form in his resume.json.
+
+## Products
+
+- [Guidester](https://saurabhupadhyay.in/guidester): in-app tester feedback for Flutter. Testers tap the spot that's wrong and type; the comment reaches a dashboard with a screenshot, the screen name and the device. Flutter package on [pub.dev](https://pub.dev/packages/guidester) (MIT), Flutter web dashboard, self-hosted Supabase backend.
+- [Snapdrop: Phone to Figma](https://play.google.com/store/apps/details?id=in.getsnapdrop.app): Android app and Figma plugin; scan the plugin's QR code and send up to ten photos into Figma. Not related to the snapdrop.net file-sharing web app.
+- [Sanatan Guide](https://play.google.com/store/apps/details?id=com.Saurabh7973.sanatan_guide): offline Android reader for the Bhagavad Gita, the Vedas and the Upanishads.
+- [Sahaj](https://play.google.com/store/apps/details?id=com.saurabh7973.sahaj): guided men's wellness training app for Android, with in-app purchases.
+
+## Code
+
+- [GitHub profile](https://github.com/Saurabh-7973): pinned repositories and profile README
+- [Guidester source](https://github.com/Saurabh-7973/guidester): package, dashboard and backend
+- [Mutual Fund Explorer](https://github.com/Saurabh-7973/mutual-fund-explorer): React Native (Expo, TypeScript) app for Indian mutual funds: NAV history, watchlist, holdings with XIRR
+
+## For recruiters
+
+- [resume.json](https://raw.githubusercontent.com/Saurabh-7973/Saurabh-7973/main/resume.json): JSON Resume v1.0.0
+- [Recruiter brief](https://github.com/Saurabh-7973/Saurabh-7973/blob/main/RECRUITERS.md)
+- [Contact](https://saurabhupadhyay.in/contact): hello@saurabhupadhyay.in
+
+## Writing
+
+- [All posts](https://saurabhupadhyay.in/writing): Flutter performance, security, app size and analytics, on Medium
+
+## Optional
+
+- [Apps](https://saurabhupadhyay.in/products)
+- [Privacy policy](https://saurabhupadhyay.in/privacy)
+- [Terms](https://saurabhupadhyay.in/terms)
